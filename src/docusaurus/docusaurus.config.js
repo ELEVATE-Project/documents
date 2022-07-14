@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Elevate',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Education Leadership Platform',
   url: 'https://dev.elevate-docs.shikshalokam.org/',
   baseUrl: '/docusaurus/',
   onBrokenLinks: 'throw',
@@ -52,6 +52,15 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+      },
     ],
   ],
 
