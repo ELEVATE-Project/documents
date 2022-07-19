@@ -1,20 +1,24 @@
+import PartialExample from './_elevate.mdx';
+
 # Notifications Service
 
-Elevate notification services can be setup in local using two methods:
+<PartialExample elevate /> notification services can be setup on a local system in one of the following ways:
 
-A. Dockerized service with local dependencies(Intermediate): Refer **Section A**.
+ - [As a dockerized service with local dependencies(Intermediate)](#dockdep)
 
-B. Local Service with local dependencies(Hardest): Refer **Section B**.
+ - [As a local service with local dependencies(Hardest)](#localdep)
 
-## A. Dockerized Service With Local Dependencies
+## Dockerized Service With Local Dependencies
+<a name="dockdep">&nbsp;</a>
 
-**Expectation**: Run single docker containerized service with existing local (in host) or remote dependencies.
+**Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
 ### Local Dependencies Steps
 
-1. Update dependency (Kafka etc) IP addresses in .env with "**host.docker.internal**".
 
-    Eg:
+1. Update dependency (such as Kafka) IP addresses in **.env** with "**host.docker.internal**".
+
+    For example:
 
     ```
      #Kafka Host Server URL
@@ -27,7 +31,7 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
     ```
 3. Run the docker container.
 
-    - For Mac & Windows with docker v18.03+:
+    - For Mac and Windows with docker v18.03+:
 
         ```
         $ docker run --name notification elevate/notification:1.0
@@ -41,9 +45,9 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
 
 ### Remote Dependencies Steps
 
-1. Update dependency (Kafka etc) Ip addresses in .env with respective remote server IPs.
+1. Update dependency (such as Kafka) IP addresses in **.env** with respective remote server IPs.
 
-    Eg:
+    For example:
 
     ```
      #Kafka Host Server URL
@@ -60,17 +64,18 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
     $ docker run --name notification elevate/notification:1.0
     ```
 
-## B. Local Service With Local Dependencies
+## Local Service With Local Dependencies
+<a name="dockdep">&nbsp;</a>
 
-**Expectation**: Run single service with existing local dependencies in host (**Non-Docker Implementation**).
+**Objective**: Run a single service with existing local dependencies in host (**Non-Docker Implementation**).
 
-### Steps
+To set up a local service with local dependencies
 
-1. Install required tools & dependencies
+1. Install required tools and dependencies:
 
-    Install any IDE (eg: VScode)
+    - Install any IDE (such as Visual Studio Code)
 
-    Install Nodejs: https://nodejs.org/en/download/
+    - Install Nodejs: https://nodejs.org/en/download/
 
 2. Clone the **Notification service** repository.
 
@@ -111,19 +116,19 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
 
     ```
 
-4. Install Npm packages
+4. Install NPM packages
 
     ```
     ELEVATE/notification/src$ npm install
     ```
 
-5. Start Notification server
+5. Start the Notification server
 
     ```
     ELEVATE/notification/src$ npm start
     ```
 
-## API Documentation link
+## API Documentation 
 
 https://dev.elevate-apis.shikshalokam.org/notification/api-doc
 

@@ -1,21 +1,28 @@
+import PartialExample from './_elevate.mdx';
+
 # Mentoring Service
 
 ## Setup Options
 
-Elevate services can be setup in local using three methods:
+<PartialExample elevate /> services can be setup in local using three methods:
 
-1. Docker-Compose File (Easiest): Refer **Section A**.
-2. Dockerized service with local dependencies(Intermediate): Refer **Section B**.
-3. Local Service with local dependencies(Hardest): Refer **Section C**.
+1. [Docker-Compose File (Easiest)](#dockcompose).
+2. [Dockerized service with local dependencies(Intermediate)](#docklocal).
+3. [Local Service with local dependencies(Hardest)](#localservice).
 
-## A. Docker-Compose
+## Docker-Compose
+<a name="dockcompose"></a>
 
-**Expectation**: Run all services at the same time with a common **Docker-Compose** file.
+**Objective**: Run all services at the same time with a common **Docker-Compose** file.
 
-### Steps
+>:::caution
+>Do not use docker-compose in production.
+
+To run all services using a docker-compose file:
 
 1.  Install **Docker** & **Docker-Compose**.
 2.  Clone all elevate services into a common directory.
+
     ```
     ./ELEVATE/
     ├── mentoring
@@ -23,13 +30,13 @@ Elevate services can be setup in local using three methods:
     ├── scheduler
     └── user
     ```
-3.  To create/start all containers:
+3.  Create/start all containers:
 
     ```
     ELEVATE/mentoring$ docker-compose up
     ```
 
-4.  To remove all containers & networks:
+4.  Remove all containers and networks:
 
     ```
     ELEVATE/mentoring$ docker-compose down
@@ -37,19 +44,22 @@ Elevate services can be setup in local using three methods:
 
     Refer **Docker-Compose README** for more information.
 
-    **Note:** It isn't always necessary to run **down** command. Existing containers and networks can be stopped gracefully by using **Ctrl + C** key combination.
+    :::note
+    It is not always necessary to run **down** command. Existing containers and networks can be stopped gracefully by using **Ctrl + C** key combination.
 
-    **Warning:** Do not use docker-compose in production.
 
-## B. Dockerized Service With Local Dependencies
+## Dockerized Service with Local Dependencies
+<a name="docklocal"></a>
 
-**Expectation**: Run single docker containerized service with existing local (in host) or remote dependencies.
+**Objective**: Run single docker containerized service with existing local (in host) or remote dependencies.
 
-### Local Dependencies Steps
+### Setting up with Local Dependencies 
 
-1. Update dependency (Mongo, Kafka etc) IP addresses in .env with "**host.docker.internal**".
+To set up a docker service with local dependencies:
 
-    Eg:
+1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with "**host.docker.internal**".
+
+    For example:
 
     ```
      #MongoDb Connectivity Url
@@ -59,9 +69,9 @@ Elevate services can be setup in local using three methods:
      KAFKA_URL = host.docker.external:9092
     ```
 
-2. Find **host.docker.internal** IP address and added it to **mongod.conf** file in host.
+2. Find **host.docker.internal** IP address and add it to **mongod.conf** file in host.
 
-    Eg: If **host.docker.internal** is **172.17.0.1**,
+    For example, if **host.docker.internal** is **172.17.0.1**,
     **mongod.conf:**
 
     ```
@@ -70,8 +80,8 @@ Elevate services can be setup in local using three methods:
         port: 27017
         bindIp: "127.0.0.1,172.17.0.1"
     ```
-
-    Note: Steps to find **host.docker.internal** IP address & location of **mongod.conf** is operating system specific. Refer [this](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
+    :::note
+    Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer [this Stack Overflow discussion](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
 
 3. Build the docker image.
     ```
@@ -89,13 +99,15 @@ Elevate services can be setup in local using three methods:
         ```
         $ docker run --name mentoring --add-host=host.docker.internal:host-gateway elevate/mentoring:1.0`
         ```
-        Refer [this](https://stackoverflow.com/a/24326540) for more information.
+        Refer [this Stack Overflow discussion](https://stackoverflow.com/a/24326540) for more information.
 
-### Remote Dependencies Steps
+### Setting up with Remote Dependencies 
 
-1. Update dependency (Mongo, Kafka etc) Ip addresses in .env with respective remote server IPs.
+To set up a docker service with remote dependencies:
 
-    Eg:
+1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with respective remote server IPs.
+
+    For example:
 
     ```
      #MongoDb Connectivity Url
@@ -107,9 +119,10 @@ Elevate services can be setup in local using three methods:
 
 2. Add Bind IP to **mongod.conf** in host:
 
-    Follow instructions given [here.](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04)
+    Follow instructions given [on this website.](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04)
 
-    Note: Instructions might differ based on MongoDB version and operating system.
+    :::note
+    Instructions might differ based on MongoDB version and operating system.
 
 3. Build the docker image.
     ```
@@ -121,21 +134,22 @@ Elevate services can be setup in local using three methods:
     $ docker run --name mentoring elevate/mentoring:1.0
     ```
 
-## C. Local Service With Local Dependencies
+## Local Service with Local Dependencies
+<a name="localservice"></a>
 
-**Expectation**: Run single service with existing local dependencies in host (**Non-Docker Implementation**).
+**Objective**: Run a single service with existing local dependencies in host (**Non-Docker Implementation**).
 
-### Steps
+To set up a local service with local dependencies:
 
-1. Install required tools & dependencies
+1. Install required tools and dependencies
 
-    Install any IDE (eg: VScode)
+    - Install any IDE (such as Visual Studio Code)
 
-    Install Nodejs: https://nodejs.org/en/download/
+    - Install Nodejs: https://nodejs.org/en/download/
 
-    Install MongoDB: https://docs.mongodb.com/manual/installation/
+    - Install MongoDB: https://docs.mongodb.com/manual/installation/
 
-    Install Robo-3T: ​​ https://robomongo.org/
+    - Install Robo-3T: ​​ https://robomongo.org/
 
 2. Clone the **Mentoring service** repository.
 
