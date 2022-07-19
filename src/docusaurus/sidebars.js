@@ -31,100 +31,117 @@ const sidebars = {
     type: 'category',
     label: 'MentorED Platform Documentation',
     items: [
-
-          {
-            type: 'category',
-            label: 'Getting Started with MentorED',
-            items: [
-              {
-                type: 'doc',
-                id: 'intro', // document ID
-                label: 'Introduction', // sidebar label
-              },
-              {
-                type: 'category',
-                label: 'Key MentorED Components',
-                items: [
-                  {
-                    type: 'doc',
-                    id: 'technicalarchitecture-mentored', // document ID
-                    label: 'Architecture', // sidebar label
-                  },
-                  {
-                      type: 'category',
-                      label: 'Microservices',
-                      items: [
-                      {
-                          type: 'doc',
-                          id: 'settingup-userservice', // document ID
-                          label: 'Setting up the User Service', // sidebar label
-                      },
-                      {
-                          type: 'doc',
-                          id: 'settingup-mentoringservice', // document ID
-                          label: 'Setting up the Mentoring Service', // sidebar label
-                      },
-                      {
-                          type: 'doc',
-                          id: 'settingup-notificationsservice', // document ID
-                          label: 'Setting up the Notifications Service', // sidebar label
-                      },
-                    ]
-                  },
-                ]
-              },
             {
               type: 'category',
-              label: 'Key Capabilities of MentorED',
+              label: 'Getting Started with MentorED',
               items: [
                 {
                   type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'User and Role Management', // sidebar label
+                  id: 'intro', // document ID
+                  label: 'Introduction', // sidebar label
                 },
                 {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Schedule Mentoring Sessions', // sidebar label
+                  type: 'category',
+                  label: 'Key MentorED Components',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'technicalarchitecture-mentored', // document ID
+                      label: 'Architecture', // sidebar label
+                    },
+                  ]
                 },
+
                 {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Promote Sessions', // sidebar label
+                  type: 'category',
+                  label: 'Key Capabilities of MentorED',
+                  items: [
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'User and Role Management', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Schedule Mentoring Sessions', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Promote Sessions', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Discover Mentors', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Discover Sessions', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Conduct Live Mentoring Sessions', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Record and Share Sessions', // sidebar label
+                    },
+                    {
+                      type: 'doc',
+                      id: 'key-capabilities', // document ID
+                      label: 'Analyze Feedback on Sessions', // sidebar label
+                    }
+                  ]
                 },
-                {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Discover Mentors', // sidebar label
-                },
-                {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Discover Sessions', // sidebar label
-                },
-                {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Conduct Live Mentoring Sessions', // sidebar label
-                },
-                {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Record and Share Sessions', // sidebar label
-                },
-                {
-                  type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Analyze Feedback on Sessions', // sidebar label
-                }
               ]
             },
-          ]
-        },
+            {
+              type: 'category',
+              label: 'Hosting and Customizing MentorED',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'settingup-overview', // document ID
+                  label: 'Overview', // sidebar label
+                },
+                {
+                  type: 'category',
+                  label: 'Setting up the Microservices',
+                  items: [
+                    {
+                        type: 'doc',
+                        id: 'settingup-userservice', // document ID
+                        label: 'Setting up the User Service', // sidebar label
+                    },
+                    {
+                        type: 'doc',
+                        id: 'settingup-mentoringservice', // document ID
+                        label: 'Setting up the Mentoring Service', // sidebar label
+                    },
+                    {
+                        type: 'doc',
+                        id: 'settingup-notificationsservice', // document ID
+                        label: 'Setting up the Notifications Service', // sidebar label
+                    },
+                  ]
+                },
+              ]
+            },                
+            {
+              type: 'doc',
+              id: 'settingup-mentoredapplication', // document ID
+              label: 'Customizing the MentorED Mobile Application', // sidebar label
+            },
+
 
         {
           type: 'category',
-          label: 'MentorED Mobile Application',
+          label: 'Using the MentorED Mobile Application',
           items: [
             {
               type: 'doc',
