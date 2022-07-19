@@ -1,10 +1,11 @@
-# How to Build the MentorED Mobile Application
+# Customizing the MentorED Mobile Application
 
-This readme file summarizes the system requirements and dependencies for building and using the <b>MentorED Mobile Application</b>, which is one of the key components of the <b>MentorED Platform</b>.
+This readme file summarizes the system requirements and dependencies for building and customizing the <b>MentorED Mobile Application</b>, which is one of the key components of the <b>MentorED Platform</b>.
 
-The mobile application is written using the Ionic framework and also uses the Capacitor runtime which makes it easy to run apps across mobile and Web platforms.  
+The mobile application is written using the Ionic framework along with the Capacitor runtime, which makes it easy to run apps across mobile and Web platforms.  
 
 ## Key Components in the Development Environment 
+
 - Ionic-Android Build Setup
 - Command Line Interface (<b>CLI</b>) Setup
 - Ionic Project Setup
@@ -22,12 +23,22 @@ The mobile application is written using the Ionic framework and also uses the Ca
 | Utility | <ul><li>cordova-res : 0.15.4</li><li>native-run : 1.6.0</li></ul>
 | System | <ul><li>Android SDK Tools: 26.1.1 (/home/afnan/Android/Sdk) </li><li>NodeJS: v14.19.0 (/usr/local/bin/node) </li><li>npm: 6.14.16 </li><li>OS: Linux 5.13</li></ul>
 
-IONIC-ANDROID BUILD SETUP
-1. Install Java (see https://www.oracle.com/java/technologies/downloads/#java8 for detailed instructions).
+## Ionic-Android Build Setup
 
-2. Install Gradle (see https://gradle.org/install/ for detailed instructions).
+1. Install Java 
 
-3. Install Android Studio (see https://developer.android.com/studio for detailed instructions)
+   :::tip
+   > For detailed instructions, see https://www.oracle.com/java/technologies/downloads/#java8
+
+2. Install Gradle 
+
+   :::tip
+   > For detailed instructions, see https://gradle.org/install/
+
+3. Install Android Studio 
+
+   :::tip
+   > For detailed instructions, see https://developer.android.com/studio 
 
 4. Install Android SDK
 
@@ -37,23 +48,40 @@ IONIC-ANDROID BUILD SETUP
 
 5. Add environment variables in ~/.bashrc or ~/.bash_profile as follows:
 
-    `export ANDROID_SDK_ROOT=path_to_sdk export` `PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin export` `PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools`
+    ```
+     export ANDROID_SDK_ROOT=path_to_sdk export 
 
-Reference: https://ionicframework.com/docs/installation/android
+     PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin export 
+
+     PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
+    ```
+
+> :::tip
+> For detailed information, see: https://ionicframework.com/docs/installation/android
 
 ## Setting up the Command Line Interface (CLI)
 
-` npm install -g ionic`
-` npm install @capacitor/core`
-` npm install @capacitor/cli --save-dev` 
-` npx cap init` 
+```
+ npm install -g ionic
 
-## PROJECT SETUP
-git clone the repo (https://github.com/ELEVATE-Prjoect/mentoring-mobile-app.git)
-Add environment files inside src/environments
-Go to project folder and run npm i
+ npm install @capacitor/core
 
-## BUILD APK
+ npm install @capacitor/cli --save-dev 
+
+ npx cap init
+
+```
+
+
+## Setting up the Project
+
+1. Use Git to clone the [repository](https://github.com/ELEVATE-Prjoect/mentoring-mobile-app.git)
+2. Add environment files inside `src/environments`
+3. Go to project folder and run `npm i`
+
+## Build the APK
+
 To check attached devices 
 1. Type  adb devices
 2. Run `ionic build` (Make sure you have attached device)

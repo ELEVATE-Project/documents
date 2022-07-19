@@ -4,8 +4,6 @@ import overviewURL from './media/overview.mp4';
 
 # Overview
 
-
-docusaurus
 To start using the <PartialExample mentored /> mobile application
 1. Download and install the <PartialExample mentored /> application from Google Play store:
 2. After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears: 
@@ -15,12 +13,6 @@ To start using the <PartialExample mentored /> mobile application
     <ReactPlayer playing controls url={overviewURL} loop="true" /> 1
 
    </div>
-
-To start using the MentorED mobile application
-1. Download and install the MentorED application from Google Play store or App Store.
-2. After successful installation, run the mobile application. The MentorED splash screen appears: 
-
-docusaurus
 
 3. If this is the first time that you are using <PartialExample mentored /> mobile application, see 
    * [Signing up on <PartialExample mentored /> as a Mentor](signing-up-as-a-mentor)

@@ -1,33 +1,36 @@
-# User Service
+import PartialExample from './_elevate.mdx';
 
-Elevate user services can be setup in local using two methods:
+# Setting up the User Service
 
-A. Dockerized service with local dependencies(Intermediate): Refer **Section A**.
+<PartialExample elevate /> user services can be setup in local in one of the following ways:
 
-B. Local Service with local dependencies(Hardest): Refer **Section B**.
+- As a [dockerized service with local dependencies (Intermediate)](#sectiona).
+- As a [local service with local dependencies (Hardest)](#sectionb).
 
-## A. Dockerized Service With Local Dependencies
+<a name="sectiona"> </a>
 
-**Expectation**: Run single docker containerized service with existing local (in host) or remote dependencies.
+## Setting up a Dockerized Service With Local Dependencies
+
+**Objective**: Run single docker containerized service with existing local (in host) or remote dependencies.
 
 ### Local Dependencies Steps
 
-1. Update dependency (Mongo, Kafka etc) IP addresses in .env with "**host.docker.internal**".
+1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with "**host.docker.internal**".
 
-    Eg:
+    For example:
 
     ```
-     #MongoDb Connectivity Url
-     MONGODB_URL = mongodb://host.docker.internal:27017/elevate-mentoring
+    #MongoDb Connectivity Url
+    MONGODB_URL = mongodb://host.docker.internal:27017/elevate-mentoring
 
-     #Kafka Host Server URL
-     KAFKA_URL = host.docker.external:9092
+    #Kafka Host Server URL
+    KAFKA_URL = host.docker.external:9092
     ```
 
 2. Find **host.docker.internal** IP address and added it to **mongod.conf** file in host.
 
-    Eg: If **host.docker.internal** is **172.17.0.1**,
-    **mongod.conf:**
+    For example, if **host.docker.internal** is **172.17.0.1**,
+     **mongod.conf:**
 
     ```
     # network interfaces
@@ -35,8 +38,8 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
         port: 27017
         bindIp: "127.0.0.1,172.17.0.1"
     ```
-
-    Note: Steps to find **host.docker.internal** IP address & location of **mongod.conf** is operating system specific. Refer [this](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
+    :::note
+    Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer [this Stack Overflow discussion thread](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
 
 3. Build the docker image.
     ```
@@ -44,7 +47,7 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
     ```
 4. Run the docker container.
 
-    - For Mac & Windows with docker v18.03+:
+    - For Mac and Windows with docker v18.03+:
 
         ```
         $ docker run --name user elevate/user:1.0
@@ -54,13 +57,13 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
         ```
         $ docker run --name user --add-host=host.docker.internal:host-gateway elevate/user:1.0`
         ```
-        Refer [this](https://stackoverflow.com/a/24326540) for more information.
+        Refer [this Stack Overflow discussion thread](https://stackoverflow.com/a/24326540) for more information.
 
 ### Remote Dependencies Steps
 
-1. Update dependency (Mongo, Kafka etc) Ip addresses in .env with respective remote server IPs.
+1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with respective remote server IPs.
 
-    Eg:
+    For example:
 
     ```
      #MongoDb Connectivity Url
@@ -74,7 +77,8 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
 
     Follow instructions given [here.](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04)
 
-    Note: Instructions might differ based on MongoDB version and operating system.
+    :::note
+    Instructions might differ based on MongoDB version and operating system.
 
 3. Build the docker image.
     ```
@@ -86,21 +90,23 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
     $ docker run --name user elevate/user:1.0
     ```
 
-## B. Local Service With Local Dependencies
+<a name="sectionb"> </a>
 
-**Expectation**: Run single service with existing local dependencies in host (**Non-Docker Implementation**).
+## Setting up a Local Service With Local Dependencies
+
+**Objective**: Run a single service with existing local dependencies in host (**Non-Docker Implementation**).
 
 ### Steps
 
-1. Install required tools & dependencies
+1. Install the required tools and dependencies such as:
 
-    Install any IDE (eg: VScode)
+    - Install any IDE (for example: Visual Studio Code)
 
-    Install Nodejs: https://nodejs.org/en/download/
+    - [Install Nodejs](https://nodejs.org/en/download/)
 
-    Install MongoDB: https://docs.mongodb.com/manual/installation/
+    - [Install MongoDB](https://docs.mongodb.com/manual/installation/)
 
-    Install Robo-3T: ​​ https://robomongo.org/
+    - [Install Robo-3T](https://robomongo.org/)
 
 2. Clone the **User service** repository.
 
@@ -225,7 +231,7 @@ B. Local Service with local dependencies(Hardest): Refer **Section B**.
     ELEVATE/user/src$ npm start
     ```
 
-## API Documentation link
+## API Documentation 
 
 https://dev.elevate-apis.shikshalokam.org/user/api-doc
 
