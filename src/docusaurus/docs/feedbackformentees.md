@@ -1,5 +1,5 @@
 # Providing Feedback for a Session
-The participants receives a feedback form.
+The participants receive a feedback form.
 
 1.  After the session, go to MentorED.
 

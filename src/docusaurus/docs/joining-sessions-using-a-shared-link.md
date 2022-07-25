@@ -31,7 +31,7 @@ To join a session, do any one of the following actions:
 
    </div>
 
-* Tap shared link and select a browser. The BigBlueButton opens up in your browser. 
+* Tap the shared link and select a browser. The BigBlueButton opens up in your browser. 
 
 
 

@@ -59,7 +59,7 @@ BigBlueButton window opens up on your web browser.
 
 6. If the host selects you for answering a question, you can see a popup message on your screen.
 
-7. To download the presented file, tap ![](media/presentedfile-download-icon.png) on the presented file.
+7. To download the presented file, tap ![](media/presentedfile-download-icon.png) on the presentation.
 
 
 8.	To leave the call, go to ![](media/menu-icon.png)  and select **Leave Meeting**.
@@ -127,7 +127,7 @@ Users can chat with others privately or share queries and information on the Pub
 Users can add shapes and text to the presentation.
 
 >:::note 
-The whiteboard appears during the presentation only if the host turns it on for participants or for a select few.
+>The whiteboard appears during the presentation only if the host turns it on for participants or for a select few.
 
 1. To select a textbox or a drawing tool, tap ![](media/whiteboardtool-text-and-shapes.png).
 

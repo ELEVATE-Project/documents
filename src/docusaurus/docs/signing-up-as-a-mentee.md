@@ -12,8 +12,8 @@ First-time users should create an account on MentorED.
 
 4.  Enter your Name, Email Id, and Password.
 
->:::note 
->Enter the correct email id.
+    >:::note 
+    >Enter the correct email id.
 
 
 5.  Tap on **Sign up as Mentee**.

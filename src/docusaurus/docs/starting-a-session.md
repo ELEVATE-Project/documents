@@ -37,7 +37,7 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
 
 BigBlueButton window opens up on your web browser.
 
-1.  To select audio settings, do any one of the following actions:
+1.  To select the audio settings, do any one of the following actions:
 
 * To connect your audio, tap **Microphone** and select **Yes**. 
 
@@ -56,7 +56,8 @@ BigBlueButton window opens up on your web browser.
 
 3.  To turn on the webcam, tap ![webcam off button](media/webcam-off.png) and select **Start Sharing**. To turn it off, tap ![webcam on button](media/webcam-on.png) and select **Stop Sharing**.
 
-    > :::note  The webcam settings window might not appear initially. 
+    > :::note  
+    > The webcam settings window might not appear initially. 
     > To change your webcam and background settings, tap ![webcam on button](media/webcam-on.png), make changes, and close the window.
     
     
@@ -76,7 +77,7 @@ BigBlueButton window opens up on your web browser.
     > * If you press the back key on your phone or close the meeting tab, you will drop off the call.
     > * If you leave the call by mistake, go back to MentorED and join the session. 
 
-    :::
+    >
     >:::caution 
     >After the end time, you cannot rejoin the session if you leave the call.
     
@@ -139,7 +140,7 @@ The host can allow participants to be the Moderator or Presenter.
 
 
    > :::note  
-   > * Moderators can manage users and [end meeting](#starting-a-mentoring-session). 
+   > * Moderators can manage users and [end meeting](#setting-up-bigbluebutton-meeting). 
    > * Moderators can be more than one.
 
    

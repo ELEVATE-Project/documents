@@ -51,52 +51,10 @@ const sidebars = {
                     },
                   ]
                 },
-
                 {
-                  type: 'category',
-                  label: 'Key Capabilities of MentorED',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'User and Role Management', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Schedule Mentoring Sessions', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Promote Sessions', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Discover Mentors', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Discover Sessions', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Conduct Live Mentoring Sessions', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Record and Share Sessions', // sidebar label
-                    },
-                    {
-                      type: 'doc',
-                      id: 'key-capabilities', // document ID
-                      label: 'Analyze Feedback on Sessions', // sidebar label
-                    }
-                  ]
+                  type: 'doc',
+                  id: 'key-capabilities', // document ID
+                  label: 'Key Capabilities of MentorED', // sidebar label
                 },
               ]
             },
@@ -153,6 +111,11 @@ const sidebars = {
               id: 'overview', // document ID
               label: 'Overview', // sidebar label
             },
+            {
+              type: 'doc',
+              id: 'notifications', // document ID
+              label: 'Notifications', // sidebar label
+            },
  
         
             {
@@ -168,6 +131,11 @@ const sidebars = {
                     type: 'doc',
                     id: 'signing-up-as-a-mentor', // document ID
                     label: 'Signing up as a Mentor', // sidebar label
+                  },
+                  {
+                    type: 'doc',
+                    id: 'logging-in', // document ID
+                    label: 'Logging in', // sidebar label
                   },
                   {
                     type: 'doc',
@@ -220,6 +188,11 @@ const sidebars = {
                     type: 'doc',
                     id: 'signing-up-as-a-mentee', // document ID
                     label: 'Signing up as a Mentee', // sidebar label
+                  },
+                  {
+                    type: 'doc',
+                    id: 'logging-in', // document ID
+                    label: 'Logging in', // sidebar label
                   },
                   {
                     type: 'doc',

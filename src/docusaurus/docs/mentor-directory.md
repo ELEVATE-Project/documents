@@ -1,6 +1,6 @@
 # Mentor Directory 
 
-You can find a list of mentor profiles arranged in alphabetical order in the Mentor Directory.
+You can find a list of mentor profiles arranged in an alphabetical order in the Mentor Directory.
 
 To view the mentor profile, do any one of the following actions:
 

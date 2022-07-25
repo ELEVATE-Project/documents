@@ -2,6 +2,9 @@
 
 First-time users should create an account on MentorED.
 
+>:::info
+>You must have received a Secret Code from ShikshaLokam before signing up on MentorED.
+
 1.  Install the MentorED application from Google Play or App Store.
 
 2.  Open MentorED and select **Sign up**. 

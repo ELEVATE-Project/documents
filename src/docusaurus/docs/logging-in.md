@@ -6,9 +6,6 @@ Signed-up users can log in to access their homepage.
 
 2.  Enter your Email Id and Password and tap **Login**.
 
-> :::note
-> Enter the correct email id and password to access your homepage. Passwords are case-sensitive.
-
-
-> :::note
-> If you do not remember your password, select **Forgot Password** to change your password.
+    > :::note
+    > * Enter the correct email id and password to access your homepage. Passwords are case-sensitive.
+    > * If you do not remember your password, select **Forgot Password** to change your password.
