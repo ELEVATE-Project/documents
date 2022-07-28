@@ -12,8 +12,8 @@ First-time users should create an account on MentorED.
 
 4.  Enter your Name, Email Id, and Password.
 
-    >:::note 
-    >Enter the correct email id.
+>:::note 
+>Enter the correct email id.
 
 
 5.  Tap on **Sign up as Mentee**.
@@ -31,4 +31,4 @@ First-time users should create an account on MentorED.
     ![homepage](media/homepage.PNG)
     
     </div>
-8.  To log out, go to the Burger Menu <div class="inlineImg"> ![burger menu icon](media/burgermenu-icon.png) and tap **Logout**.
+8.  To log out, go to the Burger Menu <div class="inlineImg"> ![burger menu icon](media/burgermenu-icon.png)</div> and tap **Logout**.

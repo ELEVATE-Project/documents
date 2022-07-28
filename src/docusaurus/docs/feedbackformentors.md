@@ -1,5 +1,5 @@
 # Providing Feedback for a Session
-The host receives a feedback form.
+Host can share their feedback after the session.
 
 1.  After the session, go to MentorED.
 

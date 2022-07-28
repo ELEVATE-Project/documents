@@ -68,8 +68,8 @@ BigBlueButton window opens up on your web browser.
 5. To set status, tap ![profile icon](media/bbb-profileicon.png) , tap your name, and select a status.
 
 
-   > :::tip 
-   > To view and clear participant's status, see [Managing Users on BigBlueButton](#managing-users-on-bigbluebutton).
+    > :::tip 
+    > To view and clear participant's status, see [Managing Users on BigBlueButton](#managing-users-on-bigbluebutton).
 
 6.	To leave the call, go to ![menu icon](media/menu-icon.png)  and select **Leave Meeting**.
     
@@ -139,9 +139,9 @@ The host can allow participants to be the Moderator or Presenter.
 1. To make the user a moderator, go to ![profile icon](media/bbb-profileicon.png),  tap the user, and select **Promote to Moderator**. 
 
 
-   > :::note  
-   > * Moderators can manage users and [end meeting](#setting-up-bigbluebutton-meeting). 
-   > * Moderators can be more than one.
+    > :::note  
+    > * Moderators can manage users and [end meeting](#setting-up-bigbluebutton-meeting). 
+    > * Moderators can be more than one.
 
    
 
@@ -192,6 +192,7 @@ Users can change the meeting window layout and turn off the notifications.
 
 
 4. To save your bandwidth, tap the **Data Savings** tab, turn off the options, and tap **Save**.
+
    >:::tip 
    >![internet strength icon](media/internetstrength-icon.png) indicates the strength of your internet connection.
 

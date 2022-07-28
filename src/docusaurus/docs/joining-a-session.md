@@ -36,7 +36,7 @@ BigBlueButton window opens up on your web browser.
     * To connect your audio, tap **Microphone** and select **Yes**. 
 
       > :::note  
-      Microphone may be on initially.
+      > Microphone may be on initially.
 
     * To join without connecting your audio, tap **Listen Only**.
 
@@ -88,6 +88,7 @@ Users can change the meeting window layout and turn off notifications.
 3.  To turn off audio and popup alerts, tap the **Notifications** tab, turn off notifications, and tap **Save**.
 
 4. To save your bandwidth, tap the **Data Savings** tab, turn off the options, and tap **Save**.
+
    >:::tip 
    >![internet strength icon](media/internetstrength-icon.png) indicates the strength of your internet connection.
 
