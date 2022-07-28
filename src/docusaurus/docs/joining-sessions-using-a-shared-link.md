@@ -20,7 +20,7 @@ To join a session, do any one of the following actions:
     
    <div class="screenshot">
 
-   ![options to join the session](media/Openwith-Options.png)
+   ![options to join the session](media/openwith-options.png)
 
    </div>
    
