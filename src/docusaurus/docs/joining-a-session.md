@@ -13,7 +13,7 @@ To join a session, do any one of the following actions:
 
   <div class="img_callout">
 
-  ![](media/mysessions-joinbutton.PNG)
+  ![](media/mysessions-joinbutton.png)
 
   </div>
   
