@@ -2,7 +2,7 @@
 
 | Feature | Description |
 | ----------- | ----------- |
-|Manage Users and Roles | Users with administrative privileges can create and manage users and assign them roles such as Mentors and Mentees.  |
+|Manage Users and Roles | Users with administrative privileges can create and manage users. To learn more, see [User Services](settingup-userservice.md) |
 | Schedule Sessions | The platform enables users who are registered as Mentors to register and publish the schedule for Mentoring sessions. |
 | Promote Sessions | The platform enables registered users to promote the schedule for upcoming Mentoring sessions.|
 | Discover Sessions| The platform enables registered users to easily search and discover upcoming Mentoring sessions.|

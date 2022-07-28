@@ -1,11 +1,13 @@
+import PartialExample from './_mentored.mdx';
+
 # Signing up as a Mentor
 
-First-time users should create an account on MentorED.
+First-time users should create an account on <PartialExample mentored />.
 
 
-1.  Install the MentorED application from Google Play or App Store.
+1.  Install the <PartialExample mentored /> application from Google Play Store.
 
-2.  Open MentorED and select **Sign up**. 
+2.  Open <PartialExample mentored /> and select **Sign up**. 
 
 
 3.  Select **Mentor** and tap **Continue**.

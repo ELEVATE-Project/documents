@@ -27,220 +27,197 @@ const sidebars = {
   ],
  */
  tutorialSidebar: [
-  {
-    type: 'category',
-    label: 'MentorED Platform Documentation',
-    items: [
-            {
-              type: 'category',
-              label: 'Getting Started with MentorED',
-              items: [
-                {
+      {
+        type: 'category',
+        label: 'Getting Started',
+        items: [
+          {
+            type: 'doc',
+            id: 'intro', // document ID
+            label: 'Introduction', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'technicalarchitecture-mentored', // document ID
+            label: 'Architecture', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'key-capabilities', // document ID
+            label: 'Key Capabilities', // sidebar label
+          },
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Hosting and Customizing your Instance',
+        items: [
+          {
+            type: 'doc',
+            id: 'settingup-overview', // document ID
+            label: 'Overview', // sidebar label
+          },
+          {
+            type: 'category',
+            label: 'Setting up the Microservices',
+            items: [
+              {
                   type: 'doc',
-                  id: 'intro', // document ID
-                  label: 'Introduction', // sidebar label
-                },
-                {
-                  type: 'category',
-                  label: 'Key MentorED Components',
-                  items: [
-                    {
-                      type: 'doc',
-                      id: 'technicalarchitecture-mentored', // document ID
-                      label: 'Architecture', // sidebar label
-                    },
-                  ]
-                },
-                {
+                  id: 'settingup-userservice', // document ID
+                  label: 'Setting up the User Service', // sidebar label
+              },
+              {
                   type: 'doc',
-                  id: 'key-capabilities', // document ID
-                  label: 'Key Capabilities of MentorED', // sidebar label
-                },
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Hosting and Customizing MentorED',
-              items: [
-                {
+                  id: 'settingup-mentoringservice', // document ID
+                  label: 'Setting up the Mentoring Service', // sidebar label
+              },
+              {
                   type: 'doc',
-                  id: 'settingup-overview', // document ID
-                  label: 'Overview', // sidebar label
-                },
-                {
-                  type: 'category',
-                  label: 'Setting up the Microservices',
-                  items: [
-                    {
-                        type: 'doc',
-                        id: 'settingup-userservice', // document ID
-                        label: 'Setting up the User Service', // sidebar label
-                    },
-                    {
-                        type: 'doc',
-                        id: 'settingup-mentoringservice', // document ID
-                        label: 'Setting up the Mentoring Service', // sidebar label
-                    },
-                    {
-                        type: 'doc',
-                        id: 'settingup-notificationsservice', // document ID
-                        label: 'Setting up the Notifications Service', // sidebar label
-                    },
-                  ]
-                },
-              ]
-            },                
-            {
-              type: 'doc',
-              id: 'settingup-mentoredapplication', // document ID
-              label: 'Customizing the MentorED Mobile Application', // sidebar label
-            },
+                  id: 'settingup-notificationsservice', // document ID
+                  label: 'Setting up the Notifications Service', // sidebar label
+              },
+            ]
+          },
+        ]
+      },                
+      {
+        type: 'doc',
+        id: 'settingup-mentoredapplication', // document ID
+        label: 'Customizing the Mobile Application', // sidebar label
+      },
+      {
+        type: 'category',
+        label: 'Using the Mobile Application',
+        items: [
+          {
+            type: 'doc',
+            id: 'using-the-mentored-mobile-application', // document ID
+            label: 'About the Mobile Application', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'notifications', // document ID
+            label: 'Notifications', // sidebar label
+          },
 
 
-        {
-          type: 'category',
-          label: 'Using the MentorED Mobile Application',
-          items: [
-            {
-              type: 'doc',
-              id: 'using-the-mentored-mobile-application', // document ID
-              label: 'About the MentorED Mobile Application', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'overview', // document ID
-              label: 'Overview', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'notifications', // document ID
-              label: 'Notifications', // sidebar label
-            },
- 
-        
-            {
-              type: 'category',
-              label: 'MentorED for Mentors',
-              items: [
-                  {
-                    type: 'doc',
-                    id: 'mentored-mobile-application-for-mentors', // document ID
-                    label: 'MentorED for Mentors', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'signing-up-as-a-mentor', // document ID
-                    label: 'Signing up as a Mentor', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'logging-in', // document ID
-                    label: 'Logging in', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'creating-and-managing-mentor-profile', // document ID
-                    label: 'Creating a Mentor Profile', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'mentor-directory', // document ID
-                    label: 'Using the Mentor Directory', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'setting-up-a-mentored-session', // document ID
-                    label: 'Setting up a MentorED Session', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'inviting-mentorsandmentees-host', // document ID
-                    label: 'Inviting Mentors and Mentees', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'starting-a-session', // document ID
-                    label: 'Starting a Mentoring Session', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'dashboard-for-mentors', // document ID
-                    label: 'Dashboard for Mentors', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'feedbackformentors', // document ID
-                    label: 'Feedback for Mentors', // sidebar label
-                  }
-              ]
-            },
+          {
+            type: 'category',
+            label: 'How Mentors can Use the Application',
+            items: [
+              
+                {
+                  type: 'doc',
+                  id: 'signing-up-as-a-mentor', // document ID
+                  label: 'Signing up as a Mentor', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'logging-in', // document ID
+                  label: 'Logging in', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'creating-and-managing-mentor-profile', // document ID
+                  label: 'Creating a Mentor Profile', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'mentor-directory', // document ID
+                  label: 'Using the Mentor Directory', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'setting-up-a-mentored-session', // document ID
+                  label: 'Setting up a Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'inviting-mentorsandmentees-host', // document ID
+                  label: 'Inviting Mentors and Mentees', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'starting-a-session', // document ID
+                  label: 'Starting a Mentoring Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'dashboard-for-mentors', // document ID
+                  label: 'Dashboard for Mentors', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'feedbackformentors', // document ID
+                  label: 'Feedback for Mentors', // sidebar label
+                }
+            ]
+          },
 
-            {
-              type: 'category',
-              label: 'MentorED for Mentees',
-              items: [
-                  {
-                    type: 'doc',
-                    id: 'mentored-mobile-application-for-mentees', // document ID
-                    label: 'MentorED for Mentees', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'signing-up-as-a-mentee', // document ID
-                    label: 'Signing up as a Mentee', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'logging-in', // document ID
-                    label: 'Logging in', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'creating-and-managing-mentee-profile', // document ID
-                    label: 'Creating a Mentee Profile', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'mentor-directory', // document ID
-                    label: 'Using the Mentor Directory', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'enrolling-for-a-session', // document ID
-                    label: 'Enrolling for a MentorED Session', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'inviting-mentorsandmentees-participants', // document ID
-                    label: 'Inviting Mentors and Mentees', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'joining-a-session', // document ID
-                    label: 'Joining a Mentoring Session', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'joining-sessions-using-a-shared-link', // document ID
-                    label: 'Joining Sessions through a Shared Link', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'dashboard-for-mentees', // document ID
-                    label: 'Dashboard for Mentees', // sidebar label
-                  },
-                  {
-                    type: 'doc',
-                    id: 'feedbackformentees', // document ID
-                    label: 'Providing Feedback on a Session', // sidebar label
-                  }
+          {
+            type: 'category',
+            label: 'How Mentees can Use the Application',
+            items: [
+               
+                {
+                  type: 'doc',
+                  id: 'signing-up-as-a-mentee', // document ID
+                  label: 'Signing up as a Mentee', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'logging-in', // document ID
+                  label: 'Logging in', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'creating-and-managing-mentee-profile', // document ID
+                  label: 'Creating a Mentee Profile', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'mentor-directory', // document ID
+                  label: 'Using the Mentor Directory', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'enrolling-for-a-session', // document ID
+                  label: 'Enrolling for a  Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'inviting-mentorsandmentees-participants', // document ID
+                  label: 'Inviting Mentors and Mentees', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'joining-a-session', // document ID
+                  label: 'Joining a Mentoring Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'joining-sessions-using-a-shared-link', // document ID
+                  label: 'Joining Sessions through a Shared Link', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'dashboard-for-mentees', // document ID
+                  label: 'Dashboard for Mentees', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'feedbackformentees', // document ID
+                  label: 'Providing Feedback on a Session', // sidebar label
+                }
               ]
             },
           ]
-        },
-      ]
-    }
-  ]
-};
-
+      },
+      {
+        type: 'doc',
+        id: 'mentoredrepos', // document ID
+        label: 'Source Code Repositories', // sidebar label
+      }
+    ]
+  };
 module.exports = sidebars;

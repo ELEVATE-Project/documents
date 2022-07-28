@@ -1,3 +1,5 @@
+import PartialExample from './_mentored.mdx';
+
 # Starting a Mentoring Session 
 
 The BigBlueButton application helps mentors to conduct mentoring sessions.
@@ -13,7 +15,7 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
 
     * Find the session and tap **Start**.
       >:::tip 
-      >If you face an error, go back to MentorED and tap **Start**.
+      >If you face an error, go back to <PartialExample mentored /> and tap **Start**.
       :::
 
       <div class="screenshot">
@@ -67,15 +69,14 @@ BigBlueButton window opens up on your web browser.
 
 5. To set status, tap ![profile icon](media/bbb-profileicon.png) , tap your name, and select a status.
 
-
-    > :::tip 
-    > To view and clear participant's status, see [Managing Users on BigBlueButton](#managing-users-on-bigbluebutton).
+   >:::tip 
+   >To view and clear participant's status, see [Managing Users on BigBlueButton](#managing-users-on-bigbluebutton).
 
 6.	To leave the call, go to ![menu icon](media/menu-icon.png)  and select **Leave Meeting**.
     
     > :::note  
     > * If you press the back key on your phone or close the meeting tab, you will drop off the call.
-    > * If you leave the call by mistake, go back to MentorED and join the session. 
+    > * If you leave the call by mistake, go back to <PartialExample mentored /> and join the session. 
 
     >
     >:::caution 
@@ -138,10 +139,9 @@ The host can allow participants to be the Moderator or Presenter.
 
 1. To make the user a moderator, go to ![profile icon](media/bbb-profileicon.png),  tap the user, and select **Promote to Moderator**. 
 
-
-    > :::note  
-    > * Moderators can manage users and [end meeting](#setting-up-bigbluebutton-meeting). 
-    > * Moderators can be more than one.
+   > :::note  
+   > * Moderators can manage users and [end meeting](#setting-up-bigbluebutton-meeting). 
+   > * Moderators can be more than one.
 
    
 

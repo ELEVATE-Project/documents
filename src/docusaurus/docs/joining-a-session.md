@@ -1,4 +1,6 @@
-# Joining a MentorED Session
+import PartialExample from './_mentored.mdx';
+
+# Joining a Session
 
 Participants can attend mentoring sessions using the BigBlueButton application.
 
@@ -16,9 +18,10 @@ To join a session, do any one of the following actions:
   ![](media/mysessions-joinbutton.png)
 
   </div>
-  
+
+  >
   >:::tip 
-  >If you face an error, go back to MentorED and tap **Join**.
+  >If you face an error, go back to <PartialExample mentored /> and tap **Join**.
     
 * On your **Homepage**, find the enrolled session from **All Sessions**. Tap the session and tap **Join**.
   
@@ -29,7 +32,7 @@ To join a session, do any one of the following actions:
   </div>
 
 ##  Setting up BigBlueButton Meeting
-BigBlueButton window opens up on your web browser.
+BigBlueButton window appears on your web browser.
 
 1.  To select the audio settings, do any one of the following actions:
 
@@ -64,11 +67,11 @@ BigBlueButton window opens up on your web browser.
 
 8.	To leave the call, go to ![](media/menu-icon.png)  and select **Leave Meeting**.
 
-
-    > :::note  
-    > * If you press the back key on your phone or close the meeting tab, you may drop off the call.
-    > * If you leave the call by mistake, go back to MentorED and join the session.
+  > :::note  
+  > * If you press the back key on your phone or close the meeting tab, you may drop off the call.
+  > * If you leave the call by mistake, go back to <PartialExample mentored /> and join the session.
   
+  >
   > :::info 
   > Host can select participants to be a Moderator or Presenter. To learn more, see [Managing User Settings](starting-a-session.md). 
 
