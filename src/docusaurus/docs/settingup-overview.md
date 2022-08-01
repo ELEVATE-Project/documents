@@ -1,7 +1,7 @@
 import PartialExample from './_mentored.mdx';
 import PartialExample2 from './_elevate.mdx';
 
-# Hosting and Customizing <PartialExample mentored />
+# Hosting and Customizing MentorED
 
 
 To host a customized instance of <PartialExample mentored />:
