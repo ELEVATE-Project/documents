@@ -1,4 +1,4 @@
-# Setting up a MentorED Session
+# Setting up a Session
 
 Mentors can create and manage mentoring sessions.
 

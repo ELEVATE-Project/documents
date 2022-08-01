@@ -1,4 +1,6 @@
-# Joining a MentorED Session
+import PartialExample from './_mentored.mdx';
+
+# Joining a Session
 
 Participants can attend mentoring sessions using the BigBlueButton application.
 
@@ -13,12 +15,13 @@ To join a session, do any one of the following actions:
 
   <div class="img_callout">
 
-  ![](media/mysessions-joinbutton.PNG)
+  ![](media/mysessions-joinbutton.png)
 
   </div>
-  
+
+  >
   >:::tip 
-  >If you face an error, go back to MentorED and tap **Join**.
+  >If you face an error, go back to <PartialExample mentored /> and tap **Join**.
     
 * On your **Homepage**, find the enrolled session from **All Sessions**. Tap the session and tap **Join**.
   
@@ -29,14 +32,14 @@ To join a session, do any one of the following actions:
   </div>
 
 ##  Setting up BigBlueButton Meeting
-BigBlueButton window opens up on your web browser.
+BigBlueButton window appears on your web browser.
 
 1.  To select the audio settings, do any one of the following actions:
 
     * To connect your audio, tap **Microphone** and select **Yes**. 
 
       > :::note  
-      Microphone may be on initially.
+      > Microphone may be on initially.
 
     * To join without connecting your audio, tap **Listen Only**.
 
@@ -59,16 +62,16 @@ BigBlueButton window opens up on your web browser.
 
 6. If the host selects you for answering a question, you can see a popup message on your screen.
 
-7. To download the presented file, tap ![](media/presentedfile-download-icon.png) on the presented file.
+7. To download the presented file, tap ![](media/presentedfile-download-icon.png) on the presentation.
 
 
 8.	To leave the call, go to ![](media/menu-icon.png)  and select **Leave Meeting**.
 
-
-    > :::note  
-    > * If you press the back key on your phone or close the meeting tab, you may drop off the call.
-    > * If you leave the call by mistake, go back to MentorED and join the session.
+  > :::note  
+  > * If you press the back key on your phone or close the meeting tab, you may drop off the call.
+  > * If you leave the call by mistake, go back to <PartialExample mentored /> and join the session.
   
+  >
   > :::info 
   > Host can select participants to be a Moderator or Presenter. To learn more, see [Managing User Settings](starting-a-session.md). 
 
@@ -88,6 +91,7 @@ Users can change the meeting window layout and turn off notifications.
 3.  To turn off audio and popup alerts, tap the **Notifications** tab, turn off notifications, and tap **Save**.
 
 4. To save your bandwidth, tap the **Data Savings** tab, turn off the options, and tap **Save**.
+
    >:::tip 
    >![internet strength icon](media/internetstrength-icon.png) indicates the strength of your internet connection.
 
@@ -127,7 +131,7 @@ Users can chat with others privately or share queries and information on the Pub
 Users can add shapes and text to the presentation.
 
 >:::note 
-The whiteboard appears during the presentation only if the host turns it on for participants or for a select few.
+>The whiteboard appears during the presentation only if the host turns it on for participants or for a select few.
 
 1. To select a textbox or a drawing tool, tap ![](media/whiteboardtool-text-and-shapes.png).
 

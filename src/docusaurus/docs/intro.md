@@ -1,8 +1,12 @@
 import PartialExample from './_mentored.mdx';
 
-# Welcome to <PartialExample mentored />
+# Welcome to MentorED
  
-<PartialExample mentored /> is an open source mentoring application that facilitates peer learning and professional development by creating a community of school leaders, teachers, educational officers, and cluster and state resource groups.
+<PartialExample mentored /> is an open source mentoring application that facilitates peer learning and professional development by creating a community of mentors and mentees. 
+
+>:::tip
+>You can download the <PartialExample mentored /> mobile application from [Google Play Store](https://play.google.com/store/apps/details?id=org.elevate.mentoring).
+
 
 >  
 

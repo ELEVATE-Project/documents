@@ -2,6 +2,9 @@
 
 Users can sign up for mentoring sessions.
 
+>:::note
+>Users can enroll for an ongoing session. These sessions are marked as *Live* on the Homepage. 
+
 1.	To enroll for a session, do any one of the following actions:
 
 * On your Homepage, find a session of interest. Tap the session tile and tap **Enroll**.

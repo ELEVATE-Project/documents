@@ -1,5 +1,5 @@
 # Inviting Mentors and Mentees
-You can invite more participants to a session by sharing a session link.
+You can invite participants to a session by sharing a session link.
 
 1. To share a session link, do any one of the following actions:
 

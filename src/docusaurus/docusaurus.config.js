@@ -9,7 +9,7 @@ const config = {
   title: 'Elevate',
   tagline: 'Education Leadership Platform',
   url: 'https://dev.elevate-docs.shikshalokam.org/',
-  baseUrl: '/Elevate/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 //  favicon: 'img/favicon.ico',

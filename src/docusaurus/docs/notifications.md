@@ -1,11 +1,27 @@
+import PartialExample from './_mentored.mdx';
+
 # Notifications
-Users are notified through email notifications.
+
+Mentors will receive email notifications:
+
+* When they sign up on <PartialExample mentored />.
+* On the number of participants who have enrolled for the session.
+* When none of the participants have enrolled for the session.
+* On upcoming sessions. 
+
+Mentees will receive email notifications:
+
+* When they sign up on <PartialExample mentored />.
+* When they enroll for a session.
+* When the session schedule or details are updated.
+* When the session is cancelled.
+* On upcoming sessions. 
+
+>:::info
+>To learn more, see [Notifications Services](https://dev.elevate-apis.shikshalokam.org/notification/api-doc).
 
 
 
-| Mentee   | Mentor |
-| ----------- | ----------- |
-|<ul><li>sign up to MentorED</li> <li>session enrollment</li><li>change or cancellation in session </li><li> session reminder</li><li> not submitted  feedback</li></ul>|<ul><li>sign up to MentorED</li><li>number of participants enrolling for their session</li><li>if no mentee enrolls for the session</li><li>session reminder</li></ul>|
 
 
 

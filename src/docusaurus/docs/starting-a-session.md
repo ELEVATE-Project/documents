@@ -1,3 +1,5 @@
+import PartialExample from './_mentored.mdx';
+
 # Starting a Mentoring Session 
 
 The BigBlueButton application helps mentors to conduct mentoring sessions.
@@ -13,7 +15,7 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
 
     * Find the session and tap **Start**.
       >:::tip 
-      >If you face an error, go back to MentorED and tap **Start**.
+      >If you face an error, go back to <PartialExample mentored /> and tap **Start**.
       :::
 
       <div class="screenshot">
@@ -37,7 +39,7 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
 
 BigBlueButton window opens up on your web browser.
 
-1.  To select audio settings, do any one of the following actions:
+1.  To select the audio settings, do any one of the following actions:
 
 * To connect your audio, tap **Microphone** and select **Yes**. 
 
@@ -56,7 +58,8 @@ BigBlueButton window opens up on your web browser.
 
 3.  To turn on the webcam, tap ![webcam off button](media/webcam-off.png) and select **Start Sharing**. To turn it off, tap ![webcam on button](media/webcam-on.png) and select **Stop Sharing**.
 
-    > :::note  The webcam settings window might not appear initially. 
+    > :::note  
+    > The webcam settings window might not appear initially. 
     > To change your webcam and background settings, tap ![webcam on button](media/webcam-on.png), make changes, and close the window.
     
     
@@ -66,17 +69,16 @@ BigBlueButton window opens up on your web browser.
 
 5. To set status, tap ![profile icon](media/bbb-profileicon.png) , tap your name, and select a status.
 
-
-   > :::tip 
-   > To view and clear participant's status, see [Managing Users on BigBlueButton](#managing-users-on-bigbluebutton).
+   >:::tip 
+   >To view and clear participant's status, see [Managing Users on BigBlueButton](#managing-users-on-bigbluebutton).
 
 6.	To leave the call, go to ![menu icon](media/menu-icon.png)  and select **Leave Meeting**.
     
     > :::note  
     > * If you press the back key on your phone or close the meeting tab, you will drop off the call.
-    > * If you leave the call by mistake, go back to MentorED and join the session. 
+    > * If you leave the call by mistake, go back to <PartialExample mentored /> and join the session. 
 
-    :::
+    >
     >:::caution 
     >After the end time, you cannot rejoin the session if you leave the call.
     
@@ -137,9 +139,8 @@ The host can allow participants to be the Moderator or Presenter.
 
 1. To make the user a moderator, go to ![profile icon](media/bbb-profileicon.png),  tap the user, and select **Promote to Moderator**. 
 
-
    > :::note  
-   > * Moderators can manage users and [end meeting](#starting-a-mentoring-session). 
+   > * Moderators can manage users and [end meeting](#setting-up-bigbluebutton-meeting). 
    > * Moderators can be more than one.
 
    
@@ -191,6 +192,7 @@ Users can change the meeting window layout and turn off the notifications.
 
 
 4. To save your bandwidth, tap the **Data Savings** tab, turn off the options, and tap **Save**.
+
    >:::tip 
    >![internet strength icon](media/internetstrength-icon.png) indicates the strength of your internet connection.
 
