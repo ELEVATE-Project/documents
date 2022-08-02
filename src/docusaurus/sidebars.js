@@ -217,7 +217,12 @@ const sidebars = {
         type: 'doc',
         id: 'mentoredrepos', // document ID
         label: 'Source Code Repositories', // sidebar label
-      }
+      },
+      {
+        type: 'doc',
+        id: 'faq', // document ID
+        label: 'FAQs', // sidebar label
+      },
     ]
   };
 module.exports = sidebars;
