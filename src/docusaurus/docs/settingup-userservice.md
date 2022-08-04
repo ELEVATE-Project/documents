@@ -233,7 +233,7 @@ import PartialExample from './_elevate.mdx';
 
 ## API Documentation 
 
-https://dev.elevate-apis.shikshalokam.org/user/api-doc
+https://elevate-apis.shikshalokam.org/user/api-doc
 
 ## Mentoring Services
 

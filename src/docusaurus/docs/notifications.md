@@ -18,7 +18,7 @@ Mentees will receive email notifications:
 * on upcoming sessions. 
 
 >:::info
->To learn more, see [Notifications Services](https://dev.elevate-apis.shikshalokam.org/notification/api-doc).
+>To learn more, see [Notifications Services](https://elevate-apis.shikshalokam.org/notification/api-doc).
 
 
 

@@ -26,6 +26,7 @@ To sign up, you can open the <PartialExample mentored /> application and tap **S
 To learn more, see the following topics:
 *  [Signing up as a Mentor](signing-up-as-a-mentor.md).
 *  [Signing up as a Mentee](signing-up-as-a-mentee.md).
+
 </details>
 
 <details>
@@ -42,8 +43,9 @@ To learn more, see [Logging in](logging-in.md).
 After signing up, you can update your profile details any time.
 
 To learn more, see the following topics: 
-* [Creating a Mentor Profile](creating-and-managing-mentor-profile.md) 
+* [Creating a Mentor Profile](creating-and-managing-mentor-profile.md)
 * [Creating a Mentee Profile](creating-and-managing-mentee-profile.md)
+
 </details>
 
 <details>
@@ -99,6 +101,7 @@ Mentoring sessions are live sessions hosted by mentors. You cannot upload or hos
 To learn more, see the following sections: 
 * [Joining a Session](joining-a-session.md)   
 * [Starting a Session](starting-a-session.md)
+
 </details>
 
 <details>

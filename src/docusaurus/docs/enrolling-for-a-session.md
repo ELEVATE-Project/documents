@@ -25,7 +25,7 @@ Users can sign up for mentoring sessions.
 
     <div class="img_callout">
 
-  ![](media/search-sessions.jpg)
+  ![](media/search-sessions.png)
     
     </div >
 

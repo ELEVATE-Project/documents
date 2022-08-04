@@ -130,7 +130,7 @@ To set up a local service with local dependencies
 
 ## API Documentation 
 
-https://dev.elevate-apis.shikshalokam.org/notification/api-doc
+https://elevate-apis.shikshalokam.org/notification/api-doc
 
 ## Mentoring Services
 
