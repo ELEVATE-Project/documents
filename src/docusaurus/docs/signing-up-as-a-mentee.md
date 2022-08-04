@@ -11,15 +11,15 @@ First-time users should create an account on <PartialExample mentored />.
 
 3.  Select **Mentee** and tap **Continue**.
 
-4.  Enter your Name, Email Id, and Password.
+4.  Enter your Name, Email ID, and Password.
 
->:::note 
->Enter the correct email id.
+    >:::note 
+    >Enter the correct email ID.
 
 
 5.  Tap on **Sign up as Mentee**.
 
-6.   Enter the OTP sent to your email and tap **Verify and Login**. 
+6.   Enter the OTP sent to your registered email ID and tap **Verify and Login**. 
 
      >:::tip 
      >To receive a new OTP, tap **Resend OTP** or **If You Didn’t Receive the OTP!**.   

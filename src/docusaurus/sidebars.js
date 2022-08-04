@@ -103,7 +103,7 @@ const sidebars = {
 
           {
             type: 'category',
-            label: 'How Mentors can Use the Application',
+            label: 'How Mentors Can Use the Application',
             items: [
               
                 {
@@ -119,7 +119,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'creating-and-managing-mentor-profile', // document ID
-                  label: 'Creating a Mentor Profile', // sidebar label
+                  label: 'Creating and Managing a Profile', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -144,19 +144,19 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'dashboard-for-mentors', // document ID
-                  label: 'Dashboard for Mentors', // sidebar label
+                  label: 'Dashboard', // sidebar label
                 },
                 {
                   type: 'doc',
                   id: 'feedbackformentors', // document ID
-                  label: 'Feedback for Mentors', // sidebar label
+                  label: 'Providing Feedback on a Session', // sidebar label
                 }
             ]
           },
 
           {
             type: 'category',
-            label: 'How Mentees can Use the Application',
+            label: 'How Mentees Can Use the Application',
             items: [
                
                 {
@@ -172,7 +172,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'creating-and-managing-mentee-profile', // document ID
-                  label: 'Creating a Mentee Profile', // sidebar label
+                  label: 'Creating and Managing a Profile', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -202,7 +202,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'dashboard-for-mentees', // document ID
-                  label: 'Dashboard for Mentees', // sidebar label
+                  label: 'Dashboard', // sidebar label
                 },
                 {
                   type: 'doc',

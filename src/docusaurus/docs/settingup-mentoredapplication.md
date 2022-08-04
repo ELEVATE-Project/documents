@@ -82,12 +82,55 @@ The mobile application is written using the Ionic framework along with the Capac
 
 ## Build the APK
 
-To check attached devices 
-1. Type  adb devices
-2. Run `ionic build` (Make sure you have attached device)
-3. Run `ionic cap sync`
-4. Run `ionic capacitor` 
-5. Run `android --prod`
-6. Specify the apk location `project_folder/platforms/android/app/build/outputs/apk/debug/apk_name.apk`
-7. Open chrome and type `chrome://inspect`
-8. Select app
+To build the apk file:
+
+1. Open a command-prompt, and type the following command to check attached devices:  
+
+    ```
+    adb devices
+
+    ```    
+2. After making sure that you have attached an Android device, run the build command:
+
+    ```
+    ionic build
+
+    ```
+
+3. Run the capacitor sync command to perform an Ionic build and update any Capacitor or Cordova plugins or dependencies   
+
+    ```
+    ionic capacitor sync
+
+    ```
+
+4. Run the following command to build the app and copy the web assets to the specified folder.
+
+    ```
+    ionic capacitor build
+
+    ```
+
+5. Run the following command to generate a production build of the Android application.
+
+    ```
+    android --prod
+    
+    ```
+
+    You can find binary file (apk) at the following location: 
+
+    ```
+    project_folder/platforms/android/app/build/outputs/apk/debug/apk_name.apk
+
+    ```
+
+6. Open Google Chrome and type the following command: 
+
+    ```
+
+    chrome://inspect
+
+    ```
+
+7. Select the app.

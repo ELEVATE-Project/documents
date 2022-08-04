@@ -9,7 +9,7 @@ You can invite participants to a session by sharing a session link.
 
    <div class="screenshot">
 
-   ![](media/sharesession.png)
+   ![](media/sharesession-host.png)
    
    </div>
    

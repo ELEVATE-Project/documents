@@ -11,7 +11,7 @@ Participants can attend mentoring sessions using the BigBlueButton application.
 
 To join a session, do any one of the following actions:
 
-* On your Homepage, go to **My Sessions**, select the session, and tap **Join**.
+* On your Home page, go to **My Sessions**, select the session, and tap **Join**.
 
   <div class="img_callout">
 
@@ -23,7 +23,7 @@ To join a session, do any one of the following actions:
   >:::tip 
   >If you face an error, go back to <PartialExample mentored /> and tap **Join**.
     
-* On your **Homepage**, find the enrolled session from **All Sessions**. Tap the session and tap **Join**.
+* On your Home page, find a session from the **All Sessions** section. Tap the session and tap **Join**.
   
   <div class="screenshot">
 

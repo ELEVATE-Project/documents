@@ -12,15 +12,15 @@ First-time users should create an account on <PartialExample mentored />.
 
 3.  Select **Mentor** and tap **Continue**.
 
-4.  Enter your Name, Email Id, Password, and the Secret Code.
+4.  Enter your Name, Email ID, Password, and the Secret Code.
 
     > :::note  
-     Enter the correct Email id. 
+     Enter the correct Email ID. 
 
 
 5. Tap on **Sign up as Mentor**.
 
-6.  Enter the OTP sent to your email and tap **Verify and Login**. 
+6.  Enter the OTP sent to your registered email ID and tap **Verify and Login**. 
     > :::tip  
     > To receive a new OTP, tap **Resend OTP** or **If You Didn’t Receive the OTP!**.
 

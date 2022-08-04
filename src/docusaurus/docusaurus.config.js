@@ -33,7 +33,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: 'mentorEd/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -91,7 +90,14 @@ const config = {
             position: 'left',
             label: 'MentorED',
             logo: 'img/mentoring-logo.png',
-          },
+        },
+        {
+          href: 'https://e.shikshalokam.navadhiti.com/contact-us/',
+          label: 'Help',
+          position: 'right',
+        },
+
+
 /*          
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -102,56 +108,65 @@ const config = {
 */          
         ],
       },
-/*      footer: {
+      footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'GET IN TOUCH',
             items: [
               {
-                label: 'MentorED Documentation',
-                to: '/docs/overview',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Join the ELEVATE Community',
+                href: 'https://e.shikshalokam.navadhiti.com/community/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/shikshalokam/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/shikshalokam',
               },
             ],
           },
+
           {
-            title: 'More',
+            title: 'REACH US',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'No 733, 17th Cross, 24th Main, JP Nagar, 6th Phase, Bangalore, Karnataka 560078.',
+                href: 'https://e.shikshalokam.navadhiti.com/'
+              },
+              {
+                label: 'Email',
+                href: 'mailto:info@shikshalokam.org',
+              },
+            ]
+          },
+          {
+            title: 'QUICK LINKS',
+            items: [
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/channel/UC5UB0MoPBTPjImvN24uLEMg/featured',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ELEVATE-Project',
+              },
+              {
+                label: 'Shikshalokam Wiki',
+                href: 'https://wiki.shikshalokam.org/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Shikshalokam. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-*/      
+      
     }),
     
 };

@@ -19,17 +19,43 @@ To learn more, see [About the <PartialExample mentored /> Mobile Application](us
 </details>
 
 <details>
+<summary>How can I register on <PartialExample mentored />?</summary>
+
+To sign up, you can open the <PartialExample mentored /> application and tap **Sign Up**.
+
+To learn more, see the following topics:
+*  [Signing up as a Mentor](signing-up-as-a-mentor.md).
+*  [Signing up as a Mentee](signing-up-as-a-mentee.md).
+</details>
+
+<details>
+<summary>What if I don't remember my password?</summary>
+
+On the Login page, you can tap **Forgot Password** to change your password.
+
+To learn more, see [Logging in](logging-in.md).
+</details>
+
+<details>
 <summary>Can I edit my profile details later?</summary>
 
 After signing up, you can update your profile details any time.
 
-To learn more, see [Creating a Mentor Profile](creating-and-managing-mentor-profile.md) or [Creating a Mentee Profile](creating-and-managing-mentee-profile.md).
+To learn more, see the following topics: 
+* [Creating a Mentor Profile](creating-and-managing-mentor-profile.md) 
+* [Creating a Mentee Profile](creating-and-managing-mentee-profile.md)
 </details>
 
 <details>
 <summary>Where can I find details about mentors?</summary>
 
 You can use the [Mentor Directory](mentor-directory.md) to look up details on individual mentors.
+</details>
+
+<details>
+<summary>How can I create a session?</summary>
+
+To create a new session, see [Setting up a Session](setting-up-a-mentored-session.md). 
 </details>
 
 <details>
@@ -44,7 +70,7 @@ To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 <details>
 <summary>What is the duration of each mentoring session?</summary>
 
-The minimum duration a session should be 30 minutes. 
+The minimum duration of a session should be 30 minutes. 
 
 To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 </details>
@@ -58,17 +84,35 @@ To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 </details>
 
 <details>
+<summary>How do I start my session?</summary>
+
+In the **Upcoming Sessions** section, you can select your session and tap **Start**.
+
+To learn more, see [Starting a Session](starting-a-session.md).
+</details>
+
+<details>
 <summary>Are these sessions pre-recorded or live?</summary>
 
 Mentoring sessions are live sessions hosted by mentors. You cannot upload or host a recorded session.  
 
-To learn more, see [Joining a Session](joining-a-session.md) or [Starting a Session](starting-a-session.md).
+To learn more, see the following sections: 
+* [Joining a Session](joining-a-session.md)   
+* [Starting a Session](starting-a-session.md)
 </details>
 
 <details>
 <summary>Where can I find the upcoming sessions?</summary>
 
 You can find the upcoming sessions on the **All Sessions** section of the Home page of the <PartialExample mentored /> mobile application.
+
+To learn more, see [Enrolling for a Session](enrolling-for-a-session.md).
+</details>
+
+<details>
+<summary>How can I register for a session?</summary>
+
+ In the **All Sessions** section of the Home page, you can select a session of interest and tap **Enroll**. 
 
 To learn more, see [Enrolling for a Session](enrolling-for-a-session.md).
 </details>
@@ -90,6 +134,14 @@ To learn more, see [Enrolling for a Session](enrolling-for-a-session.md).
 </details>
 
 <details>
+<summary>How do I attend a session?</summary>
+
+In the **My Sessions** section of the Home page, you can select an enrolled session and tap **Join**.
+
+To learn more, see [Joining a Session](joining-a-session.md).
+</details>
+
+<details>
 <summary>Can I share session links?</summary>
 
 The host and participants can share session links with their phone or email contacts, and over social media.
@@ -97,7 +149,7 @@ The host and participants can share session links with their phone or email cont
 To learn more, see the following topics:
 
 * [How can a session host share the session invite?](inviting-mentorsandmentees-host.md) 
-* [How can a participant share the session invite?](inviting-mentorsandmentees-participants.md).
+* [How can a participant share the session invite?](inviting-mentorsandmentees-participants.md)
 
 </details>
 

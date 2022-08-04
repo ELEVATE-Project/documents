@@ -5,7 +5,7 @@ You can find a list of mentor profiles arranged in an alphabetical order in the 
 To view the mentor profile, do any one of the following actions:
 
 **Using the Search Bar**
-1. In the Search Bar of the Homepage, select the **Mentor Profile** tab. 
+1. In the Search Bar of the Home page, select the **Mentor Profile** tab. 
 
     <div class="img_callout">
 
