@@ -7,10 +7,7 @@ You can invite participants to a session by sharing a session link.
 
 3. Select the session tile and tap ![](media/share-icon.png). 
 
-   <div class="screenshot">
-
    ![](media/sharesession-host.png)
    
-   </div>
    
 4. Share the session link with your contacts or on social media.

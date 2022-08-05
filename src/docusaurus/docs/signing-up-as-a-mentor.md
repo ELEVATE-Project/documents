@@ -26,10 +26,7 @@ First-time users should create an account on <PartialExample mentored />.
 
 7.  Select **Agree to Terms of Use** and tap **Proceed**. 
 
-    <div class="screenshot">
-
     ![homepage](media/homepage.PNG)
 
-    </div>
 
 8.  To log out, go to the Burger Menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.

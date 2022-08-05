@@ -13,11 +13,7 @@ To join a session, do any one of the following actions:
 
 * On your Home page, go to **My Sessions**, select the session, and tap **Join**.
 
-  <div class="img_callout">
-
   ![](media/mysessions-joinbutton.png)
-
-  </div>
 
   >
   >:::tip 
@@ -25,11 +21,8 @@ To join a session, do any one of the following actions:
     
 * On your Home page, find a session from the **All Sessions** section. Tap the session and tap **Join**.
   
-  <div class="screenshot">
-
   ![](media/joinsession.png)
 
-  </div>
 
 ##  Setting up BigBlueButton Meeting
 BigBlueButton window appears on your web browser.

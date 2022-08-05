@@ -18,30 +18,20 @@ Mentors can create and manage mentoring sessions.
 
 5.  Tap **Publish**. To create more sessions, tap **New Session**, and repeat the same. 
 
-    <div class="img_callout">
-
     ![upcoming and past sessions](media/upcomingsession-page.PNG)
-
-    </div>
 
 6.  To edit or delete a session, tap the session tile and tap **Edit** or **Delete**.
 
     > :::note 
     > You can edit or delete a session after the scheduled time.
 
-    <div class="screenshot">
-
     ![edit or delete session](media/edit-session.PNG)
     
-    </div>
 
 7. To delete your completed sessions, select the **Past** tab, select the session, and tap **Delete**.
 
-    <div class="screenshot">
-
     ![edit or delete session](media/delete-pastsessions.PNG)
     
-    </div>
 
 
 

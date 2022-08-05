@@ -7,18 +7,13 @@ Users can update their profile details.
 
 
 1.  Go to **Profile** and tap **Edit**.
-    
-    <div class="screenshot">
 
     ![](media/profile-homepage.png)
 
-    </div>
 2.  Enter your details.
-    <div class="screenshot">
-
+    
     ![](media/creatingprofile.png)
     
-    </div>
 3.  If you want to add a profile picture, tap **Add Image** and select **Take Photo** or **Choose from Library**.
 
 

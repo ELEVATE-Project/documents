@@ -33,11 +33,8 @@ To start using the <PartialExample mentored /> mobile application
    * [Signing up on <PartialExample mentored /> as a Mentor](signing-up-as-a-mentor)
    * [Signing up on <PartialExample mentored /> as a Mentee](signing-up-as-a-mentee)
 
-   <div class="screenshot">
-
    ![homepage](media/welcome.png)
 
-   </div>
 
 
 

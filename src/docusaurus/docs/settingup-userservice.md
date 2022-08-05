@@ -235,10 +235,10 @@ import PartialExample from './_elevate.mdx';
 
 https://elevate-apis.shikshalokam.org/user/api-doc
 
-## Mentoring Services
+## Mentoring Service
 
 https://github.com/ELEVATE-Project/mentoring.git
 
-## Notification Services
+## Notification Service
 
 https://github.com/ELEVATE-Project/notification.git

@@ -132,10 +132,10 @@ To set up a local service with local dependencies
 
 https://elevate-apis.shikshalokam.org/notification/api-doc
 
-## Mentoring Services
+## Mentoring Service
 
 https://github.com/ELEVATE-Project/mentoring.git
 
-## User Services
+## User Service
 
 https://github.com/ELEVATE-Project/user.git

@@ -107,14 +107,14 @@ To build the apk file:
 4. Run the following command to build the app and copy the web assets to the specified folder.
 
     ```
-    ionic capacitor build
+    ionic capacitor build android
 
     ```
 
 5. Run the following command to generate a production build of the Android application.
 
     ```
-    android --prod
+    ionic capacitor build android --prod
     
     ```
 

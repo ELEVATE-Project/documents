@@ -18,19 +18,13 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
       >If you face an error, go back to <PartialExample mentored /> and tap **Start**.
       :::
 
-      <div class="screenshot">
 
       ![start button](media/startsession-tile.png)
 
-      </div>
-
     * Select the session and tap **Start Session**.
-
-      <div class="screenshot">
 
       ![start session button](media/startsession-button.PNG)
     
-      </div>
 
     * Tap on the session link which was shared to your contacts or on social media. Tap **Start Session**.
 

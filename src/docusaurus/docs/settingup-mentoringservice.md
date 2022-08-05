@@ -278,3 +278,16 @@ To set up a local service with local dependencies:
     ```
     ELEVATE/mentoring/src/scripts$ node schedulerScript.js
     ```
+
+
+## API Documentation 
+
+https://elevate-apis.shikshalokam.org/mentoring/api-doc
+
+## User Service
+
+https://github.com/ELEVATE-Project/user.git
+
+## Notification Service
+
+https://github.com/ELEVATE-Project/notification.git 

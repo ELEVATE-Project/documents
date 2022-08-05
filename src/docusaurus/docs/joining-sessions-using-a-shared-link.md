@@ -20,20 +20,14 @@ To join a session, do any one of the following actions:
 
 * Tap the shared link and do as follows:
   1. Select **<PartialExample mentored />**. 
-    
-      <div class="screenshot">
 
       ![options to join the session](media/openwith-options.png)
 
-       </div>
    
    2. Tap **Enroll** and tap **Join**.
 
-      <div class="screenshot">
-
       ![join session button](media/joinsession.png)
 
-      </div>
 
 * Tap the shared link and select a browser. The BigBlueButton meeting window appears on your browser. 
 
