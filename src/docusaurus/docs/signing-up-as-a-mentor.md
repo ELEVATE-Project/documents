@@ -29,4 +29,4 @@ First-time users should create an account on <PartialExample mentored />.
     ![homepage](media/homepage.PNG)
 
 
-8.  To log out, go to the Burger Menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.
+8.  To log out, go to the Burger Menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> on your Home page and tap **Logout**.

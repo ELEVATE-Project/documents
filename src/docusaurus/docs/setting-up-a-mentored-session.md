@@ -20,15 +20,21 @@ Mentors can create and manage mentoring sessions.
 
     ![upcoming and past sessions](media/upcomingsession-page.PNG)
 
-6.  To edit or delete a session, tap the session tile and tap **Edit** or **Delete**.
+## Managing your Sessions
+
+1. To edit the session timings or details, tap the session tile and tap **Edit**.
 
     > :::note 
-    > You can edit or delete a session after the scheduled time.
+    > You can edit a session after the scheduled time.
 
     ![edit or delete session](media/edit-session.PNG)
-    
 
-7. To delete your completed sessions, select the **Past** tab, select the session, and tap **Delete**.
+2. To delete the session, tap the session tile and tap **Delete**.
+
+    > :::note 
+    > You can delete a session after the scheduled time.    
+
+3. To delete your completed sessions, select the **Past** tab, select the session, and tap **Delete**.
 
     ![edit or delete session](media/delete-pastsessions.PNG)
     
