@@ -24,7 +24,6 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
     
       ![start session button](media/startsession-button.PNG)
     
-
     * Tap on the session link which was shared to your contacts or on social media. Tap **Start Session**.
 
 

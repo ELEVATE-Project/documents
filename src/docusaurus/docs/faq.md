@@ -131,7 +131,7 @@ To learn more, see [Joining a Session](joining-a-session.md).
 <details>
 <summary>Can I cancel my enrollment?</summary>
 
-You can cancel your enrollment up to 10 minutes before the scheduled session.
+You can cancel your enrollment if the mentor has not started the session.
 
 To learn more, see [Enrolling for a Session](enrolling-for-a-session.md).
 </details>

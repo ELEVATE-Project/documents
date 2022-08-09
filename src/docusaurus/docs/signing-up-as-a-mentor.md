@@ -12,11 +12,14 @@ First-time users should create an account on <PartialExample mentored />.
 
 3.  Select **Mentor** and tap **Continue**.
 
-4.  Enter your Name, Email ID, Password, and the Secret Code.
+4.  Enter your details:
+    * Name
+    * Email ID
+    * Password
+    * Secret Code
 
     > :::note  
-     Enter the correct Email ID. 
-
+     Enter a valid email ID. 
 
 5. Tap on **Sign up as Mentor**.
 
@@ -29,4 +32,4 @@ First-time users should create an account on <PartialExample mentored />.
     ![homepage](media/homepage.PNG)
 
 
-8.  To log out, go to the Burger Menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> on your Home page and tap **Logout**.
+8.  To log out, go to the Burger Menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.

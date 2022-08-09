@@ -1,10 +1,11 @@
 import PartialExample from './_mentored.mdx';
+import PartialExample from './_shiksha.mdx';
 import ReactPlayer from 'react-player';
 import overviewURL from './media/overview.mp4';
 
 # About the MentorED Mobile Application
 
-The <PartialExample mentored /> mobile application is integrated with the microservices hosted by Shikshalokam. The application uses the authentication, notifications, user management, and mentoring services hosted on the Shikshalokam Cloud. 
+The <PartialExample mentored /> mobile application is integrated with the microservices hosted by <PartialExample shiksha />. The application uses the authentication, notifications, user management, and mentoring services hosted on the <PartialExample shiksha /> Cloud. 
 
 The following table summarizes the activities mentors and mentees can carry out using the <PartialExample mentored /> mobile application.
 

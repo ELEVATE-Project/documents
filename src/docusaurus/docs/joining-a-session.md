@@ -5,7 +5,6 @@ import PartialExample from './_mentored.mdx';
 Participants can attend mentoring sessions using the BigBlueButton application.
 
 > :::note  
-> * Participants are allowed to join the session 15 minutes before the start time.
 > * Participants can only join when the mentor starts the session.
 > * Participants can join the session after the scheduled time.
 

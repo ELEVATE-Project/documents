@@ -50,7 +50,7 @@ const sidebars = {
       },
       {
         type: 'category',
-        label: 'Hosting and Customizing your Instance',
+        label: 'Hosting and Customizing Your Instance',
         items: [
           {
             type: 'doc',

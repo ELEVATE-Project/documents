@@ -1,4 +1,5 @@
 import PartialExample from './_mentored.mdx';
+import PartialExample from './_shiksha.mdx';
 
 # Welcome to MentorED
  
@@ -10,7 +11,7 @@ import PartialExample from './_mentored.mdx';
 
 >  
 
-<PartialExample mentored /> is a core component of the Elevate Platform, which is an Open Source Platform-As-A-Service (PAAS) offering from Shikshalokam. The long-term vision of <PartialExample mentored /> is to create a country-wide pool of academic experts in different subjects and areas of knowledge. Over time, such a rich and reliable pool of mentors can become a vital resource for newcomers as well as junior teaching staff spread across the length and breadth of India, enabling them to strengthen their theoretical knowledge and practical skills in their respective areas of teaching.  
+<PartialExample mentored /> is a core component of the Elevate Platform, which is an Open Source Platform-As-A-Service (PAAS) offering from <PartialExample shiksha />. The long-term vision of <PartialExample mentored /> is to create a country-wide pool of academic experts in different subjects and areas of knowledge. Over time, such a rich and reliable pool of mentors can become a vital resource for newcomers as well as junior teaching staff spread across the length and breadth of India, enabling them to strengthen their theoretical knowledge and practical skills in their respective areas of teaching.  
 
 > 
 

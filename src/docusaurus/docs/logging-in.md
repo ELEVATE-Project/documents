@@ -6,7 +6,7 @@ Signed-up users can log in to access their Home page.
 
 1.  Open <PartialExample mentored /> and select **Login**.
 
-2.  Enter your Email ID and Password and tap **Login**.
+2.  Enter your Email ID and Password, and tap **Login**.
 
     > :::note
     > * Enter the correct email ID and password to access your Home Page. Passwords are case-sensitive.

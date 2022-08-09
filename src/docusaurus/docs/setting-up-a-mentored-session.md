@@ -14,15 +14,15 @@ Mentors can create and manage mentoring sessions.
 
     ![session details page](media/create_session.png)
 
-4.  If you want to add a profile picture, tap **Add Image** and select **Take Photo** or **Choose from Library**.
+4.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
 
 5.  Tap **Publish**. To create more sessions, tap **New Session**, and repeat the same. 
 
     ![upcoming and past sessions](media/upcomingsession-page.PNG)
 
-## Managing your Sessions
+## Managing Your Sessions
 
-1. To edit the session timings or details, tap the session tile and tap **Edit**.
+1. To edit the session timings or details, tap the session tile and tap **Edit**. Change the session details or timings and tap **Publish**.
 
     > :::note 
     > You can edit a session after the scheduled time.

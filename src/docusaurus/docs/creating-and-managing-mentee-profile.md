@@ -1,4 +1,4 @@
-# Creating and Managing a Profile
+# Creating and Managing a Mentee Profile
 
 Users can update their profile details. 
 
@@ -14,7 +14,7 @@ Users can update their profile details.
     
     ![](media/creatingprofile.png)
     
-3.  If you want to add a profile picture, tap **Add Image** and select **Take Photo** or **Choose from Library**.
+3.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
 
 
 4.  Tap **Submit**. To make further edits to your profile, repeat the same.

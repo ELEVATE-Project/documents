@@ -93,7 +93,7 @@ const config = {
             logo: 'img/mentoring-logo.png',
         },
         {
-          href: 'https://e.shikshalokam.navadhiti.com/contact-us/',
+          href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',
           position: 'right',
         },
@@ -117,7 +117,7 @@ const config = {
             items: [
               {
                 label: 'Join the ELEVATE Community',
-                href: 'https://e.shikshalokam.navadhiti.com/community/',
+                href: 'https://elevate.shikshalokam.org/community/',
               },
               {
                 label: 'LinkedIn',
@@ -135,7 +135,7 @@ const config = {
             items: [
               {
                 label: 'No 733, 17th Cross, 24th Main, JP Nagar, 6th Phase, Bangalore, Karnataka 560078.',
-                href: 'https://e.shikshalokam.navadhiti.com/'
+                href: 'https://elevate.shikshalokam.org/'
               },
               {
                 label: 'Email',

@@ -1,5 +1,5 @@
-# Inviting Mentors and Mentees
-You can invite participants to a session by sharing a session link.
+# Sharing Session Invites to Mentees
+You can invite participants to your session by sharing a session link.
 
 1. Go to the Burger Menu <div class="inlineImg">![](media/burgermenu-icon.png)</div> and select **Created by Me**.
 
