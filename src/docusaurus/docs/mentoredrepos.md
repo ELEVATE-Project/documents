@@ -15,6 +15,10 @@ https://github.com/ELEVATE-Project/user.git
 
 https://github.com/ELEVATE-Project/notification.git
 
+## Scheduler Service
+
+https://github.com/ELEVATE-Project/scheduler.git
+
 ## Mobile Application
 
 https://github.com/ELEVATE-Project/mentoring-mobile-app.git 

@@ -242,3 +242,7 @@ https://github.com/ELEVATE-Project/mentoring.git
 ## Notification Service
 
 https://github.com/ELEVATE-Project/notification.git
+
+## Scheduler Service
+
+https://github.com/ELEVATE-Project/scheduler.git

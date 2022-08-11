@@ -139,3 +139,7 @@ https://github.com/ELEVATE-Project/mentoring.git
 ## User Service
 
 https://github.com/ELEVATE-Project/user.git
+
+## Scheduler Service
+
+https://github.com/ELEVATE-Project/scheduler.git

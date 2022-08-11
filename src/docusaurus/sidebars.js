@@ -76,6 +76,11 @@ const sidebars = {
                   id: 'settingup-notificationsservice', // document ID
                   label: 'Setting up the Notifications Service', // sidebar label
               },
+              {
+                  type: 'doc',
+                  id: 'settingup-schedulerservice', // document ID
+                  label: 'Setting up the Scheduler Service', // sidebar label
+              },
             ]
           },
         ]
