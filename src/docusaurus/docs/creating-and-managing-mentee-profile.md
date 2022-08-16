@@ -1,9 +1,9 @@
 # Creating and Managing a Mentee Profile
 
-Users can update their profile details. 
+You can update your profile details. 
 
 > :::note 
-> You cannot use the application without updating your profile. 
+> You can use the application only after updating your profile. 
 
 
 1.  Go to **Profile** and tap **Edit**.

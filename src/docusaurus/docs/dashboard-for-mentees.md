@@ -1,6 +1,6 @@
 # Dashboard for Mentees
 
-Go to **Dashboard** to view your activity insights such as total sessions enrolled and attended. 
+To view your activity insights such as total sessions enrolled and attended, go to the **Dashboard** page.
 
 
 

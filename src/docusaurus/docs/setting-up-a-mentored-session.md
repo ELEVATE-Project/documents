@@ -22,10 +22,10 @@ Mentors can create and manage mentoring sessions.
 
 ## Managing Your Sessions
 
-1. To edit the session timings or details, tap the session tile and tap **Edit**. Change the session details or timings and tap **Publish**.
+1. To edit the session details, tap the session tile to view the Session Details page and tap **Edit**. Change the session details and tap **Publish**.
 
     > :::note 
-    > You can edit a session after the scheduled time.
+    > You can edit the session after the scheduled time.
 
     ![edit or delete session](media/edit-session.PNG)
 
