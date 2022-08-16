@@ -2,13 +2,11 @@ import PartialExample from './_elevate.mdx';
 
 # Mentoring Service
 
-## Setup Options
+<PartialExample elevate /> Mentoring Service can be set up on a local system in one of the following ways:
 
-<PartialExample elevate /> services can be setup in local using three methods:
-
-1. [Docker-Compose File (Easiest)](#dockcompose).
-2. [Dockerized service with local dependencies(Intermediate)](#docklocal).
-3. [Local Service with local dependencies(Hardest)](#localservice).
+* As a [Docker-Compose File (Easiest)](#dockcompose).
+* As a [Dockerized service with local dependencies(Intermediate)](#docklocal).
+* As a [Local Service with local dependencies(Hardest)](#localservice).
 
 ## Docker-Compose
 <a name="dockcompose"></a>
@@ -48,10 +46,10 @@ To run all services using a docker-compose file:
     It is not always necessary to run **down** command. Existing containers and networks can be stopped gracefully by using **Ctrl + C** key combination.
 
 
-## Dockerized Service with Local Dependencies
+## Setting up a Dockerized Service with Local Dependencies
 <a name="docklocal"></a>
 
-**Objective**: Run single docker containerized service with existing local (in host) or remote dependencies.
+**Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
 ### Setting up with Local Dependencies 
 
@@ -62,7 +60,7 @@ To set up a docker service with local dependencies:
     For example:
 
     ```
-     #MongoDb Connectivity Url
+     #MongoDb Connectivity URL
      MONGODB_URL = mongodb://host.docker.internal:27017/elevate-mentoring
 
      #Kafka Host Server URL
@@ -97,7 +95,7 @@ To set up a docker service with local dependencies:
 
     - For Linux:
         ```
-        $ docker run --name mentoring --add-host=host.docker.internal:host-gateway elevate/mentoring:1.0`
+        $ docker run --name mentoring --add-host=host.docker.internal:host-gateway elevate/mentoring:1.0
         ```
         Refer [this Stack Overflow discussion](https://stackoverflow.com/a/24326540) for more information.
 
@@ -105,21 +103,19 @@ To set up a docker service with local dependencies:
 
 To set up a docker service with remote dependencies:
 
-1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with respective remote server IPs.
+1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with respective remote server IPs.
 
     For example:
 
     ```
-     #MongoDb Connectivity Url
+     #MongoDb Connectivity URL
      MONGODB_URL = mongodb://10.1.2.34:27017/elevate-mentoring
 
      #Kafka Host Server URL
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Add Bind IP to **mongod.conf** in host:
-
-    Follow instructions given [on this website.](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04)
+2. Follow the instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     :::note
     Instructions might differ based on MongoDB version and operating system.
@@ -127,6 +123,7 @@ To set up a docker service with remote dependencies:
 3. Build the docker image.
     ```
     /ELEVATE/mentoring$ docker build -t elevate/mentoring:1.0 .
+    
     ```
 4. Run the docker container.
 
@@ -134,22 +131,20 @@ To set up a docker service with remote dependencies:
     $ docker run --name mentoring elevate/mentoring:1.0
     ```
 
-## Local Service with Local Dependencies
+## Setting up a Local Service with Local Dependencies
 <a name="localservice"></a>
 
 **Objective**: Run a single service with existing local dependencies in host (**Non-Docker Implementation**).
 
-To set up a local service with local dependencies:
+1. Install required tools and dependencies such as:
 
-1. Install required tools and dependencies
+    - Any IDE (such as Visual Studio Code)
 
-    - Install any IDE (such as Visual Studio Code)
+    - [Nodejs](https://nodejs.org/en/download/)
 
-    - Install Nodejs: https://nodejs.org/en/download/
+    - [MongoDB](https://docs.mongodb.com/manual/installation/)
 
-    - Install MongoDB: https://docs.mongodb.com/manual/installation/
-
-    - Install Robo-3T: ​​ https://robomongo.org/
+    - [Robo-3T] ​(https://robomongo.org/)
 
 2. Clone the **Mentoring service** repository.
 
@@ -157,9 +152,9 @@ To set up a local service with local dependencies:
     git clone https://github.com/ELEVATE-Project/mentoring.git
     ```
 
-3. Add **.env** file to the project directory
+3. Add **.env** file to the project directory.
 
-    Create a **.env** file in **src** directory of the project and copy these environment variables into it.
+    Create a **.env** file in **src** directory of the project and copy the following environment variables into the file:
 
     ```
     # Mentoring Service Config
@@ -170,16 +165,16 @@ To set up a local service with local dependencies:
     # Service environment
     APPLICATION_ENV = development
 
-    # Route after base url
+    # Route after base URL
     APPLICATION_BASE_URL = /mentoring/
 
-    # Mongo db connectivity url
+    # Mongo db connectivity URL
     MONGODB_URL = mongodb://localhost:27017/elevate-mentoring
 
     # Token secret to verify the access token
     ACCESS_TOKEN_SECRET = 'bsj82AHBxahusub12yexlashsbxAXADHBlaj'
 
-    # Kafka hosted server url
+    # Kafka hosted server URL
     KAFKA_URL = localhost:9092
 
     # Kafka group to which consumer belongs
@@ -233,13 +228,13 @@ To set up a local service with local dependencies:
     # user serice host
     USER_SERIVCE_HOST = 'http://localhost:3001'
 
-    # user serice base url
+    # user serice base URL
     USER_SERIVCE_BASE_URL = '/user/'
 
-    # Big blue button url
+    # Big blue button URL
     BIG_BLUE_BUTTON_URL = https://dev.mentoring.shikshalokam.org
 
-    # Big blue button base url
+    # Big blue button base URL
     BIB_BLUE_BUTTON_BASE_URL = /bigbluebutton/
 
     # Meeting end callback events end point
@@ -248,32 +243,31 @@ To set up a local service with local dependencies:
     # Big blue button secret key
     BIG_BLUE_BUTTON_SECRET_KEY = n
 
-    # Big blue button recording ready callback url
+    # Big blue button recording ready callback URL
     RECORDING_READY_CALLBACK_URL = http%3A%2F%2Flocalhost%3A3000%2F%3FmeetingID%3Dmeet123
 
     # Enable logging of network request
     ENABLE_LOG = true
     ```
 
-4. Start MongoDB locally
+4. Start MongoDB locally.
 
-    Based on your host operating system and method used, start MongoDB.
+    > :::note
+    > This might vary based on your host operating system and the method used.
 
-5. Install Npm packages
+5. Install the npm packages.
 
     ```
     ELEVATE/mentoring/src$ npm install
     ```
 
-6. Start Mentoring server
+6. Start the Mentoring server.
 
     ```
     ELEVATE/mentoring/src$ npm start
     ```
 
-7. To set scheduler service job
-
-    Run the **schedulerScript** file from scripts directory:
+7. Set the Scheduler service job by running the **schedulerScript** file located in the scripts directory:
 
     ```
     ELEVATE/mentoring/src/scripts$ node schedulerScript.js

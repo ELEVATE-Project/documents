@@ -10,7 +10,7 @@ Participants can attend mentoring sessions using the BigBlueButton application.
 
 To join a session, do any one of the following actions:
 
-* On your Home page, go to **My Sessions**, select the session, and tap **Join**.
+* On the Home page, go to **My Sessions**, select the session, and tap **Join**.
 
   ![](media/mysessions-joinbutton.png)
 
@@ -24,7 +24,7 @@ To join a session, do any one of the following actions:
 
 
 ##  Setting up BigBlueButton Meeting
-BigBlueButton window appears on your web browser.
+BigBlueButton meeting window appears on your web browser.
 
 1.  To select the audio settings, do any one of the following actions:
 

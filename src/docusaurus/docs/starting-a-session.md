@@ -29,7 +29,7 @@ The BigBlueButton application helps mentors to conduct mentoring sessions.
 
 ## Setting up BigBlueButton Meeting
 
-BigBlueButton window opens up on your web browser.
+BigBlueButton meeting window appears on your web browser.
 
 1.  To select the audio settings, do any one of the following actions:
 

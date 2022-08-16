@@ -26,7 +26,7 @@ To start using the <PartialExample mentored /> mobile application
 
    <div class="screenshot">
 
-    <ReactPlayer playing controls url={overviewURL} loop="false" /> 1
+    <ReactPlayer playing controls url={overviewURL} loop="false" />
 
    </div>
 
