@@ -128,6 +128,10 @@ Search for Session -
 
 Question - In case a mentoring session is a 1-1 like a doctor appointment , is item an individual slot by the mentor or is the availability of Mentor in a day an each item?
 
+Answer - Each slot of mentor becomes a fulfillment, each slot becomes a fulfillment , each item in current schema can have only 1 fulfillment_id so we repeat the items with same id but different fulfillment_id 
+In 1.0 it might come in the core spec that each item can fulfillment_id as array 
+
+
 Search for Mentor - 
 
 "intent": {
@@ -268,9 +272,11 @@ Search for Session whether there will be a certificate issued at the end of the 
                 "end" : "2022-07-21T10:35:31.820Z" // Session end date and time
             }
         },
-        "tags" : {
-            "certificateAttached" : true
-        }
+        "certificates" : [
+            {
+                "type" : "NOC/ATTENDANCE/COMPLETION" // can be Enum ? // Can be an attribute at the end of fulfillment or an item attribute , discuss with Dr Pramod, possibly multiple certificates can be issued by availing this item?
+            }
+        ]
     },
     "descriptor" : {
         "name" : "10th Std Mathematics" // Raw user search query - E.g. mentor name or session name
@@ -352,8 +358,8 @@ Search for Session which are Free (How do we put a filter of paid ? And if need 
         "tags" : {
             "certificateAttached" : true
         },
-        "price" : {
-            "value" : "0" // How do we put a filter of paid ? And if need be specify session price range.
+        "price" : { // Use the price schema
+            "value" : "6000-10000" // How do we put a filter of paid ? And if need be specify session price range.
         }
     },
     "descriptor" : {
@@ -399,7 +405,7 @@ Search for Session based on language (Should there be a key in the core spec for
         },
         "tags" : {
             "certificateAttached" : true,
-            "language" : [ // User can pass multiple language codes.
+            "language" : [ // User can pass multiple language codes. It should be part of fulfillment, we can add a attribute and not a tag, can discuss and decide.
                 "en",
                 "hi"
             ]
@@ -506,7 +512,7 @@ Search for Mentor by Skill/Area Of Expertise -
     "fulfillment" : {
         "agent" : {
             "name" : "Pramod Verma", // Raw user search query - E.g. mentor name
-            "skills": [ // Skill or area of expertiese of Mentor delivering the session
+            "skills": [ // Skill or area of expertiese of Mentor delivering the session, makes sense it can be part of the core schema.
                 {
                     "descriptor": {
                         "name": "Maths"
@@ -515,6 +521,9 @@ Search for Mentor by Skill/Area Of Expertise -
                 {
                     "descriptor": {
                         "name": "Algebra"
+                    },
+                    "credentials" : { // If there is a hard requirement for verified skills.
+
                     }
                 }
             ]
@@ -780,6 +789,8 @@ Search for Mentor based on their language :-
         }
     }
 }
+
+
 
 
 
