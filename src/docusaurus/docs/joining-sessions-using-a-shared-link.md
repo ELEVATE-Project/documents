@@ -1,7 +1,7 @@
 import PartialExample from './_mentored.mdx';
 
 # Joining Sessions through a Shared Link
-Users can join mentoring sessions through a shared link.
+You can join mentoring sessions through a shared link.
 
 > :::tip 
 > Users who have not registered on <PartialExample mentored /> yet, should do the following actions:
@@ -14,6 +14,9 @@ Users can join mentoring sessions through a shared link.
 >
 > 4. [Enroll for sessions](enrolling-for-a-session.md).
 
+You can join the session through a shared link in one of the following ways:
+* Using the <PartialExample mentored /> application
+* Using a browser
   
 ## Using the <PartialExample mentored /> Application
 
@@ -22,7 +25,7 @@ Users can join mentoring sessions through a shared link.
    ![options to join the session](media/openwith-options.png)
 
    
-2. Tap **Enroll** and tap **Join**.
+2. Tap **Join**.
 
    ![join session button](media/joinsession.png)
 

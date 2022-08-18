@@ -1,30 +1,45 @@
 import PartialExample from './_mentored.mdx';
 
-# Starting a Mentoring Session 
+# Starting a Session 
 
-The BigBlueButton application helps mentors to conduct mentoring sessions.
+You can conduct mentoring sessions using the BigBlueButton application.
 
 > :::note  
 >* Mentors can start the session only 10 minutes before the scheduled time.
 >* Mentors can start their session after the scheduled time.
 
+You can start a session in one of the following ways:
+
+* Using the start button
+* Using the session tile
+* Using the shared link
+
+## Using the Start Button
 
 1.  Go to the Burger Menu ![burger menu icon](media/burgermenu-icon.png) and tap **Created by Me**.
 
-2.  To start your session, do any one of the following actions:
+2. Select the session and tap **Start**.
+   >:::tip 
+   >If you face an error, go back to <PartialExample mentored /> and tap **Start**.
+   :::
+   
+   ![start button](media/startsession-tile.png)
 
-    * Find the session and tap **Start**.
-      >:::tip 
-      >If you face an error, go back to <PartialExample mentored /> and tap **Start**.
-      :::
-      
-      ![start button](media/startsession-tile.png)
+## Using the Session Tile
 
-    * Select the session and tap **Start Session**.
-    
-      ![start session button](media/startsession-button.PNG)
-    
-    * Tap on the session link which was shared to your contacts or on social media. Tap **Start Session**.
+1.  Go to the Burger Menu ![burger menu icon](media/burgermenu-icon.png) and tap **Created by Me**.
+
+2. Select the session tile and tap **Start Session**.
+
+   ![start session button](media/startsession-button.PNG)
+   
+## Using the Shared Link
+
+1. Tap on the session link which was shared with your contacts or on social media. 
+
+2. Tap **Start Session**.
+
+   ![start session button](media/startsession-button.PNG)
 
 
 ## Setting up BigBlueButton Meeting
@@ -78,9 +93,8 @@ BigBlueButton meeting window appears on your web browser.
 
 
 
-## Shared Notes 
-
-Shared notes allows both host and participants to take notes and share resources.
+## Sharing Notes 
+Both host and participants can take notes and share resources using the Shared Notes.
 
 >:::note   
 >* Partcipants can edit or delete information from the Shared Notes.
@@ -98,7 +112,7 @@ Shared notes allows both host and participants to take notes and share resources
 
 
 
-## Chat
+## Sending Chat Messages
 
 Users can chat with others privately or share queries and information on the Public Chat.
 
@@ -170,7 +184,7 @@ The host can allow participants to be the Moderator or Presenter.
 
 
 
-## Meeting Settings
+## Managing the Meeting Settings
 Users can change the meeting window layout and turn off the notifications.
 
 1. Tap ![menu icon](media/menu-icon.png) and select **Settings**. 
@@ -226,7 +240,7 @@ Users can upload and present files (images, documents, and videos) during the se
    
 
 
-## Whiteboard
+## Using the Whiteboard
 
 Users can add shapes and text to the presentation.
 
