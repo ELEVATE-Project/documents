@@ -144,7 +144,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'starting-a-session', // document ID
-                  label: 'Starting a Mentoring Session', // sidebar label
+                  label: 'Starting a Session', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -197,7 +197,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'joining-a-session', // document ID
-                  label: 'Joining a Mentoring Session', // sidebar label
+                  label: 'Joining a Session', // sidebar label
                 },
                 {
                   type: 'doc',

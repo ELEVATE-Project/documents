@@ -2,23 +2,33 @@ import PartialExample from './_mentored.mdx';
 
 # Joining a Session
 
-Participants can attend mentoring sessions using the BigBlueButton application.
+You can attend mentoring sessions using the BigBlueButton application.
 
 > :::note  
 > * Participants can only join when the mentor starts the session.
 > * Participants can join the session after the scheduled time.
 
-To join a session, do any one of the following actions:
+You can join a session in one of the following ways:
 
-* On the Home page, go to **My Sessions**, select the session, and tap **Join**.
+* Using the My Sessions section
+* Using the All Sessions section
+
+## Using the My Sessions Section
+1. On the Home page, go to **My Sessions**.
+
+2. Select the session and tap **Join**. To view the session details before joining the session, tap the session tile.
 
   ![](media/mysessions-joinbutton.png)
 
   >
   >:::tip 
   >If you face an error, go back to <PartialExample mentored /> and tap **Join**.
+
+## Using the All Sessions Section
     
-* On your Home page, find a session from the **All Sessions** section. Tap the session and tap **Join**.
+1. On the Home page, select a session from the **All Sessions** section. 
+
+2. Tap the session tile and tap **Join**.
   
   ![](media/joinsession.png)
 
@@ -69,7 +79,7 @@ BigBlueButton meeting window appears on your web browser.
 
    
 
-## Meeting Settings 
+## Managing the Meeting Settings 
 Users can change the meeting window layout and turn off notifications.
 
 1. Tap ![menu icon](media/menu-icon.png) and select **Settings**. 
@@ -87,12 +97,12 @@ Users can change the meeting window layout and turn off notifications.
    >:::tip 
    >![internet strength icon](media/internetstrength-icon.png) indicates the strength of your internet connection.
 
-## Shared Notes 
-Shared notes allows both host and participants to take notes and share resources.
+## Sharing Notes 
+Both host and participants can take notes and share resources using the Shared Notes.
 
 > :::note   
 > * ![](media/bbb-profileicon-notification.png) indicates new information shared in the Chat or Shared Notes.
-> * The host may turn off the shared notes for participants or for a select few.
+> * The host may turn off the Shared Notes for participants or for a select few.
 
 
 1. To take notes, go to ![profile icon](media/bbb-profileicon.png) and select **Shared Notes**. 
@@ -100,8 +110,7 @@ Shared notes allows both host and participants to take notes and share resources
 2. To download the notes, tap ![download shared notes icon](media/download-sharednotes-icon.png) and select a file format.
 
 
-
-## Chat 
+## Sending Chat Messages
 
 > :::note  
 > * ![](media/bbb-profileicon-notification.png) indicates new information shared in the Chat or Shared Notes. 
@@ -118,7 +127,7 @@ Users can chat with others privately or share queries and information on the Pub
 
 
 
-## Whiteboard 
+## Using the Whiteboard 
 
 Users can add shapes and text to the presentation.
 
@@ -165,13 +174,13 @@ To join a breakout room, do any one of the following actions:
 
 -   Unmute your [microphone](#setting-up-bigbluebutton-meeting) only when necessary.
 
--   Maintain a neat background and attire before your turn on your [webcam](#setting-up-bigbluebutton-meeting). 
+-   Maintain a neat background and attire before you turn on your [webcam](#setting-up-bigbluebutton-meeting). 
 
 -   Use respectful language while sharing any information on the [chat](#chat) and [shared notes](#shared-notes). Discuss only mentoring-related topics.
 
 - Don't remove any information shared by the host and other participants from the [shared notes](#shared-notes).
 
-- Turn off your [whiteboard](#whiteboard)  unless the host asks participants to use it. 
+- Turn off your [whiteboard](#whiteboard) unless the host asks the participants to use it. 
 
 >:::info
 >To learn more, see [BigBlueButton Help](https://docs.bigbluebutton.org/).

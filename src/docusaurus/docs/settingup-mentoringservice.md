@@ -144,7 +144,7 @@ To set up a docker service with remote dependencies:
 
     - [MongoDB](https://docs.mongodb.com/manual/installation/)
 
-    - [Robo-3T] ​(https://robomongo.org/)
+    - [Robo-3T](https://robomongo.org/)
 
 2. Clone the **Mentoring service** repository.
 

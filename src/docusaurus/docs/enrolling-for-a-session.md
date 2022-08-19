@@ -1,9 +1,13 @@
 # Enrolling for a Session
 
-Users can sign up for mentoring sessions.
+You can sign up for mentoring sessions.
 
 >:::note
 >Users can enroll for an ongoing session. These sessions are marked as *Live* on the Home page. 
+
+You can enroll for a session in one of the following ways:
+* Using the session tile
+* Using the Search bar 
 
 ## Using the Session Tile
 
@@ -27,11 +31,15 @@ Users can sign up for mentoring sessions.
 
 ## Cancelling Your Enrollment
 
-To cancel your enrollment, tap **Cancel**. You can also go to **My Sessions** section on the Home page, tap the session tile, and tap **Cancel**.
-
-![](media/mysessions.PNG)
-
-![](media/cancel-enrollment.png)
-
 > :::note 
 > You can cancel your enrollment if the mentor has not started the session.
+
+1. Go to **My Sessions** section on the Home page.
+
+    ![](media/mysessions.PNG)
+
+2. Tap the session tile and tap **Cancel**.
+
+    ![](media/cancel-enrollment.png)
+
+
