@@ -1,3 +1,5 @@
+const { response } = require("express")
+
 JOBS - 
 
 {
@@ -1033,7 +1035,452 @@ On Search Schema for Mentors -
 
 
 
+Init for session - Mentee wants to enroll in a session - Minimum information required by BPP to enroll a user into a session
 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+            "items" : [
+                {
+                    "id" : "121"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1"
+                }
+            ],
+            "billing": {
+                "name": "Akash",
+                "phone": "1234567890",
+                "email": "abc@gmail.com",
+                "time" : {
+                    "timezone" : "IST"
+                }
+            }
+        }
+    }
+}
+
+
+On init for a session - BPP gets back if the session is still open for enrollment
+
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424" // Leave it blank if init is not successful, since there is no status key ? Should we add a new status key ?
+        }
+    }
+}
+
+
+Confirm a session - BAP sends a request to BPP to confirm the mentee for the session.
+
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+            "items" : [
+                {
+                    "id" : "121"
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1"
+                }
+            ],
+            "billing": {
+                "name": "Akash",
+                "phone": "1234567890",
+                "email": "abc@gmail.com",
+                "time" : {
+                    "timezone" : "IST"
+                }
+            }
+        }
+    }
+}
+
+
+
+On Confirm for a session - BPP sends the session link to BAP
+
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": { 
+        "order": {
+            "id": "123442424", // Leave it blank if init is not successful, since there is no status key ? Should we add a new status key ?
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "ONLINE",
+                    "language" : [ // It's a new field, that conveys how the session will be delivered, can be used for any service.
+                        "hi",
+                        "en"
+                    ]
+                    "descriptor": {
+                        "name": "Full-time"
+                    },
+                    "tags": {
+                        "link": "https://join.session.com/123", // Session Link
+                    },
+                    "agent": {
+                        "name" : "Dr Rajiv Manocha",
+                        "image": "https://srf",
+                        "gender": "M",
+                        "tags" : {
+                            "subjects" : [
+                                "maths", 
+                                "physics"
+                            ],
+                            "grades" : "X, XI, XII",
+                            "boards" : "CBSE, ICSE",
+                            "rating": "5"
+                        }
+                    },
+                    "start": { // Will be in UTC
+                        "time": {
+                            "timestamp": "2021-03-23T10:00:40.065Z"
+                        }
+                    },
+                    "end": { // Will be in UTC
+                        "time": {
+                            "timestamp": "2021-03-23T10:00:40.065Z"
+                        }
+                    }
+                }
+            ]
+            
+        }
+    }
+}
+
+
+
+Mentee wants to un enroll a session - 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+        },
+        "cancellation_reason_id": "1",
+        "descriptor": {
+            "name": "Clash with an existing appointment"
+        }
+    }
+}
+
+
+BPP confirms a mentee un enroll for a session - 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+        }
+    }
+}
+
+
+Mentee wants to update his contact details for a session - 
+
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "update_target" : "billing",
+        "order": {
+            "id": "123442424",
+            "billing": {
+                "name": "Akash New Name",
+                "phone": "1234567890",
+                "email": "abc@gmail.com",
+                "time" : {
+                    "timezone" : "IST"
+                }
+            }
+        }
+    }
+}
+
+
+
+BPP confirms a an update on metee info for a session - 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+        }
+    }
+}
+
+
+BAP requests for a latest status on the session which Mentee has enrolled into - 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+        }
+    }
+}
+
+BPP provides the latest status for a session - 
+
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "order": {
+            "id": "123442424",
+            "items": [
+                {
+                    "id" : "1",
+                    "category_id" : "123",
+                    "descriptor": {
+                        "name": "10th Std Mathematics",
+                        "code" : "X-MATH-CBSE",
+                        "short_desc" : "10th Standard Mathematics (CBSE) lecture",
+                        "long_desc" : "10th Standard Mathematics (CBSE) lecture",
+                        "images" : [
+                            "https://google.com/images/image1.png"
+                        ]
+                    },
+                    "fulfillment_id": "1",
+                    "price": {
+                        "value": "0"
+                    },
+                    "tags" : {
+                        "recommended_for" : [
+                            "HM",
+                            "Principals",
+                            "Teachers"
+                        ]
+                    }
+                    "matched": true
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "ONLINE",
+                    "language" : [ // It's a new field, that conveys how the session will be delivered, can be used for any service.
+                        "hi",
+                        "en"
+                    ]
+                    "descriptor": {
+                        "name": "Full-time"
+                    },
+                    "tags": {
+                        "status" : "Live/Published",
+                        "timeZone" : ""
+                    },
+                    "agent": {
+                        "name" : "Dr Rajiv Manocha",
+                        "image": "https://srf",
+                        "gender": "M",
+                        "tags" : {
+                            "subjects" : [
+                                "maths", 
+                                "physics"
+                            ],
+                            "grades" : "X, XI, XII",
+                            "boards" : "CBSE, ICSE",
+                            "rating": "5"
+                        }
+                    },
+                    "start": { // Will be in UTC
+                        "time": {
+                            "timestamp": "2021-03-23T10:00:40.065Z"
+                        }
+                    },
+                    "end": { // Will be in UTC
+                        "time": {
+                            "timestamp": "2021-03-23T10:00:40.065Z"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
+
+
+
+BAP requests for support on the session enrolled by a mentee - 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "ref_id": "123442424"
+    }
+}
+
+
+
+
+BPP send support contat details - 
+
+{
+    "context": {
+        "domain": "mentoring",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3",
+        "bap_id": "exampleapp.io",
+        "bap_uri": "https://api.exampleapp.io/dsep/v0/",
+        "message_id": "5ac3dd78-829e-4c7d-9139-a15adbb582cc",
+        "timestamp": "2021-03-23T10:00:40.065Z",
+        "transaction_id" : "UUID_GENERATED_BY_BAP" // BPP send this in the response header whether its a success or not?
+    },
+    "message": {
+        "phone": "1234567890",
+        "email": "contact@example.com",
+        "uri": "https://www.support.com"
+    }
+}
+
+
+Rating and Feedback - At present the rating and on_rating API doesnt seem to match with the aim. rating call doesnt have order id and there is no API structure defined for submitting the form BAP has got in the on_rating response.
+
+               
 https://app.swaggerhub.com/apis-docs/beckn/beckn-protocol-core-specification/1.0.0-draft#/Beckn%20App%20Platform%20(BAP)/post_on_search
 https://docs.google.com/spreadsheets/d/1I5QrbxZKN0yem0TdQkR-zI5KkLYz9M3QG9TGRFgJGCQ/edit#gid=1739564754
 https://app.swaggerhub.com/apis/AKS301190/DSEP4Aug/2#/Beckn%20App%20Platform%20(BAP)/post_on_search
