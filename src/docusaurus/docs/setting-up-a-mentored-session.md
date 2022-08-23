@@ -1,6 +1,6 @@
 # Setting up a Session
 
-Mentors can create and manage mentoring sessions.
+You can create and manage mentoring sessions.
 
 1.  Go to the Burger Menu <div class="inlineImg">![burger menu](media/burgermenu-icon.png)</div> and select **Created by Me**.
 

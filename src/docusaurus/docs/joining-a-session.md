@@ -2,7 +2,7 @@ import PartialExample from './_mentored.mdx';
 
 # Joining a Session
 
-You can attend mentoring sessions using the BigBlueButton application.
+<PartialExample mentored /> application is integrated with BigBlueButton to enable hosting of mentoring sessions.
 
 > :::note  
 > * Participants can only join when the mentor starts the session.

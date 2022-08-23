@@ -2,7 +2,7 @@ import PartialExample from './_mentored.mdx';
 
 # Starting a Session 
 
-You can conduct mentoring sessions using the BigBlueButton application.
+<PartialExample mentored /> application is integrated with BigBlueButton to enable hosting of mentoring sessions.
 
 > :::note  
 >* Mentors can start the session only 10 minutes before the scheduled time.
