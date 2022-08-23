@@ -2,7 +2,7 @@ import PartialExample from './_mentored.mdx';
 
 # Logging in
 
-Signed-up users can log in to access their Home page.
+Signed-up users can log in to access the Home page.
 
 1.  Open <PartialExample mentored /> and select **Login**.
 

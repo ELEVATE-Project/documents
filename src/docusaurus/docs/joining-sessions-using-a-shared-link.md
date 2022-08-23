@@ -1,6 +1,6 @@
 import PartialExample from './_mentored.mdx';
 
-# Joining Sessions through a Shared Link
+# Using a Shared Link to Join a Session
 You can join mentoring sessions through a shared link.
 
 > :::tip 
@@ -26,6 +26,9 @@ You can join the session through a shared link in one of the following ways:
 
    
 2. Tap **Join**.
+
+   >:::note
+   >If you haven't enrolled for the session yet, tap **Enroll**.
 
    ![join session button](media/joinsession.png)
 

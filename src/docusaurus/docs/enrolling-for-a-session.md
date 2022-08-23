@@ -1,6 +1,6 @@
 # Enrolling for a Session
 
-You can sign up for mentoring sessions.
+You can explore and sign up for mentoring sessions.
 
 >:::note
 >Users can enroll for an ongoing session. These sessions are marked as *Live* on the Home page. 

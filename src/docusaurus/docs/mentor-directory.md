@@ -2,10 +2,10 @@
 You can discover mentors in your chosen area of expertise using the [Mentor Directory](mentor-directory.md).
 
 You can discover mentors in one of the following ways:
-* Using the Mentor tab
+* Using the Mentors tab
 * Using the Search bar
 
-## Using the Mentor Tab
+## Using the Mentors Tab
 Mentor profiles are listed in an alphabetical order in the Mentor Directory. You can also search for mentors using the Search Bar.
 
 1. Go to **Mentors**. 
