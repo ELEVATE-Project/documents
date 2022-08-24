@@ -1486,3 +1486,9 @@ https://docs.google.com/spreadsheets/d/1I5QrbxZKN0yem0TdQkR-zI5KkLYz9M3QG9TGRFgJ
 https://app.swaggerhub.com/apis/AKS301190/DSEP4Aug/2#/Beckn%20App%20Platform%20(BAP)/post_on_search
 https://github.com/beckn/DSEP-Specification/discussions/34
 
+Pre-release branch for 1.0 Core Spec - https://github.com/beckn/protocol-specifications/blob/release-1.x/core/v0/api/core.yaml
+
+Core Spec -RFC - https://docs.google.com/spreadsheets/d/1vUDv5zD6jj5aLHjnvDvoNkZVKUSVSSd7LPr7v6PHyjM/edit#gid=1371813672
+
+Core spec will be pulled in DSEP first then we will raise a PR for our changes - 
+https://github.com/beckn/DSEP-Specification/tree/draft
