@@ -14,7 +14,7 @@ The following table summarizes the activities mentors and mentees can carry out 
 | Mentors | Mentees |
 | ----------- | ----------- |
 | Create and manage live mentoring sessions.| Discover and join live mentoring sessions. |
-| Interact with the participants on a one-on-one basis. | Interact with the mentor and other participants on a one-on-one basis.|
+| Interact with the participants. | Interact with the mentor and other participants.|
 | Collaborate with other mentors on mentoring sessions. | Collaborate with other participants. |
 | Use the mentor directory to get to know other mentors. | Use the mentor directory to get to know more about mentors.|
 |Provide feedback on mentoring sessions.| Provide feedback on mentoring sessions.|

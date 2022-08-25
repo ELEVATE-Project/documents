@@ -1,5 +1,6 @@
 import PartialExample from './_mentored.mdx';
 import PartialExample2 from './_elevate.mdx';
+import Shiksha from './_shiksha.mdx';
 
 # Hosting and Customizing MentorED
 
