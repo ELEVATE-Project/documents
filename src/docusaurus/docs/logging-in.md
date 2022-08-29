@@ -24,4 +24,4 @@ While logging in, if you don't remember your password you can change it.
     > :::tip  
     > To receive a new OTP, tap **Resend OTP**.
 
-5. Tap **Verify and Login** to log in to your Home page.
+5. Tap **Verify and Login** to log in to the Home page.

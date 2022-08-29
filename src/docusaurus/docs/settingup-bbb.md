@@ -1,47 +1,50 @@
 # Setting up the BigBlueButton Service
 
-1. Before installing, ensure that you meet all the [prerequisites](https://docs.bigbluebutton.org/2.4/install.html) required for you to install BigBlueButton.
+1. Before installing, ensure that you meet all the [prerequisites](https://docs.bigbluebutton.org/2.4/install.html) required to install BigBlueButton.
 
-2. Install [BigBlueButton version 2.4](https://docs.bigbluebutton.org/2.4/install.html) using the hostname ```prod.mentoring.shikshalokam.org``` and email address (for Let’s Encrypt) ```notice@example.com```. 
+2. Install [BigBlueButton version 2.4](https://docs.bigbluebutton.org/2.4/install.html) using the hostname and email address, which you want to use. 
 
-3. After the ```bbb-install.sh``` script finishes, check the status of your server.
+3. After completing the installation, check the status of your server using the following command:
 
     ``` 
     sudo bbb-conf --check
     ```
 
     >:::note
-    >An output that followed ```Potential problems``` may be due to configuration or installation errors. You will receive recommendations to resolve the issue.
+    >If you encounter any error which is flagged as ```Potential problems```, check for installation or configuration errors on your server.
 
-4. To start the service:
+4. Start the service using the following command:
 
     ```
     sudo bbb-conf --start
     ```
 
-5. To check that all the BigBlueButton processes have started and are running:
+5. Check if the BigBlueButton service is running using the following command:
 
     ``` 
     sudo bbb-conf --status
-    ```
-    
-6. To get the secret key:
-
     ``` 
-    sudo bbb-conf --secret
-    ``` 
-7. To restart the BigBlueButton Server:
+6. Restart the BigBlueButton Server using the following command:
 
     ```
     sudo bbb-conf --restart
     ```
-8. To delete the demo meeting:
+## Obtaining the Secret Key
 
-    ``` 
-    sudo apt-get purge bbb-demo
-    ```
+If you wish to generate a new secret key, use the following command:
+
+``` 
+sudo bbb-conf --secret
+```
+## Deleting the Demo Meeting
+
+If you want to delete the demo meeting, use the following command:
+
+``` 
+sudo apt-get purge bbb-demo
+```
 
 >:::info
 >* To learn more, see [BigBlueButton Installation Guide](https://docs.bigbluebutton.org/2.4/install.html).
->* To set up the auto deletion of the recording’s metadata after converting the raw recording to mp4 file and uploading to the cloud storage, see [ELEVATE-Project on GitHub](https://github.com/ELEVATE-Project/elevate-utils/tree/master/BBB-Recordings).
+>* To automatically delete the metadata of recordings which are converted to mp4 format and uploaded on the cloud storage, see [ELEVATE-Project on GitHub](https://github.com/ELEVATE-Project/elevate-utils/tree/master/BBB-Recordings).
 

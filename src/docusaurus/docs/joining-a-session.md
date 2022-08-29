@@ -5,6 +5,7 @@ import PartialExample from './_mentored.mdx';
 <PartialExample mentored /> application is integrated with BigBlueButton to enable hosting of mentoring sessions.
 
 > :::note  
+> * Participants should enroll before joining a sesssion. 
 > * Participants can only join when the mentor starts the session.
 > * Participants can join the session anytime within the time allocated for the session.
 
@@ -86,7 +87,7 @@ To leave the meeting, go to **Options** and select **Leave Meeting**.
 
 - Use respectful language while sharing any information. Discuss only mentoring-related topics.
 
-- To ask a question, tap the **Raise Hand** button.
+- Tap the **Raise Hand** button to ask a question.
 
 BigBlueButton application provides more features which are as follows:
 
