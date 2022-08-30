@@ -12,7 +12,7 @@ import PartialExample from './_elevate.mdx';
 
 **Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
-### Setting up with Local Dependencies
+### Setting up With Local Dependencies
 
 1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with "**host.docker.internal**".
 
@@ -60,7 +60,7 @@ import PartialExample from './_elevate.mdx';
         ```
         Refer this [Stack Overflow discussion thread](https://stackoverflow.com/a/24326540) for more information.
 
-### Setting up with Remote Dependencies 
+### Setting up With Remote Dependencies 
 
 1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with respective remote server IPs.
 
@@ -74,7 +74,7 @@ import PartialExample from './_elevate.mdx';
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2.  Follow the instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) add Bind IP to **mongod.conf** in host.
+2.  Follow the instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     > :::note
     > Instructions might differ based on the MongoDB version and operating system.

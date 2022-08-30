@@ -6,7 +6,7 @@ You can discover mentors in one of the following ways:
 * Using the Search bar
 
 ## Using the Mentors Tab
-Mentor profiles are listed in an alphabetical order in the Mentor Directory. You can also search for mentors using the Search Bar.
+Mentor profiles are listed in an alphabetical order in the Mentor Directory. You can also search for mentors using the Search bar.
 
 1. Go to **Mentors**. 
 
@@ -20,7 +20,7 @@ Mentor profiles are listed in an alphabetical order in the Mentor Directory. You
 
 ## Using the Search Bar to View the Mentor Profile
 
-1. In the Search Bar of the Home page, select the **Mentor Profile** tab. 
+1. In the Search bar of the Home page, select the **Mentor Profile** tab. 
 
     ![search for mentor profile](media/search-mentordirectory.PNG)
 

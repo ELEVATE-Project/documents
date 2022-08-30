@@ -13,7 +13,7 @@ import PartialExample from './_elevate.mdx';
 
 **Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
-### Setting up with Local Dependencies
+### Setting up With Local Dependencies
 
 1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with "**host.docker.internal**".
 
@@ -59,7 +59,7 @@ import PartialExample from './_elevate.mdx';
         ```
         Refer [this Stack Overflow discussion thread](https://stackoverflow.com/a/24326540) for more information.
 
-### Setting up with Remote Dependencies
+### Setting up With Remote Dependencies
 
 1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with respective remote server IPs.
 

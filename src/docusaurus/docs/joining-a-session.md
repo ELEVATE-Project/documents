@@ -5,9 +5,9 @@ import PartialExample from './_mentored.mdx';
 <PartialExample mentored /> application is integrated with BigBlueButton to enable hosting of mentoring sessions.
 
 > :::note  
-> * Participants should enroll before joining a sesssion. 
-> * Participants can only join when the mentor starts the session.
-> * Participants can join the session anytime within the time allocated for the session.
+> * You must enroll before joining a session. 
+> * You can only join when the mentor starts the session.
+> * You can join the session anytime within the time allocated for the session.
 
 You can join a session in one of the following ways:
 

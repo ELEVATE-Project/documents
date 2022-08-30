@@ -28,7 +28,7 @@ To run all services using a docker-compose file:
     ├── scheduler
     └── user
     ```
-3.  Create/start all containers:
+3.  Create or start all containers:
 
     ```
     ELEVATE/mentoring$ docker-compose up
@@ -46,12 +46,12 @@ To run all services using a docker-compose file:
     It is not always necessary to run **down** command. Existing containers and networks can be stopped gracefully by using **Ctrl + C** key combination.
 
 
-## Setting up a Dockerized Service with Local Dependencies
+## Setting up a Dockerized Service With Local Dependencies
 <a name="docklocal"></a>
 
 **Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
-### Setting up with Local Dependencies 
+### Setting up With Local Dependencies 
 
 To set up a docker service with local dependencies:
 
@@ -70,7 +70,7 @@ To set up a docker service with local dependencies:
 2. Find **host.docker.internal** IP address and add it to **mongod.conf** file in host.
 
     For example, if **host.docker.internal** is **172.17.0.1**,
-    **mongod.conf:**
+    **mongod.conf** file will be as follows:
 
     ```
     # network interfaces
@@ -99,7 +99,7 @@ To set up a docker service with local dependencies:
         ```
         Refer [this Stack Overflow discussion](https://stackoverflow.com/a/24326540) for more information.
 
-### Setting up with Remote Dependencies 
+### Setting up With Remote Dependencies 
 
 To set up a docker service with remote dependencies:
 
@@ -131,7 +131,7 @@ To set up a docker service with remote dependencies:
     $ docker run --name mentoring elevate/mentoring:1.0
     ```
 
-## Setting up a Local Service with Local Dependencies
+## Setting up a Local Service With Local Dependencies
 <a name="localservice"></a>
 
 **Objective**: Run a single service with existing local dependencies in host (**Non-Docker Implementation**).

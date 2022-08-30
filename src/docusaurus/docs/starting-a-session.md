@@ -5,8 +5,8 @@ import PartialExample from './_mentored.mdx';
 <PartialExample mentored /> application is integrated with BigBlueButton to enable hosting of mentoring sessions.
 
 > :::note  
->* Mentors can start the session only 10 minutes before the scheduled time.
->* Mentors can start their session anytime within the time allocated for the session.
+>* You can start the session only 10 minutes before the scheduled time.
+>* You can start the session anytime within the time allocated for the session.
 
 You can start a session in one of the following ways:
 

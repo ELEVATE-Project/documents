@@ -16,7 +16,7 @@ You can create and manage mentoring sessions.
 
 4.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
 
-5.  Tap **Publish**. To create more sessions, tap **New Session**, and repeat the same. 
+5.  Tap **Publish**. To create more sessions, tap **New Session** and repeat the same. 
 
     ![upcoming and past sessions](media/upcomingsession-page.PNG)
 

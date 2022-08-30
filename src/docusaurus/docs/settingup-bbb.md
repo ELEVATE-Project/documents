@@ -24,7 +24,7 @@
     ``` 
     sudo bbb-conf --status
     ``` 
-6. Restart the BigBlueButton Server using the following command:
+6. Restart the BigBlueButton server using the following command:
 
     ```
     sudo bbb-conf --restart

@@ -9,7 +9,7 @@ Signed-up users can log in to access the Home page.
 2.  Enter your Email ID and Password, and tap **Login**.
 
     > :::note
-    > Enter the correct email ID and password to access your Home Page. Passwords are case-sensitive.
+    > Enter the correct email ID and password to access the Home Page. Passwords are case-sensitive.
     
 
 ## Resetting the Password
