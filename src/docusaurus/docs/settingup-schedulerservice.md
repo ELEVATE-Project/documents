@@ -2,7 +2,7 @@ import PartialExample from './_elevate.mdx';
 
 # Scheduler Service
 
-<PartialExample elevate /> Scheduler Service can be set up on a local system in one of the following ways:
+You can set up the <PartialExample elevate /> Scheduler Service on a local system in one of the following ways:
 
 * As a [dockerized service with local dependencies (Intermediate)](#setting-up-a-dockerized-service-with-local-dependencies)
 
@@ -39,7 +39,7 @@ import PartialExample from './_elevate.mdx';
     ```
 
     > :::note
-    > Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer this [Stack Overflow discussion thread](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
+    > Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer [this Stack Overflow discussion thread](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
 
 3. Build the docker image.
     ```
@@ -74,7 +74,7 @@ import PartialExample from './_elevate.mdx';
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2.  Follow the instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
+2.  Follow the instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     > :::note
     > Instructions might differ based on the MongoDB version and operating system.

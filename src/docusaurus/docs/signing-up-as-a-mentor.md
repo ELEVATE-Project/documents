@@ -9,14 +9,13 @@ First-time users should create an account on <PartialExample mentored />.
 
 2.  Open <PartialExample mentored /> and select **Sign up**. 
 
-
 3.  Select **Mentor** and tap **Continue**.
 
 4.  Enter your details:
-    * Name
-    * Email ID
-    * Password
-    * Secret Code
+    - **Name**
+    - **Email**
+    - **Password**
+    - **Secret code**
 
     > :::note  
      Enter a valid email ID. 
@@ -31,5 +30,6 @@ First-time users should create an account on <PartialExample mentored />.
 
     ![homepage](media/homepage.PNG)
 
+## Logging out
 
-8.  To log out, go to the Burger Menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.
+To log out, go to the **Hamburger** menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.

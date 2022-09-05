@@ -2,7 +2,7 @@ import PartialExample from './_elevate.mdx';
 
 # Setting up the User Service
 
-<PartialExample elevate /> User Service can be set up on a local system in one of the following ways:
+You can set up the <PartialExample elevate /> User Service on a local system in one of the following ways:
 
 - As a [dockerized service with local dependencies (Intermediate)](#sectiona).
 - As a [local service with local dependencies (Hardest)](#sectionb).
@@ -73,7 +73,7 @@ import PartialExample from './_elevate.mdx';
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Follow instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
+2. Follow instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     :::note
     Instructions might differ based on MongoDB version and operating system.

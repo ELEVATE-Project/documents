@@ -2,7 +2,7 @@ import PartialExample from './_elevate.mdx';
 
 # Notifications Service
 
-<PartialExample elevate /> Notification Service can be set up on a local system in one of the following ways:
+You can set up the <PartialExample elevate /> Notification Service on a local system in one of the following ways:
 
  - As a [dockerized service with local dependencies(Intermediate)](#dockdep)
 
@@ -41,7 +41,7 @@ import PartialExample from './_elevate.mdx';
         ```
         $ docker run --name notification --add-host=host.docker.internal:host-gateway elevate/notification:1.0
         ```
-        Refer [this](https://stackoverflow.com/a/24326540) for more information.
+        Refer [this Stack Overflow discussion](https://stackoverflow.com/a/24326540) for more information.
 
 ### Setting up With Remote Dependencies
 

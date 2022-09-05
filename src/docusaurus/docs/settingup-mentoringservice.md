@@ -2,7 +2,7 @@ import PartialExample from './_elevate.mdx';
 
 # Mentoring Service
 
-<PartialExample elevate /> Mentoring Service can be set up on a local system in one of the following ways:
+You can set up the <PartialExample elevate /> Mentoring Service on a local system in one of the following ways:
 
 * As a [Docker-Compose File (Easiest)](#dockcompose).
 * As a [Dockerized service with local dependencies(Intermediate)](#docklocal).
@@ -115,7 +115,7 @@ To set up a docker service with remote dependencies:
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Follow the instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
+2. Follow the instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     :::note
     Instructions might differ based on MongoDB version and operating system.

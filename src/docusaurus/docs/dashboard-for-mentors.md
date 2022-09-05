@@ -1,13 +1,14 @@
 # Dashboard for Mentors
 
-To view your activity insights, go to the **Dashboard** page. 
+The Dashboard provides a summary of the number of sessions conducted and attended by the mentor.
 
-The Mentor tab shows the total sessions created and hosted. The Mentee tab shows the total sessions enrolled and attended.
+1. Go to the **Dashboard** tab. 
 
-![](media/dashboard-icon.png)
+    ![](media/dashboard-icon.png)
 
+2. Review the activity summary.
 
-![](media/mentor-dashboard.PNG)
+    ![](media/mentor-dashboard.PNG)
 
 
 

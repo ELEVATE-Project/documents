@@ -6,7 +6,7 @@ You can update your profile details.
 > You can use the application only after updating your profile. 
 
 
-1.  Go to **Profile** and tap **Edit**.
+1.  Go to the **Profile** tab and tap **Edit**.
 
     ![](media/profile-homepage.png)
 
@@ -17,4 +17,4 @@ You can update your profile details.
 3.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
 
 
-4.  Tap **Submit**. To make further edits to your profile, repeat the same.
+4.  Tap **Submit**.

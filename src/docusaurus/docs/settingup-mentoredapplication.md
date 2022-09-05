@@ -21,7 +21,7 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
 | Capacitor | <ul><li>Capacitor CLI : 3.5.1 </li><li>@capacitor/android : 3.5.0 </li><li>@capacitor/core : 3.5.1 </li><li>@capacitor/ios : 3.5.0</li></ul>
 | Cordova | <ul><li>Cordova CLI : 11.0.0</li><li>Cordova Platforms : none</li><li>Cordova Plugins : no whitelisted plugins (0 plugins total)</li></ul>
 | Utility | <ul><li>cordova-res : 0.15.4</li><li>native-run : 1.6.0</li></ul>
-| System | <ul><li>Android SDK Tools: 26.1.1 (/home/afnan/Android/Sdk) </li><li>NodeJS: v14.19.0 (/usr/local/bin/node) </li><li>npm: 6.14.16 </li><li>OS: Linux 5.13</li></ul>
+| System | <ul><li>Android SDK Tools: 26.1.1 (/home/user/Android/Sdk) </li><li>NodeJS: v14.19.0 (/usr/local/bin/node) </li><li>npm: 6.14.16 </li><li>OS: Linux 5.13</li></ul>
 
 ## Ionic-Android Build Setup
 
@@ -83,7 +83,7 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
 
 ## Setting up the Project
 
-1. Use Git to clone the [repository](https://github.com/ELEVATE-Prjoect/mentoring-mobile-app.git).
+1. Use Git to clone the [repository](https://github.com/ELEVATE-Project/mentoring-mobile-app.git).
 2. Create a file named **environment.ts** in the  `src/environments` folder and add the necessary variables.
 3. Go to project folder and run `npm i`.
 

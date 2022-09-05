@@ -13,8 +13,8 @@ Mentees will receive email notifications:
 
 * When they sign up on <PartialExample mentored />.
 * When they enroll for a session or cancel their enrollment.
-* When the session schedule or details are updated.
-* When the session is cancelled.
+* When the mentor updates the session schedule or details.
+* When the mentor cancels the session.
 * About upcoming sessions, which they have signed up for.
 
 >:::info

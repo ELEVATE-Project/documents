@@ -20,9 +20,10 @@ The following table summarizes the activities mentors and mentees can carry out 
 |Provide feedback on mentoring sessions.| Provide feedback on mentoring sessions.|
 
 
-To start using the <PartialExample mentored /> mobile application
+## Installing the MentorED Application
+
 1. Download and install the <PartialExample mentored /> application from Google Play store.
-2. After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears: 
+2. After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears. 
 
    <div class="screenshot">
 

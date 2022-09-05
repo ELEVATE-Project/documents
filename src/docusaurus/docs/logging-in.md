@@ -6,7 +6,7 @@ Signed-up users can log in to access the Home page.
 
 1.  Open <PartialExample mentored /> and select **Login**.
 
-2.  Enter your Email ID and Password, and tap **Login**.
+2.  Enter your **Email** and **Password**, and tap **Login**.
 
     > :::note
     > Enter the correct email ID and password to access the Home Page. Passwords are case-sensitive.
@@ -17,7 +17,7 @@ Signed-up users can log in to access the Home page.
 While logging in, if you don't remember your password you can change it.
 
 1. On the Login page, tap **Forgot Password**.
-2. Enter your email ID and the new password.
+2. Enter your **Email** and the new password.
 3. Tap **Reset Password**.
 4. Enter the OTP sent to your registered email ID.
 

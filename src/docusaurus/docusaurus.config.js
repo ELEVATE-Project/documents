@@ -155,13 +155,13 @@ const config = {
                 href: 'https://github.com/ELEVATE-Project',
               },
               {
-                label: 'Shikshalokam Wiki',
+                label: 'ShikshaLokam Wiki',
                 href: 'https://wiki.shikshalokam.org/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Shikshalokam. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ShikshaLokam. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
