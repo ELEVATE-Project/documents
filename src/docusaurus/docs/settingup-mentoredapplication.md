@@ -1,8 +1,8 @@
+import PartialExample from './_mentored.mdx';
+
 # Customizing the MentorED Mobile Application
 
-This readme file summarizes the system requirements and dependencies for building and customizing the <b>MentorED Mobile Application</b>, which is one of the key components of the <b>MentorED Platform</b>.
-
-The mobile application is written using the Ionic framework along with the Capacitor runtime, which makes it easy to run apps across mobile and Web platforms.  
+The <PartialExample mentored /> mobile application is developed using the Ionic framework along with the Capacitor runtime, which makes it easy to run apps across mobile and Web platforms.  
 
 ## Key Components in the Development Environment 
 
@@ -21,26 +21,26 @@ The mobile application is written using the Ionic framework along with the Capac
 | Capacitor | <ul><li>Capacitor CLI : 3.5.1 </li><li>@capacitor/android : 3.5.0 </li><li>@capacitor/core : 3.5.1 </li><li>@capacitor/ios : 3.5.0</li></ul>
 | Cordova | <ul><li>Cordova CLI : 11.0.0</li><li>Cordova Platforms : none</li><li>Cordova Plugins : no whitelisted plugins (0 plugins total)</li></ul>
 | Utility | <ul><li>cordova-res : 0.15.4</li><li>native-run : 1.6.0</li></ul>
-| System | <ul><li>Android SDK Tools: 26.1.1 (/home/afnan/Android/Sdk) </li><li>NodeJS: v14.19.0 (/usr/local/bin/node) </li><li>npm: 6.14.16 </li><li>OS: Linux 5.13</li></ul>
+| System | <ul><li>Android SDK Tools: 26.1.1 (/home/user/Android/Sdk) </li><li>NodeJS: v14.19.0 (/usr/local/bin/node) </li><li>npm: 6.14.16 </li><li>OS: Linux 5.13</li></ul>
 
 ## Ionic-Android Build Setup
 
-1. Install Java 
+1. Install Java. 
 
    :::tip
    > For detailed instructions, see https://www.oracle.com/java/technologies/downloads/#java8
 
-2. Install Gradle 
+2. Install Gradle. 
 
    :::tip
    > For detailed instructions, see https://gradle.org/install/
 
-3. Install Android Studio 
+3. Install Android Studio. 
 
    :::tip
    > For detailed instructions, see https://developer.android.com/studio 
 
-4. Install Android SDK
+4. Install Android SDK.
 
     - Open Android studio 
     - Go to **Settings** > **Appearance and Behavior** > **System Settings** > **Android SDK**.
@@ -62,23 +62,30 @@ The mobile application is written using the Ionic framework along with the Capac
 
 ## Setting up the Command Line Interface (CLI)
 
-```
- npm install -g ionic
+1. Install the Ionic framework.
+    ```
+    npm install -g ionic
+    ```
+2. Install the Capacitor Core.
 
- npm install @capacitor/core
+    ```
+    npm install @capacitor/core
+    ```
+3. Install the Capacitor runtime Client.
 
- npm install @capacitor/cli --save-dev 
-
- npx cap init
-
-```
-
+    ```
+    npm install @capacitor/cli --save-dev 
+    ```
+4. Initialize the Capacitor runtime.
+    ```
+    npx cap init
+    ```
 
 ## Setting up the Project
 
-1. Use Git to clone the [repository](https://github.com/ELEVATE-Prjoect/mentoring-mobile-app.git)
-2. Add environment files inside `src/environments`
-3. Go to project folder and run `npm i`
+1. Use Git to clone the [repository](https://github.com/ELEVATE-Project/mentoring-mobile-app.git).
+2. Create a file named **environment.ts** in the  `src/environments` folder and add the necessary variables.
+3. Go to project folder and run `npm i`.
 
 ## Build the APK
 
@@ -97,7 +104,7 @@ To build the apk file:
 
     ```
 
-3. Run the capacitor sync command to perform an Ionic build and update any Capacitor or Cordova plugins or dependencies   
+3. Run the capacitor sync command to perform an Ionic build and update any Capacitor or Cordova plugins or dependencies.  
 
     ```
     ionic capacitor sync

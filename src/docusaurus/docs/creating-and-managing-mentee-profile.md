@@ -1,12 +1,12 @@
 # Creating and Managing a Mentee Profile
 
-Users can update their profile details. 
+You can update your profile details. 
 
 > :::note 
-> You cannot use the application without updating your profile. 
+> You can use the application only after updating your profile. 
 
 
-1.  Go to **Profile** and tap **Edit**.
+1.  Go to the **Profile** tab and tap **Edit**.
 
     ![](media/profile-homepage.png)
 
@@ -17,4 +17,4 @@ Users can update their profile details.
 3.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
 
 
-4.  Tap **Submit**. To make further edits to your profile, repeat the same.
+4.  Tap **Submit**.

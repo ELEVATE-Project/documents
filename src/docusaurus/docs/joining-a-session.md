@@ -2,176 +2,97 @@ import PartialExample from './_mentored.mdx';
 
 # Joining a Session
 
-Participants can attend mentoring sessions using the BigBlueButton application.
+<PartialExample mentored /> application is integrated with BigBlueButton to enable the hosting of mentoring sessions.
 
 > :::note  
-> * Participants can only join when the mentor starts the session.
-> * Participants can join the session after the scheduled time.
+> * You must enroll before joining a session. 
+> * You can only join when the mentor starts the session.
+> * You can join the session anytime within the time allocated for the session.
 
-To join a session, do any one of the following actions:
+You can join a session in one of the following ways:
 
-* On your Home page, go to **My Sessions**, select the session, and tap **Join**.
+* Using **My Sessions** section
+* Using **All Sessions** section
+
+## Using My Sessions Section
+1. On the Home page, go to **My Sessions**.
+
+2. Select the session and tap **Join**. To view the session details before joining, tap the session tile.
+
+  >:::tip 
+  >If an error occurs, go back to <PartialExample mentored /> and tap **Join**.
 
   ![](media/mysessions-joinbutton.png)
 
-  >
-  >:::tip 
-  >If you face an error, go back to <PartialExample mentored /> and tap **Join**.
+## Using All Sessions Section
     
-* On your Home page, find a session from the **All Sessions** section. Tap the session and tap **Join**.
+1. On the Home page, select a session from the **All Sessions** section. 
+
+2. Tap the session tile and tap **Join**.
   
   ![](media/joinsession.png)
 
 
-##  Setting up BigBlueButton Meeting
-BigBlueButton window appears on your web browser.
+##  Configuring the BigBlueButton Settings
+The BigBlueButton meeting window appears on your web browser.
+
+### Configuring the Microphone
 
 1.  To select the audio settings, do any one of the following actions:
 
-    * To connect your audio, tap **Microphone** and select **Yes**. 
+    * To connect your microphone, tap the **Microphone** option and select **Yes**. 
 
       > :::note  
-      > Microphone may be on initially.
+      > Microphone may turn on by default.
 
-    * To join without connecting your audio, tap **Listen Only**.
+    * To join without connecting your microphone, tap the **Listen Only** option.
 
+2.	To mute your microphone, tap the **Microphone** button. Tap again to unmute it.
 
-2. To change your audio settings later, do any one of the following:
+### Configuring the Webcam 
 
-   * To disconnect your audio, Tap ![](media/audiobutton.png) . Tap  ![](media/audiobutton-off.png)  and tap **Listen Only**.
-   * To connect your audio, Tap ![](media/listenonlybutton.png). Tap ![](media/audiobutton-off.png) , tap **Microphone**, and select **Yes**.
+1. To turn on the webcam, tap the **Webcam** button.
 
-
-3.  To turn on the webcam, tap ![](media/webcam-off.png) and select **Start Sharing**. To turn it off, tap ![](media/webcam-on.png) and select **Stop Sharing**.
+2. Tap **Start Sharing**. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
 
     > :::note  
-    > The webcam settings window might not appear initially. 
-    > To change your webcam and background settings, tap ![](media/webcam-on.png), make changes, and close the window.
+    >* The webcam may turn on by default. 
+    >* To change your webcam and background, tap the **Webcam** button, make changes, and close the window.
 
-4. To set status, tap ![](media/bbb-profileicon.png) , tap your name, and select a status.
+3. To turn it off, tap the **Webcam** button and tap **Stop Sharing**.
 
-5. Tap ![](media/loweredhand.png) to raise hand and tap ![](media/raisedhand.png) to lower hand.
+### Checking the Quality of Your Internet Connection 
 
-6. If the host selects you for answering a question, you can see a popup message on your screen.
+The **Connection Status** icon located on the top portion of the window indicates the quality of your internet connection.
 
-7. To download the presented file, tap ![](media/presentedfile-download-icon.png) on the presentation.
+### Leaving the Session
 
-
-8.	To leave the call, go to ![](media/menu-icon.png)  and select **Leave Meeting**.
+To leave the meeting, go to the **Options** menu and select **Leave Meeting**.
 
   > :::note  
-  > * If you press the back key on your phone or close the meeting tab, you may drop off the call.
-  > * If you leave the call by mistake, go back to <PartialExample mentored /> and join the session.
-  
-  >
-  > :::info 
-  > Host can select participants to be a Moderator or Presenter. To learn more, see [Managing User Settings](starting-a-session.md). 
+  > If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and tap **Join**. 
 
-   
+### Best Practices
 
-## Meeting Settings 
-Users can change the meeting window layout and turn off notifications.
+- Unmute your [microphone](#configuring-the-microphone) only when necessary.
 
-1. Tap ![menu icon](media/menu-icon.png) and select **Settings**. 
+- Maintain a neat background and attire before you turn on your [webcam](#configuring-the-webcam). 
 
-2. To change meeting layout, tap the **Application** tab, select **Layout Type**, and tap **Save**.
+- Use respectful language while sharing any information. Discuss only mentoring-related topics.
 
-   > :::note  
-   > The changes are visible only on your screen.
+- Tap the **Raise Hand** button to ask a question.
 
+## Using BigBlueButton Features
 
-3.  To turn off audio and popup alerts, tap the **Notifications** tab, turn off notifications, and tap **Save**.
+The BigBlueButton application provides more features which are as follows:
 
-4. To save your bandwidth, tap the **Data Savings** tab, turn off the options, and tap **Save**.
-
-   >:::tip 
-   >![internet strength icon](media/internetstrength-icon.png) indicates the strength of your internet connection.
-
-## Shared Notes 
-Shared notes allows both host and participants to take notes and share resources.
-
-> :::note   
-> * ![](media/bbb-profileicon-notification.png) indicates new information shared in the Chat or Shared Notes.
-> * The host may turn off the shared notes for participants or for a select few.
-
-
-1. To take notes, go to ![profile icon](media/bbb-profileicon.png) and select **Shared Notes**. 
-
-2. To download the notes, tap ![download shared notes icon](media/download-sharednotes-icon.png) and select a file format.
-
-
-
-## Chat 
-
-> :::note  
-> * ![](media/bbb-profileicon-notification.png) indicates new information shared in the Chat or Shared Notes. 
-> * The host may turn off the public and private chat for participants or for a select few.
-
-
-Users can chat with others privately or share queries and information on the Public Chat.
-
-1. To chat with participants, go to ![](media/bbb-profileicon.png) and select **Public Chat**. 
-
-2. To chat with participants privately, go to ![](media/bbb-profileicon.png), tap the user, and select **Start a Private Chat**. 
-
-3. To save or copy the messages, tap ![](media/menu-icon.png) on the chat window and select an option.
-
-
-
-## Whiteboard 
-
-Users can add shapes and text to the presentation.
-
->:::note 
->The whiteboard appears during the presentation only if the host turns it on for participants or for a select few.
-
-1. To select a textbox or a drawing tool, tap ![](media/whiteboardtool-text-and-shapes.png).
-
-2. To remove changes, tap ![](media/whiteboardtools-undochange.png).
-
-3. To remove all texts and shapes, tap ![](media/whiteboardtools-deletetool.png).
-
-    > :::note
-     ![](media/whiteboardtools-undochange.png) and ![](media/whiteboardtools-deletetool.png) removes only your texts and shapes.
-    
-
-4. To turn off your whiteboard, tap ![](media/whiteboardtools-turnoff.png).
-
-
-
-## Polling 
-Poll allows users to answer a question during a presentation.
-
-You can select an option or type your answer.
-
-
-
-## Joining Breakout Rooms 
-Participants can join breakout rooms for group discussions.
-
-To join a breakout room, do any one of the following actions:
-
-* Select **Join Room**. The breakout room opens up in a new tab.
-
-* If the host asks you to select a room, select the room from the dropdown menu and select **Join Room**.
-
->:::tip  
->* The breakout room opens up in a new tab. You can switch between the two meeting tabs. 
->* To leave the Breakout Room, close the Breakout Room tab.
-
-
-
-## Best Practices
-
--   Unmute your [microphone](#setting-up-bigbluebutton-meeting) only when necessary.
-
--   Maintain a neat background and attire before your turn on your [webcam](#setting-up-bigbluebutton-meeting). 
-
--   Use respectful language while sharing any information on the [chat](#chat) and [shared notes](#shared-notes). Discuss only mentoring-related topics.
-
-- Don't remove any information shared by the host and other participants from the [shared notes](#shared-notes).
-
-- Turn off your [whiteboard](#whiteboard)  unless the host asks participants to use it. 
+* Managing meeting settings
+* Adding user status
+* Sending chat messages
+* Sharing notes
+* Using the whiteboard
+* Polling
+* Joining breakout rooms
 
 >:::info
->To learn more, see [BigBlueButton Help](https://docs.bigbluebutton.org/).
+>To learn more, see [BigBlueButton Help](https://bigbluebutton.org/teachers/tutorials/).

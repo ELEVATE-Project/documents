@@ -81,6 +81,11 @@ const sidebars = {
                   id: 'settingup-schedulerservice', // document ID
                   label: 'Setting up the Scheduler Service', // sidebar label
               },
+              {
+                  type: 'doc',
+                  id: 'settingup-bbb', // document ID
+                  label: 'Setting up the BigBlueButton Service', // sidebar label
+              },
             ]
           },
         ]
@@ -144,7 +149,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'starting-a-session', // document ID
-                  label: 'Starting a Mentoring Session', // sidebar label
+                  label: 'Starting a Session', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -197,12 +202,12 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'joining-a-session', // document ID
-                  label: 'Joining a Mentoring Session', // sidebar label
+                  label: 'Joining a Session', // sidebar label
                 },
                 {
                   type: 'doc',
                   id: 'joining-sessions-using-a-shared-link', // document ID
-                  label: 'Joining Sessions through a Shared Link', // sidebar label
+                  label: 'Using a Shared Link to Join a Session', // sidebar label
                 },
                 {
                   type: 'doc',

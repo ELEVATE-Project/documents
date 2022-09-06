@@ -2,34 +2,34 @@ import PartialExample from './_elevate.mdx';
 
 # Scheduler Service
 
-<PartialExample elevate /> scheduler services can be set up in local in one of the following ways:
+You can set up the <PartialExample elevate /> Scheduler Service on a local system in one of the following ways:
 
-* As a [dockerized service with local dependencies (Intermediate)](#a-dockerized-service-with-local-dependencies)
+* As a [dockerized service with local dependencies (Intermediate)](#setting-up-a-dockerized-service-with-local-dependencies)
 
-* As a [local Service with local dependencies (Hardest)](#b-local-service-with-local-dependencies)
+* As a [local Service with local dependencies (Hardest)](#setting-up-a-local-service-with-local-dependencies)
 
-## A. Dockerized Service With Local Dependencies
+## Setting up a Dockerized Service With Local Dependencies
 
-**Expectation**: Run single docker containerized service with existing local (in host) or remote dependencies.
+**Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
-### Local Dependencies Steps
+### Setting up With Local Dependencies
 
-1. Update dependency (Mongo, Kafka etc) IP addresses in .env with "**host.docker.internal**".
+1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with "**host.docker.internal**".
 
     For example:
 
     ```
-     #MongoDb Connectivity Url
+     #MongoDb Connectivity URL
      MONGODB_URL = mongodb://host.docker.internal:27017/elevate-scheduler
 
      #Kafka Host Server URL
      KAFKA_URL = host.docker.external:9092
     ```
 
-2. Find **host.docker.internal** IP address and added it to **mongod.conf** file in host.
+2. Find **host.docker.internal** IP address and add it to **mongod.conf** file in host.
 
     For example: If **host.docker.internal** is **172.17.0.1**,
-    **mongod.conf:**
+    **mongod.conf** will be as follows:
 
     ```
     # network interfaces
@@ -39,11 +39,12 @@ import PartialExample from './_elevate.mdx';
     ```
 
     > :::note
-    > Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer this [Stack Overflow discussion thread](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
+    > Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer [this Stack Overflow discussion thread](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
 
 3. Build the docker image.
     ```
     /ELEVATE/scheduler$ docker build -t elevate/scheduler:1.0 .
+
     ```
 4. Run the docker container.
 
@@ -55,34 +56,33 @@ import PartialExample from './_elevate.mdx';
 
     - For Linux:
         ```
-        $ docker run --name user --add-host=host.docker.internal:host-gateway elevate/scheduler:1.0`
+        $ docker run --name user --add-host=host.docker.internal:host-gateway elevate/scheduler:1.0
         ```
         Refer this [Stack Overflow discussion thread](https://stackoverflow.com/a/24326540) for more information.
 
-### Remote Dependencies Steps
+### Setting up With Remote Dependencies 
 
-1. Update dependency (such as Mongo, Kafka etc) Ip addresses in .env with respective remote server IPs.
+1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with respective remote server IPs.
 
-    For Example:
+    For example:
 
     ```
-     #MongoDb Connectivity Url
+     #MongoDb Connectivity URL
      MONGODB_URL = mongodb://10.1.2.34:27017/elevate-scheduler
 
      #Kafka Host Server URL
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Add Bind IP to **mongod.conf** in host:
-
-    Follow instructions given [here](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04).
+2.  Follow the instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     > :::note
-    > Instructions might differ based on MongoDB version and operating system.
+    > Instructions might differ based on the MongoDB version and operating system.
 
 3. Build the docker image.
     ```
     /ELEVATE/scheduler$ docker build -t elevate/scheduler:1.0 .
+    
     ```
 4. Run the docker container.
 
@@ -90,21 +90,19 @@ import PartialExample from './_elevate.mdx';
     $ docker run --name scheduler elevate/scheduler:1.0
     ```
 
-## B. Local Service With Local Dependencies
+## Setting up a Local Service With Local Dependencies
 
-**Expectation**: Run single service with existing local dependencies in host (**Non-Docker Implementation**).
-
-### Steps
+**Objective**: Run single service with existing local dependencies in host (**Non-Docker Implementation**).
 
 1. Install the required tools and dependencies such as:
 
-    * Install any IDE (for example: Visual Studio Code)
+    * Any IDE (for example: Visual Studio Code)
 
-    * [Install Nodejs](https://nodejs.org/en/download/)
+    * [Nodejs](https://nodejs.org/en/download/)
 
-    * [Install MongoDB](https://docs.mongodb.com/manual/installation/)
+    * [MongoDB](https://docs.mongodb.com/manual/installation/)
     
-    * [Install Robo-3T](https://robomongo.org/)
+    * [Robo-3T](https://robomongo.org/)
 
 2. Clone the **Scheduler service** repository.
 
@@ -114,15 +112,15 @@ import PartialExample from './_elevate.mdx';
 
 3. Add **.env** file to the project directory.
 
-    Create a **.env** file in **src** directory of the project and copy these environment variables into it.
+    Create a **.env** file in **src** directory of the project and copy the following environment variables into the file:
 
     ```
     #Scheduler Service Config
 
-    #Application Base url
+    #Application Base URL
     APPLICATION_BASE_URL = /scheduler/
 
-    # Kafka hosted server url
+    # Kafka hosted server URL
     KAFKA_URL = localhost:9092
 
     # Kafka topic to push notification data
@@ -134,27 +132,28 @@ import PartialExample from './_elevate.mdx';
     # App running port
     APPLICATION_PORT = 4000
 
-    # Api doc url
+    # Api doc URL
     API_DOC_URL = '/api-doc'
     ```
 
 4. Start MongoDB locally.
 
-    Based on your host operating system and method used, start MongoDB.
+    > :::note
+    > This might vary based on your host operating system and the method used.
 
-5. Install Npm packages.
+5. Install the npm packages.
 
     ```
     ELEVATE/scheduler/src$ npm install
     ```
 
-6. Start Scheduler server.
+6. Start the Scheduler server.
 
     ```
     ELEVATE/scheduler/src$ npm start
     ```
 
-## API Documentation link
+## API Documentation 
 
 https://elevate-apis.shikshalokam.org/scheduler/api-doc
 

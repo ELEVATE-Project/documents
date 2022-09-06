@@ -2,7 +2,7 @@ import PartialExample from './_elevate.mdx';
 
 # Setting up the User Service
 
-<PartialExample elevate /> user services can be setup in local in one of the following ways:
+You can set up the <PartialExample elevate /> User Service on a local system in one of the following ways:
 
 - As a [dockerized service with local dependencies (Intermediate)](#sectiona).
 - As a [local service with local dependencies (Hardest)](#sectionb).
@@ -11,26 +11,26 @@ import PartialExample from './_elevate.mdx';
 
 ## Setting up a Dockerized Service With Local Dependencies
 
-**Objective**: Run single docker containerized service with existing local (in host) or remote dependencies.
+**Objective**: Run a single docker containerized service with existing local (in host) or remote dependencies.
 
-### Local Dependencies Steps
+### Setting up With Local Dependencies
 
-1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with "**host.docker.internal**".
+1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with "**host.docker.internal**".
 
     For example:
 
     ```
-    #MongoDb Connectivity Url
+    #MongoDb Connectivity URL
     MONGODB_URL = mongodb://host.docker.internal:27017/elevate-mentoring
 
     #Kafka Host Server URL
     KAFKA_URL = host.docker.external:9092
     ```
 
-2. Find **host.docker.internal** IP address and added it to **mongod.conf** file in host.
+2. Find **host.docker.internal** IP address and add it to **mongod.conf** file in host.
 
     For example, if **host.docker.internal** is **172.17.0.1**,
-     **mongod.conf:**
+     **mongod.conf** file will be as follows:
 
     ```
     # network interfaces
@@ -55,27 +55,25 @@ import PartialExample from './_elevate.mdx';
 
     - For Linux:
         ```
-        $ docker run --name user --add-host=host.docker.internal:host-gateway elevate/user:1.0`
+        $ docker run --name user --add-host=host.docker.internal:host-gateway elevate/user:1.0
         ```
         Refer [this Stack Overflow discussion thread](https://stackoverflow.com/a/24326540) for more information.
 
-### Remote Dependencies Steps
+### Setting up With Remote Dependencies
 
-1. Update dependency (such as Mongo, Kafka) IP addresses in **.env** with respective remote server IPs.
+1. Update dependency (such as Mongo and Kafka) IP addresses in **.env** with respective remote server IPs.
 
     For example:
 
     ```
-     #MongoDb Connectivity Url
+     #MongoDb Connectivity URL
      MONGODB_URL = mongodb://10.1.2.34:27017/elevate-mentoring
 
      #Kafka Host Server URL
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Add Bind IP to **mongod.conf** in host:
-
-    Follow instructions given [here.](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04)
+2. Follow instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
     :::note
     Instructions might differ based on MongoDB version and operating system.
@@ -83,6 +81,7 @@ import PartialExample from './_elevate.mdx';
 3. Build the docker image.
     ```
     /ELEVATE/user$ docker build -t elevate/user:1.0 .
+
     ```
 4. Run the docker container.
 
@@ -96,17 +95,15 @@ import PartialExample from './_elevate.mdx';
 
 **Objective**: Run a single service with existing local dependencies in host (**Non-Docker Implementation**).
 
-### Steps
-
 1. Install the required tools and dependencies such as:
 
-    - Install any IDE (for example: Visual Studio Code)
+    - Any IDE (for example: Visual Studio Code)
 
-    - [Install Nodejs](https://nodejs.org/en/download/)
+    - [Nodejs](https://nodejs.org/en/download/)
 
-    - [Install MongoDB](https://docs.mongodb.com/manual/installation/)
+    - [MongoDB](https://docs.mongodb.com/manual/installation/)
 
-    - [Install Robo-3T](https://robomongo.org/)
+    - [Robo-3T](https://robomongo.org/)
 
 2. Clone the **User service** repository.
 
@@ -114,9 +111,9 @@ import PartialExample from './_elevate.mdx';
     git clone https://github.com/ELEVATE-Project/user.git
     ```
 
-3. Add **.env** file to the project directory
+3. Add **.env** file to the project directory.
 
-    Create a **.env** file in **src** directory of the project and copy these environment variables into it.
+    Create a **.env** file in **src** directory of the project and copy the folowing environment variables into the file:
 
     ```
     #User Service Config
@@ -127,7 +124,7 @@ import PartialExample from './_elevate.mdx';
     # Service environment
     APPLICATION_ENV = development
 
-    # Database connectivity url
+    # Database connectivity URL
     MONGODB_URL = mongodb://localhost:27017/db-name
 
     # Number of rounds for encryption
@@ -139,7 +136,7 @@ import PartialExample from './_elevate.mdx';
     # Token secret to generate refresh token
     REFRESH_TOKEN_SECRET = 'refresh-token-secret'
 
-    # Kafka hosted server url
+    # Kafka hosted server URL
     KAFKA_URL = localhost:9092
 
     # Kafka group to which consumer belongs
@@ -202,7 +199,7 @@ import PartialExample from './_elevate.mdx';
     # JWT Refresh Token expiry In Days
     REFRESH_TOKEN_EXPIRY = '183'
 
-    # Redis Host connectivity url
+    # Redis Host connectivity URL
     REDIS_HOST = 'redis://localhost:6379'
 
     # Otp expiration time for forgetpassword or registration process
@@ -211,21 +208,22 @@ import PartialExample from './_elevate.mdx';
     # Enable email based otp verification for registration process
     ENABLE_EMAIL_OTP_VERIFICATION = true
 
-    # Api doc url
+    # Api doc URL
     API_DOC_URL = '/api-doc'
     ```
 
-4. Start MongoDB locally
+4. Start MongoDB locally.
 
-    Based on your host operating system and method used, start MongoDB.
+    > :::note
+    > This might vary based on your host operating system and the method used.
 
-5. Install Npm packages
+5. Install the npm packages.
 
     ```
     ELEVATE/user/src$ npm install
     ```
 
-6. Start User server
+6. Start the User server.
 
     ```
     ELEVATE/user/src$ npm start

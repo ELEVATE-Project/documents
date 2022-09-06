@@ -14,19 +14,20 @@ The following table summarizes the activities mentors and mentees can carry out 
 | Mentors | Mentees |
 | ----------- | ----------- |
 | Create and manage live mentoring sessions.| Discover and join live mentoring sessions. |
-| Interact with the participants on a one-on-one basis. | Interact with the mentor and other participants on a one-on-one basis.|
+| Interact with the participants. | Interact with the mentor and other participants.|
 | Collaborate with other mentors on mentoring sessions. | Collaborate with other participants. |
 | Use the mentor directory to get to know other mentors. | Use the mentor directory to get to know more about mentors.|
 |Provide feedback on mentoring sessions.| Provide feedback on mentoring sessions.|
 
 
-To start using the <PartialExample mentored /> mobile application
+## Installing the MentorED Application
+
 1. Download and install the <PartialExample mentored /> application from Google Play store.
-2. After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears: 
+2. After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears. 
 
    <div class="screenshot">
 
-    <ReactPlayer playing controls url={overviewURL} loop="false" /> 1
+    <ReactPlayer playing controls url={overviewURL} loop="false" />
 
    </div>
 

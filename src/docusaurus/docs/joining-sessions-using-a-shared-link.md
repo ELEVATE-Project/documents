@@ -1,7 +1,7 @@
 import PartialExample from './_mentored.mdx';
 
-# Joining Sessions through a Shared Link
-Users can join mentoring sessions through a shared link.
+# Using a Shared Link to Join a Session
+You can join mentoring sessions through a shared link.
 
 > :::tip 
 > Users who have not registered on <PartialExample mentored /> yet, should do the following actions:
@@ -14,28 +14,20 @@ Users can join mentoring sessions through a shared link.
 >
 > 4. [Enroll for sessions](enrolling-for-a-session.md).
 
-  
+1. Tap the shared link and tap **<PartialExample mentored />**. 
 
-To join a session, do any one of the following actions:
-
-* Tap the shared link and do as follows:
-  1. Select **<PartialExample mentored />**. 
-
-      ![options to join the session](media/openwith-options.png)
-
+   ![options to join the session](media/openwith-options.png)
    
-   2. Tap **Enroll** and tap **Join**.
+2. Tap **Join**. The BigBlueButton meeting window appears on your web browser. 
 
-      ![join session button](media/joinsession.png)
+   >:::note
+   >If you haven't enrolled for the session yet, tap **Enroll**.
 
-
-* Tap the shared link and select a browser. The BigBlueButton meeting window appears on your browser. 
-
-
+   ![join session button](media/joinsession.png)
 
 > :::info 
 > * To know more about enrolling for a session and cancelling your enrollment, see [Enrolling for a Session](enrolling-for-a-session.md). 
-> * To know more about joining a BigBlueButton meeting, see [Setting up a BigBlueButton Meeting](joining-a-session.md).
+> * To know more about joining a BigBlueButton meeting, see [Configuring the BigBlueButton Settings](joining-a-session.md).
 
 
   
