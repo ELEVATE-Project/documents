@@ -32,6 +32,18 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+       docs: {
+        lastVersion: '2.0',
+        versions: {
+          current: {
+            label: '2.1',
+            path: 'docs/intro',
+          },
+        },
+      },
+
+      /*     
+      ({
         docs: {
           routeBasePath: 'mentorEd/',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -84,6 +96,13 @@ const config = {
           src: 'img/elevate-logo.png',
         },
         items: [
+          {
+            type: 'docsVersionDropdown',
+            label: 'Versions',
+            position: 'right',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
+          },
 
         {
             type: 'doc',
