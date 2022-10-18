@@ -36,7 +36,7 @@ const config = {
         lastVersion: '2.0',
         versions: {
           current: {
-            label: '2.1',
+            label: '2.0',
             path: 'docs/intro',
           },
         },
@@ -96,13 +96,13 @@ const config = {
           src: 'img/elevate-logo.png',
         },
         items: [
-          {
-            type: 'docsVersionDropdown',
-            label: 'Versions',
-            position: 'right',
-            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-            dropdownActiveClassDisabled: true,
-          },
+          // {
+          //   type: 'docsVersionDropdown',
+          //   label: 'Versions',
+          //   position: 'right',
+          //   dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          //   dropdownActiveClassDisabled: true,
+          // },
 
         {
             type: 'doc',
