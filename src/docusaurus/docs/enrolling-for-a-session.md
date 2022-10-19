@@ -17,7 +17,7 @@ You can enroll for a session in one of the following ways:
 
 2. Find a session of interest and tap **Enroll**.
 
-    ![](media/enrollbutton.PNG) 
+    ![](media/enrollbutton.png) 
 
 ## Using the Session Details Page
 
