@@ -8,7 +8,7 @@ The Dashboard provides a summary of the number of sessions conducted and attende
 
 2. Review the activity summary.
 
-    ![](media/mentor-dashboard.PNG)
+    ![](media/mentor-dashboard.png)
 
 
 

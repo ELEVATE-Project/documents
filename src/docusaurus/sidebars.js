@@ -138,6 +138,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'viewing-a-mentorprofile-using-a-sharedlink', // document ID
+                  label: 'Using a Shared Link to View the Mentor Profile', // sidebar label
+                },
+                {
+                  type: 'doc',
                   id: 'setting-up-a-mentored-session', // document ID
                   label: 'Setting up a Session', // sidebar label
                 },
@@ -188,6 +193,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'mentor-directory', // document ID
                   label: 'Using the Mentor Directory', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'viewing-a-mentorprofile-using-a-sharedlink', // document ID
+                  label: 'Using a Shared Link to View the Mentor Profile', // sidebar label
                 },
                 {
                   type: 'doc',

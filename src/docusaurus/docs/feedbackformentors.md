@@ -1,6 +1,7 @@
 import PartialExample from './_mentored.mdx';
 
-# How Mentors Can Provide Feedback on a Session
+# Providing Session Feedback as a Mentor
+
 At the end of the session, the mentor can share feedback by providing a rating for the session. 
 
 1. After the session, go to <PartialExample mentored />.

@@ -1,18 +1,19 @@
 import PartialExample from './_mentored.mdx';
 
 # Using a Shared Link to Join a Session
-You can join mentoring sessions through a shared link.
+
+You can join mentoring sessions using a link shared by your contacts or on social media.
 
 > :::tip 
 > Users who have not registered on <PartialExample mentored /> yet, should do the following actions:
 >
 > 1. Install the application.
 >
-> 2. [Sign up](signing-up-as-a-mentee.md).
+> 2. Sign up.
 >
-> 3. [Update your profile](creating-and-managing-mentee-profile.md).
+> 3. Update your profile.
 >
-> 4. [Enroll for sessions](enrolling-for-a-session.md).
+> 4. Enroll for sessions.
 
 1. Tap the shared link and tap **<PartialExample mentored />**. 
 

@@ -16,24 +16,23 @@ You can start a session in one of the following ways:
 
 ## Using the Start Button
 
-1.  Go to the **Hamburger** menu ![burger menu icon](media/burgermenu-icon.png) and tap **Created by Me**.
+1. On your Home page, go the **Created sessions** tab.
 
-2. Tap the **Upcoming** tab.
+2. Find the session and tap **Start**.
 
-3. Find the session and tap **Start**.
    >:::tip 
    >If an error occurs, go back to <PartialExample mentored /> and tap **Start**.
    :::
    
-   ![start button](media/startsession-tile.png)
+   ![start button](media/startbutton.png)
 
 ## Using the Session Tile
 
-1.  Go to the **Hamburger** menu ![burger menu icon](media/burgermenu-icon.png) and tap **Created by Me**.
+1. On your Home page, go the **Created sessions** tab.
 
-2. Tap the **Upcoming** tab.
+2. Tap the session tile.
 
-3. Tap the session tile and tap **Start Session**.
+3. Tap **Start Session**.
 
    ![start session button](media/startsession-button.PNG)
    
@@ -60,29 +59,29 @@ BigBlueButton meeting window appears on your web browser.
 
 ### Configuring the Participants' Microphones
 
-1. Go to the **User Toggle List**.
+1. Go to the **User list toggle**.
 
 2. To mute the microphone, do any one of the following actions:
 
-* Tap the **Manage Users** icon and select **Mute All Users Except Presenter** to mute the participants' microphones.
+* Tap the **Manage users** icon and select **Mute all users except presenter** to mute the participants' microphones.
 
-* Tap the participant's name and select **Mute User** to mute a specific participant's microphone.
+* Tap the participant's name and select **Mute user** to mute a specific participant's microphone.
 
 ### Configuring the Webcam 
 
 1. To turn on the webcam, tap the **Webcam** button.
 
-2. Tap **Start Sharing**. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
+2. Tap **Start sharing**. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
 
    > :::note  
    >* The webcam may turn on by default. 
    >* To change your webcam and background, tap the **Webcam** button, make changes, and close the window.
 
-3. To turn it off, tap the **Webcam** button and tap **Stop Sharing**.
+3. To turn it off, tap the **Webcam** button and tap **Stop sharing**.
 
 ### Checking the Quality of Your Internet Connection 
 
-The **Connection Status** icon located on the top portion of the window indicates the quality of your internet connection.
+The **Connection status** icon located on the top portion of the window indicates the quality of your internet connection.
 
 ### Disabling Session Recording
 
@@ -90,7 +89,7 @@ To pause the recording, tap the **Record** button and tap **Yes**. Tap the butto
 
 ### Leaving the Session
 
-To leave the meeting, go to the **Options** menu and select **Leave Meeting**.
+To leave the meeting, go to the **Options** menu and select **Leave meeting**.
     
 > :::note  
 > If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and tap **Start**. 
@@ -101,7 +100,7 @@ To leave the meeting, go to the **Options** menu and select **Leave Meeting**.
 
 ### Ending the Session
 
-To end the meeting, go to the **Options** menu and select **End Meeting**.
+To end the meeting, go to the **Options** menu and select **End meeting**.
 
 ### Best Practices
 
@@ -127,4 +126,4 @@ The BigBlueButton application provides more features which are as follows:
 * Creating breakout rooms
 
 >:::info 
->To learn more, see [BigBlueButton Help](https://bigbluebutton.org/teachers/tutorials/).
+>To learn more, see [BigBlueButton help](https://bigbluebutton.org/teachers/tutorials/).

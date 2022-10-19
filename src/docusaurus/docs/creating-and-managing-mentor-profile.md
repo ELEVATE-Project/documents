@@ -1,21 +1,19 @@
 # Creating and Managing a Mentor Profile
 
-You can update your profile details to help mentees get to know you. 
+The Profile page allows you to do the following actions:
 
-> :::note
-> You can use the application only after updating your profile. 
+* Update your profile details to help mentees get to know you.
+* View the number of sessions conducted. 
+* View your session ratings.
 
+1.  Go to the **Profile** tab and tap **Edit profile**.
 
-1.  Go to the **Profile** tab and tap **Edit**.
-
-    ![profile icon](media/profile-homepage.png)
-
+    ![profile icon](media/profile-icon.png)
 
 2.  Enter your details.
 
     ![profile details page](media/creatingprofile.png)
 
-3.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
-
+3.  If you want to add a profile picture, tap **Add image**. Select **Take Photo** or **Choose from Library**.
 
 4.  Tap **Submit**.

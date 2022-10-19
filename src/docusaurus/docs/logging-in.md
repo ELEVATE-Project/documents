@@ -16,7 +16,7 @@ Signed-up users can log in to access the Home page.
 
 While logging in, if you don't remember your password you can change it.
 
-1. On the Login page, tap **Forgot Password**.
+1. On the Login page, tap **Forgot password**.
 2. Enter your **Email** and the new password.
 3. Tap **Reset Password**.
 4. Enter the OTP sent to your registered email ID.
@@ -24,4 +24,4 @@ While logging in, if you don't remember your password you can change it.
     > :::tip  
     > To receive a new OTP, tap **Resend OTP**.
 
-5. Tap **Verify and Login** to log in to the Home page.
+5. Tap **Verify and login** to log in to the Home page.

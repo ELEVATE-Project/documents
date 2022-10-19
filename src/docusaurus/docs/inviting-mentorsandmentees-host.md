@@ -1,9 +1,7 @@
 # Sharing Session Invites to Mentees
 You can invite participants to your session by sharing a session link.
 
-1. Go to the **Hamburger** menu <div class="inlineImg">![](media/burgermenu-icon.png)</div> and select **Created by Me**.
-
-2. Tap the **Upcoming** tab.
+1. On the Home page, go to the **Created sessions** tab.
 
 3. Find a session. Tap the session tile and tap **Share** ![](media/share-icon.png). 
 

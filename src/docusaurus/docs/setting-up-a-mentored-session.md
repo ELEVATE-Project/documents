@@ -2,9 +2,9 @@
 
 You can create and manage mentoring sessions.
 
-1.  Go to the **Hamburger** menu <div class="inlineImg">![burger menu](media/burgermenu-icon.png)</div>  and select **Created by Me**.
+1.  On the Home page, go to the **Created sessions** tab.
 
-2.  Select **+ Create New Session**.
+2.  Tap **Create session**.
 
 3.  Enter the session details.
 
@@ -14,14 +14,14 @@ You can create and manage mentoring sessions.
 
     ![session details page](media/create_session.png)
 
-4.  If you want to add a profile picture, tap **Add Image**. Select **Take Photo** or **Choose from Library**.
+4.  If you want to add a profile picture, tap **Add image**. Select **Take Photo** or **Choose from library**.
 
 5.  Tap **Publish**.
 
-    ![upcoming and past sessions](media/upcomingsession-page.PNG)
+    ![new session](media/newsession.png)
 
     > :::tip
-    > To create more sessions, tap **New Session** and repeat steps 1 to 5.
+    > To create more sessions, tap **Create session** and repeat steps 1 to 5.
 
 ## Editing a Session
 
@@ -38,11 +38,10 @@ To delete the session, tap the session tile and tap **Delete**.
 
 ## Deleting Your Completed Sessions  
 
-1. To delete your completed sessions, tap the **Past** tab.
+1. To delete your completed sessions, tap the session tile and tap **Delete**.
 
-    ![edit or delete session](media/delete-pastsessions.PNG)
-    
-2.  Tap the session tile and tap **Delete**.
+    ![delete past sessions](media/delete-pastsessions.PNG)
+
 
 
 
