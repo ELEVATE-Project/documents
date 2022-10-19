@@ -60,7 +60,7 @@ Mentors and mentees can share a mentor profile link with their contacts or on so
 
 3. Share the mentor profile link with your contacts or on social media.
 
-    ![share profile](media/shareprofile.PNG)
+    ![share profile](media/shareprofile.png)
 
 > :::info
 > To learn more about enrolling and joining sessions using the Mentor Directory, see the following topics:
