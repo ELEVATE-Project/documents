@@ -31,7 +31,7 @@ You can enroll for a session in one of the following ways:
  
 ## Using the Search Bar
 
-1. Tap the **All Sessions** tab.
+1. In the **Search** bar of the Home page, tap the **All Sessions** tab.
 
     ![](media/search-sessions.png)
 

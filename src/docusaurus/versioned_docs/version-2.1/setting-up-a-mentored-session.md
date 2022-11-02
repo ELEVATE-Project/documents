@@ -38,9 +38,11 @@ To delete the session, tap the session tile and tap **Delete**.
 
 ## Deleting Your Completed Sessions  
 
-1. To delete your completed sessions, tap the session tile and tap **Delete**.
+1. To delete your completed sessions, tap the session tile.
 
     ![delete past sessions](media/delete-pastsessions.PNG)
+
+2. Tap **Delete**.
 
 
 

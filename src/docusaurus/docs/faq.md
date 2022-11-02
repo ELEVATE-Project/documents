@@ -105,7 +105,7 @@ To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 <details>
 <summary>How do I start my session?</summary>
 
-On the **Created sessions** tab on the Home page, you can find your session and tap **Start**.
+On the **Created sessions** tab of the Home page, you can find your session and tap **Start**.
 
 To learn more, see [Starting a Session](starting-a-session.md).
 </details>
@@ -132,7 +132,7 @@ To learn more, see [Enrolling for a Session](enrolling-for-a-session.md).
 <details>
 <summary>How can I register for a session?</summary>
 
- In the **All sessions** tab of the Home page, you can find a session of interest and tap **Enroll**. 
+On the **All sessions** tab of the Home page, you can find a session of interest and tap **Enroll**. 
 
 To learn more, see [Enrolling for a Session](enrolling-for-a-session.md).
 </details>

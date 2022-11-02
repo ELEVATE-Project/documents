@@ -11,7 +11,7 @@ The Mentor Directory allows you to do the following actions:
 
 ## Viewing the Mentor Profile
 
-You can discover mentors in one of the following ways:
+You can discover mentors and view their profile in one of the following ways:
 * Using the **Mentors** tab
 * Using the **Search** bar
 

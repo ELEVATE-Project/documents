@@ -26,11 +26,11 @@ You can start a session in one of the following ways:
    
    ![start button](media/startbutton.png)
 
-## Using the Session Tile
+## Using the Session Details Page
 
 1. On your Home page, go the **Created sessions** tab.
 
-2. Tap the session tile.
+2. Tap the session tile to view the Session Details page.
 
 3. Tap **Start Session**.
 
