@@ -4,6 +4,8 @@
     #contents: "{{ lookup('file', '/opt/rsync/text.txt') }}"
     project_path: /opt/backend/deployment
   tasks:
+    - name: Delete old releases 
+      shell: "rm -rf {{ project_path }}/releases/"
     - name: Set some variable
       set_fact:
         release_path: "{{ project_path }}/releases/{{ lookup('pipe','date +%Y%m%d%H%M%S') }}"
