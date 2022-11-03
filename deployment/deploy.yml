@@ -1,0 +1,47 @@
+---
+- hosts: elevate
+  vars:
+    #contents: "{{ lookup('file', '/opt/rsync/text.txt') }}"
+    project_path: /opt/backend/deployment
+  tasks:
+    - name: Set some variable
+      set_fact:
+        release_path: "{{ project_path }}/releases/{{ lookup('pipe','date +%Y%m%d%H%M%S') }}"
+        current_path: "{{ project_path }}/documents"
+    - name: Retrieve current release folder
+      command: readlink -f documents
+      register: current_release_path
+      ignore_errors: yes
+      args:
+        chdir: "{{ project_path }}"
+    - name: Create new folder
+      file:
+        dest={{ release_path }}
+        mode=0755
+        recurse=yes
+        state=directory
+    - name: Clone the repository
+      git:
+        repo: https://github.com/ELEVATE-Project/documents.git
+        dest: "{{ release_path }}"
+        clone: yes
+        update: yes
+        version: "{{ gitBranch }}"
+    - name: Update npm
+      shell: cd {{release_path}}/src/docusaurus && npm i && npm run build
+    
+    - name: Update symlink
+      file:
+        src={{ release_path }}
+        dest={{ current_path }}
+        state=link
+    - name: Delete old pm2 process
+      command: pm2 delete elevate-documents
+      ignore_errors: yes
+    - name: Start pm2
+      command: "chdir={{current_path}}/src/docusaurus/ pm2 start npm --name elevate-documents "
+      register: pm2Info
+
+    - name: debug info
+      debug:
+         msg: "Pm2 log {{pm2Info}}"
