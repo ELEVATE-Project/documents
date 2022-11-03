@@ -39,7 +39,7 @@
       command: pm2 delete elevate-documents
       ignore_errors: yes
     - name: Start pm2
-      command: "chdir={{current_path}}/src/docusaurus/ pm2 start npm --name elevate-documents "
+      command: "chdir={{current_path}}/src/docusaurus/ pm2 start npm --name 'elevate-documents' -- start"
       register: pm2Info
 
     - name: debug info
