@@ -103,11 +103,6 @@
             },
             {
               "type": "doc",
-              "id": "viewing-a-mentorprofile-using-a-sharedlink",
-              "label": "Using a Shared Link to View the Mentor Profile"
-            },
-            {
-              "type": "doc",
               "id": "setting-up-a-mentored-session",
               "label": "Setting up a Session"
             },
