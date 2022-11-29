@@ -1,11 +1,10 @@
 # Mentor Directory 
 
-The Mentor Directory allows you to do the following actions:
+On the Mentor Directory, you can do the following actions:
 
 * Discover mentors in your chosen area of expertise.
 * View the number of sessions conducted by the mentor.
 * View the ratings they received for sessions.
-* Share a mentor profile link with your contacts or on social media.
 * Discover sessions created by the mentor.
 * Enroll and join sessions.
 
@@ -18,6 +17,8 @@ You can discover mentors and view their profile in one of the following ways:
 ### Using the Mentors Tab 
 
 The Mentor Directory lists mentor profiles in an alphabetical order. You can also search for mentors using the **Search** bar.
+
+**To view the mentor profile using the Mentors tab, do as follows:**
 
 1. Go to the **Mentors** tab. 
 
@@ -50,19 +51,7 @@ The Mentor Directory lists mentor profiles in an alphabetical order. You can als
 
     ![upcoming sessions](media/mentordirectory-upcomingsessions.png)
 
-## Sharing a Mentor Profile
-
-Mentors and mentees can share a mentor profile link with their contacts or on social media.
-
-1. Tap the mentor profile tile.
-
-2. Tap **Share profile**.
-
-3. Share the mentor profile link with your contacts or on social media.
-
-    ![share profile](media/shareprofile.png)
-
 > :::info
-> To learn more about enrolling and joining sessions using the Mentor Directory, see the following topics:
+> To learn more about enrolling and joining sessions using the mentor profile, see the following topics:
 > * [Enrolling for a Session](enrolling-for-a-session.md)
 > * [Joining a Session](joining-a-session.md)

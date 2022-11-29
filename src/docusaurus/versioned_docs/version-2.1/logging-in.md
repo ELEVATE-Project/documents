@@ -4,9 +4,11 @@ import PartialExample from './_mentored.mdx';
 
 Signed-up users can log in to access the Home page.
 
+**To log in to the Home page, do as follows:**
+
 1.  Open <PartialExample mentored /> and select **Login**.
 
-2.  Enter your **Email** and **Password**, and tap **Login**.
+2.  Enter your **Email** and **Password**, and tap **Login**. The Home page appears.
 
     > :::note
     > Enter the correct email ID and password to access the Home Page. Passwords are case-sensitive.
@@ -15,6 +17,8 @@ Signed-up users can log in to access the Home page.
 ## Resetting the Password
 
 While logging in, if you don't remember your password you can change it.
+
+**To reset your password, do as follows:**
 
 1. On the Login page, tap **Forgot password**.
 2. Enter your **Email** and the new password.

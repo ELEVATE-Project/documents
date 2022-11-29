@@ -19,7 +19,7 @@ import Shiksha from './_shiksha.mdx';
 
 >
 
-Mentees can access the mentor directory to learn about mentors, discover and join live mentoring sessions. Mentees can also collaborate with the mentor and other participants on a one-on-one basis, and provide feedback on the session.
+Mentees can access the mentor directory to learn about mentors, discover and join live mentoring sessions. Mentees can also collaborate with the mentor and other participants, and provide feedback on the session.
 
 >
 

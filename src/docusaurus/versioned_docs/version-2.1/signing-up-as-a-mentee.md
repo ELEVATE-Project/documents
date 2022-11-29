@@ -4,6 +4,7 @@ import PartialExample from './_mentored.mdx';
 
 First-time users should create an account on <PartialExample mentored />.
 
+**To sign up as a mentee, do as follows:**
 
 1.  Install the <PartialExample mentored /> application from Google Play Store.
 
@@ -27,8 +28,11 @@ First-time users should create an account on <PartialExample mentored />.
      >:::tip 
      >To receive a new OTP, tap **Resend OTP**.   
     
+7.  On the Terms of Use page, review the terms of use and policy settings. 
 
-7.  Select **Agree to terms of use** and tap **Proceed**.
+8. Select the checkbox to agree to the terms of use and policy settings. 
+
+9. Tap **Proceed**. The Home page appears.
 
     ![homepage](media/mentee-homepage.png)
 

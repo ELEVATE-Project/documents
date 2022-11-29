@@ -1,4 +1,5 @@
 # Sharing Session Invites to Your Contacts
+
 You can invite participants to a session by sharing a session link.
 
 You can share a session link in one of the following ways:
@@ -6,6 +7,7 @@ You can share a session link in one of the following ways:
 * Using the **Enrolled sessions** tab
 
 ## Using the All Sessions Tab
+
 1. On the Home page, go to the **All sessions** tab.
 
 2. Find an upcoming session. 

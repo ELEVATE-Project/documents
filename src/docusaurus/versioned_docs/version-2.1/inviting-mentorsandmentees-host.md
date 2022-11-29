@@ -1,5 +1,8 @@
 # Sharing Session Invites to Mentees
+
 You can invite participants to your session by sharing a session link.
+
+**To share a session link, do as follows:**
 
 1. On the Home page, go to the **Created sessions** tab.
 

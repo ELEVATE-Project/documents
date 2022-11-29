@@ -2,6 +2,8 @@
 
 You can create and manage mentoring sessions.
 
+**To create a session, do as follows:**
+
 1.  On the Home page, go to the **Created sessions** tab.
 
 2.  Tap **Create session**.
@@ -16,7 +18,7 @@ You can create and manage mentoring sessions.
 
 4.  If you want to add a profile picture, tap **Add image**. Select **Take Photo** or **Choose from library**.
 
-5.  Tap **Publish**.
+5.  Tap **Publish**. The new session appears on the **Created sessions** tab of the Home page.
 
     ![new session](media/newsession.png)
 
@@ -30,11 +32,13 @@ You can create and manage mentoring sessions.
     ![edit or delete session](media/edit-session.PNG)
 
 2. Tap **Edit**.
-3. Change the session details and tap **Publish**.
+3. Change the session details and tap **Publish**. The session details are updated.
 
 ## Deleting a session
 
-To delete the session, tap the session tile and tap **Delete**. 
+To delete the session, tap the session tile and tap **Delete**.
+
+The session is cancelled and is removed from the **Created sessions** tab of the Home page.
 
 ## Deleting Your Completed Sessions  
 
@@ -42,7 +46,8 @@ To delete the session, tap the session tile and tap **Delete**.
 
     ![delete past sessions](media/delete-pastsessions.PNG)
 
-2. Tap **Delete**.
+2. Tap **Delete**. The completed session is removed from the **Created sessions** tab.
+
 
 
 

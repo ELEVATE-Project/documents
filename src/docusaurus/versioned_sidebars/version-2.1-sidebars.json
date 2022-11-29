@@ -79,7 +79,7 @@
         },
         {
           "type": "category",
-          "label": "How Mentors can Use the Application",
+          "label": "How Mentors Can Use the Application",
           "items": [
             {
               "type": "doc",
@@ -135,7 +135,7 @@
         },
         {
           "type": "category",
-          "label": "How Mentees can Use the Application",
+          "label": "How Mentees Can Use the Application",
           "items": [
             {
               "type": "doc",
@@ -156,11 +156,6 @@
               "type": "doc",
               "id": "mentor-directory",
               "label": "Using the Mentor Directory"
-            },
-            {
-              "type": "doc",
-              "id": "viewing-a-mentorprofile-using-a-sharedlink",
-              "label": "Using a Shared Link to View the Mentor Profile"
             },
             {
               "type": "doc",

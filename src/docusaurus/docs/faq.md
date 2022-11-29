@@ -55,22 +55,6 @@ You can use the [Mentor Directory](mentor-directory.md) to look up details on in
 </details>
 
 <details>
-<summary>Can I share a mentor profile?</summary>
-
-To share a mentor profile link, tap the **Share profile** button on the Mentor Profile page.
-
-To learn more, see [Using the Mentor Directory](mentor-directory.md).
-</details>
-
-<details>
-<summary>How can I view a mentor profile using a shared link?</summary>
-
-To view the Mentor Profile page, you can tap the shared link and the view it through the <PartialExample mentored /> application.
-
-To learn more, see [Using a Shared Link to View a Mentor Profile](viewing-a-mentorprofile-using-a-sharedlink.md)
-</details>
-
-<details>
 <summary>How can I create a session?</summary>
 
 To create a new session, go to the **Created sessions** tab on the Home page and tap the **Create session** button. 
@@ -206,7 +190,7 @@ To learn more, see the following topics:
 </details>
 
 <details>
-<summary>Can I view my session ratings?</summary>
+<summary>Can I view the ratings for the sessions I have hosted?</summary>
 
 To view your session ratings, you can go to the **Profile** tab. 
 

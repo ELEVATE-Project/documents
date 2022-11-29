@@ -15,6 +15,8 @@ You can join mentoring sessions using a link shared by your contacts or on socia
 >
 > 4. Enroll for sessions.
 
+**To join a session using a shared link, do as follows:**
+
 1. Tap the shared link and tap **<PartialExample mentored />**. 
 
    ![options to join the session](media/openwith-options.png)

@@ -13,18 +13,20 @@ You can join a session in one of the following ways:
 
 * Using the **Enrolled sessions** tab
 * Using the **All sessions** tab
-* Using the **Search** bar
 * Using the mentor profile
+* Using the Session Details page
+* Using the **Search** bar
 
 ## Using the Enrolled Sessions Tab
 
 1. On the Home page, go to the **Enrolled sessions** tab.
 
-2. Find the session and tap **Join**. 
+2. Find the session.
+
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
 
     >:::tip
-    >* To view the Session Details page before joining, tap the session tile and tap **Join**.
-    >* If an error occurs, go back to <PartialExample mentored /> and tap **Join**.
+    > If an error occurs, go back to <PartialExample mentored /> and tap **Join**.
 
     ![](media/joinbutton.png)
 
@@ -32,9 +34,21 @@ You can join a session in one of the following ways:
     
 1. On the Home page, go to the **All Sessions** tab. 
 
-2. Find an enrolled session and tap **Join**.
+2. Find an enrolled session.
+
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
   
     ![](media/joinbutton.png)
+
+## Using the Session Details Page
+
+1. Find an enrolled session from the **All Sessions** tab,**Enrolled Sessions** tab, or the Mentor Profile page.
+
+2. Tap the session tile to view the Session Details page.
+
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
+
+    ![](media/joinsession.png)
 
 ## Using the Search bar
 
@@ -44,30 +58,28 @@ You can join a session in one of the following ways:
 
 2. Type the session name and tap the **Search** button. 
 
-3. Tap **Join**.
-
-    >:::tip
-    >To view the Session Details page before joining, tap the session tile and tap **Join**.
-
 ## Using the Mentor Profile
 
 >:::info
->To learn more about accessing the mentor profile, see any one of the following sections:
-> * [Mentor Directory](mentor-directory.md)
-> * [Using a Shared Link to View a Mentor Profile](viewing-a-mentorprofile-using-a-sharedlink.md)
+>See [Mentor Directory](mentor-directory.md) to learn more about accessing the mentor profile.
+
+**To join a session using the mentor profile, do as follows:**
 
 1.	On the Mentor Profile page, go to the **Upcoming sessions** tab.
 
-2.	Tap **Join**. 
+2.	Tap **Join**. The BigBlueButton meeting window appears on your web browser.
 
     ![](media/mentorprofile-join.png)
 
-    >:::tip
-    >To view the Session Details page before joining, tap the session tile and tap **Join**.
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
 
 ##  Configuring the BigBlueButton Settings
 
-The BigBlueButton meeting window appears on your web browser.
+To get the best audio and video quality in the BigBlueButton meetings, you can adjust the following settings:
+
+* Configure microphone settings.
+* Configure webcam settings.
+* Check the quality of the internet connection.
 
 ### Configuring the Microphone
 

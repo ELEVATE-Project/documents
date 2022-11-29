@@ -18,7 +18,9 @@ You can start a session in one of the following ways:
 
 1. On your Home page, go the **Created sessions** tab.
 
-2. Find the session and tap **Start**.
+2. Find the session.
+
+3. Tap **Start**. BigBlueButton meeting window appears on your web browser.
 
    >:::tip 
    >If an error occurs, go back to <PartialExample mentored /> and tap **Start**.
@@ -32,7 +34,7 @@ You can start a session in one of the following ways:
 
 2. Tap the session tile to view the Session Details page.
 
-3. Tap **Start Session**.
+3. Tap **Start Session**. BigBlueButton meeting window appears on your web browser.
 
    ![start session button](media/startsession-button.PNG)
    
@@ -40,13 +42,18 @@ You can start a session in one of the following ways:
 
 1. Tap on the session link which was shared with your contacts or on social media. 
 
-2. Tap **Start Session**.
+2. Tap **Start Session**. BigBlueButton meeting window appears on your web browser.
 
    ![start session button](media/startsession-button.PNG)
 
 ## Configuring the BigBlueButton Settings
 
-BigBlueButton meeting window appears on your web browser.
+During the mentoring session, you can configure the following BigBlueButton meeting settings:
+
+* Configure the microphone.
+* Configure other participants' microphones.
+* Configure the webcam.
+* Disable session recording.
 
 ### Configuring Your Microphone
 
