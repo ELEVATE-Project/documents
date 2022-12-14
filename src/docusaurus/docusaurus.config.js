@@ -32,6 +32,29 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+       docs: {
+        lastVersion: '2.1',
+      versions: {
+        '2.1': {
+          label: '2.1',
+          path: '2.1',
+        },
+        '2.0': {
+          label: '2.0',
+          path: '2.0',
+         }
+      }
+       // lastVersion: '2.0',
+        // versions: {
+        //   current: {
+        //     label: '2.1',
+        //     path: 'docs/2.1/intro',
+        //   },
+        // },
+      },
+
+      /*     
+      ({
         docs: {
           routeBasePath: 'mentorEd/',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -84,6 +107,13 @@ const config = {
           src: 'img/elevate-logo.png',
         },
         items: [
+          {
+            type: 'docsVersionDropdown',
+            label: 'Versions',
+            position: 'right',
+           // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
+          },
 
         {
             type: 'doc',

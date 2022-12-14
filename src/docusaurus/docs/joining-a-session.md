@@ -11,30 +11,75 @@ import PartialExample from './_mentored.mdx';
 
 You can join a session in one of the following ways:
 
-* Using **My Sessions** section
-* Using **All Sessions** section
+* Using the **Enrolled sessions** tab
+* Using the **All sessions** tab
+* Using the mentor profile
+* Using the Session Details page
+* Using the **Search** bar
 
-## Using My Sessions Section
-1. On the Home page, go to **My Sessions**.
+## Using the Enrolled Sessions Tab
 
-2. Select the session and tap **Join**. To view the session details before joining, tap the session tile.
+1. On the Home page, go to the **Enrolled sessions** tab.
 
-  >:::tip 
-  >If an error occurs, go back to <PartialExample mentored /> and tap **Join**.
+2. Find the session.
 
-  ![](media/mysessions-joinbutton.png)
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
 
-## Using All Sessions Section
+    >:::tip
+    > If an error occurs, go back to <PartialExample mentored /> and tap **Join**.
+
+    ![](media/joinbutton.png)
+
+## Using the All Sessions Tab
     
-1. On the Home page, select a session from the **All Sessions** section. 
+1. On the Home page, go to the **All Sessions** tab. 
 
-2. Tap the session tile and tap **Join**.
+2. Find an enrolled session.
+
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
   
-  ![](media/joinsession.png)
+    ![](media/joinbutton.png)
 
+## Using the Session Details Page
+
+1. Find an enrolled session from the **All Sessions** tab,**Enrolled Sessions** tab, or the Mentor Profile page.
+
+2. Tap the session tile to view the Session Details page.
+
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
+
+    ![](media/joinsession.png)
+
+## Using the Search bar
+
+1. Tap the **All Sessions** tab.
+
+    ![](media/search-sessions.png)
+
+2. Type the session name and tap the **Search** button. 
+
+## Using the Mentor Profile
+
+>:::info
+>See [Mentor Directory](mentor-directory.md) to learn more about accessing the mentor profile.
+
+**To join a session using the mentor profile, do as follows:**
+
+1.	On the Mentor Profile page, go to the **Upcoming sessions** tab.
+
+2.	Tap **Join**. The BigBlueButton meeting window appears on your web browser.
+
+    ![](media/mentorprofile-join.png)
+
+3. Tap **Join**. The BigBlueButton meeting window appears on your web browser.
 
 ##  Configuring the BigBlueButton Settings
-The BigBlueButton meeting window appears on your web browser.
+
+To get the best audio and video quality in the BigBlueButton meetings, you can adjust the following settings:
+
+* Configure microphone settings.
+* Configure webcam settings.
+* Check the quality of the internet connection.
 
 ### Configuring the Microphone
 
@@ -45,7 +90,7 @@ The BigBlueButton meeting window appears on your web browser.
       > :::note  
       > Microphone may turn on by default.
 
-    * To join without connecting your microphone, tap the **Listen Only** option.
+    * To join without connecting your microphone, tap the **Listen only** option.
 
 2.	To mute your microphone, tap the **Microphone** button. Tap again to unmute it.
 
@@ -53,21 +98,21 @@ The BigBlueButton meeting window appears on your web browser.
 
 1. To turn on the webcam, tap the **Webcam** button.
 
-2. Tap **Start Sharing**. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
+2. Tap **Start sharing**. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
 
     > :::note  
     >* The webcam may turn on by default. 
     >* To change your webcam and background, tap the **Webcam** button, make changes, and close the window.
 
-3. To turn it off, tap the **Webcam** button and tap **Stop Sharing**.
+3. To turn it off, tap the **Webcam** button and tap **Stop sharing**.
 
 ### Checking the Quality of Your Internet Connection 
 
-The **Connection Status** icon located on the top portion of the window indicates the quality of your internet connection.
+The **Connection status** icon located on the top portion of the window indicates the quality of your internet connection.
 
 ### Leaving the Session
 
-To leave the meeting, go to the **Options** menu and select **Leave Meeting**.
+To leave the meeting, go to the **Options** menu and select **Leave meeting**.
 
   > :::note  
   > If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and tap **Join**. 
@@ -80,7 +125,7 @@ To leave the meeting, go to the **Options** menu and select **Leave Meeting**.
 
 - Use respectful language while sharing any information. Discuss only mentoring-related topics.
 
-- Tap the **Raise Hand** button to ask a question.
+- Tap the **Raise hand** button to ask a question.
 
 ## Using BigBlueButton Features
 
