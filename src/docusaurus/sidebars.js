@@ -128,6 +128,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'applicationmenu-options', // document ID
+                  label: 'Using the Application Menu', // sidebar label
+                },
+                {
+                  type: 'doc',
                   id: 'creating-and-managing-mentor-profile', // document ID
                   label: 'Creating and Managing a Profile', // sidebar label
                 },
@@ -181,6 +186,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'applicationmenu-options', // document ID
+                  label: 'Using the Application Menu', // sidebar label
+                },
+                {
+                  type: 'doc',
                   id: 'creating-and-managing-mentee-profile', // document ID
                   label: 'Creating and Managing a Profile', // sidebar label
                 },
@@ -222,6 +232,16 @@ const sidebars = {
               ]
             },
           ]
+      },
+      {
+        type: 'doc',
+        id: 'additionaltechnicalresources', // document ID
+        label: 'Additional Technical Resources', // sidebar label
+      },
+      {
+        type: 'doc',
+        id: 'databasedesign', // document ID
+        label: 'Database Design', // sidebar label
       },
       {
         type: 'doc',

@@ -6,9 +6,17 @@ On the Profile page, you can do the following actions:
 * View the number of sessions conducted. 
 * View your session ratings.
 
-To view the Profile page, go to the **Profile** tab.
+## Viewing the Profile Page
 
-![profile icon](media/profile-icon.png)
+**To view the Profile page, do one of the following actions:**
+
+* Go to the **Profile** tab.
+
+    ![profile icon](media/profile-icon.png)
+
+* Go to the **Application** menu <div class="inlineImg"> ![burger menu icon](media/burgermenu-icon.png)</div> and tap **View profile**.
+
+    ![](media/viewprofile-mentor.png)
 
 ## Updating your Profile
 
@@ -21,7 +29,7 @@ To view the Profile page, go to the **Profile** tab.
 
     ![edit profile](media/editmentorprofile.png)
 
-2.  Enter your details.
+2.  On the Profile details page, enter your details.
 
     ![profile details page](media/creatingprofile.png)
 

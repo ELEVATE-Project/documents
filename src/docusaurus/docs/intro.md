@@ -15,7 +15,7 @@ import Shiksha from './_shiksha.mdx';
 
 > 
 
-<PartialExample mentored /> could not have been launched at a better time. Mobile and Internet penetration has seen an exponential rise over the past decade and post the Covid-19 pandemic, mobile and internet usage has peaked across rural and urban India. As the society has become more tech-savvy, espcially in the use mobile applications for various purposes such as making video calls and attending online meetings or classes, most users will find it easy to sign up and start using the <PartialExample mentored /> platform. 
+<PartialExample mentored /> could not have been launched at a better time. Mobile and Internet penetration has seen an exponential rise over the past decade and post the Covid-19 pandemic, mobile and internet usage has peaked across rural and urban India. As the society has become more tech-savvy, especially in the use mobile applications for various purposes such as making video calls and attending online meetings or classes, most users will find it easy to sign up and start using the <PartialExample mentored /> platform. 
 
 >
 

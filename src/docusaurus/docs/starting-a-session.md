@@ -34,7 +34,7 @@ You can start a session in one of the following ways:
 
 2. Tap the session tile to view the Session Details page.
 
-3. Tap **Start Session**. BigBlueButton meeting window appears on your web browser.
+3. Tap **Start session**. BigBlueButton meeting window appears on your web browser.
 
    ![start session button](media/startsession-button.PNG)
    
@@ -42,7 +42,7 @@ You can start a session in one of the following ways:
 
 1. Tap on the session link which was shared with your contacts or on social media. 
 
-2. Tap **Start Session**. BigBlueButton meeting window appears on your web browser.
+2. Tap **Start session**. BigBlueButton meeting window appears on your web browser.
 
    ![start session button](media/startsession-button.PNG)
 

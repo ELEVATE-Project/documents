@@ -63,7 +63,7 @@ You can enroll for a session in one of the following ways:
 
 2. Tap the session tile.
 
-3. Tap **Cancel**. The session is removed from the **Enrolled sessions** tab of the Home page. 
+3. Tap **Unenroll**. The session is removed from the **Enrolled sessions** tab of the Home page. 
 
     ![](media/cancel-enrollment.png)
 

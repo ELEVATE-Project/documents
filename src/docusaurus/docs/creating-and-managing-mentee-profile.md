@@ -5,9 +5,17 @@ On the Profile page, you can do the following actions:
 * Update your profile.
 * View the number of sessions attended.
 
-To view the Profile page, go to the **Profile** tab.
+## Viewing the Profile Page
 
-![](media/profile-icon.png)
+**To view the Profile page, do one of the following actions:**
+
+* Go to the **Profile** tab.
+
+    ![](media/profile-icon.png)
+
+* Go to the **Application** menu <div class="inlineImg"> ![burger menu icon](media/burgermenu-icon.png)</div> and tap **View profile**.
+
+    ![](media/viewprofile-mentee.png)
 
 ## Updating your Profile
 
@@ -20,7 +28,7 @@ To view the Profile page, go to the **Profile** tab.
 
     ![](media/editmenteeprofile.png)
 
-2. Enter your details.
+2. On the Profile details page, enter your details.
     
     ![](media/creatingprofile.png)
     

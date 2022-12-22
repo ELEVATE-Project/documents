@@ -32,6 +32,7 @@ You can create and manage mentoring sessions.
     ![edit or delete session](media/edit-session.PNG)
 
 2. Tap **Edit**.
+
 3. Change the session details and tap **Publish**. The session details are updated.
 
 ## Deleting a session

@@ -37,4 +37,4 @@ First-time users should create an account on <PartialExample mentored />.
 
 ## Logging out
 
-To log out, go to the **Hamburger** menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.
+To log out, go to the **Application** menu <div class="inlineImg">![burger menu icon](media/burgermenu-icon.png) </div> and tap **Logout**.

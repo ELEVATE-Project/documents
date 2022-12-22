@@ -38,6 +38,30 @@ To learn more, see [Logging in](logging-in.md).
 </details>
 
 <details>
+<summary>How to change the language on the application?</summary>
+
+To change the language, you can go to the **Application** menu and select the **Language** option.
+
+To learn more, see [Using the Application Menu](applicationmenu-options.md).
+</details>
+
+<details>
+<summary>What to do if I face any technical issues?</summary>
+
+If you face any technical issues, you can report the issue to the support team on the Help page.
+
+To learn more, see [Using the Application Menu](applicationmenu-options.md).
+</details>
+
+<details>
+<summary>Where can I find the video instructions about using the application features?</summary>
+
+To view the video instructions, you can go to the **Application** menu and select the **Help videos** option.
+
+To learn more, see [Using the Application Menu](applicationmenu-options.md).
+</details>
+
+<details>
 <summary>Can I edit my profile details later?</summary>
 
 After signing up, you can update your profile details any time.
