@@ -14,7 +14,7 @@ You can write to the support team about any problems you faced while using the a
 
     ![](media/help.png)
 
-3. Tap **Submit**.
+3. Tap **Submit**. Your issue is reported successfully.
 
 ## Using the FAQ Page
 
