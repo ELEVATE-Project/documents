@@ -1,0 +1,200 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "intro",
+          "label": "Introduction"
+        },
+        {
+          "type": "doc",
+          "id": "technicalarchitecture-mentored",
+          "label": "Architecture"
+        },
+        {
+          "type": "doc",
+          "id": "key-capabilities",
+          "label": "Key Capabilities"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Hosting and Customizing your Instance",
+      "items": [
+        {
+          "type": "doc",
+          "id": "settingup-overview",
+          "label": "Overview"
+        },
+        {
+          "type": "category",
+          "label": "Setting up the Microservices",
+          "items": [
+            {
+              "type": "doc",
+              "id": "settingup-userservice",
+              "label": "Setting up the User Service"
+            },
+            {
+              "type": "doc",
+              "id": "settingup-mentoringservice",
+              "label": "Setting up the Mentoring Service"
+            },
+            {
+              "type": "doc",
+              "id": "settingup-notificationsservice",
+              "label": "Setting up the Notifications Service"
+            },
+            {
+              "type": "doc",
+              "id": "settingup-bbb",
+              "label": "Setting up BigBlueButton"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "settingup-mentoredapplication",
+      "label": "Customizing the Mobile Application"
+    },
+    {
+      "type": "category",
+      "label": "Using the Mobile Application",
+      "items": [
+        {
+          "type": "doc",
+          "id": "using-the-mentored-mobile-application",
+          "label": "About the Mobile Application"
+        },
+        {
+          "type": "doc",
+          "id": "notifications",
+          "label": "Notifications"
+        },
+        {
+          "type": "category",
+          "label": "How Mentors Can Use the Application",
+          "items": [
+            {
+              "type": "doc",
+              "id": "signing-up-as-a-mentor",
+              "label": "Signing up as a Mentor"
+            },
+            {
+              "type": "doc",
+              "id": "logging-in",
+              "label": "Logging in"
+            },
+            {
+              "type": "doc",
+              "id": "creating-and-managing-mentor-profile",
+              "label": "Creating a Mentor Profile"
+            },
+            {
+              "type": "doc",
+              "id": "mentor-directory",
+              "label": "Using the Mentor Directory"
+            },
+            {
+              "type": "doc",
+              "id": "setting-up-a-mentored-session",
+              "label": "Setting up a Session"
+            },
+            {
+              "type": "doc",
+              "id": "inviting-mentorsandmentees-host",
+              "label": "Inviting Mentors and Mentees"
+            },
+            {
+              "type": "doc",
+              "id": "starting-a-session",
+              "label": "Starting a Mentoring Session"
+            },
+            {
+              "type": "doc",
+              "id": "dashboard-for-mentors",
+              "label": "Dashboard for Mentors"
+            },
+            {
+              "type": "doc",
+              "id": "feedbackformentors",
+              "label": "Feedback for Mentors"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "How Mentees Can Use the Application",
+          "items": [
+            {
+              "type": "doc",
+              "id": "signing-up-as-a-mentee",
+              "label": "Signing up as a Mentee"
+            },
+            {
+              "type": "doc",
+              "id": "logging-in",
+              "label": "Logging in"
+            },
+            {
+              "type": "doc",
+              "id": "creating-and-managing-mentee-profile",
+              "label": "Creating a Mentee Profile"
+            },
+            {
+              "type": "doc",
+              "id": "mentor-directory",
+              "label": "Using the Mentor Directory"
+            },
+            {
+              "type": "doc",
+              "id": "enrolling-for-a-session",
+              "label": "Enrolling for a  Session"
+            },
+            {
+              "type": "doc",
+              "id": "inviting-mentorsandmentees-participants",
+              "label": "Inviting Mentors and Mentees"
+            },
+            {
+              "type": "doc",
+              "id": "joining-a-session",
+              "label": "Joining a Mentoring Session"
+            },
+            {
+              "type": "doc",
+              "id": "joining-sessions-using-a-shared-link",
+              "label": "Joining Sessions through a Shared Link"
+            },
+            {
+              "type": "doc",
+              "id": "dashboard-for-mentees",
+              "label": "Dashboard for Mentees"
+            },
+            {
+              "type": "doc",
+              "id": "feedbackformentees",
+              "label": "Providing Feedback on a Session"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "mentoredrepos",
+      "label": "Source Code Repositories"
+    },
+    {
+      "type": "doc",
+      "id": "faq",
+      "label": "FAQs"
+    }
+  ]
+}
