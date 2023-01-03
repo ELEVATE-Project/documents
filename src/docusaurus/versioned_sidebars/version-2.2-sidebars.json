@@ -93,6 +93,11 @@
             },
             {
               "type": "doc",
+              "id": "applicationmenu-options",
+              "label": "Using the Application Menu"
+            },
+            {
+              "type": "doc",
               "id": "creating-and-managing-mentor-profile",
               "label": "Creating a Mentor Profile"
             },
@@ -144,6 +149,11 @@
             },
             {
               "type": "doc",
+              "id": "applicationmenu-options",
+              "label": "Using the Application Menu"
+            },
+            {
+              "type": "doc",
               "id": "creating-and-managing-mentee-profile",
               "label": "Creating a Mentee Profile"
             },
@@ -185,6 +195,16 @@
           ]
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "additionaltechnicalresources",
+      "label": "Additional Technical Resources"
+    },
+    {
+      "type": "doc",
+      "id": "databasedesign",
+      "label": "Database Design"
     },
     {
       "type": "doc",
