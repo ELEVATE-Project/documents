@@ -25,11 +25,7 @@ The following table summarizes the activities mentors and mentees can carry out 
 1. Download and install the <PartialExample mentored /> application from Google Play store.
 2. After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears. 
 
-   <div class="screenshot">
-
     <ReactPlayer playing controls url={overviewURL} loop="false" />
-
-   </div>
 
 3. If this is the first time that you are using <PartialExample mentored /> mobile application, see 
    * [Signing up on <PartialExample mentored /> as a Mentor](signing-up-as-a-mentor)

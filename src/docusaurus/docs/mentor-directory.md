@@ -28,7 +28,7 @@ The Mentor Directory lists mentor profiles in an alphabetical order. You can als
 
 3.	Go to the **About** tab to view the profile details.
 
-    ![mentor profile page](media/mentorprofile.PNG)
+    ![mentor profile page](media/mentorprofile.png)
 
 ### Using the Search Bar
 

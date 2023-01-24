@@ -1,12 +1,60 @@
 import PartialExample from './_elevate.mdx';
+import Version from './_version.mdx';
+import CodeBlock from '@theme/CodeBlock';
 
 # Mentoring Service
 
 You can set up the <PartialExample elevate /> Mentoring Service on a local system in one of the following ways:
 
+* Using a [Docker Image](#using-a-docker-image).
 * As a [Docker-Compose File (Easiest)](#dockcompose).
 * As a [Dockerized service with local dependencies(Intermediate)](#docklocal).
 * As a [Local Service with local dependencies(Hardest)](#localservice).
+
+## Using a Docker Image
+
+**Objective**: Adding the service to your cloud environment by running the docker images.
+
+**Prerequisite**: Docker is installed and is running.
+
+>:::info
+>See the [Docker website](http://www.docker.io/gettingstarted/#h_installation) for installation instructions.
+
+1. Pull the docker image:
+
+    <CodeBlock language="jsx">
+    docker pull shikshalokamqa/elevate-mentoring:version
+    </CodeBlock>
+    
+    For example:
+
+    <CodeBlock language="jsx">
+    docker pull shikshalokamqa/elevate-mentoring:version:<Version version />
+    </CodeBlock>
+
+2. Run the docker image:
+
+    <CodeBlock language="jsx">
+    docker run shikshalokamqa/elevate-mentoring:version
+    </CodeBlock>
+
+    To run the docker image with port number:
+
+    <CodeBlock language="jsx">
+    docker run -p 3000:3001 shikshalokamqa/elevate-mentoring:version
+    </CodeBlock>
+
+    You can pass the .env file as argument to the image.
+
+    For example:
+
+    <CodeBlock language="jsx">
+    docker run --env-file="path of the env file" shikshalokamqa/elevate-mentoring:<Version version />
+    </CodeBlock>
+
+    >:::info
+    >For more information about the elevate-mentoring env file, you can check the [sample env](https://github.com/ELEVATE-Project/mentoring/blob/master/src/.env.sample).
+
 
 ## Docker-Compose
 <a name="dockcompose"></a>
@@ -18,7 +66,7 @@ You can set up the <PartialExample elevate /> Mentoring Service on a local syste
 
 To run all services using a docker-compose file:
 
-1.  Install **Docker** & **Docker-Compose**.
+1.  Install **Docker** and **Docker-Compose**.
 2.  Clone all elevate services into a common directory.
 
     ```
@@ -87,7 +135,7 @@ To set up a docker service with local dependencies:
     ```
 4. Run the docker container.
 
-    - For Mac & Windows with docker v18.03+:
+    - For Mac and Windows with docker v18.03+:
 
         ```
         $ docker run --name mentoring elevate/mentoring:1.0

@@ -1,12 +1,60 @@
 import PartialExample from './_elevate.mdx';
+import Version from './_version.mdx';
+import CodeBlock from '@theme/CodeBlock';
 
 # Notifications Service
 
 You can set up the <PartialExample elevate /> Notification Service on a local system in one of the following ways:
 
+ - Using a [Docker Image](#using-a-docker-image).
+
  - As a [dockerized service with local dependencies(Intermediate)](#dockdep)
 
  - As a [local service with local dependencies(Hardest)](#localdep)
+
+## Using a Docker Image
+
+**Objective**: Adding the service to your cloud environment by running the docker images.
+
+**Prerequisite**: Docker is installed and is running.
+
+>:::info
+>See the [Docker website](http://www.docker.io/gettingstarted/#h_installation) for installation instructions.
+
+1. Pull the docker image:
+
+    <CodeBlock language="jsx">
+    docker pull shikshalokamqa/elevate-notification:version
+    </CodeBlock>
+    
+    For example:
+
+    <CodeBlock language="jsx">
+    docker pull shikshalokamqa/elevate-notification:version:<Version version />
+    </CodeBlock>
+
+2. Run the docker image:
+
+    <CodeBlock language="jsx">
+    docker run shikshalokamqa/elevate-notification:version
+    </CodeBlock>
+
+    To run the docker image with port number:
+
+    <CodeBlock language="jsx">
+    docker run -p 3000:3001 shikshalokamqa/elevate-notification:version
+    </CodeBlock>
+
+    You can pass the .env file as argument to the image.
+
+    For example:
+
+    <CodeBlock language="jsx">
+    docker run --env-file="path of the env file" shikshalokamqa/elevate-notification:<Version version />
+    </CodeBlock>
+
+    >:::info
+    >For more information about the elevate-notification env file, you can check the [sample env](https://github.com/ELEVATE-Project/notification/blob/master/src/.env.sample).
 
 ## Setting up a Dockerized Service With Local Dependencies
 <a name="dockdep">&nbsp;</a>

@@ -1,13 +1,60 @@
 import PartialExample from './_elevate.mdx';
+import Version from './_version.mdx';
+import CodeBlock from '@theme/CodeBlock';
 
 # Setting up the User Service
 
 You can set up the <PartialExample elevate /> User Service on a local system in one of the following ways:
 
+- Using a [Docker Image](#using-a-docker-image).
 - As a [dockerized service with local dependencies (Intermediate)](#sectiona).
 - As a [local service with local dependencies (Hardest)](#sectionb).
 
 <a name="sectiona"> </a>
+
+## Using a Docker Image
+
+**Objective**: Adding the service to your cloud environment by running the docker images.
+
+**Prerequisite**: Docker is installed and is running.
+
+>:::info
+>See the [Docker website](http://www.docker.io/gettingstarted/#h_installation) for installation instructions.
+
+1. Pull the docker image:
+
+    <CodeBlock language="jsx">
+    docker pull shikshalokamqa/elevate-user:version
+    </CodeBlock>
+    
+    For example:
+
+    <CodeBlock language="jsx">
+    docker pull shikshalokamqa/elevate-user:version:<Version version />
+    </CodeBlock>
+
+2. Run the docker image:
+
+    <CodeBlock language="jsx">
+    docker run shikshalokamqa/elevate-user:version
+    </CodeBlock>
+
+    To run the docker image with port number:
+
+    <CodeBlock language="jsx">
+    docker run -p 3000:3001 shikshalokamqa/elevate-user:version
+    </CodeBlock>
+
+    You can pass the .env file as argument to the image.
+
+    For example:
+
+    <CodeBlock language="jsx">
+    docker run --env-file="path of the env file" shikshalokamqa/elevate-user:<Version version />
+    </CodeBlock>
+
+    >:::info
+    >For more information about the elevate-user env file, you can check the [sample env](https://github.com/ELEVATE-Project/user/blob/master/src/.env.sample).
 
 ## Setting up a Dockerized Service With Local Dependencies
 
