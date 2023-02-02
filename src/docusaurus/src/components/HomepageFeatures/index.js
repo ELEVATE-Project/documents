@@ -13,7 +13,7 @@ const FeatureList = [
        The objective is to create a transparent eco-system to learn, connect, solve, and share. 
       </>
     ),
-    linkUrl: 'docs/2.1/intro',
+    linkUrl: 'docs/2.2/intro',
     linkUrlText: 'Click here to learn more',
   },
   {

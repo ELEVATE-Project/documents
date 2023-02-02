@@ -33,17 +33,21 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
        docs: {
-        lastVersion: '2.1',
-      versions: {
-        '2.1': {
-          label: '2.1',
-          path: '2.1',
-        },
-        '2.0': {
-          label: '2.0',
-          path: '2.0',
-         }
-      }
+        lastVersion: '2.2',
+        versions: {
+          "2.2": {
+            label: '2.2',
+            path: '2.2',
+          },
+          '2.1': {
+            label: '2.1',
+            path: '2.1',
+          },
+          '2.0': {
+            label: '2.0',
+            path: '2.0',
+          }
+        }
        // lastVersion: '2.0',
         // versions: {
         //   current: {
@@ -196,6 +200,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['jsx', 'powershell', 'docker', 'ini'],
       },
       
     }),
