@@ -126,6 +126,12 @@ const config = {
             label: 'MentorED',
             logo: 'img/mentoring-logo.png',
         },
+		    {
+            href: "https://elevate.shikshalokam.org/blogs",
+            label: 'Blogs',
+            position: 'right'
+        },
+        
         {
           href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',
@@ -180,6 +186,10 @@ const config = {
           {
             title: 'QUICK LINKS',
             items: [
+              {
+                label: 'Blogs',
+                href: 'https://elevate.shikshalokam.org/blogs',
+              },
               {
                 label: 'YouTube',
                 href: 'https://www.youtube.com/channel/UC5UB0MoPBTPjImvN24uLEMg/featured',
