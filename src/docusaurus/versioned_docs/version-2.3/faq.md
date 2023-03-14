@@ -15,7 +15,7 @@ import PartialExample from './_mentored.mdx';
 * Mentors can create mentoring sessions and join other sessions. 
 * Mentees can join mentoring sessions. 
 
-To learn more, see [About the <PartialExample mentored /> Mobile Application](using-the-mentored-mobile-application.md).
+To learn more, see [About the <PartialExample mentored /> Mobile Application](using-the-mentored-mobile-application.mdx).
 </details>
 
 <details>
