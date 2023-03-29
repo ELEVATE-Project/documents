@@ -97,12 +97,12 @@ const sidebars = {
       },
       {
         type: 'category',
-        label: 'Using the Mobile Application',
+        label: 'Using the Application',
         items: [
           {
             type: 'doc',
-            id: 'using-the-mentored-mobile-application', // document ID
-            label: 'About the Mobile Application', // sidebar label
+            id: 'using-the-mentored-application', // document ID
+            label: 'About the Application', // sidebar label
           },
           {
             type: 'doc',

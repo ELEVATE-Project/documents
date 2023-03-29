@@ -65,12 +65,12 @@
     },
     {
       "type": "category",
-      "label": "Using the Mobile Application",
+      "label": "Using the Application",
       "items": [
         {
           "type": "doc",
-          "id": "using-the-mentored-mobile-application",
-          "label": "About the Mobile Application"
+          "id": "using-the-mentored-application",
+          "label": "About the Application"
         },
         {
           "type": "doc",

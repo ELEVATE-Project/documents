@@ -15,7 +15,7 @@ import PartialExample from './_mentored.mdx';
 * Mentors can create mentoring sessions and join other sessions. 
 * Mentees can join mentoring sessions. 
 
-To learn more, see [About the <PartialExample mentored /> Mobile Application](using-the-mentored-mobile-application.mdx).
+To learn more, see [About the <PartialExample mentored /> Mobile Application](using-the-mentored-application.mdx).
 </details>
 
 <details>
@@ -24,8 +24,8 @@ To learn more, see [About the <PartialExample mentored /> Mobile Application](us
 To sign up, you can open the <PartialExample mentored /> application and tap **Sign up**.
 
 To learn more, see the following topics:
-*  [Signing up as a Mentor](signing-up-as-a-mentor.md).
-*  [Signing up as a Mentee](signing-up-as-a-mentee.md).
+*  [Signing up as a Mentor](signing-up-as-a-mentor.mdx).
+*  [Signing up as a Mentee](signing-up-as-a-mentee.mdx).
 
 </details>
 
@@ -34,7 +34,7 @@ To learn more, see the following topics:
 
 On the Login page, you can tap **Forgot Password** to change your password.
 
-To learn more, see [Logging in](logging-in.md).
+To learn more, see [Logging in](logging-in.mdx).
 </details>
 
 <details>
@@ -67,8 +67,8 @@ To learn more, see [Using the Application Menu](applicationmenu-options.md).
 After signing up, you can update your profile details any time.
 
 To learn more, see the following topics: 
-* [Creating a Mentor Profile](creating-and-managing-mentor-profile.md)
-* [Creating a Mentee Profile](creating-and-managing-mentee-profile.md)
+* [Creating a Mentor Profile](creating-and-managing-mentor-profile.mdx)
+* [Creating a Mentee Profile](creating-and-managing-mentee-profile.mdx)
 
 </details>
 
@@ -218,7 +218,7 @@ To learn more, see the following topics:
 
 To view your session ratings, you can go to the **Profile** tab. 
 
-To learn more, see [Creating and Managing a Mentor Profile](creating-and-managing-mentor-profile.md).
+To learn more, see [Creating and Managing a Mentor Profile](creating-and-managing-mentor-profile.mdx).
 </details>
 
 <details>
