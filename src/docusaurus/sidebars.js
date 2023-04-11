@@ -128,8 +128,23 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'applicationmenu-options', // document ID
-                  label: 'Using the Application Menu', // sidebar label
+                  id: 'change-language', // document ID
+                  label: 'Changing the Language Settings', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'report-an-issue', // document ID
+                  label: 'Reporting an Issue', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'using-faq', // document ID
+                  label: 'Using the FAQ Page', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'view-helpvideos', // document ID
+                  label: 'Viewing the Help Videos', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -186,8 +201,23 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'applicationmenu-options', // document ID
-                  label: 'Using the Application Menu', // sidebar label
+                  id: 'change-language', // document ID
+                  label: 'Changing the Language Settings', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'report-an-issue', // document ID
+                  label: 'Reporting an Issue', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'using-faq', // document ID
+                  label: 'Using the FAQ Page', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'view-helpvideos', // document ID
+                  label: 'Viewing the Help Videos', // sidebar label
                 },
                 {
                   type: 'doc',

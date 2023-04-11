@@ -1,0 +1,163 @@
+import SessionDetails from './media/create_session.png';
+import NewSession from './media/newsession.png'
+import EditAndDeleteSession from './media/edit-session.PNG'
+import DeletePastSession from './media/delete-pastsessions.PNG'
+import PortalSessionDetails from './media/portal-createsession.png'
+import PortalNewSession from './media/portal-newsession.png'
+import PortalEditAndDeleteSession from './media/portal-editsession.png'
+import PortalDeletePastSession from './media/portal-deletepastsession.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+# Setting up a Session
+
+You can create and manage mentoring sessions.
+
+**To create a session, do as follows:**
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>On the Home page, go to the <b>Created sessions</b> tab.</li>
+<li>Tap <b>Create session</b>.</li>
+<li>Enter the session details.
+    <Admonition type="note">
+    <ul>
+    <li>The session duration should be at least 30 minutes.</li>
+    <li>While setting the end time, set an extra time of at least 10 minutes to account for any delays during the session.</li>
+    </ul>
+    </Admonition>
+<br />
+<br />
+    <img src={SessionDetails} />
+</li>
+<li>If you want to add a profile picture, tap <b>Add image</b>. Select <b>Take Photo</b> or <b>Choose from library</b>.</li>
+<li>Tap <b>Publish</b>. The new session appears on the <b>Created sessions</b> tab of the Home page.
+    <Admonition type="tip">
+    <p>To create more sessions, tap <b>Create session</b> and repeat steps 1 to 5.</p>
+    </Admonition>
+<br />
+<br />
+    <img src={NewSession} />
+</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+<ol>
+<li>Go to the <b>Created sessions</b> tab.</li>
+<li>Click the <b>Click here to create a new session</b> button.</li>
+<li>Enter the session details.
+    <Admonition type="note">
+    <ul>
+    <li>The session duration should be at least 30 minutes.</li>
+    <li>While setting the end time, set an extra time of at least 10 minutes to account for any delays during the session.</li>
+    </ul>
+    </Admonition>
+<br />
+<br />
+    <img src={PortalSessionDetails} />
+</li>
+<li>If you want to add a profile picture, click <b>Add image</b>.</li>
+<li>Click <b>Publish</b>. The new session appears on the Upcoming sessions section of the <b>Created sessions</b> tab.
+    <Admonition type="tip">
+    <p>To create more sessions, click the <b>Click here to create a new session</b> button and repeat steps 1 to 5.</p>
+    </Admonition>
+<br />
+<br />
+    <img src={PortalNewSession} />
+</li>
+</ol>
+</TabItem>
+</Tabs>
+
+## Editing a Session
+
+**To edit a session, do as follows:**
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>To edit the session details, tap the session tile to view the Session Details page.</li>
+<li>Click <b>Edit session</b>.</li>
+<br />
+<br />
+    <img src={EditAndDeleteSession} />
+<li>Change the session details and tap <b>Publish</b>. The session details are updated.</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+<ol>
+<li>To edit the session details, do one of the following actions: 
+    <ul>
+    <li>Click the session tile to view the Session Details page.</li>
+    <li>Click the <b>View Details</b> link to view the Session Details page.</li>
+    </ul>
+<br />
+<br />
+    <img src={PortalEditAndDeleteSession} />
+</li>
+<li>Click <b>Edit session</b>.</li>
+<li>Change the session details and tap <b>Publish</b>. The session details are updated.</li>
+</ol>
+</TabItem>
+</Tabs>
+
+## Deleting a Session
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<p>To delete the session, tap the session tile and tap <b>Delete</b>. The session is cancelled and is removed from the <b>Created sessions</b> tab of the Home page.</p>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+    <Admonition type="note">
+        <p>If you want to delete the session, you must do so at least 10 minutes before the start time.</p>
+    </Admonition>
+    <p><b>To edit a session, do as follows:</b></p>
+    <ol>
+        <li>Do one of the following actions:
+            <ul>
+                <li>Click the session tile to view the Session Details page.</li>
+                <li>Click the <b>View Details</b> link to view the Session Details page.</li>
+            </ul>
+        </li>
+        <li>Click <b>Delete session</b>.</li>
+        <li>Click the <b>Yes, delete</b> button on the confirmation dialog. The session is cancelled and is removed
+        from the Upcoming sessions section of the <b>Created sessions</b> tab.</li>
+    </ol>
+</TabItem>
+</Tabs>
+
+## Deleting Your Completed Sessions  
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>To delete your completed sessions, tap the session tile.
+<br />
+<br />
+    <img src={DeletePastSession} />
+</li>
+<li>Tap <b>Delete</b>. The completed session is removed from the <b>Created sessions</b> tab.</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+<ol>
+<li>Do one of the following actions: 
+    <ul>
+    <li>Click the session tile to view the Session Details page.</li>
+    <li>Click the <b>View Details</b> link to view the Session Details page.</li>
+    </ul>
+</li>
+<li>Click <b>Delete</b>. The completed session is removed from the Past sessions sections <b>Created sessions</b> tab.
+<br />
+<br />
+    <img src={PortalDeletePastSession} />
+</li>
+</ol>
+</TabItem>
+</Tabs>
+
+
+
+

@@ -93,8 +93,23 @@
             },
             {
               "type": "doc",
-              "id": "applicationmenu-options",
-              "label": "Using the Application Menu"
+              "id": "change-language",
+              "label": "Changing the Language Settings"
+            },
+            {
+              "type": "doc",
+              "id": "report-an-issue",
+              "label": "Reporting an Issue"
+            },
+            {
+              "type": "doc",
+              "id": "using-faq",
+              "label": "Using the FAQ Page"
+            },
+            {
+              "type": "doc",
+              "id": "view-helpvideos",
+              "label": "Viewing the Help Videos"
             },
             {
               "type": "doc",
@@ -149,8 +164,23 @@
             },
             {
               "type": "doc",
-              "id": "applicationmenu-options",
-              "label": "Using the Application Menu"
+              "id": "change-language",
+              "label": "Changing the Language Settings"
+            },
+            {
+              "type": "doc",
+              "id": "report-an-issue",
+              "label": "Reporting an Issue"
+            },
+            {
+              "type": "doc",
+              "id": "using-faq",
+              "label": "Using the FAQ Page"
+            },
+            {
+              "type": "doc",
+              "id": "view-helpvideos",
+              "label": "Viewing the Help Videos"
             },
             {
               "type": "doc",
