@@ -29,7 +29,7 @@ You can join mentoring sessions using a link shared by your contacts or on socia
    ![join session button](media/joinsession.png)
 
 > :::info 
-> * To know more about enrolling for a session and cancelling your enrollment, see [Enrolling for a Session](enrolling-for-a-session.md). 
+> * To know more about enrolling for a session and cancelling your enrollment, see [Enrolling for a Session](enrolling-for-a-session.mdx). 
 > * To know more about joining a BigBlueButton meeting, see [Configuring the BigBlueButton Settings](joining-a-session.md).
 
 

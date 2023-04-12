@@ -61,7 +61,7 @@ You can join a session in one of the following ways:
 ## Using the Mentor Profile
 
 >:::info
->See [Mentor Directory](mentor-directory.md) to learn more about accessing the mentor profile.
+>See [Mentor Directory](mentor-directory.mdx) to learn more about accessing the mentor profile.
 
 **To join a session using the mentor profile, do as follows:**
 
