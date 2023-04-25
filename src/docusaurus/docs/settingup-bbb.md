@@ -1,8 +1,8 @@
 # Setting up the BigBlueButton Service
 
-1. Before installing, ensure that you meet all the [prerequisites](https://docs.bigbluebutton.org/2.4/install.html) required to install BigBlueButton.
+1. Before installing, ensure that you meet all the [prerequisites](https://docs.bigbluebutton.org/administration/install) required to install BigBlueButton.
 
-2. Install [BigBlueButton version 2.4](https://docs.bigbluebutton.org/2.4/install.html) using the hostname and email address, which you want to use. 
+2. Install [BigBlueButton version 2.6](https://docs.bigbluebutton.org/administration/install) using the hostname and email address, which you want to use. 
 
 3. After completing the installation, check the status of your server using the following command:
 
@@ -45,6 +45,6 @@ sudo apt-get purge bbb-demo
 ```
 
 >:::info
->* To learn more, see [BigBlueButton Installation Guide](https://docs.bigbluebutton.org/2.4/install.html).
+>* To learn more, see [BigBlueButton Installation Guide](https://docs.bigbluebutton.org/administration/install).
 >* To automatically delete the metadata of recordings which are converted to mp4 format and uploaded on the cloud storage, see [ELEVATE-Project on GitHub](https://github.com/ELEVATE-Project/elevate-utils/tree/master/BBB-Recordings).
 

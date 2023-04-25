@@ -118,6 +118,11 @@
             },
             {
               "type": "doc",
+              "id": "viewmentorprofilelink",
+              "label": "Using a Shared Link to View a Mentor Profile"
+            },
+            {
+              "type": "doc",
               "id": "mentor-directory",
               "label": "Using the Mentor Directory"
             },
@@ -191,6 +196,11 @@
               "type": "doc",
               "id": "mentor-directory",
               "label": "Using the Mentor Directory"
+            },
+            {
+              "type": "doc",
+              "id": "viewmentorprofilelink",
+              "label": "Using a Shared Link to View a Mentor Profile"
             },
             {
               "type": "doc",

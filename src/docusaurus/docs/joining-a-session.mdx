@@ -1,0 +1,239 @@
+import JoinButton from './media/joinbutton.png';
+import SessionDetailsJoin from './media/sessiondetailsjoin.png'
+import SearchSession from './media/search-sessions.png'
+import MentorProfileJoin from './media/mentorprofile-join.png'
+import PortalJoinButton from './media/portal-joinbutton.png';
+import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
+import PortalMentorProfileJoin from './media/portal-mentorprofilejoin.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
+# Joining a Session
+
+<PartialExample mentored /> application is integrated with BigBlueButton to enable the hosting of mentoring sessions.
+
+> :::note  
+> * You must enroll before joining a session. 
+> * You can only join when the mentor starts the session.
+> * You can join the session anytime within the time allocated for the session.
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<p>You can join a session in one of the following ways:</p>
+<ul>
+<li>Using the <b>Enrolled sessions</b> tab</li>
+<li>Using the <b>All sessions</b> tab</li>
+<li>Using the mentor profile</li>
+<li>Using the Session Details page</li>
+<li>Using the <b>Search</b> bar</li>
+</ul>
+<h2>Using the Enrolled Sessions Tab</h2>
+<ol>
+<li>On the Home page, go to the <b>Enrolled sessions</b> tab.</li>
+<li>Find the session.</li>
+<li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+    <Admonition type="tip">    
+    <p>If an error occurs, go back to <PartialExample mentored /> and tap <b>Join</b>.</p>
+    </Admonition>
+<br />
+    <img src={JoinButton} />
+</li>
+</ol>
+<h2>Using the All Sessions Tab</h2>
+<ol>   
+<li>On the Home page, go to the <b>All Sessions</b> tab.</li> 
+<li>Find an enrolled session.</li>
+<li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+<br /> 
+    <img src={JoinButton} />
+</li>
+</ol>
+<h2>Using the Session Details Page</h2>
+<ol>
+<li>Find an enrolled session from the <b>All Sessions</b> tab,<b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
+<li>Tap the session tile to view the Session Details page.</li>
+<li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+<br /> 
+    <img src={SessionDetailsJoin} />
+</li>
+</ol>
+<h2>Using the Search bar</h2>
+<ol>
+<li>Tap the <b>All Sessions</b> tab.
+<br /> 
+    <img src={SearchSession} />
+</li>
+<li>Type the session name and tap the <b>Search</b> button.</li>
+</ol>
+<h2>Using the Mentor Profile</h2>
+<Admonition type="info">    
+<p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
+</Admonition>
+<p><b>To join a session using the mentor profile, do as follows:</b></p>
+<ol>
+<li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
+<li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+<br /> 
+    <img src={MentorProfileJoin} />
+</li>
+<li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser.</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+<p>You can join a session in one of the following ways:</p>
+<ul>
+<li>Using the <b>Enrolled sessions</b> tab</li>
+<li>Using the <b>Home</b> tab</li>
+<li>Using the mentor profile</li>
+<li>Using the Session Details page</li>
+</ul>
+<h2>Using the Enrolled Sessions Tab</h2>
+<ol>
+<li>Go to the <b>Enrolled sessions</b> tab.</li>
+<li>Find the session.</li>
+<li>Click <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+    <Admonition type="tip">    
+    <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Join</b>.</p>
+    </Admonition>
+<br />
+    <img src={PortalJoinButton} />
+</li>
+</ol>
+<h2>Using the Home Tab</h2>
+<ol>   
+<li>Go to the <b>Home</b> tab.</li> 
+<li>Find an enrolled session.</li>
+<li>Click <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+<br /> 
+    <img src={PortalJoinButton} />
+</li>
+</ol>
+<h2>Using the Session Details Page</h2>
+<ol>
+<li>Find an enrolled session from the <b>Home</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.
+   <ul>
+   <li>Click the session tile to view the Session details page .</li>
+   <li>Click the <b>View Details</b> link to view the Session details page.</li>
+   </ul>
+</li>
+<li>Click <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+<br /> 
+    <img src={PortalSessionDetailsJoin} />
+</li>
+</ol>
+<h2>Using the Mentor Profile</h2>
+<Admonition type="info">    
+<p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
+</Admonition>
+<p><b>To join a session using the mentor profile, do as follows:</b></p>
+<ol>
+<li>On the Mentor Profile page, go to the Upcoming sessions section.</li>
+<li>Click <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
+<br /> 
+    <img src={PortalMentorProfileJoin} />
+</li>
+</ol>
+</TabItem>
+</Tabs>
+
+##  Configuring the BigBlueButton Settings
+
+To get the best audio and video quality in the BigBlueButton meetings, you can adjust the following settings:
+
+* Configure microphone settings.
+* Configure webcam settings.
+* Check the quality of the internet connection.
+
+### Configuring the Microphone
+
+1.  To select the audio settings, do any one of the following actions:
+
+    * To connect your microphone, tap the **Microphone** option and select **Join audio**. 
+
+      > :::note  
+      > Microphone may turn on by default.
+
+    * To join without connecting your microphone, tap the **Listen only** option.
+
+2.	To mute your microphone, tap the **Microphone** button. Tap again to unmute it.
+
+### Configuring the Webcam 
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>To turn on the webcam, tap the <b>Webcam</b> button.</li>
+<li>Tap <b>Start sharing</b>. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
+   <Admonition type="note">
+   <ul>
+   <li>The webcam may turn on by default.</li>
+   <li>To change your webcam and background, tap the <b>Webcam</b> button, make changes, and close the window.</li>
+   </ul>
+   </Admonition>
+</li>
+<li>To turn it off, tap the <b>Webcam</b> button and tap <b>Stop sharing</b>.</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal" default>
+<ol>
+<li>To turn on the webcam, click the <b>Webcam</b> button.</li>
+<li>Click <b>Start sharing</b>. Before turning on your webcam, you can change the webcam and background settings. 
+   <Admonition type="note">
+   <ul>
+   <li>The webcam may turn on by default.</li>
+   <li>To change your webcam and background, do as follows:
+      <ol>
+      <li>Click the upward arrow on the <b>Webcam</b> button.</li>
+      <li>Select <b>Open advanced settings</b> option.</li>
+      <li>Change the background and close the Webcam settings window.</li>
+      </ol>
+    </li>
+   </ul>
+   </Admonition>
+</li>
+<li>To turn it off, tap the <b>Webcam</b> button.</li>
+</ol>
+</TabItem>
+</Tabs>
+
+### Checking the Quality of Your Internet Connection 
+
+The **Connection status** icon located on the top portion of the window indicates the quality of your internet connection.
+
+### Leaving the Session
+
+To leave the meeting, do as follows:
+
+1. Go to the **Options** menu and select **Leave meeting**.
+
+2. Tap **Ok**. The <PartialExample mentored /> home page appears.
+
+  > :::note  
+  > If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and tap **Join**. 
+
+### Best Practices
+
+- Unmute your [microphone](#configuring-the-microphone) only when necessary.
+
+- Maintain a neat background and attire before you turn on your [webcam](#configuring-the-webcam). 
+
+- Use respectful language while sharing any information. Discuss only mentoring-related topics.
+
+- Tap the **Raise hand** button to ask a question.
+
+## Using BigBlueButton Features
+
+The BigBlueButton application provides more features which are as follows:
+
+* Managing meeting settings
+* Adding user status
+* Sending chat messages
+* Sharing notes
+* Using the whiteboard
+* Polling
+* Joining breakout rooms
+
+>:::info
+>To learn more, see [BigBlueButton Help](https://bigbluebutton.org/teachers/tutorials/).

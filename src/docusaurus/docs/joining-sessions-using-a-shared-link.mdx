@@ -1,0 +1,79 @@
+import OpenWithOptions from './media/openwith-options.png';
+import SessionDetailsJoin from './media/sessiondetailsjoin.png'
+import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
+# Using a Shared Link to Join a Session
+
+You can join mentoring sessions using a link shared by your contacts or on social media.
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<Admonition type="tip">
+   <p>Users who have not registered on <PartialExample mentored /> yet, should do the following actions:</p>
+   <ol>
+   <li>Install the application.</li>
+   <li>Do one of the following actions:
+      <ul>
+      <li>Sign up to create a new account.</li>
+      <li>Log in if you already have an account.</li>
+      </ul>
+   </li>
+   <li>Update your profile.</li>
+   <li>Enroll for sessions.</li>
+   </ol>
+</Admonition>
+<p><b>To join a session using a shared link, do as follows:</b></p>
+<ol>
+<li>Tap the shared link and tap <b><PartialExample mentored /></b>. 
+<br />
+   <img src={OpenWithOptions} />
+</li>  
+<li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser. 
+   <Admonition type="note">    
+   <p>If you haven't enrolled for the session yet, tap <b>Enroll</b>.</p>
+   </Admonition>
+<br />
+   <img src={SessionDetailsJoin} />
+</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+<Admonition type="tip">
+   <p>Users who have not registered on <PartialExample mentored /> yet, should do the following actions:</p>
+   <ol>
+   <li>Open the web portal.</li>
+   <li>Do one of the following actions:
+      <ul>
+      <li>Sign up to create a new account.</li>
+      <li>Log in if you already have an account.</li>
+      </ul>
+   </li>
+   <li>Update your profile.</li>
+   <li>Enroll for sessions.</li>
+   </ol>
+</Admonition>
+<p><b>To join a session using a shared link, do as follows:</b></p>
+<ol>
+<li>Click the shared link.</li>  
+<li>Click <b>Join</b>. The BigBlueButton meeting window appears on your web browser. 
+   <Admonition type="note">    
+   <p>If you haven't enrolled for the session yet, click <b>Enroll</b>.</p>
+   </Admonition>
+<br />
+   <img src={PortalSessionDetailsJoin} />
+</li>
+</ol> 
+</TabItem>
+</Tabs>
+
+> :::info 
+> * To know more about enrolling for a session and cancelling your enrollment, <a href="enrolling-for-a-session">Enrolling for a Session</a>. 
+> * To know more about joining a BigBlueButton meeting, <a href="joining-a-session">Configuring the BigBlueButton Settings</a>.
+
+
+  
+   
