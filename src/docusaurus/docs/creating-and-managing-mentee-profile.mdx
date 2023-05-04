@@ -4,8 +4,8 @@ import ViewMenteeProfile from './media/viewprofile-mentee.png'
 import PortalAppMenu from './media/portal-applicationmenu.png'
 import EditMenteeProfile from './media/editmenteeprofile.png'
 import PortalEditMenteeProfile from './media/portal-editmenteeprofile.png'
-import CreateProfile from './media/portal-createprofile.png'
-import PortalCreateProfile from './media/portal-createprofile.png'
+import CreateProfileOptions from './media/createprofile-options.png'
+import PortalCreateProfileOptions from './media/portal-createprofileoptions.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
@@ -40,7 +40,6 @@ On the Profile page, you can do the following actions:
 <TabItem value="mentored portal" label="Web Portal">
 <p>To view the Profile page, go to the <b>Application</b> menu on the top-right corner of the page and tap <b>My profile</b>.</p>
 <br />
-<br />
 <img src={PortalAppMenu} />
 </TabItem>
 </Tabs>
@@ -61,12 +60,37 @@ On the Profile page, you can do the following actions:
 <br />
     <img src={EditMenteeProfile} />
 </li>
-<li>On the Profile details page, enter your details.
+<li>To update your profile picture, tap <b>Add image</b> and do one of the following actions:
+    <ul>
+    <li>To take a picture, select <b>Take Photo</b>.</li>
+    <li>To upload an image, select <b>Choose from library</b>.</li>
+    <li>To remove the existing image, select <b>Remove current photo</b>.</li>
+    </ul>
+</li>
+<li>Enter the information in the <b>Your experience in years</b>, <b>Tell us about yourself</b>, and <b>Education qualification</b> box.</li>
+<li>To select your location, do as follows:
+    <ul>
+    <li>Tap the <b>Select your location</b> dropdown menu.</li>
+    <li>Select the location and tap <b>Ok</b>.</li>
+    </ul>
+</li>
+<li>Select an option in the <b>Your role</b>, <b>Your expertise</b>, and <b>Languages</b> box. Tap the option again to cancel the selection.
+<br />
+    <Admonition type="tip">
+    <ul>
+    <li>To add a new option, do as follows:
+        <ol>
+        <li>Tap <b>+ Add</b> and enter the new option.</li>
+        <li>Tap <b>Ok</b>.</li>
+        </ol>
+    </li>
+    <li>To select all the options, turn on the toggle.</li>
+    </ul>
+    </Admonition>
 <br />
 <br />
-    <img src={CreateProfile} />
+    <img src={CreateProfileOptions} />
 </li> 
-<li>If you want to add a profile picture, tap <b>Add Image</b>. Select <b>Take Photo</b> or <b>Choose from library</b>.</li>
 <li>Tap <b>Submit</b>. The profile details are updated.</li>
 </ol>
 </TabItem>
@@ -77,12 +101,31 @@ On the Profile page, you can do the following actions:
 <br />
     <img src={PortalEditMenteeProfile} />
 </li>
-<li>On the Profile details page, enter your details.
-<br />
-<br />
-    <img src={PortalCreateProfile} />
+<li>To update your profile picture, do any one of the following actions: 
+<ul>
+<li>Click <b>Add image</b> and select the image.</li>
+<li>To remove an existing image, click <b>Remove image</b>.</li>
+</ul>
 </li>
-<li>If you want to add a profile picture, click <b>Add image</b> and select the image.</li>
+<li>Enter the information in the <b>Your experience in years</b>, <b>Tell us about yourself</b>, and <b>Education qualification</b box.</li>
+<li>To select your location, click the <b>Select your location</b> box and select the location from the dropdown menu.</li>
+<li>Select an option in the <b>Your role</b>, <b>Your expertise</b>, and <b>Languages</b> box. Click the option again to cancel the selection.
+<br />
+    <Admonition type="tip">
+    <ul>
+    <li>To add a new option, do as follows:
+        <ol>
+        <li>Click <b>+ Add new</b> and enter the new option.</li>
+        <li>Click <b>Ok</b>.</li>
+        </ol>
+    </li>
+    <li>To select all the options, turn on the toggle.</li>
+    </ul>
+    </Admonition>
+<br />
+<br />
+    <img src={PortalCreateProfileOptions} />
+</li>
 <li>Click <b>Submit</b>. The profile details are updated.</li>
 </ol>
 </TabItem>
