@@ -96,6 +96,11 @@ const sidebars = {
         label: 'Customizing the Mobile Application', // sidebar label
       },
       {
+        type: 'doc',
+        id: 'settingup-webportal', // document ID
+        label: 'Customizing the Web Portal', // sidebar label
+      },
+      {
         type: 'category',
         label: 'Using the Application',
         items: [

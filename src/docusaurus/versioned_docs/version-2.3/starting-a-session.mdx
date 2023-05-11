@@ -1,6 +1,8 @@
 import StartButton from './media/startbutton.png';
+import NewSession from './media/newsession.png'
 import StartSessionButton from './media/startsession-button.PNG'
 import PortalStartButton from './media/portal-startbutton.png'
+import PortalNewSession from './media/portal-newsession.png'
 import PortalSessionDetailsStart from './media/portal-sessiondetailsstart.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -11,9 +13,12 @@ import PartialExample from './_mentored.mdx';
 
 <PartialExample mentored /> application is integrated with BigBlueButton to enable the hosting of mentoring sessions.
 
-> :::note  
->* You can start the session only 10 minutes before the scheduled time.
->* You can start the session anytime within the time allocated for the session.
+<Admonition type="note">
+<ul>
+<li>You can start the session only 10 minutes before the scheduled time.</li>
+<li>You can start the session anytime within the time allocated for the session.</li>
+</ul>
+</Admonition>
 
 You can start a session in one of the following ways:
 
@@ -59,7 +64,11 @@ You can start a session in one of the following ways:
 <TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
 <li>On your Home page, go the <b>Created sessions</b> tab.</li>
-<li>Tap the session tile to view the Session Details page.</li>
+<li>Tap the session tile to view the Session Details page.
+<br />
+<br />
+   <img src={NewSession} />
+</li>
 <li>Tap <b>Start session</b>. BigBlueButton meeting window appears on your web browser.
 <br />
 <br />
@@ -72,11 +81,14 @@ You can start a session in one of the following ways:
 <li>Go the <b>Created sessions</b> tab.</li>
 <li>Do one of the following actions:
    <ul>
-   <li>Click the session tile to view the Session details page .</li>
+   <li>Click the session tile to view the Session details page.
+   <br />
+      <img src={PortalNewSession} />
+   </li>
    <li>Click the <b>View details</b> link to view the Session details page.</li>
    </ul>
 </li>
-<li>Tap <b>Start</b>. BigBlueButton meeting window appears on your web browser.
+<li>Click <b>Start</b>. BigBlueButton meeting window appears on your web browser.
 <br />
 <br />
    <img src={PortalSessionDetailsStart} />
@@ -84,7 +96,7 @@ You can start a session in one of the following ways:
 </ol>
 </TabItem>
 </Tabs>
-   
+
 ## Using the Shared Link
 
 <Tabs>
@@ -123,8 +135,8 @@ During the mentoring session, you can configure the following BigBlueButton meet
 
 1. To connect your microphone, click the **Microphone** option and select **Yes**. 
 
-  > :::note
-  > Microphone may turn on by default.
+   :::note
+   Microphone may turn on by default.
 
 2.	To mute your microphone, click the **Microphone** button. Click again to unmute it.
 
@@ -134,9 +146,9 @@ During the mentoring session, you can configure the following BigBlueButton meet
 
 2. To mute the microphone, do any one of the following actions:
 
-* Click the **Manage users** icon and select **Mute all users except presenter** to mute the participants' microphones.
+   * Click the **Manage users** icon and select **Mute all users except presenter** to mute the participants' microphones.
 
-* Click the participant's name and select **Mute user** to mute a specific participant's microphone.
+   * Click the participant's name and select **Mute user** to mute a specific participant's microphone.
 
 ### Configuring the Webcam
 
@@ -187,18 +199,34 @@ To pause the recording, click the **Record** button and click **Yes**. Click the
 
 ### Leaving the Session
 
-**To leave the meeting, do as follows:** 
-
-1. Go to the **Options** menu and select **Leave meeting**.
-
-2. Click **Ok**. The <PartialExample mentored /> home page appears.
-    
-> :::note  
-> If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and tap **Start**. 
-
->
->:::caution 
->If you leave the meeting after the end time, you cannot rejoin.
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>Go to the <b>Options</b> menu and select <b>Leave meeting</b>.</li>
+<li>Tap <b>Ok</b>. The <PartialExample mentored /> Home page appears.
+<br />
+   <Admonition type="note">    
+   <p>If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and click **Start**.</p>
+   </Admonition>
+</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal" default>
+<ol>
+<li>Go to the <b>Options</b> menu and select <b>Leave meeting</b>.</li>
+<li>Click <b>Ok</b>. The <PartialExample mentored /> Home page appears.
+<br />
+   <Admonition type="note">    
+   <p>If you leave the meeting unintentionally (by closing the meeting tab), go back to <PartialExample mentored /> and click **Start**.</p>
+   </Admonition>
+<br />  
+   <Admonition type="caution">    
+   <p>If the session is extended beyond the scheduled end time, you cannot rejoin if you leave the meeting after the scheduled end time.</p>
+   </Admonition>
+</li>
+</ol>
+</TabItem>
+</Tabs>
 
 ### Ending the Session
 
@@ -208,7 +236,7 @@ To pause the recording, click the **Record** button and click **Yes**. Click the
 
 2. Click **End session for all users** button.
 
-3. Click **Ok**. The <PartialExample mentored /> home page appears.
+3. Click **Ok**. The <PartialExample mentored /> Home page appears.
 
 ### Best Practices
 
@@ -233,5 +261,5 @@ The BigBlueButton application provides more features which are as follows:
 * Selecting a random user
 * Creating breakout rooms
 
->:::info 
->To learn more, see [BigBlueButton help](https://bigbluebutton.org/teachers/tutorials/).
+:::info 
+To learn more, see [BigBlueButton help](https://bigbluebutton.org/teachers/tutorials/).

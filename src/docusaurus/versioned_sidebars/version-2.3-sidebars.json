@@ -64,6 +64,11 @@
       "label": "Customizing the Mobile Application"
     },
     {
+      "type": "doc",
+      "id": "settingup-webportal",
+      "label": "Customizing the Web Portal"
+    },
+    {
       "type": "category",
       "label": "Using the Application",
       "items": [

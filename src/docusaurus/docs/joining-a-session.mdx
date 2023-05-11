@@ -1,8 +1,10 @@
 import JoinButton from './media/joinbutton.png';
 import SessionDetailsJoin from './media/sessiondetailsjoin.png'
+import SessionTileJoin from './media/sessiontile-join.png'
 import SearchSession from './media/search-sessions.png'
 import MentorProfileJoin from './media/mentorprofile-join.png'
 import PortalJoinButton from './media/portal-joinbutton.png';
+import PortalSessionTileJoin from './media/portal-sessiontilejoin.png'
 import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
 import PortalMentorProfileJoin from './media/portal-mentorprofilejoin.png'
 import Tabs from '@theme/Tabs';
@@ -14,10 +16,13 @@ import PartialExample from './_mentored.mdx';
 
 <PartialExample mentored /> application is integrated with BigBlueButton to enable the hosting of mentoring sessions.
 
-> :::note  
-> * You must enroll before joining a session. 
-> * You can only join when the mentor starts the session.
-> * You can join the session anytime within the time allocated for the session.
+<Admonition type="note">
+<ul>
+<li>You must enroll before joining a session.</li>
+<li>You can only join when the mentor starts the session.</li>
+<li>You can join the session anytime within the time allocated for the session.</li>
+</ul>
+</Admonition>
 
 <Tabs>
 <TabItem value="mentored mobile application" label="Mobile App" default>
@@ -55,7 +60,11 @@ import PartialExample from './_mentored.mdx';
 <h2>Using the Session Details Page</h2>
 <ol>
 <li>Find an enrolled session from the <b>All Sessions</b> tab,<b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
-<li>Tap the session tile to view the Session Details page.</li>
+<li>Tap the session tile to view the Session Details page.
+<br />
+<br /> 
+    <img src={SessionTileJoin} />
+</li>
 <li>Tap <b>Join</b>. The BigBlueButton meeting window appears on your web browser.
 <br />
 <br /> 
@@ -121,7 +130,11 @@ import PartialExample from './_mentored.mdx';
 <ol>
 <li>Find an enrolled session from the <b>Home</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.
    <ul>
-   <li>Click the session tile to view the Session details page .</li>
+   <li>Click the session tile to view the Session details page.
+   <br />
+   <br />
+    <img src={PortalSessionTileJoin} />
+   </li>
    <li>Click the <b>View details</b> link to view the Session details page.</li>
    </ul>
 </li>
@@ -213,14 +226,38 @@ The **Connection status** icon located on the top portion of the window indicate
 
 ### Leaving the Session
 
-To leave the meeting, do as follows:
-
-1. Go to the **Options** menu and select **Leave meeting**.
-
-2. Click **Ok**. The <PartialExample mentored /> home page appears.
-
-  > :::note  
-  > If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and clcik **Join**. 
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>Go to the <b>Options</b> menu and select <b>Leave meeting</b>.</li>
+<li>Tap <b>Ok</b>. The <PartialExample mentored /> Home page appears.
+<br />
+   <Admonition type="note">    
+   <p>If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and tap **Join**.</p>
+   </Admonition>
+<br />  
+   <Admonition type="caution">
+   <p>If the session is extended beyond the scheduled end time, you cannot rejoin if you leave the meeting after the scheduled end time.</p>
+   </Admonition>
+</li>
+</ol>
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal" default>
+<ol>
+<li>Go to the <b>Options</b> menu and select <b>Leave meeting</b>.</li>
+<li>Click <b>Ok</b>. The <PartialExample mentored /> Home page appears.
+<br />
+   <Admonition type="note">    
+   <p>If you leave the meeting unintentionally (by closing the meeting tab), go back to <PartialExample mentored /> and click **Join**.</p>
+   </Admonition>
+<br />  
+   <Admonition type="caution">
+   <p>If the session is extended beyond the scheduled end time, you cannot rejoin if you leave the meeting after the scheduled end time.</p>
+   </Admonition>
+</li>
+</ol>
+</TabItem>
+</Tabs>
 
 ### Best Practices
 
@@ -244,5 +281,5 @@ The BigBlueButton application provides more features which are as follows:
 * Polling
 * Joining breakout rooms
 
->:::info
->To learn more, see [BigBlueButton Help](https://bigbluebutton.org/teachers/tutorials/).
+:::info
+To learn more, see [BigBlueButton Help](https://bigbluebutton.org/teachers/tutorials/).
