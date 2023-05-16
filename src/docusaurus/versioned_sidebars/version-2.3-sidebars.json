@@ -242,19 +242,25 @@
       ]
     },
     {
-      "type": "doc",
-      "id": "additionaltechnicalresources",
-      "label": "Additional Technical Resources"
-    },
-    {
-      "type": "doc",
-      "id": "databasedesign",
-      "label": "Database Design"
-    },
-    {
-      "type": "doc",
-      "id": "mentoredrepos",
-      "label": "Source Code Repositories"
+      "type": "category",
+      "label": "Additional Technical Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "apidocumentation",
+          "label": "API Documentation"
+        },
+        {
+          "type": "doc",
+          "id": "databasedesign",
+          "label": "Database Design"
+        },
+        {
+          "type": "doc",
+          "id": "mentoredrepos",
+          "label": "Source Code Repositories"
+        }
+      ]
     },
     {
       "type": "doc",

@@ -279,19 +279,25 @@ const sidebars = {
           ]
       },
       {
-        type: 'doc',
-        id: 'additionaltechnicalresources', // document ID
-        label: 'Additional Technical Resources', // sidebar label
-      },
-      {
-        type: 'doc',
-        id: 'databasedesign', // document ID
-        label: 'Database Design', // sidebar label
-      },
-      {
-        type: 'doc',
-        id: 'mentoredrepos', // document ID
-        label: 'Source Code Repositories', // sidebar label
+        type: 'category',
+        label: 'Additional Technical Resources',
+        items: [
+          {
+            type: 'doc',
+            id: 'apidocumentation', // document ID
+            label: 'API Documentation', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'databasedesign', // document ID
+            label: 'Database Design', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'mentoredrepos', // document ID
+            label: 'Source Code Repositories', // sidebar label
+          },
+        ]
       },
       {
         type: 'doc',
