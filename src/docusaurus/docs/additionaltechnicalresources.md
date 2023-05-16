@@ -1,8 +1,6 @@
 import PartialExample from './_elevate.mdx';
 
-# Additional Technical Resources
-
-## API Documentation
+# API Documentation
 
 If you wish to integrate a custom mobile app, you need to understand how to use the Application Programming Interfaces exposed by the platform. To learn about <PartialExample elevate /> APIs, see the following topics:
 

@@ -1,3 +1,5 @@
+import PartialExample from './_mentored.mdx';
+
 # Customizing the Web Portal
 
 The <PartialExample mentored /> web portal is developed using the Angular framework.
