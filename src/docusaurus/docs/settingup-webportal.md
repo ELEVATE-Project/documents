@@ -33,7 +33,9 @@ The <PartialExample mentored /> web portal is developed using the Angular framew
 ## Setting up the Project
 
 1. Use Git to clone the [repository](https://github.com/ELEVATE-Project/mentorED-Portal.git).
+
 2. Create a file named **environment.ts** in the  `src/environments` folder and add the necessary variables.
+
 3. Go to project folder and run `npm i`.
 
 ## Building the Web Portal

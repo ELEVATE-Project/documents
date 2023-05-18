@@ -1,12 +1,14 @@
 import PartialExample from './_mentored.mdx';
 import Shiksha from './_shiksha.mdx';
+import Admonition from '@theme/Admonition';
 
 # Welcome to MentorED
  
-<PartialExample mentored /> is an open source mentoring application that facilitates peer learning and professional development by creating a community of mentors and mentees. 
+<PartialExample mentored /> is an open source mentoring application that facilitates peer learning and professional development by creating a community of mentors and mentees.
 
->:::tip
->You can download the <PartialExample mentored /> mobile application from [Google Play Store](https://play.google.com/store/apps/details?id=org.elevate.mentoring).
+<Admonition type="tip">
+<p>You can download the <PartialExample mentored /> mobile application from <a href="https://play.google.com/store/apps/details?id=org.elevate.mentoring">Google Play Store</a>.</p>
+</Admonition>
 
 
 >  

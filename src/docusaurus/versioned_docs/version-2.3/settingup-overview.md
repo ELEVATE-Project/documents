@@ -1,13 +1,15 @@
 import PartialExample from './_mentored.mdx';
 import PartialExample2 from './_elevate.mdx';
 import Shiksha from './_shiksha.mdx';
+import Admonition from '@theme/Admonition';
 
 # Hosting and Customizing MentorED
 
 <PartialExample mentored /> consists of a collection of microservices which can be set up in a local server or in a cloud environment. You can choose to customize only the look and feel of the mobile application and use the microservices hosted by <Shiksha shiksha />.
 
->:::note
->To learn more, read the microservices sections for more information.
+<Admonition type="note">
+<p>To learn more, read the microservices sections for more information.</p>
+</Admonition>
 
 To host a customized instance of <PartialExample mentored />:
 

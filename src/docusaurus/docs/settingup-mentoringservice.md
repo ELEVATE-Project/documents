@@ -1,6 +1,7 @@
 import PartialExample from './_elevate.mdx';
 import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
+import Admonition from '@theme/Admonition';
 
 # Mentoring Service
 
@@ -17,8 +18,9 @@ You can set up the <PartialExample elevate /> Mentoring Service on a local syste
 
 **Prerequisite**: Docker is installed and is running.
 
->:::info
->See the [Docker website](http://www.docker.io/gettingstarted/#h_installation) for installation instructions.
+<Admonition type="info">
+<p>See the <a href="http://www.docker.io/gettingstarted/#h_installation">Docker website</a> for installation instructions.</p>
+</Admonition>
 
 1. Pull the docker image:
 
@@ -52,17 +54,18 @@ You can set up the <PartialExample elevate /> Mentoring Service on a local syste
     docker run --env-file="path of the env file" shikshalokamqa/elevate-mentoring:<Version version />
     </CodeBlock>
 
-    >:::info
-    >For more information about the elevate-mentoring env file, you can check the [sample env](https://github.com/ELEVATE-Project/mentoring/blob/master/src/.env.sample).
-
+    <Admonition type="info">
+    <p>See the <a href="https://github.com/ELEVATE-Project/mentoring/blob/master/src/.env.sample">sample env</a> for installation instructions.</p>
+    </Admonition>
 
 ## Docker-Compose
 <a name="dockcompose"></a>
 
 **Objective**: Run all services at the same time with a common **Docker-Compose** file.
 
->:::caution
->Do not use docker-compose in production.
+<Admonition type="caution">
+<p>Do not use docker-compose in production.</p>
+</Admonition>
 
 To run all services using a docker-compose file:
 
@@ -90,9 +93,9 @@ To run all services using a docker-compose file:
 
     Refer **Docker-Compose README** for more information.
 
-    :::note
-    It is not always necessary to run **down** command. Existing containers and networks can be stopped gracefully by using **Ctrl + C** key combination.
-
+    <Admonition type="note">
+    <p>It is not always necessary to run <b>down</b> command. Existing containers and networks can be stopped gracefully by using <b>Ctrl + C</b> key combination.</p>
+    </Admonition>
 
 ## Setting up a Dockerized Service With Local Dependencies
 <a name="docklocal"></a>
@@ -126,8 +129,10 @@ To set up a docker service with local dependencies:
         port: 27017
         bindIp: "127.0.0.1,172.17.0.1"
     ```
-    :::note
-    Steps to find **host.docker.internal** IP address and location of **mongod.conf** is operating system specific. Refer [this Stack Overflow discussion](https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container) for more information.
+
+    <Admonition type="note">
+    <p>Steps to find <b>host.docker.internal</b> IP address and location of <b>mongod.conf</b> is operating system specific. Refer <a href="https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container">this Stack Overflow discussion</a> for more information.</p>
+    </Admonition>
 
 3. Build the docker image.
     ```
@@ -165,8 +170,9 @@ To set up a docker service with remote dependencies:
 
 2. Follow the instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
 
-    :::note
-    Instructions might differ based on MongoDB version and operating system.
+    <Admonition type="note">
+    <p>Instructions might differ based on MongoDB version and operating system.</p>
+    </Admonition>
 
 3. Build the docker image.
     ```
@@ -300,8 +306,9 @@ To set up a docker service with remote dependencies:
 
 4. Start MongoDB locally.
 
-    > :::note
-    > This might vary based on your host operating system and the method used.
+    <Admonition type="note">
+    <p>This might vary based on your host operating system and the method used.</p>
+    </Admonition>
 
 5. Install the npm packages.
 

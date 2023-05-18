@@ -1,3 +1,5 @@
+import Admonition from '@theme/Admonition';
+
 # Setting up the BigBlueButton Service
 
 1. Before installing, ensure that you meet all the [prerequisites](https://docs.bigbluebutton.org/administration/install) required to install BigBlueButton.
@@ -10,8 +12,9 @@
     sudo bbb-conf --check
     ```
 
-    >:::note
-    >If you encounter any error which is flagged as ```Potential problems```, check for installation or configuration errors on your server.
+    <Admonition type="note">
+    <p>If you encounter any error which is flagged as <i>Potential problems</i>, check for installation or configuration errors on your server.</p>
+    </Admonition>
 
 4. Start the service using the following command:
 
@@ -44,7 +47,9 @@ If you want to delete the demo meeting, use the following command:
 sudo apt-get purge bbb-demo
 ```
 
->:::info
->* To learn more, see [BigBlueButton Installation Guide](https://docs.bigbluebutton.org/administration/install).
->* To automatically delete the metadata of recordings which are converted to mp4 format and uploaded on the cloud storage, see [ELEVATE-Project on GitHub](https://github.com/ELEVATE-Project/elevate-utils/tree/master/BBB-Recordings).
-
+<Admonition type="info">
+<ul>
+<li>To learn more, see <a href="https://docs.bigbluebutton.org/administration/install">BigBlueButton Installation Guide</a>.</li>
+<li>To automatically delete the metadata of recordings which are converted to mp4 format and uploaded on the cloud storage, see <a href="https://github.com/ELEVATE-Project/elevate-utils/tree/master/BBB-Recordings">ELEVATE-Project on GitHub</a>.</li>
+</ul>
+</Admonition>

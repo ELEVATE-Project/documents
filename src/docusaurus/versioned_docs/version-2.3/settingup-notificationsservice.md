@@ -1,6 +1,7 @@
 import PartialExample from './_elevate.mdx';
 import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
+import Admonition from '@theme/Admonition';
 
 # Notifications Service
 
@@ -18,8 +19,9 @@ You can set up the <PartialExample elevate /> Notification Service on a local sy
 
 **Prerequisite**: Docker is installed and is running.
 
->:::info
->See the [Docker website](http://www.docker.io/gettingstarted/#h_installation) for installation instructions.
+<Admonition type="info">
+<p>See <a href="http://www.docker.io/gettingstarted/#h_installation">Docker website</a> for installation instructions.</p>
+</Admonition>
 
 1. Pull the docker image:
 
@@ -53,8 +55,9 @@ You can set up the <PartialExample elevate /> Notification Service on a local sy
     docker run --env-file="path of the env file" shikshalokamqa/elevate-notification:<Version version />
     </CodeBlock>
 
-    >:::info
-    >For more information about the elevate-notification env file, you can check the [sample env](https://github.com/ELEVATE-Project/notification/blob/master/src/.env.sample).
+    <Admonition type="info">
+    <p>For more information about the elevate-notification env file, you can check the <a href="https://github.com/ELEVATE-Project/notification/blob/master/src/.env.sample">sample env</a>.</p>
+    </Admonition>
 
 ## Setting up a Dockerized Service With Local Dependencies
 <a name="dockdep">&nbsp;</a>

@@ -1,4 +1,5 @@
 import PartialExample from './_mentored.mdx';
+import Admonition from '@theme/Admonition';
 
 # Customizing the MentorED Mobile Application
 
@@ -27,18 +28,21 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
 
 1. Install Java. 
 
-   :::tip
-   > For detailed instructions, see https://www.oracle.com/java/technologies/downloads/#java8
+    <Admonition type="tip">  
+    <p>For detailed instructions, see <a href="https://www.oracle.com/java/technologies/downloads/#java8">https://www.oracle.com/java/technologies/downloads/#java8</a>.</p>
+    </Admonition>
 
 2. Install Gradle. 
 
-   :::tip
-   > For detailed instructions, see https://gradle.org/install/
+    <Admonition type="tip">  
+    <p>For detailed instructions, see <a href="https://gradle.org/install/">https://gradle.org/install/</a>.</p>
+    </Admonition>
 
 3. Install Android Studio. 
 
-   :::tip
-   > For detailed instructions, see https://developer.android.com/studio 
+    <Admonition type="tip">  
+    <p>For detailed instructions, see <a href="https://developer.android.com/studio">https://developer.android.com/studio</a>.</p>
+    </Admonition>
 
 4. Install Android SDK.
 
@@ -57,8 +61,9 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
 
     ```
 
-> :::tip
-> For detailed information, see: https://ionicframework.com/docs/installation/android
+<Admonition type="tip">  
+<p>For detailed information, see <a href="https://ionicframework.com/docs/developing/android">https://ionicframework.com/docs/developing/android</a>.</p>
+</Admonition>
 
 ## Setting up the Command Line Interface (CLI)
 

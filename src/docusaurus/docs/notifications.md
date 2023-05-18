@@ -1,4 +1,5 @@
 import PartialExample from './_mentored.mdx';
+import Admonition from '@theme/Admonition';
 
 # Notifications
 
@@ -17,8 +18,9 @@ Mentees will receive email notifications:
 * When the mentor cancels the session.
 * About upcoming sessions, which they have signed up for.
 
->:::info
->To learn more, see [Notifications Service](https://elevate-apis.shikshalokam.org/notification/api-doc).
+<Admonition type="info">
+<p>To learn more, see <a href="https://elevate-apis.shikshalokam.org/notification/api-doc">Notifications Service</a>.</p>
+</Admonition>
 
 
 
