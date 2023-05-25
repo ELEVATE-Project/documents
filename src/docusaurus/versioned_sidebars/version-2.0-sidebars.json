@@ -51,6 +51,11 @@
             },
             {
               "type": "doc",
+              "id": "settingup-schedulerservice",
+              "label": "Setting up the Scheduler Service"
+            },
+            {
+              "type": "doc",
               "id": "settingup-bbb",
               "label": "Setting up BigBlueButton"
             }
