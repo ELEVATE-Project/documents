@@ -33,8 +33,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
        docs: {
-        lastVersion: '2.2',
+        lastVersion: '2.3',
         versions: {
+          "2.3": {
+            label: '2.3',
+            path: '2.3',
+          },
           "2.2": {
             label: '2.2',
             path: '2.2',
@@ -126,6 +130,12 @@ const config = {
             label: 'MentorED',
             logo: 'img/mentoring-logo.png',
         },
+		    {
+            href: "https://elevate.shikshalokam.org/blogs",
+            label: 'Blogs',
+            position: 'right'
+        },
+        
         {
           href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',
@@ -180,6 +190,10 @@ const config = {
           {
             title: 'QUICK LINKS',
             items: [
+              {
+                label: 'Blogs',
+                href: 'https://elevate.shikshalokam.org/blogs',
+              },
               {
                 label: 'YouTube',
                 href: 'https://www.youtube.com/channel/UC5UB0MoPBTPjImvN24uLEMg/featured',

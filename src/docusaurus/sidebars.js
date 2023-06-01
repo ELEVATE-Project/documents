@@ -96,13 +96,18 @@ const sidebars = {
         label: 'Customizing the Mobile Application', // sidebar label
       },
       {
+        type: 'doc',
+        id: 'settingup-webportal', // document ID
+        label: 'Customizing the Web Portal', // sidebar label
+      },
+      {
         type: 'category',
-        label: 'Using the Mobile Application',
+        label: 'Using the Application',
         items: [
           {
             type: 'doc',
-            id: 'using-the-mentored-mobile-application', // document ID
-            label: 'About the Mobile Application', // sidebar label
+            id: 'using-the-mentored-application', // document ID
+            label: 'About the Application', // sidebar label
           },
           {
             type: 'doc',
@@ -128,8 +133,23 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'applicationmenu-options', // document ID
-                  label: 'Using the Application Menu', // sidebar label
+                  id: 'change-language', // document ID
+                  label: 'Changing the Language Settings', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'report-an-issue', // document ID
+                  label: 'Reporting an Issue', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'using-faq', // document ID
+                  label: 'Using the FAQ Page', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'view-helpvideos', // document ID
+                  label: 'Viewing the Help Videos', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -140,6 +160,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'mentor-directory', // document ID
                   label: 'Using the Mentor Directory', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'viewmentorprofilelink', // document ID
+                  label: 'Using a Shared Link to View a Mentor Profile', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -186,8 +211,23 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
-                  id: 'applicationmenu-options', // document ID
-                  label: 'Using the Application Menu', // sidebar label
+                  id: 'change-language', // document ID
+                  label: 'Changing the Language Settings', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'report-an-issue', // document ID
+                  label: 'Reporting an Issue', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'using-faq', // document ID
+                  label: 'Using the FAQ Page', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'view-helpvideos', // document ID
+                  label: 'Viewing the Help Videos', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -198,6 +238,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'mentor-directory', // document ID
                   label: 'Using the Mentor Directory', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'viewmentorprofilelink', // document ID
+                  label: 'Using a Shared Link to View a Mentor Profile', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -234,19 +279,25 @@ const sidebars = {
           ]
       },
       {
-        type: 'doc',
-        id: 'additionaltechnicalresources', // document ID
-        label: 'Additional Technical Resources', // sidebar label
-      },
-      {
-        type: 'doc',
-        id: 'databasedesign', // document ID
-        label: 'Database Design', // sidebar label
-      },
-      {
-        type: 'doc',
-        id: 'mentoredrepos', // document ID
-        label: 'Source Code Repositories', // sidebar label
+        type: 'category',
+        label: 'Additional Technical Resources',
+        items: [
+          {
+            type: 'doc',
+            id: 'apidocumentation', // document ID
+            label: 'API Documentation', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'databasedesign', // document ID
+            label: 'Database Design', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'mentoredrepos', // document ID
+            label: 'Source Code Repositories', // sidebar label
+          },
+        ]
       },
       {
         type: 'doc',
