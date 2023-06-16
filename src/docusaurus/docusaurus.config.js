@@ -33,8 +33,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
        docs: {
-        lastVersion: '2.3',
+        lastVersion: '2.4',
         versions: {
+          "2.4": {
+            label: '2.4',
+            path: '2.4',
+          },
           "2.3": {
             label: '2.3',
             path: '2.3',
