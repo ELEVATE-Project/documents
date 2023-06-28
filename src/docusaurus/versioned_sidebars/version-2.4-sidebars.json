@@ -103,6 +103,11 @@
             },
             {
               "type": "doc",
+              "id": "report-signuporloginissue",
+              "label": "Reporting Issues Related to Signing up and Logging in"
+            },
+            {
+              "type": "doc",
               "id": "change-language",
               "label": "Changing the Language Settings"
             },
@@ -176,6 +181,11 @@
               "type": "doc",
               "id": "logging-in",
               "label": "Logging in"
+            },
+            {
+              "type": "doc",
+              "id": "report-signuporloginissue",
+              "label": "Reporting Issues Related to Signing up and Logging in"
             },
             {
               "type": "doc",

@@ -133,6 +133,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'report-signuporloginissue', // document ID
+                  label: 'Reporting Issues Related to Signing up and Logging in', // sidebar label
+                },
+                {
+                  type: 'doc',
                   id: 'change-language', // document ID
                   label: 'Changing the Language Settings', // sidebar label
                 },
@@ -208,6 +213,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'logging-in', // document ID
                   label: 'Logging in', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'report-signuporloginissue', // document ID
+                  label: 'Reporting Issues Related to Signing up and Logging in', // sidebar label
                 },
                 {
                   type: 'doc',
