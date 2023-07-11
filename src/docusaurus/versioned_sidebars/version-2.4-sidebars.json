@@ -165,6 +165,11 @@
               "type": "doc",
               "id": "feedbackformentors",
               "label": "Feedback for Mentors"
+            },
+            {
+              "type": "doc",
+              "id": "mentor-deleteaccountrequest",
+              "label": "Creating a Request to Delete the Account"
             }
           ]
         },
@@ -251,6 +256,11 @@
               "type": "doc",
               "id": "feedbackformentees",
               "label": "Providing Feedback on a Session"
+            },
+            {
+              "type": "doc",
+              "id": "mentee-deleteaccountrequest",
+              "label": "Creating a Request to Delete the Account"
             }
           ]
         }

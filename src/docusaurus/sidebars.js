@@ -195,6 +195,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'feedbackformentors', // document ID
                   label: 'Providing Feedback on a Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'mentor-deleteaccountrequest', // document ID
+                  label: 'Creating a Request to Delete the Account', // sidebar label
                 }
             ]
           },
@@ -283,6 +288,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'feedbackformentees', // document ID
                   label: 'Providing Feedback on a Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'mentor-deleteaccountrequest', // document ID
+                  label: 'Creating a Request to Delete the Account', // sidebar label
                 }
               ]
             },
