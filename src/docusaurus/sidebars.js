@@ -58,6 +58,11 @@ const sidebars = {
             label: 'Overview', // sidebar label
           },
           {
+            type: 'doc',
+            id: 'settingup-mongodb', // document ID
+            label: 'Setting up MongoDB 4.1.4', // sidebar label
+          },
+          {
             type: 'category',
             label: 'Setting up the Microservices',
             items: [

@@ -27,18 +27,23 @@ You can create and manage mentoring sessions.
     <img src={SessionDetails} />
 </p>
 </li>
-<li>To update your profile picture, tap <b>Add image</b> and do one of the following actions:
+<li>Optionally, to add a session image, tap <b>Add image</b> and do one of the following actions:
     <ul>
     <li>To take a picture, select <b>Take Photo</b>.</li>
     <li>To upload an image, select <b>Choose from library</b>.</li>
-    <li>To remove the existing image, select <b>Remove current photo</b>.</li>
     </ul>
+<p>  
+    <Admonition type="tip">
+    <p>Select an image that is relevant to the session topic.</p>
+    </Admonition>
+</p>
 </li>
-<li>Enter the session information in the <b>Session title</b> and <b>Description</b> box.</li>
+<li>Enter the session information in the <b>Session title</b> and <b>Description</b> boxes.</li>
 <li>To schedule a session, do as follows:
     <ol>
-    <li>Tap the <b>Start date</b> or <b>End date</b> box.</li>
-    <li>Select the date and time from the <b>Set date and time</b> menu and tap <b>Set</b>.</li>
+    <li>Tap the <b>Start date</b> box and select the date and time from the date and time picker.</li>
+    <li>Tap the <b>End date</b> box and select the date and time from the date and time picker.</li>
+    <li>Tap <b>Set</b>.</li>
     </ol>
 <p>  
     <Admonition type="note">
@@ -70,43 +75,68 @@ You can create and manage mentoring sessions.
     <img src={SessionDetailsOptions} />  
 </p> 
 </li>
-<li>If you want to add a profile picture, tap <b>Add image</b>. Select <b>Take Photo</b> or <b>Choose from library</b>.</li>
-<li>Tap <b>Publish and add link</b>. The session is published and the <b>Meeting Link</b> tab is enabled.
+<li>Tap <b>Publish and add link</b>. The session is published on the platform and participants can now view your session.
+<p>
+    <Admonition type="note">
+    <p>You must set the meeting platform on the <b>Meeting Link</b> tab.</p>
+    </Admonition>
+</p>
 <p>
     <img src={AddMeetingLink} />  
 </p>
+<p>
+    <Admonition type="tip">
+    <p>To go back and edit the session details, do as follows:</p>
+    <ol>
+    <li>Go to the <b>Edit session</b> tab.</li>
+    <li>Make the necessary changes and tap <b>Save</b>.</li>
+    </ol>
+    </Admonition>
+</p>
 </li>
-<li>Do one of the following:
-    <ul>
-    <li>Click <b>Submit</b>.
+<li>On the <b>Meeting Link</b> tab, select a meeting platform from the <b>Add meeting link</b> menu.
     <p>
-        <Admonition type="tip">
-        <p><b>BigBlueButton</b> is the default meeting platform.</p>
+        <Admonition type="note">
+        <p>If you haven't selected a meeting platform, <b>BigBlueButton</b> is set as the default platform.</p>
         </Admonition>
     </p>
-    </li>
-    <li>To select a meeting platform other than <b>BigBlueButton</b> on the <b>Meeting Link</b> tab, select a meeting platform from the <b>Add meeting link</b> menu.</li>
-    </ul>
-</li>
-<li>To add the details about the meeting platform, do as follows:
-    <ul>
-    <li>If you have selected Google Meet as the meeting platform, paste the meeting link in the <b>Meet link</b> box.</li>
-    <li>If you have selected WhatsApp as the meeting platform, paste the call link in the <b>WhatsApp</b> box.</li>
-    <li>If you have selected Zoom as the meeting platform, do as follows:
-        <ul> 
-        <li>Paste the meeting link in the <b>Zoom link</b> box.</li>
-        <li>Paste the meeting ID in the <b>Meeting ID</b> box.</li>
-        <li>Paste the passcode in the <b>Passcode</b> box.</li>
-        </ul>
-    </li>
-    </ul>
+<table>
+  <tr>
+    <th>Meeting Platform</th>
+    <th>Meeting Information</th>
+  </tr>
+  <tr>
+    <td>BigBlueButton</td>
+    <td>No action required.</td>
+  </tr>
+  <tr>
+    <td>Google Meet</td>
+    <td>Copy and paste the call link in the <b>Meet link</b> box.</td>
+  </tr>
+  <tr>
+    <td>WhatsApp</td>
+    <td>Copy and paste the call link in the <b>WhatsApp</b> box.</td>
+  </tr>
+  <tr>
+    <td>Zoom</td>
+    <td>
+    Do the following actions: 
+    <ol>
+        <li>Copy and paste the meeting link in the <b>Zoom link</b> box.</li>
+        <li>Copy and paste the meeting ID in the <b>Meeting ID</b> box.</li>
+        <li>Copy and paste the passcode in the <b>Passcode</b> box.</li>
+    </ol>
+    </td>
+  </tr>
+</table>
 </li>
 <li>Tap <b>Submit</b>. The meeting information is added.
 <p>
     <Admonition type="tip">
     <ul>
-    <li>You can find the new sessions on the <b>Created session</b> tab on the Home page.</li>
+    <li>You can find the new sessions on the <b>Created sessions</b> tab on the Home page.</li>
     <li>To create more sessions, click the <b>Click here to create a new session</b> button and repeat steps 1 to 10.</li>
+    <li>You can also find your completed sessions in the Past Sessions section of the <b>Created sessions</b> tab.</li>
     </ul>
     </Admonition>
 </p>
@@ -121,12 +151,19 @@ You can create and manage mentoring sessions.
     <img src={PortalSessionDetails} />
 </p>
 </li>
-<li>To add a session image, click <b>Add image</b> and select the image.</li>
-<li>Enter the session information in the <b>Session title</b> and <b>Description</b> box.</li>
+<li>Optionally, to add a session image, click <b>Add image</b> and select the image.
+<p>  
+    <Admonition type="tip">
+    <p>Select an image that is relevant to the session topic.</p>
+    </Admonition>
+</p>
+</li>
+<li>Enter the session information in the <b>Session title</b> and <b>Description</b> boxes.</li>
 <li>To schedule a session, do as follows:
     <ol>
-    <li>Click the <b>Start date</b> or <b>End date</b> box.</li>
-    <li>Select the date and time from the menu and click <b>Set</b>.</li>
+    <li>Click the <b>Start date</b> box and select the date and time from the date and time picker.</li>
+    <li>Click the <b>End date</b> box and select the date and time from the date and time picker.</li>
+    <li>Click <b>Set</b>.</li>
     </ol>
 <p> 
     <Admonition type="note">
@@ -161,48 +198,74 @@ You can create and manage mentoring sessions.
     <img src={PortalSessionDetailsOptions} />
 </p>
 </li>
-<li>Click <b>Publish and add link</b>. The session is published and the <b>Meeting Link</b> tab is enabled.
+<li>Click <b>Publish and add link</b>. The session is published on the platform and participants can now view your session.
+<p>
+    <Admonition type="note">
+    <p>You must set the meeting platform on the <b>Meeting Link</b> tab.</p>
+    </Admonition>
+</p>
 <p>
     <img src={PortalAddMeetingLink} />  
 </p>
+<p>
+    <Admonition type="tip">
+    <p>To go back and edit the session details, do as follows:</p>
+    <ol>
+    <li>Go to the <b>Edit session</b> tab.</li>
+    <li>Make the necessary changes and click <b>Save</b>.</li>
+    </ol>
+    </Admonition>
+</p>
 </li>
-<li>Do one of the following:
-    <ul>
-    <li>Click <b>Submit</b>.
-    <p>
-        <Admonition type="tip">
-        <p><b>BigBlueButton</b> is the default meeting platform.</p>
-        </Admonition>
-    </p>
-    </li>
-    <li>To select a meeting platform other than <b>BigBlueButton</b> on the <b>Meeting Link</b> tab, select a meeting platform from the <b>Add meeting link</b> menu.</li>
-    </ul>
-</li>
-<li>To add the details about the meeting platform, do as follows:
-    <ul>
-    <li>If you have selected Google Meet as the meeting platform, paste the meeting link in the <b>Meet link</b> box.</li>
-    <li>If you have selected WhatsApp as the meeting platform, paste the call link in the <b>WhatsApp</b> box.
+<li>On the <b>Meeting Link</b> tab, select a meeting platform from the <b>Add meeting link</b> menu.
     <p>
         <Admonition type="note">
-        <p>If you select WhatsApp as the meeting platform, you can host the sessions only through the WhatsApp mobile app.</p>
+        <p>If you haven't selected a meeting platform, <b>BigBlueButton</b> is set as the default platform.</p>
         </Admonition>
     </p>
-    </li>
-    <li>If you have selected Zoom as the meeting platform, do as follows:
-        <ul> 
-        <li>Paste the meeting link in the <b>Zoom link</b> box.</li>
-        <li>Paste the meeting ID in the <b>Meeting ID</b> box.</li>
-        <li>Paste the passcode in the <b>Passcode</b> box.</li>
-        </ul>
-    </li>
-    </ul>
+<table>
+  <tr>
+    <th>Meeting Platform</th>
+    <th>Meeting Information</th>
+  </tr>
+  <tr>
+    <td>BigBlueButton</td>
+    <td>No action required.</td>
+  </tr>
+  <tr>
+    <td>Google Meet</td>
+    <td>Copy and paste the call link in the <b>Meet link</b> box.</td>
+  </tr>
+  <tr>
+    <td>WhatsApp</td>
+    <td>Copy and paste the call link in the <b>WhatsApp</b> box.
+    <p>
+    <Admonition type="note">
+    <p>If you select WhatsApp as the meeting platform, you can host the sessions only through the WhatsApp mobile application.</p>
+    </Admonition>
+    </p>
+    </td>
+  </tr>
+  <tr>
+    <td>Zoom</td>
+    <td>
+    Do the following actions:
+    <ol> 
+        <li>Copy and paste the meeting link in the <b>Zoom link</b> box.</li>
+        <li>Copy and paste the meeting ID in the <b>Meeting ID</b> box.</li>
+        <li>Copy and paste the passcode in the <b>Passcode</b> box.</li>
+    </ol>
+    </td>
+  </tr>
+</table>
 </li>
 <li>Click <b>Submit</b>. The meeting information is added.
 <p>
     <Admonition type="tip">
     <ul>
-    <li>You can find the new sessions on the <b>Created session</b> tab.</li>
+    <li>You can find the new sessions on the <b>Created sessions</b> tab.</li>
     <li>To create more sessions, click the <b>Click here to create a new session</b> button and repeat steps 1 to 10.</li>
+    <li>You can also find your completed sessions in the Past Sessions section of the <b>Created sessions</b> tab.</li>
     </ul>
     </Admonition>
 </p>
@@ -224,26 +287,34 @@ You can create and manage mentoring sessions.
 <TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
 <li>To edit the session details, tap the session tile to view the Session Details page.</li>
-<li>Tap <b>Edit</b>.
+<li>Tap <b>Edit</b>. The Edit session details page appears.
 <p>
     <img src={EditAndDeleteSession} />
 </p>
 </li>
-<li>To edit the session details and the profile picture on the Edit session details page, go to the <b>Edit session</b> tab and do as follows:
-    <ol>
-    <li>Change the session details.</li>
-    <li>To update your profile picture, tap <b>Add image</b> and do one of the following actions:
-        <ul>
-        <li>To take a picture, select <b>Take Photo</b>.</li>
-        <li>To upload an image, select <b>Choose from library</b>.</li>
-        <li>To remove the existing image, select <b>Remove current photo</b>.</li>
-        </ul>
-    </li>
-    </ol>
+</ol>
+<h3>Editing the Session Details</h3>
+<ol>
+<li>On the Edit session details page, go to the <b>Edit session</b> tab.</li>
+<li>Make the necessary changes to the session information.</li>
+<li>Optionally, to update your session image, tap <b>Add image</b> and do one of the following actions:
+    <ul>
+    <li>To take a picture, select <b>Take Photo</b>.</li>
+    <li>To upload an image, select <b>Choose from library</b>.</li>
+    <li>To remove the existing image, select <b>Remove current photo</b>.</li>
+    </ul>
+<p>  
+    <Admonition type="tip">
+    <p>Select an image that is relevant to the session topic.</p>
+    </Admonition>
+</p>
 </li>
 <li>Tap <b>Save</b>. The session details are updated.</li>
-<li>To edit the meeting platform and the meeting information, go to the <b>Meeting link</b> tab and make the necessary changes.</li>
-<li>Tap <b>Submit</b>. The meeting information is updated.</li>
+</ol>
+<h3>Editing the Meeting Information</h3>
+<ol>
+<li>On the Edit Session Details page, go to the <b>Meeting link</b> tab and make the necessary changes.</li>
+<li>Tap <b>Save</b>. The meeting information is updated.</li>
 </ol>
 </TabItem>
 <TabItem value="mentored portal" label="Web Portal">
@@ -259,21 +330,28 @@ You can create and manage mentoring sessions.
     <img src={PortalEditAndDeleteSession} />
 </p>
 </li>
-<li>To edit the session details and the profile picture on the Edit session details page, go to the <b>Edit session</b> tab and do as follows:
-    <ol>
-    <li>Change the session details.</li>
-    <li>To update your profile picture, click <b>Add image</b> and do one of the following actions:
-        <ul>
-        <li>To take a picture, select <b>Take Photo</b>.</li>
-        <li>To upload an image, select <b>Choose from library</b>.</li>
-        <li>To remove the existing image, select <b>Remove current photo</b>.</li>
-        </ul>
-    </li>
-    </ol>
+</ol>
+<h3>Editing the Session Details</h3>
+<ol>
+<li>On the Edit session details page, go to the <b>Edit session</b> tab.</li>
+<li>Change the session details.</li>
+<li>Optionally, to update your session image, do one of the following actions:
+    <ul>
+    <li>Click <b>Add image</b> and select the new image.</li>
+    <li>To remove the existing image, click <b>Remove image</b>.</li>
+    </ul>
+<p>  
+    <Admonition type="tip">
+    <p>Select an image that is relevant to the session topic.</p>
+    </Admonition>
+</p>
 </li>
 <li>Click <b>Save</b>. The session details are updated.</li>
-<li>To edit the meeting platform and the meeting information, go to the <b>Meeting link</b> tab and make the necessary changes.</li>
-<li>Click <b>Submit</b>. The meeting information is updated.</li>
+</ol>
+<h3>Editing the Meeting Information</h3>
+<ol>
+<li>On the Edit session details page, go to the <b>Meeting link</b> tab and make the necessary changes.</li>
+<li>Click <b>Save</b>. The meeting information is updated.</li>
 </ol>
 </TabItem>
 </Tabs>

@@ -77,17 +77,8 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
     KAFKA_URL = host.docker.external:9092
     ```
 
-2. Find **host.docker.internal** IP address and add it to **mongod.conf** file in host.
+2. Find **host.docker.internal** IP address and use it as the bind IP. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
 
-    For example, if **host.docker.internal** is **172.17.0.1**,
-     **mongod.conf** file will be as follows:
-
-    ```
-    # network interfaces
-    net:
-        port: 27017
-        bindIp: "127.0.0.1,172.17.0.1"
-    ```
     <Admonition type="note">
     <p>Steps to find <b>host.docker.internal</b> IP address and location of <b>mongod.conf</b> is operating system specific. Refer <a href="https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container">this Stack Overflow discussion thread</a> for more information.</p>
     </Admonition>
@@ -124,7 +115,7 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Follow instructions given in [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) to add Bind IP to **mongod.conf** in host.
+2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [this documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) for more information.
 
     <Admonition type="note">
     <p>Instructions might differ based on the MongoDB version and operating system.</p>
@@ -153,7 +144,7 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
 
     - [Nodejs](https://nodejs.org/en/download/)
 
-    - [MongoDB](https://docs.mongodb.com/manual/installation/)
+    - [MongoDB](settingup-mongodb.md)
 
     - [Robo-3T](https://robomongo.org/)
 
@@ -264,7 +255,7 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
     API_DOC_URL = '/api-doc'
     ```
 
-4. Start MongoDB locally.
+4. Start MongoDB locally. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
 
     <Admonition type="note">
     <p>This might vary based on your host operating system and the method used.</p>

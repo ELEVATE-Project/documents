@@ -31,6 +31,11 @@
           "label": "Overview"
         },
         {
+          "type": "doc",
+          "id": "settingup-mongodb",
+          "label": "Setting up MongoDB 4.1.4"
+        },
+        {
           "type": "category",
           "label": "Setting up the Microservices",
           "items": [

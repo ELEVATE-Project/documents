@@ -1,3 +1,4 @@
+import ParticipantLimit from './_participantlimit.mdx';
 import EnrollButton from './media/enrollbutton.png';
 import MentorProfileEnroll from './media/mentorprofile-enroll.png'
 import SessionDetailsEnroll from './media/sessiondetailsenroll.png'
@@ -18,7 +19,10 @@ import Admonition from '@theme/Admonition';
 You can explore and sign up for mentoring sessions.
 
 <Admonition type="note">
-<p>You can enroll for an ongoing session, which appears as <i>Live</i> on the Home page.</p>
+<ul>
+<li>A maximum number of <ParticipantLimit /> participants can enroll for a session. If you try to enroll after this limit is reached, a <i>Session seats full</i> message appears.</li>
+<li>You can enroll for an ongoing session, which appears as <i>Live</i> on the Home page.</li>
+</ul>
 </Admonition>
 
 <Tabs>

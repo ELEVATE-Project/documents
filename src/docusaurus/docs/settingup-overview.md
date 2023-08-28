@@ -14,7 +14,7 @@ import Admonition from '@theme/Admonition';
 To host a customized instance of <PartialExample mentored />:
 
 1. [Set up Apache Kafka](https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04).
-2. [Set up MongoDB](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04).
+2. [Set up MongoDB](settingup-mongodb.md).
 3. [Set up Node.js](https://serverspace.io/support/help/how-to-install-node-js-on-ubuntu-20-04/).
 4. [Set up Robo 3T](https://robomongo.org/).
 5. [Set up the <PartialExample2 elevate /> user service](settingup-userservice).
