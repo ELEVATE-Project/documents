@@ -58,6 +58,11 @@ const sidebars = {
             label: 'Overview', // sidebar label
           },
           {
+            type: 'doc',
+            id: 'settingup-mongodb', // document ID
+            label: 'Setting up MongoDB 4.1.4', // sidebar label
+          },
+          {
             type: 'category',
             label: 'Setting up the Microservices',
             items: [
@@ -133,6 +138,11 @@ const sidebars = {
                 },
                 {
                   type: 'doc',
+                  id: 'report-signuporloginissue', // document ID
+                  label: 'Reporting Issues Related to Signing up and Logging in', // sidebar label
+                },
+                {
+                  type: 'doc',
                   id: 'change-language', // document ID
                   label: 'Changing the Language Settings', // sidebar label
                 },
@@ -190,6 +200,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'feedbackformentors', // document ID
                   label: 'Providing Feedback on a Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'mentor-deleteaccountrequest', // document ID
+                  label: 'Creating a Request to Delete the Account', // sidebar label
                 }
             ]
           },
@@ -208,6 +223,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'logging-in', // document ID
                   label: 'Logging in', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'report-signuporloginissue', // document ID
+                  label: 'Reporting Issues Related to Signing up and Logging in', // sidebar label
                 },
                 {
                   type: 'doc',
@@ -273,6 +293,11 @@ const sidebars = {
                   type: 'doc',
                   id: 'feedbackformentees', // document ID
                   label: 'Providing Feedback on a Session', // sidebar label
+                },
+                {
+                  type: 'doc',
+                  id: 'mentor-deleteaccountrequest', // document ID
+                  label: 'Creating a Request to Delete the Account', // sidebar label
                 }
               ]
             },

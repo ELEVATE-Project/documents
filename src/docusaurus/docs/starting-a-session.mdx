@@ -1,6 +1,6 @@
 import StartButton from './media/startbutton.png';
 import NewSession from './media/newsession.png'
-import StartSessionButton from './media/startsession-button.PNG'
+import StartSessionButton from './media/startsession.png'
 import PortalStartButton from './media/portal-startbutton.png'
 import PortalNewSession from './media/portal-newsession.png'
 import PortalSessionDetailsStart from './media/portal-sessiondetailsstart.png'
@@ -11,12 +11,13 @@ import PartialExample from './_mentored.mdx';
 
 # Starting a Session 
 
-<PartialExample mentored /> application is integrated with BigBlueButton to enable the hosting of mentoring sessions.
+You can host the mentoring session through your selected meeting platform.
 
 <Admonition type="note">
 <ul>
 <li>You can start the session only 10 minutes before the scheduled time.</li>
 <li>You can start the session anytime within the time allocated for the session.</li>
+<li>To start the session using the MentorED mobile application, you should install all the meeting applications except BigBlueButton.</li>
 </ul>
 </Admonition>
 
@@ -32,7 +33,7 @@ You can start a session in one of the following ways:
 <ol>
 <li>On your Home page, go the <b>Created sessions</b> tab.</li>
 <li>Find the session.</li>
-<li>Tap <b>Start</b>. BigBlueButton meeting window appears on your web browser.
+<li>Tap <b>Start</b>. The meeting window appears.
 <p>
    <Admonition type="tip">    
    <p>If an error occurs, go back to <PartialExample mentored /> and tap <b>Start</b>.</p>
@@ -48,7 +49,7 @@ You can start a session in one of the following ways:
 <ol>
 <li>Go the <b>Created sessions</b> tab.</li>
 <li>Find the session.</li>
-<li>Click <b>Start</b>. BigBlueButton meeting window appears on your web browser.
+<li>Click <b>Start</b>. The meeting window appears.
 <p>
    <Admonition type="tip">    
    <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Start</b>.</p>
@@ -73,7 +74,7 @@ You can start a session in one of the following ways:
    <img src={NewSession} />
 </p>
 </li>
-<li>Tap <b>Start session</b>. BigBlueButton meeting window appears on your web browser.
+<li>Tap <b>Start session</b>. The meeting window appears.
 <p>
    <img src={StartSessionButton} />
 </p>
@@ -93,7 +94,7 @@ You can start a session in one of the following ways:
    <li>Click the <b>View details</b> link to view the Session details page.</li>
    </ul>
 </li>
-<li>Click <b>Start</b>. BigBlueButton meeting window appears on your web browser.
+<li>Click <b>Start</b>.The meeting window appears.
 <p>
    <img src={PortalSessionDetailsStart} />
 </p>
@@ -108,7 +109,7 @@ You can start a session in one of the following ways:
 <TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
 <li>Tap the session link which was shared with your contacts or on social media.</li> 
-<li>Tap <b>Start session</b>. BigBlueButton meeting window appears on your web browser.
+<li>Tap <b>Start session</b>. The meeting window appears.
 <p>
    <img src={StartSessionButton} />
 </p>
@@ -118,7 +119,7 @@ You can start a session in one of the following ways:
 <TabItem value="mentored portal" label="Web Portal">
 <ol>
 <li>Click the session link which was shared with your contacts or on social media.</li> 
-<li>Click <b>Start</b>. BigBlueButton meeting window appears on your web browser.
+<li>Click <b>Start</b>. The meeting window appears.
 <p>
    <img src={PortalSessionDetailsStart} />
 </p>
@@ -126,6 +127,18 @@ You can start a session in one of the following ways:
 </ol>
 </TabItem>
 </Tabs>
+
+<p>
+   <Admonition type="info">    
+   <p>To configure the meeting settings, see any one of the following sections:</p>
+   <ul>
+   <li><a href="#configuring-the-bigbluebutton-settings">Configuring the BigBlueButton Settings</a></li>
+   <li><a href="https://support.google.com/">Google Meet Support</a></li>
+   <li><a href="https://www.whatsapp.com/">WhatsApp Help Center</a></li>
+   <li><a href="https://zoom.us/">Zoom Support Center</a></li>
+   </ul>
+   </Admonition>
+</p>
 
 ## Configuring the BigBlueButton Settings
 
@@ -232,7 +245,7 @@ To pause the recording, click the **Record** button and click **Yes**. Click the
    </Admonition>
 </p> 
 <p>
-   <Admonition type="caution">    
+   <Admonition type="caution">
    <p>If the session is extended beyond the scheduled end time, you cannot rejoin if you leave the meeting after the scheduled end time.</p>
    </Admonition>
 </p>
@@ -243,13 +256,13 @@ To pause the recording, click the **Record** button and click **Yes**. Click the
 
 ### Ending the Session
 
-**To end the meeting, do as follows:**
+**To end the mentoring session, do as follows:**
 
 1. Go to the **Options** menu and select **End meeting**.
 
 2. Click **End session for all users** button.
 
-3. Click **Ok**. The <PartialExample mentored /> Home page appears.
+3. Click **Ok**. The <PartialExample mentored /> Home page appears and the session moves to the Past sessions section of the **Created Sessions** tab.
 
 ### Best Practices
 
