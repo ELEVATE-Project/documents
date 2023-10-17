@@ -18,4 +18,4 @@ To host a customized instance of <PartialExample mentored />:
 6. [Set up the <PartialExample2 elevate /> mentoring service](settingup-mentoringservice).
 7. [Set up the <PartialExample2 elevate /> notification service](settingup-notificationsservice).
 8. [Set up the BigBlueButton service](https://docs.bigbluebutton.org/2.4/install.html#before-you-install).
-9. [Customize the <PartialExample mentored /> mobile application](settingup-mentoredapplication).
+9. [Customize the <PartialExample mentored /> mobile application](settingup-mobileapplication).

@@ -15,7 +15,7 @@ import PartialExample from './_mentored.mdx';
 * Mentors can create mentoring sessions and join other sessions. 
 * Mentees can join mentoring sessions. 
 
-To learn more, see [About the <PartialExample mentored /> Mobile Application](using-the-mentored-mobile-application.md).
+To learn more, see [About the <PartialExample mentored /> Mobile Application](using-the-application.md).
 </details>
 
 <details>
@@ -83,7 +83,7 @@ You can use the [Mentor Directory](mentor-directory.md) to look up details on in
 
 To create a new session, go to the **Created sessions** tab on the Home page and tap the **Create session** button. 
 
-To learn more, see [Setting up a Session](setting-up-a-mentored-session.md). 
+To learn more, see [Setting up a Session](setting-up-a-session.md). 
 </details>
 
 <details>
@@ -91,7 +91,7 @@ To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 
 You can edit a session to change the timings or the details associated with it. In case you want to cancel the session, you can delete the session.
 
-To learn more, see [Setting up a Session](setting-up-a-mentored-session.md). 
+To learn more, see [Setting up a Session](setting-up-a-session.md). 
 </details>
 
 <details>
@@ -99,7 +99,7 @@ To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 
 The minimum duration of a session should be 30 minutes. 
 
-To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
+To learn more, see [Setting up a Session](setting-up-a-session.md).
 </details>
 
 <details>
@@ -107,7 +107,7 @@ To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
 
 <PartialExample mentored /> does not apply any limits on the number of sessions that a mentor can host. 
 
-To learn more, see [Setting up a Session](setting-up-a-mentored-session.md).
+To learn more, see [Setting up a Session](setting-up-a-session.md).
 </details>
 
 <details>

@@ -20,7 +20,7 @@ To host a customized instance of <PartialExample mentored />:
 1. [Set up MongoDB](settingup-mongodb).
 2. [Install Node.js on Ubuntu 20.04](https://serverspace.io) (Search for *Install node.js on Ubuntu 20.04* in the Tutorials section.).
 3. [Set up mentoring service](settingup-mentoringservice).
-4. [Customize the <PartialExample mentored /> mobile application](settingup-mentoredapplication).
+4. [Customize the <PartialExample mentored /> mobile application](settingup-mobileapplication).
 5. [Customize the Web Portal](settingup-webportal).
 
 Optionally, you can set up the following supporting services:
@@ -30,5 +30,4 @@ Optionally, you can set up the following supporting services:
 * [Set up notifications service](settingup-notificationsservice).
 * [Set up scheduler service](settingup-schedulerservice).
 * [Set up BigBlueButton service](settingup-bbb).
-
 
