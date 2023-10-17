@@ -5,11 +5,11 @@ import Admonition from '@theme/Admonition';
 
 # Setting up the User Service
 
-You can set up the <PartialExample elevate /> User Service on a local system in one of the following ways:
+You can set up the User Service on a local system in one of the following ways:
 
-- Using a [Docker Image](#using-a-docker-image).
-- As a [dockerized service with local dependencies (Intermediate)](#sectiona).
-- As a [local service with local dependencies (Hardest)](#sectionb).
+- Using a [Docker Image](#using-a-docker-image)
+- As a [dockerized service with local dependencies (Intermediate)](#sectiona)
+- As a [local service with local dependencies (Hardest)](#sectionb)
 
 <a name="sectiona"> </a>
 
@@ -20,7 +20,7 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See <a href="http://www.docker.io/gettingstarted/#h_installation">Docker website</a> for installation instructions.</p>
+<p>See <a href="http://www.docker.io">Get Started</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
@@ -115,7 +115,7 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [this documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) for more information.
+2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [Configure Remote Access for MongoDB on Ubuntu 20.04](https://www.digitalocean.com/community) for more information.
 
     <Admonition type="note">
     <p>Instructions might differ based on the MongoDB version and operating system.</p>
@@ -142,7 +142,7 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
 
     - Any IDE (for example: Visual Studio Code)
 
-    - [Nodejs](https://nodejs.org/en/download/)
+    - [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
 
     - [MongoDB](settingup-mongodb.md)
 
@@ -158,101 +158,88 @@ You can set up the <PartialExample elevate /> User Service on a local system in 
 
     Create a **.env** file in **src** directory of the project and copy the folowing environment variables into the file:
 
+
     ```
-    #User Service Config
+    # User Service Config
 
-    # Port on which service runs
-    APPLICATION_PORT = 3000
+    # Application Configuration
+    APPLICATION_PORT=3001
+    APPLICATION_ENV=development
+    APPLICATION_BASE_URL=/user/
+    ENABLE_LOG=true
+    API_DOC_URL=/user/api-doc
+    INTERNAL_CACHE_EXP_TIME=86400
 
-    # Service environment
-    APPLICATION_ENV = development
+    # Database Configuration
+    MONGODB_URL=mongodb://localhost:27017/elevate-users
 
-    # Database connectivity URL
-    MONGODB_URL = mongodb://localhost:27017/db-name
+    # Access Tokens Configuration
+    ACCESS_TOKEN_SECRET=w4asdf3aasdfwe5t6ergw4uyh56y
+    INTERNAL_ACCESS_TOKEN=internal_access_token
 
-    # Number of rounds for encryption
-    SALT_ROUNDS = 10
+    # Kafka Configuration
+    KAFKA_URL=localhost:9095
+    KAFKA_GROUP_ID=mentoring
+    KAFKA_TOPIC=kakfatopic
+    NOTIFICATION_KAFKA_TOPIC=dev.notifications
+    KAFKA_MENTORING_TOPIC=mentoringtopic
+    SESSION_KAFKA_TOPIC=session
+    KAFKA_RECORDING_TOPIC=recordingtopic
+    RATING_KAFKA_TOPIC=dev.mentor_rating
 
-    # Token secret to generate access token
-    ACCESS_TOKEN_SECRET = 'access-token-secret'
+    # Email Configuration
+    REGISTRATION_EMAIL_TEMPLATE_CODE=registration
+    OTP_EMAIL_TEMPLATE_CODE=emailotp
+    KEY=E/m3RD/SGASDFS+W45TYGshsfWASAsadfSasdDF45Y=
+    IV=W45YW45TSGDF4AGASDFWH/Q==
+    REGISTRATION_OTP_EMAIL_TEMPLATE_CODE=registrationotp
+    REGISTRATION_EMAIL_TEMPLATE_CODE=registration
+    REGISTRATION_OTP_EMAIL_TEMPLATE_CODE=registrationotp
+    CLEAR_INTERNAL_CACHE=userinternal
 
-    # Token secret to generate refresh token
-    REFRESH_TOKEN_SECRET = 'refresh-token-secret'
+    # Security Configuration
+    SALT_ROUNDS=10
+    ACCESS_TOKEN_EXPIRY=1
+    REFRESH_TOKEN_EXPIRY=183
+    MENTOR_SECRET_CODE=1234
+    ADMIN_SECRET_CODE=asdSADFfasdfargasdf
 
-    # Kafka hosted server URL
-    KAFKA_URL = localhost:9092
+    # Kafka Topics Configuration
+    KAFKA_TOPIC=kakfatopic
+    NOTIFICATION_KAFKA_TOPIC=dev.notifications
 
-    # Kafka group to which consumer belongs
-    KAFKA_GROUP_ID = userservice
+    # Cloud Storage Configuration
+    CLOUD_STORAGE=AWS
+    GCP_PATH=gcp.json
+    DEFAULT_GCP_BUCKET_NAME=mentoring-dev-storage
+    GCP_PROJECT_ID=sl-dev-project
+    AWS_ACCESS_KEY_ID=E5SDG6ASDFYHE546YE56Y
+    AWS_SECRET_ACCESS_KEY=WSADFAAHFHSF45YHW4T
+    AWS_BUCKET_REGION=ap-south-1
+    AWS_BUCKET_ENDPOINT=s3.ap-south-1.amazonaws.com
+    DEFAULT_AWS_BUCKET_NAME=mentoring-dev-storage
+    AZURE_ACCOUNT_NAME=mentoring
+    AZURE_ACCOUNT_KEY=W4SDSFGAH45HYW45
+    DEFAULT_AZURE_CONTAINER_NAME=mentoring-images
 
-    # Kafka topic to consume data from
-    KAFKA_TOPIC = 'topic'
+    # Redis Configuration
+    REDIS_HOST=redis://redis:6379
 
-    # Kafka topic to push notification data
-    NOTIFICATION_KAFKA_TOPIC = notificationtopic
+    # OCI Configuration
+    OCI_ACCESS_KEY_ID=asdfhgs54tfawsdf
+    OCI_SECRET_ACCESS_KEY=ah45gyh5df/5ygsdf=
+    OCI_BUCKET_REGION=ap-hyderabad-1
+    OCI_BUCKET_ENDPOINT=https://yseh456y.compat.objectstorage.ap-hyderabad-1.oraclecloud.com
+    DEFAULT_OCI_BUCKET_NAME=dev-mentoring
 
-    # Any one of three features available for cloud storage
-    CLOUD_STORAGE = 'GCP/AWS/AZURE'
+    # Logging Configuration
+    ERROR_LOG_LEVEL=silly
+    DISABLE_LOG=false
+    DEFAULT_ORGANISATION_CODE=defaultOrganization
 
-    # Gcp json config file path
-    GCP_PATH = 'gcp.json'
+    REFRESH_TOKEN_SECRET=as987d6f0a9s876df0897as6d
+    APP_NAME=MentorED
 
-    # Gcp bucket name which stores files
-    DEFAULT_GCP_BUCKET_NAME = 'gcp-bucket-storage-name'
-
-    # Gcp project id
-    GCP_PROJECT_ID = 'project-id'
-
-    # Aws access key id
-    AWS_ACCESS_KEY_ID = 'aws-access-key-id'
-
-    # Aws secret access key
-    AWS_SECRET_ACCESS_KEY = 'aws-secret-access-key'
-
-    # Aws region where bucket will be located
-    AWS_BUCKET_REGION = 'ap-south-1'
-
-    # Aws end point
-    AWS_BUCKET_ENDPOINT = 's3.ap-south-1.amazonaws.com'
-
-    # Aws bucket name which stores files
-    DEFAULT_AWS_BUCKET_NAME = 'aws-bucket-storage-name'
-
-    # Azure storage account name
-    AZURE_ACCOUNT_NAME = 'account-name'
-
-    # Azure storage account key
-    AZURE_ACCOUNT_KEY = 'azure-account-key'
-
-    # Azure storage container which stores files
-    DEFAULT_AZURE_CONTAINER_NAME = 'azure-container-storage-name'
-
-    # Internal access token for communicationcation between services via network call
-    INTERNAL_ACCESS_TOKEN = 'internal-access-token'
-
-    # Mentor screct code for registering
-    MENTOR_SECRET_CODE = 'secret-code'
-
-    #Enable logging of network request
-    ENABLE_LOG = true
-
-    # JWT Access Token expiry In Days
-    ACCESS_TOKEN_EXPIRY = '1'
-
-    # JWT Refresh Token expiry In Days
-    REFRESH_TOKEN_EXPIRY = '183'
-
-    # Redis Host connectivity URL
-    REDIS_HOST = 'redis://localhost:6379'
-
-    # Otp expiration time for forgetpassword or registration process
-    OTP_EXP_TIME = 86400
-
-    # Enable email based otp verification for registration process
-    ENABLE_EMAIL_OTP_VERIFICATION = true
-
-    # Api doc URL
-    API_DOC_URL = '/api-doc'
     ```
 
 4. Start MongoDB locally. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
@@ -281,7 +268,9 @@ https://elevate-apis.shikshalokam.org/user/api-doc
 
 https://github.com/ELEVATE-Project/mentoring.git
 
-## Notification Service
+## Supporting Services
+
+## Notifications Service
 
 https://github.com/ELEVATE-Project/notification.git
 

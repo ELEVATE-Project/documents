@@ -1,16 +1,16 @@
-import PartialExample from './_elevate.mdx';
+import PartialExample from './_mentored.mdx';
 import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';
 
-# Mentoring Service
+# Setting up the Mentor Service
 
-You can set up the <PartialExample elevate /> Mentoring Service on a local system in one of the following ways:
+You can set up the <PartialExample mentored /> Service on a local system in one of the following ways:
 
-* Using a [Docker Image](#using-a-docker-image).
-* As a [Docker-Compose File (Easiest)](#dockcompose).
-* As a [Dockerized service with local dependencies(Intermediate)](#docklocal).
-* As a [Local Service with local dependencies(Hardest)](#localservice).
+* Using a [Docker Image](#using-a-docker-image)
+* As a [Docker-Compose File (Easiest)](#dockcompose)
+* As a [Dockerized service with local dependencies (Intermediate)](#docklocal)
+* As a [Local Service with local dependencies (Hardest)](#localservice)
 
 ## Using a Docker Image
 
@@ -19,7 +19,7 @@ You can set up the <PartialExample elevate /> Mentoring Service on a local syste
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See the <a href="http://www.docker.io/gettingstarted/#h_installation">Docker website</a> for installation instructions.</p>
+<p>See the <a href="http://www.docker.io">Get Started</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
@@ -158,7 +158,7 @@ To set up a docker service with remote dependencies:
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [this documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) for more information.
+2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [Configure Remote Access for MongoDB on Ubuntu 20.04](https://www.digitalocean.com/community) for more information.
 
     <Admonition type="note">
     <p>Instructions might differ based on MongoDB version and operating system.</p>
@@ -184,7 +184,7 @@ To set up a docker service with remote dependencies:
 
     - Any IDE (such as Visual Studio Code)
 
-    - [Nodejs](https://nodejs.org/en/download/)
+    - [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
 
     - [MongoDB](settingup-mongodb.md)
 
@@ -203,95 +203,93 @@ To set up a docker service with remote dependencies:
     ```
     # Mentoring Service Config
 
-    # Port on which service runs
-    APPLICATION_PORT = 3000
+    # Application Configuration
+    APPLICATION_PORT=3000
+    APPLICATION_ENV=development
+    APPLICATION_BASE_URL=/mentoring/
+    ENABLE_LOG=true
+    API_DOC_URL=/mentoring/api-doc
+    INTERNAL_CACHE_EXP_TIME=86400
 
-    # Service environment
-    APPLICATION_ENV = development
+    # Database Configuration
+    MONGODB_URL=mongodb://localhost:27017/elevate-mentoring
 
-    # Route after base URL
-    APPLICATION_BASE_URL = /mentoring/
+    # Access Tokens Configuration
+    ACCESS_TOKEN_SECRET=sasadfdsdffas6a0asd9fs7asdfd6f0a9s86dfa9s08df
+    INTERNAL_ACCESS_TOKEN=internal_access_token
 
-    # Mongo db connectivity URL
-    MONGODB_URL = mongodb://localhost:27017/elevate-mentoring
+    # Kafka Configuration
+    KAFKA_URL=localhost:9092
+    KAFKA_GROUP_ID=mentoring
+    NOTIFICATION_KAFKA_TOPIC=develop.notifications
+    KAFKA_MENTORING_TOPIC=mentoringtopic
+    SESSION_KAFKA_TOPIC=session
+    KAFKA_RECORDING_TOPIC=recordingtopic
+    RATING_KAFKA_TOPIC=dev.rate
 
-    # Token secret to verify the access token
-    ACCESS_TOKEN_SECRET = 'bsj82AHBxahusub12yexlashsbxAXADHBlaj'
+    # Cloud Storage Configuration
+    CLOUD_STORAGE=AWS
+    MENTOR_SESSION_RESCHEDULE_EMAIL_TEMPLATE=mentor_session_reschedule
 
-    # Kafka hosted server URL
-    KAFKA_URL = localhost:9092
+    # GCP Configuration
+    GCP_PATH=gcp.json
+    DEFAULT_GCP_BUCKET_NAME=gcp-bucket-storage-name
+    GCP_PROJECT_ID=project-id
 
-    # Kafka group to which consumer belongs
-    KAFKA_GROUP_ID = userservice
+    # AWS Configuration
+    AWS_ACCESS_KEY_ID=aws-access-key-id
+    AWS_SECRET_ACCESS_KEY=aws-secret-access-key
+    AWS_BUCKET_REGION=ap-south-1
+    AWS_BUCKET_ENDPOINT=s3.ap-south-1.amazonaws.com
+    DEFAULT_AWS_BUCKET_NAME=aws-bucket-storage-name
 
-    # Kafka topic to push notification data
-    NOTIFICATION_KAFKA_TOPIC = notificationtopic
+    # Azure Configuration
+    AZURE_ACCOUNT_NAME=account-name
+    AZURE_ACCOUNT_KEY=azure-account-key
+    DEFAULT_AZURE_CONTAINER_NAME=azure-container-storage-name
 
-    # Kafka topic name to consume from mentoring topic
-    KAFKA_MENTORING_TOPIC ="mentoringtopic"
+    # User Service Configuration
+    USER_SERIVCE_HOST=http://localhost:3001
+    USER_SERIVCE_BASE_URL=/user/
 
-    # Kafka topic to push recording data
-    KAFKA_RECORDING_TOPIC ="recordingtopic"
+    # BigBlueButton Configuration
+    BIG_BLUE_BUTTON_URL=https://dev.mentoring.org-domain.org
+    BIB_BLUE_BUTTON_BASE_URL=/bigbluebutton/
+    MEETING_END_CALLBACK_EVENTS=https%3A%2F%2Fdev.apis.org_domain.org%2Fmentoring%2Fv1%2Fsessions%2Fcompleted
+    BIG_BLUE_BUTTON_SECRET_KEY=wsfsadfasdfr3tfg
+    RECORDING_READY_CALLBACK_URL=http%3A%2F%2Flocalhost%3A3000%2F%3FmeetingID%3Dmeet123
 
-    # Any one of three features available for cloud storage
-    CLOUD_STORAGE = 'GCP/AWS/AZURE'
+    # Redis Configuration
+    REDIS_HOST=redis://localhost:6379
 
-    # Gcp json config file path
-    GCP_PATH = 'gcp.json'
+    # Kafka Internal Communication
+    CLEAR_INTERNAL_CACHE=mentoringInternal
 
-    # Gcp bucket name which stores files
-    DEFAULT_GCP_BUCKET_NAME = 'gcp-bucket-storage-name'
+    # Enable Email for Reported Issue Configuration
+    ENABLE_EMAIL_FOR_REPORT_ISSUE=true
 
-    # Gcp project id
-    GCP_PROJECT_ID = 'project-id'
+    # Support Email Configuration
+    SUPPORT_EMAIL_ID=support@xyz.com,team@xyz.com
 
-    # Aws access key id
-    AWS_ACCESS_KEY_ID = 'aws-access-key-id'
+    # Email Template Code for Reported Issue Configuration
+    REPORT_ISSUE_EMAIL_TEMPLATE_CODE=user_issue_reported
 
-    # Aws secret access key
-    AWS_SECRET_ACCESS_KEY = 'aws-secret-access-key'
+    # BigBlueButton Session Configuration
+    BIG_BLUE_BUTTON_SESSION_END_URL=https%3A%2F%2Fdev.mentoring.org-domain.org%2F
 
-    # Aws region where bucket will be located
-    AWS_BUCKET_REGION = 'ap-south-1'
+    # Disable BigBlueButton
+    DEFAULT_MEETING_SERVICE=OFF
 
-    # Aws end point
-    AWS_BUCKET_ENDPOINT = 's3.ap-south-1.amazonaws.com'
+    # Additional Configuration
+    SCHEDULER_SERVICE_ERROR_REPORTING_EMAIL_ID=report@scheduler.com
+    SCHEDULER_SERVICE_URL=http://localhost:4000/jobs/scheduleJob
+    ERROR_LOG_LEVEL=silly
+    DISABLE_LOG=false
+    DEFAULT_MEETING_SERVICE=BBB
+    SESSION_EDIT_WINDOW_MINUTES=0
+    SESSION_MENTEE_LIMIT=5
+    MENTOR_SESSION_DELETE_EMAIL_TEMPLATE=mentor_session_delete
 
-    # Aws bucket name which stores files
-    DEFAULT_AWS_BUCKET_NAME = 'aws-bucket-storage-name'
-
-    # Azure storage account name
-    AZURE_ACCOUNT_NAME = 'account-name'
-
-    # Azure storage account key
-    AZURE_ACCOUNT_KEY = 'azure-account-key'
-
-    # Azure storage container which stores files
-    DEFAULT_AZURE_CONTAINER_NAME = 'azure-container-storage-name'
-
-    # user serice host
-    USER_SERIVCE_HOST = 'http://localhost:3001'
-
-    # user serice base URL
-    USER_SERIVCE_BASE_URL = '/user/'
-
-    # Big blue button URL
-    BIG_BLUE_BUTTON_URL = https://dev.mentoring.shikshalokam.org
-
-    # Big blue button base URL
-    BIB_BLUE_BUTTON_BASE_URL = /bigbluebutton/
-
-    # Meeting end callback events end point
-    MEETING_END_CALLBACK_EVENTS = https%3A%2F%2Fdev.elevate-apis.shikshalokam.org%2Fmentoring%2Fv1%2Fsessions%2Fcompleted
-
-    # Big blue button secret key
-    BIG_BLUE_BUTTON_SECRET_KEY = n
-
-    # Big blue button recording ready callback URL
-    RECORDING_READY_CALLBACK_URL = http%3A%2F%2Flocalhost%3A3000%2F%3FmeetingID%3Dmeet123
-
-    # Enable logging of network request
-    ENABLE_LOG = true
     ```
 
 4. Start MongoDB locally. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
@@ -318,19 +316,20 @@ To set up a docker service with remote dependencies:
     ELEVATE/mentoring/src/scripts$ node schedulerScript.js
     ```
 
-
 ## API Documentation 
 
 https://elevate-apis.shikshalokam.org/mentoring/api-doc
 
-## User Service
+## Supporting Services
+
+### User Service
 
 https://github.com/ELEVATE-Project/user.git
 
-## Notification Service
+### Notifications Service
 
 https://github.com/ELEVATE-Project/notification.git 
 
-## Scheduler Service
+### Scheduler Service
 
 https://github.com/ELEVATE-Project/scheduler.git

@@ -3,22 +3,32 @@ import PartialExample2 from './_elevate.mdx';
 import Shiksha from './_shiksha.mdx';
 import Admonition from '@theme/Admonition';
 
-# Hosting and Customizing MentorED
+# Hosting and Customizing Mentor
 
-<PartialExample mentored /> consists of a collection of microservices which can be set up in a local server or in a cloud environment. You can choose to customize only the look and feel of the mobile application and use the microservices hosted by <Shiksha shiksha />.
+The Mentor capability is enabled by the Mentor microservice which can be set up in any cloud environment or in an on-premise setup. 
 
-<Admonition type="note">
+In addition, you can also set up a reference implementation (portal) and customize the look and feel based on your needs. See [Customize the Web Portal](settingup-webportal) to learn more.
+
+Other services such as user, notification, scheduler, and BigBlueButton are optional. The mentor service can work with one or more existing implementations of the same.
+
+<Admonition type="info">
 <p>To learn more, read the microservices sections for more information.</p>
 </Admonition>
 
 To host a customized instance of <PartialExample mentored />:
 
-1. [Set up Apache Kafka](https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04).
-2. [Set up MongoDB](settingup-mongodb.md).
-3. [Set up Node.js](https://serverspace.io/support/help/how-to-install-node-js-on-ubuntu-20-04/).
-4. [Set up Robo 3T](https://robomongo.org/).
-5. [Set up the <PartialExample2 elevate /> user service](settingup-userservice).
-6. [Set up the <PartialExample2 elevate /> mentoring service](settingup-mentoringservice).
-7. [Set up the <PartialExample2 elevate /> notification service](settingup-notificationsservice).
-8. [Set up the BigBlueButton service](https://docs.bigbluebutton.org/2.4/install.html#before-you-install).
-9. [Customize the <PartialExample mentored /> mobile application](settingup-mentoredapplication).
+1. [Set up MongoDB](settingup-mongodb).
+2. [Install Node.js on Ubuntu 20.04](https://serverspace.io) (Search for *Install node.js on Ubuntu 20.04* in the Tutorials section.).
+3. [Set up mentoring service](settingup-mentoringservice).
+4. [Customize the <PartialExample mentored /> mobile application](settingup-mentoredapplication).
+5. [Customize the Web Portal](settingup-webportal).
+
+Optionally, you can set up the following supporting services:
+
+* [Install Apache Kafka on Ubuntu 20.04](https://www.digitalocean.com/community).
+* [Set up user service](settingup-userservice).
+* [Set up notifications service](settingup-notificationsservice).
+* [Set up scheduler service](settingup-schedulerservice).
+* [Set up BigBlueButton service](settingup-bbb).
+
+

@@ -11,7 +11,7 @@
         },
         {
           "type": "doc",
-          "id": "technicalarchitecture-mentored",
+          "id": "technicalarchitecture",
           "label": "Architecture"
         },
         {
@@ -36,18 +36,28 @@
           "label": "Setting up MongoDB 4.1.4"
         },
         {
+          "type": "doc",
+          "id": "settingup-mentoringservice",
+          "label": "Setting up the Mentor Service"
+        },
+        {
+          "type": "doc",
+          "id": "settingup-mobileapplication",
+          "label": "Customizing the Mobile Application"
+        },
+        {
+          "type": "doc",
+          "id": "settingup-webportal",
+          "label": "Customizing the Web Portal"
+        },
+        {
           "type": "category",
-          "label": "Setting up the Microservices",
+          "label": "Setting up the Supporting Microservices (Optional)",
           "items": [
             {
               "type": "doc",
               "id": "settingup-userservice",
               "label": "Setting up the User Service"
-            },
-            {
-              "type": "doc",
-              "id": "settingup-mentoringservice",
-              "label": "Setting up the Mentoring Service"
             },
             {
               "type": "doc",
@@ -69,22 +79,12 @@
       ]
     },
     {
-      "type": "doc",
-      "id": "settingup-mentoredapplication",
-      "label": "Customizing the Mobile Application"
-    },
-    {
-      "type": "doc",
-      "id": "settingup-webportal",
-      "label": "Customizing the Web Portal"
-    },
-    {
       "type": "category",
       "label": "Using the Application",
       "items": [
         {
           "type": "doc",
-          "id": "using-the-mentored-application",
+          "id": "using-the-application",
           "label": "About the Application"
         },
         {
@@ -148,7 +148,7 @@
             },
             {
               "type": "doc",
-              "id": "setting-up-a-mentored-session",
+              "id": "setting-up-a-session",
               "label": "Setting up a Session"
             },
             {
@@ -287,7 +287,7 @@
         },
         {
           "type": "doc",
-          "id": "mentoredrepos",
+          "id": "repos",
           "label": "Source Code Repositories"
         }
       ]

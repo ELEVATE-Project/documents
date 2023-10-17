@@ -11,7 +11,7 @@
         },
         {
           "type": "doc",
-          "id": "technicalarchitecture-mentored",
+          "id": "technicalarchitecture",
           "label": "Architecture"
         },
         {
@@ -65,7 +65,7 @@
     },
     {
       "type": "doc",
-      "id": "settingup-mentoredapplication",
+      "id": "settingup-mobileapplication",
       "label": "Customizing the Mobile Application"
     },
     {
@@ -74,7 +74,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "using-the-mentored-mobile-application",
+          "id": "using-the-application",
           "label": "About the Mobile Application"
         },
         {
@@ -113,7 +113,7 @@
             },
             {
               "type": "doc",
-              "id": "setting-up-a-mentored-session",
+              "id": "setting-up-a-session",
               "label": "Setting up a Session"
             },
             {
@@ -213,7 +213,7 @@
     },
     {
       "type": "doc",
-      "id": "mentoredrepos",
+      "id": "repos",
       "label": "Source Code Repositories"
     },
     {

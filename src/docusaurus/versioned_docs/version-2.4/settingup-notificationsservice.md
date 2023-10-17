@@ -3,15 +3,15 @@ import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';
 
-# Notifications Service
+# Setting up the Notifications Service
 
-You can set up the <PartialExample elevate /> Notification Service on a local system in one of the following ways:
+You can set up the Notification Service on a local system in one of the following ways:
 
- - Using a [Docker Image](#using-a-docker-image).
+ - Using a [Docker Image](#using-a-docker-image)
 
- - As a [dockerized service with local dependencies(Intermediate)](#dockdep)
+ - As a [dockerized service with local dependencies (Intermediate)](#dockdep)
 
- - As a [local service with local dependencies(Hardest)](#localdep)
+ - As a [local service with local dependencies (Hardest)](#localdep)
 
 ## Using a Docker Image
 
@@ -20,7 +20,7 @@ You can set up the <PartialExample elevate /> Notification Service on a local sy
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See <a href="http://www.docker.io/gettingstarted/#h_installation">Docker website</a> for installation instructions.</p>
+<p>See <a href="http://www.docker.io">Get Started</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
@@ -125,7 +125,7 @@ You can set up the <PartialExample elevate /> Notification Service on a local sy
 
     - Any IDE (such as Visual Studio Code)
 
-    - [Nodejs](https://nodejs.org/en/download/)
+    - [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
 
 2. Clone the **Notification service** repository.
 
@@ -140,29 +140,27 @@ You can set up the <PartialExample elevate /> Notification Service on a local sy
     ```
     # Notification Service Config
 
-    #Port on which service runs
-    APPLICATION_PORT = 3000
+    # Application Configuration
+    APPLICATION_PORT=3002
+    APPLICATION_ENV=development
+    APPLICATION_BASE_URL=/notification/
+    ENABLE_LOG=true
 
-    #Application environment
-    APPLICATION_ENV = development
+    # Kafka Configuration
+    KAFKA_HOST=localhost:9092
+    KAFKA_TOPIC=testTopic
+    KAFKA_GROUP_ID=notification
 
-    #Route after base URL
-    APPLICATION_BASE_URL = /notification/
+    # SendGrid Configuration
+    SENDGRID_API_KEY=SG.45gy5g
+    SENDGRID_FROM_MAIL=test@gmail.com
 
-    #Kafka endpoint
-    KAFKA_HOST = "localhost:9092"
+    # API Documentation Configuration
+    API_DOC_URL=/notification/api-doc
 
-    #kafka topic name
-    KAFKA_TOPIC ="testTopic"
-
-    #kafka consumer group id
-    KAFKA_GROUP_ID = "notification"
-
-    #sendgrid api key
-    SENDGRID_API_KEY = "SG.sdssd.dsdsd.XVSDGFEBGEB.sddsd"
-
-    #sendgrid sender email address
-    SENDGRID_FROM_MAIL = "test@gmail.com"
+    # Logging Configuration
+    ERROR_LOG_LEVEL=silly
+    DISABLE_LOG=false
 
     ```
 
@@ -182,14 +180,16 @@ You can set up the <PartialExample elevate /> Notification Service on a local sy
 
 https://elevate-apis.shikshalokam.org/notification/api-doc
 
-## Mentoring Service
+## Mentor Service
 
 https://github.com/ELEVATE-Project/mentoring.git
 
-## User Service
+## Supporting Services
+
+### User Service
 
 https://github.com/ELEVATE-Project/user.git
 
-## Scheduler Service
+### Scheduler Service
 
 https://github.com/ELEVATE-Project/scheduler.git

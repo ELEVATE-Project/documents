@@ -1,0 +1,78 @@
+import PartialExample from './_mentored.mdx';
+import Shiksha from './_shiksha.mdx';
+import ReactPlayer from 'react-player';
+import overviewURL from './media/overview.mp4';
+import portalWelcome from './media/portal-welcome.png';
+import AppWelcome from './media/welcome.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+# About the Mentor Application
+
+The <PartialExample mentored /> application is integrated with the microservices hosted by <Shiksha shiksha />. The application uses the authentication, notifications, user management, and mentoring services hosted on the <Shiksha shiksha /> Cloud. 
+
+The following table summarizes the activities mentors and mentees can carry out using the <PartialExample mentored /> mobile application.
+
+
+| Mentors | Mentees |
+| ----------- | ----------- |
+| Create and manage live <PartialExample mentored /> sessions.| Discover and join live <PartialExample mentored /> sessions. |
+| Interact with the participants. | Interact with the mentor and other participants.|
+| Collaborate with other mentors on <PartialExample mentored /> sessions. | Collaborate with other participants. |
+| Use the mentor directory to get to know other mentors. | Use the mentor directory to get to know more about mentors.|
+|Provide feedback on <PartialExample mentored /> sessions.| Provide feedback on <PartialExample mentored /> sessions.|
+
+
+## Getting Started with MentorED
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>Download and install the <PartialExample mentored /> application from Google Play store.
+<p>
+  <Admonition type="note">
+  <p>To install the application, your device should have an Android version of 5.0 or above.</p>
+  </Admonition>
+</p>
+</li>
+<li>After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears.
+<p><ReactPlayer playing controls url={overviewURL} loop="false" /></p>
+</li>
+<li>If this is the first time that you are using <PartialExample mentored /> mobile application, see:
+<ul>
+   <li><a href="signing-up-as-a-mentor">Signing up as a Mentor</a></li>
+   <li><a href="signing-up-as-a-mentee">Signing up as a Mentee</a></li>
+</ul>
+<p>
+  <img src={AppWelcome} />
+</p>
+</li> 
+</ol>   
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+
+<p>To access the portal, go to <a href="https://mentored.shikshalokam.org/">https://mentored.shikshalokam.org/</a></p>
+<p>
+  <Admonition type="note">
+  <ul>
+  <li>If the web portal does not load, update your web browser and retry.</li>
+  <li>The supported web browsers are Google Chrome, Firefox, and Safari.</li>
+  </ul>
+  </Admonition>
+</p>
+<p>If this is the first time that you are using <PartialExample mentored /> portal, see:</p>
+<ul> 
+<li><a href="signing-up-as-a-mentor">Signing up as a Mentor</a></li>
+<li><a href="signing-up-as-a-mentee">Signing up as a Mentee</a></li>
+</ul>
+<p>
+  <img src={portalWelcome} />
+</p>
+  </TabItem>
+</Tabs>
+
+
+
+
+
