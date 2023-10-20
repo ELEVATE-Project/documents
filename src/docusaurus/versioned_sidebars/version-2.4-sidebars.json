@@ -272,6 +272,11 @@
       ]
     },
     {
+      "type": "doc",
+      "id": "faq",
+      "label": "FAQs"
+    },
+    {
       "type": "category",
       "label": "Additional Technical Resources",
       "items": [
@@ -291,11 +296,6 @@
           "label": "Source Code Repositories"
         }
       ]
-    },
-    {
-      "type": "doc",
-      "id": "faq",
-      "label": "FAQs"
     }
   ]
 }

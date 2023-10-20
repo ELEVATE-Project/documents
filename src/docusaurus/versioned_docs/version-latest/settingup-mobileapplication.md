@@ -3,7 +3,7 @@ import Admonition from '@theme/Admonition';
 
 # Customizing the Mentor Mobile Application
 
-The <PartialExample mentored /> mobile application is developed using the Ionic framework along with the Capacitor runtime, which makes it easy to run apps across mobile and Web platforms.  
+The <PartialExample mentored /> mobile application is developed using the Ionic framework along with the Capacitor runtime, which makes it easy to run apps across mobile and web platforms.  
 
 ## Key Components in the Development Environment 
 
@@ -17,19 +17,19 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
 
 | Requirement         | Description    |
 |--------------|-----------|
-| Ionic CLI | Version 6.19.1 (/usr/local/lib/node_modules/@ionic/cli) |
-| Ionic Framework | <ul><li>@ionic/angular 6.1.7 </li> <li>@angular-devkit/build-angular : 13.2.6 </li><li> @angular-devkit/schematics : 13.2.6 </li><li>@angular/cli : 13.2.6 </li><li> @ionic/angular-toolkit : 6.1.0 </li></ul> |
-| Capacitor | <ul><li>Capacitor CLI : 3.5.1 </li><li>@capacitor/android : 3.5.0 </li><li>@capacitor/core : 3.5.1 </li><li>@capacitor/ios : 3.5.0</li></ul>
+| Ionic CLI |Version 7.1.1 (/usr/local/lib/node_modules/@ionic/cli)|
+| Ionic Framework | <ul><li>@ionic/angular 6.7.5</li> <li>@angular-devkit/build-angular : 13.2.6 </li><li> @angular-devkit/schematics : 13.2.6 </li><li>@angular/cli : 13.2.6 </li><li> @ionic/angular-toolkit : 6.1.0 </li></ul> |
+| Capacitor | <ul><li>Capacitor CLI : 5.4.1 </li><li>@capacitor/android : 5.4.1 </li><li>@capacitor/core : 5.4.1 </li><li>@capacitor/ios : 5.4.1 </li></ul>
 | Cordova | <ul><li>Cordova CLI : 11.0.0</li><li>Cordova Platforms : none</li><li>Cordova Plugins : no whitelisted plugins (0 plugins total)</li></ul>
-| Utility | <ul><li>cordova-res : 0.15.4</li><li>native-run : 1.6.0</li></ul>
-| System | <ul><li>Android SDK Tools: 26.1.1 (/home/user/Android/Sdk) </li><li>NodeJS: v14.19.0 (/usr/local/bin/node) </li><li>npm: 6.14.16 </li><li>OS: Linux 5.13</li></ul>
+| Utility | <ul><li>cordova-res : 0.15.4</li><li>native-run : 1.7.3 </li></ul>
+| System | <ul><li>Android SDK Build-Tools: 34 (/home/user/Android/Sdk) </li><li>Android SDK Platform-Tools: 34.0.4 (/home/user/Android/Sdk) </li><li>Android SDK Command-Line Tools: Latest</li><li>Android Emulator: 32.1.5</li><li>NodeJS: v18.18.2 (/usr/local/bin/node) </li><li>npm: 10.2.0 </li><li>OS: Linux 5.15</li></ul>
 
 ## Ionic-Android Build Setup
 
 1. Install Java. 
 
     <Admonition type="tip">  
-    <p>For detailed instructions, see the Java 8 section in <a href="https://www.oracle.com">Java Downloads</a>.</p>
+    <p>For detailed instructions, search for *Java downloads* and go to the JDK 17 section in <a href="https://www.oracle.com">Oracle Cloud applications and Cloud Platforms</a>.</p>
     </Admonition>
 
 2. Install Gradle. 
@@ -44,25 +44,25 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
     <p>For detailed instructions, see <a href="https://developer.android.com">Android Studio</a>.</p>
     </Admonition>
 
-4. Install Android SDK.
+4. To install Android SDK, do as follows:
 
-    - Open Android studio 
-    - Go to **Settings** > **Appearance and Behavior** > **System Settings** > **Android SDK**.
-    - Install the appropriate Android SDK platform package.
+    1. Open Android Studio. 
+    2. Go to **Settings** > **Appearance and Behavior** > **System Settings** > **Android SDK**.
+    3. Install the appropriate Android SDK platform package.
 
 5. Add environment variables in ~/.bashrc or ~/.bash_profile as follows:
 
     ```
-     export ANDROID_SDK_ROOT=path_to_sdk export 
+     export ANDROID_SDK_ROOT=path_to_sdk
+     
+     export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
 
-     PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin export 
-
-     PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+     export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
     ```
 
 <Admonition type="tip">  
-<p>For detailed information, see <a href="https://ionicframework.com">Android Development</a>.</p>
+<p>For detailed information, search for *Android Development* in <a href="https://ionicframework.com">Ionic Framework</a>.</p>
 </Admonition>
 
 ## Setting up the Command Line Interface (CLI)
@@ -88,7 +88,7 @@ The <PartialExample mentored /> mobile application is developed using the Ionic 
 
 ## Setting up the Project
 
-1. Use Git to clone the [repository](https://github.com/ELEVATE-Project/mentoring-mobile-app.git).
+1. Clone the [repository](https://github.com/ELEVATE-Project/mentoring-mobile-app.git).
 2. Create a file named **environment.ts** in the  `src/environments` folder and add the necessary variables.
 3. Go to project folder and run `npm i`.
 

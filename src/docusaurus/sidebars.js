@@ -304,6 +304,11 @@ const sidebars = {
       ]
     },
     {
+      type: 'doc',
+      id: 'faq', // document ID
+      label: 'FAQs', // sidebar label
+    },
+    {
       type: 'category',
       label: 'Additional Technical Resources',
       items: [
@@ -323,12 +328,7 @@ const sidebars = {
           label: 'Source Code Repositories', // sidebar label
         },
       ]
-    },
-    {
-      type: 'doc',
-      id: 'faq', // document ID
-      label: 'FAQs', // sidebar label
-    },
+    }
   ]
 };
 module.exports = sidebars;

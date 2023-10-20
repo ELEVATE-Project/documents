@@ -19,7 +19,7 @@ You can set up the Scheduler Service on a local system in one of the following w
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See <a href="http://www.docker.io">Get Started</a> for installation instructions.</p>
+<p>See the <a href="http://www.docker.io">Get Started section in Docker</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
@@ -115,7 +115,7 @@ You can set up the Scheduler Service on a local system in one of the following w
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [Configure Remote Access for MongoDB on Ubuntu 20.04](https://www.digitalocean.com/community) for more information.
+2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). For more information, search for *Configure Remote Access for MongoDB on Ubuntu 20.04* in [DigitalOcean Community](https://www.digitalocean.com/community).
 
     <Admonition type="note">
     <p>Instructions might differ based on the MongoDB version and operating system.</p>
@@ -141,7 +141,7 @@ You can set up the Scheduler Service on a local system in one of the following w
     * Any IDE (for example: Visual Studio Code)
 
     * [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
-    
+
     * [MongoDB](settingup-mongodb.md)
     
     * [Robo-3T](https://robomongo.org/)
@@ -175,6 +175,7 @@ You can set up the Scheduler Service on a local system in one of the following w
     # Logging Configuration
     ERROR_LOG_LEVEL='silly'
     DISABLE_LOG=false
+    
     ```
 
 4. Start MongoDB locally. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.

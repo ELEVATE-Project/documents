@@ -5,7 +5,7 @@ import Admonition from '@theme/Admonition';
 
 # Setting up the Notifications Service
 
-You can set up the Notification Service on a local system in one of the following ways:
+You can set up the Notifications Service on a local system in one of the following ways:
 
  - Using a [Docker Image](#using-a-docker-image)
 
@@ -20,7 +20,7 @@ You can set up the Notification Service on a local system in one of the followin
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See <a href="http://www.docker.io">Get Started</a> for installation instructions.</p>
+<p>See the <a href="http://www.docker.io">Get Started section in Docker</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
