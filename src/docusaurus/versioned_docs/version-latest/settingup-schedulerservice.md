@@ -140,7 +140,7 @@ You can set up the Scheduler Service on a local system in one of the following w
 
     * Any IDE (for example: Visual Studio Code)
 
-    * [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
+    * [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
     * [MongoDB](settingup-mongodb.md)
     
@@ -196,11 +196,8 @@ You can set up the Scheduler Service on a local system in one of the following w
     ELEVATE/scheduler/src$ npm start
     ```
 
-## API Documentation 
 
-https://elevate-apis.shikshalokam.org/scheduler/api-doc
-
-## Mentoring Service
+## Mentor Service
 
 https://github.com/ELEVATE-Project/mentoring.git
 

@@ -9,7 +9,7 @@ The <PartialExample mentored /> capability is enabled by the <PartialExample men
 
 In addition, you can also set up a reference implementation (portal) and customize the look and feel based on your needs. See [Customize the Web Portal](settingup-webportal) to learn more.
 
-Other services such as user, notification, scheduler, and BigBlueButton are optional. The <PartialExample mentored /> service can work with one or more existing implementations of the same.
+Other services such as User, Notification, Scheduler, and BigBlueButton are optional. The <PartialExample mentored /> service can work with one or more existing implementations of the same.
 
 <Admonition type="info">
 <p>To learn more, read the microservices sections for more information.</p>
@@ -26,8 +26,8 @@ To host a customized instance of <PartialExample mentored />:
 Optionally, you can set up the following supporting services:
 
 * [Install Apache Kafka on Ubuntu 20.04](https://www.digitalocean.com/community) (Search for *Install Apache Kafka on Ubuntu 20.04* in the Community serach box.).
-* [Set up user service](settingup-userservice).
-* [Set up notifications service](settingup-notificationsservice).
-* [Set up scheduler service](settingup-schedulerservice).
-* [Set up BigBlueButton service](settingup-bbb).
+* [Set up User Service](settingup-userservice).
+* [Set up Notifications Service](settingup-notificationsservice).
+* [Set up Scheduler Service](settingup-schedulerservice).
+* [Set up BigBlueButton Service](settingup-bbb).
 

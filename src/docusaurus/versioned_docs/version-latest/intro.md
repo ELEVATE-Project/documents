@@ -5,7 +5,7 @@ import Intro from './media/intro.png';
 
 # Welcome to Mentor
  
-<PartialExample mentored /> is a composite building block which enables online interactions between mentees and mentors to facilitate professional development through peer learning and community building.
+<PartialExample mentored /> is a composite building block through which mentees and mentors can engage in online interactions to facilitate professional development through peer learning and community building.
 
 >
 
@@ -36,13 +36,13 @@ This gap needs to be bridged through a network of mentors and experts available 
 
 ## Mentor Building Block
 
-<PartialExample mentored /> building block facilitates the development of a mentoring network by enabling online interactions between mentees and mentors in the ecosystem. The network allows mentees to <b>search for and discover experts</b> and seek guidance for professional development. <div class="wrapText"><img src={Intro} /></div>
+<PartialExample mentored /> building block facilitates the development of a mentoring network by enabling online interactions between mentees and mentors in the ecosystem. Using the network, mentees can <b>search for and discover experts</b> and seek guidance for professional development. <div class="wrapText"><img src={Intro} /></div>
 
 >
 
-The capability endeavours to build a marketplace for mentors and mentees where mentees discover (trusted) mentors, establish a connection, and schedule <PartialExample mentored /> sessions. Thereafter, the mentor and mentee rate the session and share their feedback. 
+The capability endeavours to build a marketplace for mentors and mentees where mentees discover (trusted) mentors, establish a connection, and join mentoring sessions. Thereafter, the mentor and mentee rate the session and share their feedback. 
 
-Currently, the capability enables only mentor-driven interactions (group and one-on-one mentoring). However, sessions conducted by mentees are part of the roadmap.
+Currently, the capability enables only mentor-driven interactions (group mentoring).
 
 The long-term vision of the <PartialExample mentored /> building block is to create a country-wide pool of academic experts in different subjects and areas of knowledge to support the workforce. The mentor building block has the potential to address the **skill gap** in all sectors of the economy. It encourages a cross-section of ideas and information sharing and opens avenues for cross-learning and interdisciplinary growth. 
 

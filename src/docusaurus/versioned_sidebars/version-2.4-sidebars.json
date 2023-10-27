@@ -143,11 +143,6 @@
             },
             {
               "type": "doc",
-              "id": "mentor-directory",
-              "label": "Using the Mentor Directory"
-            },
-            {
-              "type": "doc",
               "id": "setting-up-a-session",
               "label": "Setting up a Session"
             },

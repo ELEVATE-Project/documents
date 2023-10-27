@@ -125,7 +125,7 @@ You can set up the Notifications Service on a local system in one of the followi
 
     - Any IDE (such as Visual Studio Code)
 
-    - [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
+    - [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
 2. Clone the **Notification service** repository.
 
@@ -175,10 +175,6 @@ You can set up the Notifications Service on a local system in one of the followi
     ```
     ELEVATE/notification/src$ npm start
     ```
-
-## API Documentation 
-
-https://elevate-apis.shikshalokam.org/notification/api-doc
 
 ## Mentor Service
 

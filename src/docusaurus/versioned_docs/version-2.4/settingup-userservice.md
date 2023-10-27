@@ -20,7 +20,7 @@ You can set up the User Service on a local system in one of the following ways:
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See <a href="http://www.docker.io">Get Started section in Docker</a> for installation instructions.</p>
+<p>See the <a href="http://www.docker.io">Get Started section in Docker</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
@@ -142,7 +142,7 @@ You can set up the User Service on a local system in one of the following ways:
 
     - Any IDE (for example: Visual Studio Code)
 
-    - [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
+    - [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
     - [MongoDB](settingup-mongodb.md)
 
@@ -263,16 +263,16 @@ You can set up the User Service on a local system in one of the following ways:
 
 https://elevate-apis.shikshalokam.org/user/api-doc
 
-## Mentoring Service
+## Mentor Service
 
 https://github.com/ELEVATE-Project/mentoring.git
 
 ## Supporting Services
 
-## Notifications Service
+### Notifications Service
 
 https://github.com/ELEVATE-Project/notification.git
 
-## Scheduler Service
+### Scheduler Service
 
 https://github.com/ELEVATE-Project/scheduler.git

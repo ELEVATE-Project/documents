@@ -184,7 +184,7 @@ To set up a docker service with remote dependencies:
 
     - Any IDE (such as Visual Studio Code)
 
-    - [Nodejs](https://nodejs.org) (Install Nodejs from the Downloads section.)
+    - [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
     - [MongoDB](settingup-mongodb.md)
 
