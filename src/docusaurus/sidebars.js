@@ -83,8 +83,8 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'settingup-userservice', // document ID
-              label: 'Setting up the User Service', // sidebar label
+              id: 'settingup-bbb', // document ID
+              label: 'Setting up the BigBlueButton Service', // sidebar label
             },
             {
               type: 'doc',
@@ -98,8 +98,8 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'settingup-bbb', // document ID
-              label: 'Setting up the BigBlueButton Service', // sidebar label
+              id: 'settingup-userservice', // document ID
+              label: 'Setting up the User Service', // sidebar label
             },
           ]
         },
