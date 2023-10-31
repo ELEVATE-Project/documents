@@ -133,43 +133,13 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'logging-in', // document ID
+              id: 'logging-in-mentor', // document ID
               label: 'Logging in', // sidebar label
             },
             {
               type: 'doc',
-              id: 'report-signuporloginissue', // document ID
-              label: 'Reporting Issues Related to Signing up and Logging in', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'change-language', // document ID
-              label: 'Changing the Language Settings', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'report-an-issue', // document ID
-              label: 'Reporting an Issue', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'using-faq', // document ID
-              label: 'Using the FAQ Page', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'view-helpvideos', // document ID
-              label: 'Viewing the Help Videos', // sidebar label
-            },
-            {
-              type: 'doc',
               id: 'creating-and-managing-mentor-profile', // document ID
-              label: 'Creating and Managing a Profile', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'viewmentorprofilelink', // document ID
-              label: 'Using a Shared Link to View a Mentor Profile', // sidebar label
+              label: 'Creating a Mentor Profile', // sidebar label
             },
             {
               type: 'doc',
@@ -199,7 +169,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'mentor-deleteaccountrequest', // document ID
-              label: 'Creating a Request to Delete the Account', // sidebar label
+              label: 'Deleting the Account', // sidebar label
             }
           ]
         },
@@ -216,38 +186,13 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'logging-in', // document ID
+              id: 'logging-in-mentee', // document ID
               label: 'Logging in', // sidebar label
             },
             {
               type: 'doc',
-              id: 'report-signuporloginissue', // document ID
-              label: 'Reporting Issues Related to Signing up and Logging in', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'change-language', // document ID
-              label: 'Changing the Language Settings', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'report-an-issue', // document ID
-              label: 'Reporting an Issue', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'using-faq', // document ID
-              label: 'Using the FAQ Page', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'view-helpvideos', // document ID
-              label: 'Viewing the Help Videos', // sidebar label
-            },
-            {
-              type: 'doc',
               id: 'creating-and-managing-mentee-profile', // document ID
-              label: 'Creating and Managing a Profile', // sidebar label
+              label: 'Creating a Mentee Profile', // sidebar label
             },
             {
               type: 'doc',
@@ -292,16 +237,47 @@ const sidebars = {
             {
               type: 'doc',
               id: 'mentor-deleteaccountrequest', // document ID
-              label: 'Creating a Request to Delete the Account', // sidebar label
+              label: 'Deleting the Account', // sidebar label
             }
           ]
         },
+        {
+          "type": "doc",
+          "id": "change-language",
+          "label": "Changing the Language Settings"
+        },
+        {
+          "type": "category",
+          "label": "Support",
+          "items": [
+            {
+              "type": "doc",
+              "id": "report-signuporloginissue",
+              "label": "Reporting Sign up and Log in Issues"
+            },
+            {
+              "type": "doc",
+              "id": "report-an-issue",
+              "label": "Reporting an Issue"
+            },
+            {
+              "type": "doc",
+              "id": "using-faq",
+              "label": "Using the FAQ Page"
+            },
+            {
+              "type": "doc",
+              "id": "view-helpvideos",
+              "label": "Viewing the Help Videos"
+            }
+          ]
+        },
+        {
+          type: 'doc',
+          id: 'faq', // document ID
+          label: 'FAQs', // sidebar label
+        },
       ]
-    },
-    {
-      type: 'doc',
-      id: 'faq', // document ID
-      label: 'FAQs', // sidebar label
     },
     {
       type: 'category',

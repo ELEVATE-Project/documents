@@ -25,7 +25,7 @@ To host a customized instance of <PartialExample mentored />:
 
 Optionally, you can set up the following supporting services:
 
-* [Install Apache Kafka on Ubuntu 20.04](https://www.digitalocean.com/community) (Search for *Install Apache Kafka on Ubuntu 20.04* in the Community serach box.).
+* [Install Apache Kafka on Ubuntu 20.04](https://www.digitalocean.com/community) (Search for *Install Apache Kafka on Ubuntu 20.04* in the **Community** search box.).
 * [Set up User Service](settingup-userservice).
 * [Set up Notifications Service](settingup-notificationsservice).
 * [Set up Scheduler Service](settingup-schedulerservice).

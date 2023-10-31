@@ -259,20 +259,11 @@ You can set up the User Service on a local system in one of the following ways:
     ELEVATE/user/src$ npm start
     ```
 
-## API Documentation 
+## Additional Resources
 
-https://elevate-apis.shikshalokam.org/user/api-doc
-
-## Mentor Service
-
-https://github.com/ELEVATE-Project/mentoring.git
-
-## Supporting Services
-
-### Notifications Service
-
-https://github.com/ELEVATE-Project/notification.git
-
-### Scheduler Service
-
-https://github.com/ELEVATE-Project/scheduler.git
+|To learn more| See the following links|
+|--------------|-----------|
+|API Documentation|https://elevate-apis.shikshalokam.org/user/api-doc|
+|Mentor Service|https://github.com/ELEVATE-Project/mentoring.git|
+|Supporting Service: Scheduler Service|https://github.com/ELEVATE-Project/scheduler.git|
+|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|

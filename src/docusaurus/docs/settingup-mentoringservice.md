@@ -318,21 +318,11 @@ To set up a docker service with remote dependencies:
     ELEVATE/mentoring/src/scripts$ node schedulerScript.js
     ```
 
+## Additional Resources
 
-## API Documentation 
-
-https://elevate-apis.shikshalokam.org/mentoring/api-doc
-
-## Supporting Services
-
-### User Service
-
-https://github.com/ELEVATE-Project/user.git
-
-### Notifications Service
-
-https://github.com/ELEVATE-Project/notification.git 
-
-### Scheduler Service
-
-https://github.com/ELEVATE-Project/scheduler.git
+|To learn more| See the following links|
+|--------------|-----------|
+|API Documentation|https://elevate-apis.shikshalokam.org/mentoring/api-doc|
+|Supporting Service: User Service|https://github.com/ELEVATE-Project/user.git|
+|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|
+|Supporting Service: Scheduler Service|https://github.com/ELEVATE-Project/scheduler.git|

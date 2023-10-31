@@ -196,16 +196,10 @@ You can set up the Scheduler Service on a local system in one of the following w
     ELEVATE/scheduler/src$ npm start
     ```
 
-## Mentor Service
+## Additional Resources
 
-https://github.com/ELEVATE-Project/mentoring.git
-
-## Supporting Services
-
-### User Service
-
-https://github.com/ELEVATE-Project/user.git
-
-### Notifications Service
-
-https://github.com/ELEVATE-Project/notification.git
+|To learn more| See the following links|
+|--------------|-----------|
+|Mentor Service|https://github.com/ELEVATE-Project/mentoring.git|
+|Supporting Service: User Service|https://github.com/ELEVATE-Project/user.git|
+|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|

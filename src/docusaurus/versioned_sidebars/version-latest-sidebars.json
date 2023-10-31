@@ -103,43 +103,13 @@
             },
             {
               "type": "doc",
-              "id": "logging-in",
+              "id": "logging-in-mentor",
               "label": "Logging in"
-            },
-            {
-              "type": "doc",
-              "id": "report-signuporloginissue",
-              "label": "Reporting Issues Related to Signing up and Logging in"
-            },
-            {
-              "type": "doc",
-              "id": "change-language",
-              "label": "Changing the Language Settings"
-            },
-            {
-              "type": "doc",
-              "id": "report-an-issue",
-              "label": "Reporting an Issue"
-            },
-            {
-              "type": "doc",
-              "id": "using-faq",
-              "label": "Using the FAQ Page"
-            },
-            {
-              "type": "doc",
-              "id": "view-helpvideos",
-              "label": "Viewing the Help Videos"
             },
             {
               "type": "doc",
               "id": "creating-and-managing-mentor-profile",
               "label": "Creating a Mentor Profile"
-            },
-            {
-              "type": "doc",
-              "id": "viewmentorprofilelink",
-              "label": "Using a Shared Link to View a Mentor Profile"
             },
             {
               "type": "doc",
@@ -164,12 +134,12 @@
             {
               "type": "doc",
               "id": "feedbackformentors",
-              "label": "Feedback for Mentors"
+              "label": "Providing Feedback on a Session"
             },
             {
               "type": "doc",
               "id": "mentor-deleteaccountrequest",
-              "label": "Creating a Request to Delete the Account"
+              "label": "Deleting the Account"
             }
           ]
         },
@@ -184,33 +154,8 @@
             },
             {
               "type": "doc",
-              "id": "logging-in",
+              "id": "logging-in-mentee",
               "label": "Logging in"
-            },
-            {
-              "type": "doc",
-              "id": "report-signuporloginissue",
-              "label": "Reporting Issues Related to Signing up and Logging in"
-            },
-            {
-              "type": "doc",
-              "id": "change-language",
-              "label": "Changing the Language Settings"
-            },
-            {
-              "type": "doc",
-              "id": "report-an-issue",
-              "label": "Reporting an Issue"
-            },
-            {
-              "type": "doc",
-              "id": "using-faq",
-              "label": "Using the FAQ Page"
-            },
-            {
-              "type": "doc",
-              "id": "view-helpvideos",
-              "label": "Viewing the Help Videos"
             },
             {
               "type": "doc",
@@ -260,16 +205,47 @@
             {
               "type": "doc",
               "id": "mentee-deleteaccountrequest",
-              "label": "Creating a Request to Delete the Account"
+              "label": "Deleting the Account"
             }
           ]
+        },
+        {
+          "type": "doc",
+          "id": "change-language",
+          "label": "Changing the Language Settings"
+        },
+        {
+          "type": "category",
+          "label": "Support",
+          "items": [
+            {
+              "type": "doc",
+              "id": "report-signuporloginissue",
+              "label": "Reporting Sign up and Log in Issues"
+            },
+            {
+              "type": "doc",
+              "id": "report-an-issue",
+              "label": "Reporting an Issue"
+            },
+            {
+              "type": "doc",
+              "id": "using-faq",
+              "label": "Using the FAQ Page"
+            },
+            {
+              "type": "doc",
+              "id": "view-helpvideos",
+              "label": "Viewing the Help Videos"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "faq",
+          "label": "FAQs"
         }
       ]
-    },
-    {
-      "type": "doc",
-      "id": "faq",
-      "label": "FAQs"
     },
     {
       "type": "category",
