@@ -109,7 +109,7 @@
             {
               "type": "doc",
               "id": "creating-and-managing-mentor-profile",
-              "label": "Creating a Mentor Profile"
+              "label": "Creating a Profile"
             },
             {
               "type": "doc",
@@ -129,7 +129,7 @@
             {
               "type": "doc",
               "id": "dashboard-for-mentors",
-              "label": "Dashboard for Mentors"
+              "label": "Dashboard"
             },
             {
               "type": "doc",
@@ -160,7 +160,7 @@
             {
               "type": "doc",
               "id": "creating-and-managing-mentee-profile",
-              "label": "Creating a Mentee Profile"
+              "label": "Creating a Profile"
             },
             {
               "type": "doc",
@@ -180,7 +180,7 @@
             {
               "type": "doc",
               "id": "inviting-mentorsandmentees-participants",
-              "label": "Inviting Mentors and Mentees"
+              "label": "Sharing Session Invites to Your Contacts"
             },
             {
               "type": "doc",
@@ -195,7 +195,7 @@
             {
               "type": "doc",
               "id": "dashboard-for-mentees",
-              "label": "Dashboard for Mentees"
+              "label": "Dashboard"
             },
             {
               "type": "doc",

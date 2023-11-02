@@ -139,7 +139,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'creating-and-managing-mentor-profile', // document ID
-              label: 'Creating a Mentor Profile', // sidebar label
+              label: 'Creating a Profile', // sidebar label
             },
             {
               type: 'doc',
@@ -192,7 +192,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'creating-and-managing-mentee-profile', // document ID
-              label: 'Creating a Mentee Profile', // sidebar label
+              label: 'Creating a Profile', // sidebar label
             },
             {
               type: 'doc',
@@ -212,7 +212,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'inviting-mentorsandmentees-participants', // document ID
-              label: 'Inviting Mentors and Mentees', // sidebar label
+              label: 'Sharing Session Invites to Your Contacts', // sidebar label
             },
             {
               type: 'doc',
