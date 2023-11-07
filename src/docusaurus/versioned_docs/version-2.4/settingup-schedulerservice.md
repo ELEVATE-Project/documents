@@ -143,8 +143,6 @@ You can set up the Scheduler Service on a local system in one of the following w
     * [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
     * [MongoDB](settingup-mongodb.md)
-    
-    * [Robo-3T](https://robomongo.org/)
 
 2. Clone the **Scheduler service** repository.
 

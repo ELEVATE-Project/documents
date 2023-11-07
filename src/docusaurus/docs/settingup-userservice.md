@@ -146,8 +146,6 @@ You can set up the User Service on a local system in one of the following ways:
 
     - [MongoDB](settingup-mongodb.md)
 
-    - [Robo-3T](https://robomongo.org/)
-
 2. Clone the **User service** repository.
 
     ```
