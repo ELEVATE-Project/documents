@@ -17,15 +17,9 @@ import Intro from './media/intro.png';
 
 This microsite contains detailed documentation that helps organisations understand the <PartialExample mentored /> Building Block. 
 
-Till recently, mentees needed to travel to different locations to attend sessions to upskill and enhance their expertise. Face-to-face learning was the only way that was considered effective. 
-
-The COVID-19 pandemic changed all or this. Mobile and web adoption accelerated as organizations started hosting online learning sessions.
-
-<PartialExample mentored /> is a technology platform using which mentees can discover trusted mentors in their chosen domain and get mentored through online, instructor-led sessions. Mentees can access training and learning, without needing to travel to attend sessions.
-
 ## Introduction
 
-With the ubiquity of the Internet, learners have access to online learning and training resources from across the globe. The pandemic gave an impetus, and today, India has over 13.6 million learners online (WEF report 2022) &mdash; the second largest in the world. Yet, people need to be more skilled to get employed. 
+With the ubiquity of the Internet, learners have access to online learning and training resources from across the globe. The COVID-19 pandemic gave an impetus, and today, India has over 13.6 million learners online (WEF report 2022) &mdash; the second largest in the world. Yet, people need to be more skilled to get employed. 
 
 This gap needs to be bridged through a network of mentors and experts available in our ecosystem. Expertise is available in each domain, but we need to build pathways to connect mentees with mentors to seek guidance. 
 
