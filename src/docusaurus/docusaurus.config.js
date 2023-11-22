@@ -130,7 +130,7 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Mentor',
-            logo: 'img/mentoring-logo.png',
+  //          logo: 'img/mentoring-logo.png',
         },
         
         {

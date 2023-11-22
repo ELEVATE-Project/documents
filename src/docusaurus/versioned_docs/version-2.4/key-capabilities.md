@@ -2,7 +2,7 @@ import PartialExample from './_mentored.mdx';
 
 # Key Capabilities of Mentor
 
-<PartialExample mentored /> building block enables online interactions between mentors and mentees by connecting the domain experts and making them accessible to mentees. The capability leverages video conferencing tools for mentees to connect and join mentoring sessions. The recommendation engine maps mentees with mentors or experts based on criteria such as skills, organizations, domains, language, and locations. This enables access to a variety of learning experiences.
+Using the <PartialExample mentored /> building block, domain experts or mentors become easily accessible to mentees through online interactions. The capability leverages video conferencing tools for mentees to connect and join mentoring sessions. The recommendation engine maps mentees with mentors or experts based on criteria such as skills, organizations, domains, language, and locations leading to a variety of learning experiences.
 
 >
 

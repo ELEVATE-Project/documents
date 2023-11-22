@@ -36,13 +36,13 @@ This gap needs to be bridged through a network of mentors and experts available 
 
 The capability endeavours to build a marketplace for mentors and mentees where mentees discover (trusted) mentors, establish a connection, and join mentoring sessions. Thereafter, the mentor and mentee rate the session and share their feedback. 
 
-Currently, the capability enables only mentor-driven interactions (group mentoring).
+Currently, only mentor-driven interactions (group mentoring) can be carried out using the <PartialExample mentored /> building block.
 
-The long-term vision of the <PartialExample mentored /> building block is to create a country-wide pool of academic experts in different subjects and areas of knowledge to support the workforce. The mentor building block has the potential to address the **skill gap** in all sectors of the economy. It encourages a cross-section of ideas and information sharing and opens avenues for cross-learning and interdisciplinary growth. 
+The long-term vision of the <PartialExample mentored /> building block is to create a country-wide pool of academic experts in different subjects and areas of knowledge to support the workforce. The <PartialExample mentored /> building block has the potential to address the **skill gap** in all sectors of the economy. It encourages a cross-section of ideas and information sharing and opens avenues for cross-learning and interdisciplinary growth. 
 
 It can be leveraged to upskill and build capability in academia, government organisations, and corporations. Over time, such a rich and reliable pool of mentors can become a vital resource for new entrants in the job market and the existing workforce to stay abreast of future skills. Thus, continuously upskilling the society's **human capital base** and keeping them job-fit.
 
-<PartialExample mentored /> includes a microservice, reference portal or web application, and Data analytics. The service is developed in compliance with NDEAR principles. The services are generic, configurable, scalable, and enable interoperability.
+<PartialExample mentored /> includes a microservice, reference portal or web application, and data analytics. The service is developed in compliance with NDEAR principles. The services are generic, configurable, scalable, and interoperable.
 
 >
 
