@@ -15,7 +15,7 @@ import Intro from './media/intro.png';
 
 ## Overview
 
-This microsite contains detailed documentation that helps organizations understand the <PartialExample mentored /> Building Block. 
+This microsite contains detailed documentation that helps organizations understand the **<PartialExample mentored /> building block**. 
 
 ## Introduction
 
