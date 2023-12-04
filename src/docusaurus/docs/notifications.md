@@ -21,11 +21,6 @@ Mentees will receive email notifications:
 * When the request to delete their account is accepted.
 * When the enrollment to sessions is cancelled after account deletion.
 
-<Admonition type="info">
-<p>To learn more, see <a href="https://elevate-apis.shikshalokam.org/notification/api-doc">Notifications Service</a>.</p>
-</Admonition>
-
-
 
 
 

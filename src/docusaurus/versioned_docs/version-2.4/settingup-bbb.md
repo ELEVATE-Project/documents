@@ -2,9 +2,9 @@ import Admonition from '@theme/Admonition';
 
 # Setting up the BigBlueButton Service
 
-1. Before installing, ensure that you meet all the [prerequisites](https://docs.bigbluebutton.org/administration/install) required to install BigBlueButton.
+1. Before installing, ensure that you meet all the prerequisites required to install BigBlueButton. To learn more, see Administration section in [BigBlueButton Docs](https://docs.bigbluebutton.org).
 
-2. Install [BigBlueButton version 2.6](https://docs.bigbluebutton.org/administration/install) using the hostname and email address, which you want to use. 
+2. Install BigBlueButton version 2.6 using the hostname and email address, which you want to use. To learn more, see Administration section in [BigBlueButton Docs](https://docs.bigbluebutton.org).
 
 3. After completing the installation, check the status of your server using the following command:
 
@@ -49,7 +49,7 @@ sudo apt-get purge bbb-demo
 
 <Admonition type="info">
 <ul>
-<li>To learn more, see <a href="https://docs.bigbluebutton.org/administration/install">BigBlueButton Installation Guide</a>.</li>
+<li>To learn more, see the Administration section in <a href="https://docs.bigbluebutton.org">BigBlueButton Docs</a>.</li>
 <li>To automatically delete the metadata of recordings which are converted to mp4 format and uploaded on the cloud storage, see <a href="https://github.com/ELEVATE-Project/elevate-utils/tree/master/BBB-Recordings">ELEVATE-Project on GitHub</a>.</li>
 </ul>
 </Admonition>

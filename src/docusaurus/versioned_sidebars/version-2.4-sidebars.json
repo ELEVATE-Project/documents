@@ -11,7 +11,7 @@
         },
         {
           "type": "doc",
-          "id": "technicalarchitecture-mentored",
+          "id": "technicalarchitecture",
           "label": "Architecture"
         },
         {
@@ -36,18 +36,28 @@
           "label": "Setting up MongoDB 4.1.4"
         },
         {
+          "type": "doc",
+          "id": "settingup-mentoringservice",
+          "label": "Setting up the Mentor Service"
+        },
+        {
+          "type": "doc",
+          "id": "settingup-mobileapplication",
+          "label": "Customizing the Mobile Application"
+        },
+        {
+          "type": "doc",
+          "id": "settingup-webportal",
+          "label": "Customizing the Web Portal"
+        },
+        {
           "type": "category",
-          "label": "Setting up the Microservices",
+          "label": "Setting up the Supporting Microservices (Optional)",
           "items": [
             {
               "type": "doc",
-              "id": "settingup-userservice",
-              "label": "Setting up the User Service"
-            },
-            {
-              "type": "doc",
-              "id": "settingup-mentoringservice",
-              "label": "Setting up the Mentoring Service"
+              "id": "settingup-bbb",
+              "label": "Setting up BigBlueButton"
             },
             {
               "type": "doc",
@@ -61,22 +71,12 @@
             },
             {
               "type": "doc",
-              "id": "settingup-bbb",
-              "label": "Setting up BigBlueButton"
+              "id": "settingup-userservice",
+              "label": "Setting up the User Service"
             }
           ]
         }
       ]
-    },
-    {
-      "type": "doc",
-      "id": "settingup-mentoredapplication",
-      "label": "Customizing the Mobile Application"
-    },
-    {
-      "type": "doc",
-      "id": "settingup-webportal",
-      "label": "Customizing the Web Portal"
     },
     {
       "type": "category",
@@ -84,7 +84,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "using-the-mentored-application",
+          "id": "using-the-application",
           "label": "About the Application"
         },
         {
@@ -103,52 +103,17 @@
             },
             {
               "type": "doc",
-              "id": "logging-in",
+              "id": "logging-in-mentor",
               "label": "Logging in"
             },
             {
               "type": "doc",
-              "id": "report-signuporloginissue",
-              "label": "Reporting Issues Related to Signing up and Logging in"
-            },
-            {
-              "type": "doc",
-              "id": "change-language",
-              "label": "Changing the Language Settings"
-            },
-            {
-              "type": "doc",
-              "id": "report-an-issue",
-              "label": "Reporting an Issue"
-            },
-            {
-              "type": "doc",
-              "id": "using-faq",
-              "label": "Using the FAQ Page"
-            },
-            {
-              "type": "doc",
-              "id": "view-helpvideos",
-              "label": "Viewing the Help Videos"
-            },
-            {
-              "type": "doc",
               "id": "creating-and-managing-mentor-profile",
-              "label": "Creating a Mentor Profile"
+              "label": "Creating a Profile"
             },
             {
               "type": "doc",
-              "id": "viewmentorprofilelink",
-              "label": "Using a Shared Link to View a Mentor Profile"
-            },
-            {
-              "type": "doc",
-              "id": "mentor-directory",
-              "label": "Using the Mentor Directory"
-            },
-            {
-              "type": "doc",
-              "id": "setting-up-a-mentored-session",
+              "id": "setting-up-a-session",
               "label": "Setting up a Session"
             },
             {
@@ -159,22 +124,22 @@
             {
               "type": "doc",
               "id": "starting-a-session",
-              "label": "Starting a Mentoring Session"
+              "label": "Starting a Session"
             },
             {
               "type": "doc",
               "id": "dashboard-for-mentors",
-              "label": "Dashboard for Mentors"
+              "label": "Dashboard"
             },
             {
               "type": "doc",
               "id": "feedbackformentors",
-              "label": "Feedback for Mentors"
+              "label": "Providing Feedback on a Session"
             },
             {
               "type": "doc",
               "id": "mentor-deleteaccountrequest",
-              "label": "Creating a Request to Delete the Account"
+              "label": "Deleting the Account"
             }
           ]
         },
@@ -189,38 +154,13 @@
             },
             {
               "type": "doc",
-              "id": "logging-in",
+              "id": "logging-in-mentee",
               "label": "Logging in"
             },
             {
               "type": "doc",
-              "id": "report-signuporloginissue",
-              "label": "Reporting Issues Related to Signing up and Logging in"
-            },
-            {
-              "type": "doc",
-              "id": "change-language",
-              "label": "Changing the Language Settings"
-            },
-            {
-              "type": "doc",
-              "id": "report-an-issue",
-              "label": "Reporting an Issue"
-            },
-            {
-              "type": "doc",
-              "id": "using-faq",
-              "label": "Using the FAQ Page"
-            },
-            {
-              "type": "doc",
-              "id": "view-helpvideos",
-              "label": "Viewing the Help Videos"
-            },
-            {
-              "type": "doc",
               "id": "creating-and-managing-mentee-profile",
-              "label": "Creating a Mentee Profile"
+              "label": "Creating a Profile"
             },
             {
               "type": "doc",
@@ -240,12 +180,12 @@
             {
               "type": "doc",
               "id": "inviting-mentorsandmentees-participants",
-              "label": "Inviting Mentors and Mentees"
+              "label": "Sharing Session Invites to Your Contacts"
             },
             {
               "type": "doc",
               "id": "joining-a-session",
-              "label": "Joining a Mentoring Session"
+              "label": "Joining a Session"
             },
             {
               "type": "doc",
@@ -255,7 +195,7 @@
             {
               "type": "doc",
               "id": "dashboard-for-mentees",
-              "label": "Dashboard for Mentees"
+              "label": "Dashboard"
             },
             {
               "type": "doc",
@@ -265,9 +205,45 @@
             {
               "type": "doc",
               "id": "mentee-deleteaccountrequest",
-              "label": "Creating a Request to Delete the Account"
+              "label": "Deleting the Account"
             }
           ]
+        },
+        {
+          "type": "doc",
+          "id": "change-language",
+          "label": "Changing the Language Settings"
+        },
+        {
+          "type": "category",
+          "label": "Support",
+          "items": [
+            {
+              "type": "doc",
+              "id": "report-signuporloginissue",
+              "label": "Reporting Sign up and Log in Issues"
+            },
+            {
+              "type": "doc",
+              "id": "report-an-issue",
+              "label": "Reporting an Issue"
+            },
+            {
+              "type": "doc",
+              "id": "using-faq",
+              "label": "Using the FAQ Page"
+            },
+            {
+              "type": "doc",
+              "id": "view-helpvideos",
+              "label": "Viewing the Help Videos"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "faq",
+          "label": "FAQs"
         }
       ]
     },
@@ -287,15 +263,10 @@
         },
         {
           "type": "doc",
-          "id": "mentoredrepos",
+          "id": "repos",
           "label": "Source Code Repositories"
         }
       ]
-    },
-    {
-      "type": "doc",
-      "id": "faq",
-      "label": "FAQs"
     }
   ]
 }

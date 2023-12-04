@@ -3,11 +3,11 @@ import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';
 
-# Scheduler Service
+# Setting up the Scheduler Service
 
-You can set up the <PartialExample elevate /> Scheduler Service on a local system in one of the following ways:
+You can set up the Scheduler Service on a local system in one of the following ways:
 
-* Using a [Docker Image](#using-a-docker-image).
+* Using a [Docker Image](#using-a-docker-image)
 * As a [dockerized service with local dependencies (Intermediate)](#setting-up-a-dockerized-service-with-local-dependencies)
 
 * As a [local Service with local dependencies (Hardest)](#setting-up-a-local-service-with-local-dependencies)
@@ -19,7 +19,7 @@ You can set up the <PartialExample elevate /> Scheduler Service on a local syste
 **Prerequisite**: Docker is installed and is running.
 
 <Admonition type="info">
-<p>See <a href="http://www.docker.io/gettingstarted/#h_installation">Docker website</a> for installation instructions.</p>
+<p>See the <a href="http://www.docker.io">Get Started section in Docker</a> for installation instructions.</p>
 </Admonition>
 
 1. Pull the docker image:
@@ -115,7 +115,7 @@ You can set up the <PartialExample elevate /> Scheduler Service on a local syste
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). Refer [this documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04) for more information.
+2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). For more information, search for *Configure Remote Access for MongoDB on Ubuntu 20.04* in [DigitalOcean Community](https://www.digitalocean.com/community).
 
     <Admonition type="note">
     <p>Instructions might differ based on the MongoDB version and operating system.</p>
@@ -140,11 +140,9 @@ You can set up the <PartialExample elevate /> Scheduler Service on a local syste
 
     * Any IDE (for example: Visual Studio Code)
 
-    * [Nodejs](https://nodejs.org/en/download/)
+    * [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
     * [MongoDB](settingup-mongodb.md)
-    
-    * [Robo-3T](https://robomongo.org/)
 
 2. Clone the **Scheduler service** repository.
 
@@ -157,25 +155,25 @@ You can set up the <PartialExample elevate /> Scheduler Service on a local syste
     Create a **.env** file in **src** directory of the project and copy the following environment variables into the file:
 
     ```
-    #Scheduler Service Config
+    # Scheduler Service Config
 
-    #Application Base URL
-    APPLICATION_BASE_URL = /scheduler/
+    # Application Configuration
+    APPLICATION_PORT=4000
+    API_DOC_URL=/scheduler/api-doc
 
-    # Kafka hosted server URL
-    KAFKA_URL = localhost:9092
+    # Kafka Configuration
+    KAFKA_URL=localhost:9092
+    NOTIFICATION_KAFKA_TOPIC=notificationtopic
 
-    # Kafka topic to push notification data
-    NOTIFICATION_KAFKA_TOPIC = 'notificationtopic'
+    # Database Configuration
+    MONGODB_URL=mongodb://localhost:27017/tl-cron-rest
+    REPLICA_SET_NAME=rs
+    REPLICA_SET_READ_PREFERENCE=secondaryPreference
 
-    # MONGODB_URL
-    MONGODB_URL = mongodb://localhost:27017/tl-cron-rest
-
-    # App running port
-    APPLICATION_PORT = 4000
-
-    # Api doc URL
-    API_DOC_URL = '/api-doc'
+    # Logging Configuration
+    ERROR_LOG_LEVEL='silly'
+    DISABLE_LOG=false
+    
     ```
 
 4. Start MongoDB locally. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
@@ -196,18 +194,10 @@ You can set up the <PartialExample elevate /> Scheduler Service on a local syste
     ELEVATE/scheduler/src$ npm start
     ```
 
-## API Documentation 
+## Additional Resources
 
-https://elevate-apis.shikshalokam.org/scheduler/api-doc
-
-## Mentoring Services
-
-https://github.com/ELEVATE-Project/mentoring.git
-
-## User Services
-
-https://github.com/ELEVATE-Project/user.git
-
-## Notification Services
-
-https://github.com/ELEVATE-Project/notification.git
+|To learn more| See the following links|
+|--------------|-----------|
+|Mentor Service|https://github.com/ELEVATE-Project/mentoring.git|
+|Supporting Service: User Service|https://github.com/ELEVATE-Project/user.git|
+|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|

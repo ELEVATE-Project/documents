@@ -33,8 +33,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
        docs: {
-        lastVersion: '2.4',
+        includeCurrentVersion: false,
+        lastVersion: 'latest',
         versions: {
+          "latest": {
+            label: '2.4',
+            path: 'latest',
+          },
           "2.4": {
             label: '2.4',
             path: '2.4',
@@ -119,20 +124,13 @@ const config = {
           src: 'img/elevate-logo.png',
         },
         items: [
-          {
-            type: 'docsVersionDropdown',
-            label: 'Versions',
-            position: 'right',
-           // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-            dropdownActiveClassDisabled: true,
-          },
 
         {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'MentorED',
-            logo: 'img/mentoring-logo.png',
+            label: 'Mentor',
+  //          logo: 'img/mentoring-logo.png',
         },
         
         {

@@ -54,3 +54,8 @@
   display: inline-block;
   clear: both;
 }
+
+.wrapText {
+  float: right; 
+  padding: 10px;
+}

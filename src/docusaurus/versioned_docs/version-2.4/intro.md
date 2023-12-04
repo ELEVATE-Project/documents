@@ -1,28 +1,53 @@
 import PartialExample from './_mentored.mdx';
 import Shiksha from './_shiksha.mdx';
 import Admonition from '@theme/Admonition';
+import Intro from './media/intro.png';
 
-# Welcome to MentorED
+# Welcome to Mentor
  
-<PartialExample mentored /> is an open source mentoring application that facilitates peer learning and professional development by creating a community of mentors and mentees.
+<PartialExample mentored /> is a composite building block through which mentees and mentors can engage in online interactions to facilitate professional development through peer learning and community building.
+
+>
 
 <Admonition type="tip">
 <p>You can download the <PartialExample mentored /> mobile application from <a href="https://play.google.com/store/apps/details?id=org.elevate.mentoring">Google Play Store</a>.</p>
 </Admonition>
 
+## Overview
 
->  
+This microsite contains detailed documentation that helps organizations understand the **<PartialExample mentored /> building block**. 
 
-<PartialExample mentored /> is a core component of the Elevate Platform, which is an Open Source Platform-As-A-Service (PAAS) offering from <Shiksha shiksha />. The long-term vision of <PartialExample mentored /> is to create a country-wide pool of academic experts in different subjects and areas of knowledge. Over time, such a rich and reliable pool of mentors can become a vital resource for newcomers as well as junior teaching staff spread across the length and breadth of India, enabling them to strengthen their theoretical knowledge and practical skills in their respective areas of teaching.  
+## Introduction
 
-> 
+With the ubiquity of the Internet, learners have access to online learning and training resources from across the globe. The COVID-19 pandemic gave an impetus, and today, India has over 13.6 million learners online (WEF report 2022) &mdash; the second largest in the world. Yet, people need to be more skilled to get employed. 
 
-<PartialExample mentored /> could not have been launched at a better time. Mobile and Internet penetration has seen an exponential rise over the past decade and post the Covid-19 pandemic, mobile and internet usage has peaked across rural and urban India. As the society has become more tech-savvy, especially in the use mobile applications for various purposes such as making video calls and attending online meetings or classes, most users will find it easy to sign up and start using the <PartialExample mentored /> platform. 
+This gap needs to be bridged through a network of mentors and experts available in our ecosystem. Expertise is available in each domain, but we need to build pathways to connect mentees with mentors to seek guidance. 
+
+<Admonition type="info">
+<p>The government has undertaken many initiatives to drive learners online, like the National Digital Educational Architecture (NDEAR), PM eVIDYA Program, Samagra Shiksha Scheme, ‘ShaGun’, DIKSHA, SWAYAM, Shiksha Van, E-Pathshala, National Repository of Open Educational Resources (NROER), and to upskill them with emerging technologies such as National Digital Literacy Mission (NDLM) and FutureSkills (NASSCOM).</p>
+<p>The National Education Policy (2020) has identified the need to create a marketplace where mentors and mentees discover one another and engage for guidance and professional development. The National Mentoring Mission (NMM) envisions a large, decentralized, tech-assisted mentoring structure at different levels of the education and upskilling ecosystem. The NMM encourages the use of digital technologies to make the initiative auto-scalable, diverse, inclusive, and context-aware.</p>
+</Admonition>
+
+## Mentor Building Block
+
+<PartialExample mentored /> building block facilitates the development of a mentoring network by enabling online interactions between mentees and mentors in the ecosystem. Using the network, mentees can <b>search for and discover experts</b> and seek guidance for professional development. <div class="wrapText"><img src={Intro} /></div>
 
 >
 
-Mentees can access the mentor directory to learn about mentors, discover and join live mentoring sessions. Mentees can also collaborate with the mentor and other participants, and provide feedback on the session.
+The capability endeavours to build a marketplace for mentors and mentees where mentees discover (trusted) mentors, establish a connection, and join mentoring sessions. Thereafter, the mentor and mentee rate the session and share their feedback. 
+
+Currently, only mentor-driven interactions (group mentoring) can be carried out using the <PartialExample mentored /> building block.
+
+The long-term vision of the <PartialExample mentored /> building block is to create a country-wide pool of academic experts in different subjects and areas of knowledge to support the workforce. The <PartialExample mentored /> building block has the potential to address the **skill gap** in all sectors of the economy. It encourages a cross-section of ideas and information sharing and opens avenues for cross-learning and interdisciplinary growth. 
+
+It can be leveraged to upskill and build capability in academia, government organisations, and corporations. Over time, such a rich and reliable pool of mentors can become a vital resource for new entrants in the job market and the existing workforce to stay abreast of future skills. Thus, continuously upskilling the society's **human capital base** and keeping them job-fit.
+
+<PartialExample mentored /> includes a microservice, reference portal or web application, and data analytics. The service is developed in compliance with NDEAR principles. The services are generic, configurable, scalable, and interoperable.
 
 >
 
-This user guide provides a technical overview of the <PartialExample mentored /> platform, explains the different components of the platform, and provides  instructions on how to set up, configure, and use the platform.
+If <PartialExample mentored /> is being hosted as a stand-alone capability and not as part of an existing platform, you can leverage the following services: 
+
+* User Management
+* Scheduler 
+* Notifications

@@ -1,0 +1,91 @@
+import PartialExample from './_mentored.mdx';
+import Shiksha from './_shiksha.mdx';
+import ReactPlayer from 'react-player';
+import overviewURL from './media/overview.mp4';
+import portalWelcome from './media/portal-welcome.png';
+import AppWelcome from './media/welcome.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+# About the Mentor Application
+
+The reference solution (<PartialExample mentored />) uses all the microservices available in this building block, like <PartialExample mentored />, Notifications, Scheduler, and User Management. It scaffolds the following processes:
+
+1. Build an open network of mentors, who can host mentoring interactions.
+2. Make them searchable (discoverable) by registered mentees or mentors.
+3. Discover mentors and establish contact with them.
+4. Communicate to plan the implementation of the mentoring sessions.
+5. Capture feedback to evaluate the quality of interaction. 
+
+## Getting Started with Mentor
+
+The <PartialExample mentored /> building block and the associated microservices provide virtual mentorship capabilities. One of the most important things to recognise about **mentoring as an approach to learning** is that it is incredibly diverse and can have a formal or informal setup. The <PartialExample mentored /> capability can be deployed as a stand-alone solution or integrated with a learning and development program. Its salient features are as follows:
+
+* Intuitive Android and web interface for all users 
+* Role-based workflow for mentor and mentee
+* Mentoring session broadcast and session discovery 
+* Group sessions (one to many)
+* Virtual meeting platforms such as BigBlueButton (default) and others
+* Communication using notifications and emails
+* Reports for mentors and mentees
+
+<p>
+  <Admonition type="info">
+  <p><a href="view-helpvideos">Help Videos</a> are available for quick reference of the implementation.</p>
+  <p>To learn more about the <PartialExample mentored /> building block, see <a href="intro">Welcome to <PartialExample mentored /></a>.</p>
+  </Admonition>
+</p>
+
+**To get started with <PartialExample mentored /> application, do as follows:**
+
+<Tabs>
+<TabItem value="mentored mobile application" label="Mobile App" default>
+<ol>
+<li>Download and install the <PartialExample mentored /> application from Google Play store.
+<p>
+  <Admonition type="note">
+  <p>To install the application, your device should have an Android version of 5.0 or above.</p>
+  </Admonition>
+</p>
+</li>
+<li>After successful installation, run the mobile application. The <PartialExample mentored /> splash screen appears.
+<p><ReactPlayer playing controls url={overviewURL} loop="false" /></p>
+</li>
+<li>If this is the first time that you are using <PartialExample mentored /> mobile application, see:
+<ul>
+   <li><a href="signing-up-as-a-mentor">Signing up as a Mentor</a></li>
+   <li><a href="signing-up-as-a-mentee">Signing up as a Mentee</a></li>
+</ul>
+<p>
+  <img src={AppWelcome} />
+</p>
+</li> 
+</ol>   
+</TabItem>
+<TabItem value="mentored portal" label="Web Portal">
+
+<p>To access the portal, go to <a href="https://mentored.shikshalokam.org/">https://mentored.shikshalokam.org/</a></p>
+<p>
+  <Admonition type="note">
+  <ul>
+  <li>If the web portal does not load, update your web browser and retry.</li>
+  <li>The supported web browsers are Google Chrome, Firefox, and Safari.</li>
+  </ul>
+  </Admonition>
+</p>
+<p>If this is the first time that you are using <PartialExample mentored /> portal, see:</p>
+<ul> 
+<li><a href="signing-up-as-a-mentor">Signing up as a Mentor</a></li>
+<li><a href="signing-up-as-a-mentee">Signing up as a Mentee</a></li>
+</ul>
+<p>
+  <img src={portalWelcome} />
+</p>
+  </TabItem>
+</Tabs>
+
+
+
+
+
