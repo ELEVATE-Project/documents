@@ -33,12 +33,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
        docs: {
-        includeCurrentVersion: false,
-        lastVersion: 'latest',
+        routeBasePath: 'mentor',
+        sidebarPath: require.resolve('./sidebars.js'),
+        lastVersion: 'current',
         versions: {
-          "latest": {
+          current: {
             label: '2.4',
-            path: 'latest',
           },
           "2.4": {
             label: '2.4',
