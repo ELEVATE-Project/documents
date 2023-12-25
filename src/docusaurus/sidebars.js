@@ -47,7 +47,7 @@ const sidebars = {
           label: 'Key Capabilities', // sidebar label
         },
       ]
-    },
+    },  
     {
       type: 'category',
       label: 'Hosting and Customizing Your Instance',
@@ -106,6 +106,11 @@ const sidebars = {
       ]
     },
     {
+      type: 'doc',
+      id: 'policyarchitecture', // document ID
+      label: 'Policy Architecture', // sidebar label
+    }, 
+    {
       type: 'category',
       label: 'Using the Application',
       items: [
@@ -119,8 +124,23 @@ const sidebars = {
           id: 'notifications', // document ID
           label: 'Notifications', // sidebar label
         },
+        {
+          type: 'category',
+          label: 'How Organization Administrators Can Manage Users',
+          items: [
 
-
+            {
+              type: 'doc',
+              id: 'managementorrequests', // document ID
+              label: 'Managing Requests to be a Mentor', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'bulkupload', // document ID
+              label: 'Uploading Users to the Application', // sidebar label
+            },
+          ]
+        },
         {
           type: 'category',
           label: 'How Mentors Can Use the Application',
@@ -193,6 +213,11 @@ const sidebars = {
               type: 'doc',
               id: 'creating-and-managing-mentee-profile', // document ID
               label: 'Creating a Profile', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'request-beamentor', // document ID
+              label: 'Requesting to be a Mentor', // sidebar label
             },
             {
               type: 'doc',

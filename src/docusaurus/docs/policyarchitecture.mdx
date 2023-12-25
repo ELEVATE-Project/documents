@@ -1,0 +1,40 @@
+import Admonition from '@theme/Admonition';
+
+# Policy Architecture
+
+From the back end, organizations can configure policies to deny or allow:
+
+* A user's access to mentors or sessions of their organization.
+
+* Mentees from accessing mentors or sessions of other organizations.
+
+Organizations can independently deny or allow access to mentors and sessions. If mentor access is denied, users cannot view the mentor profiles in the Mentor Directory. If session access is denied, users cannot view the session hosted by the mentors of an organization.
+
+Before providing policy-based access, the users and organization are identified based on:
+
+* The **domain name** in the email ID of registered users. 
+
+    <p>  
+        <Admonition type="note">
+        <p>If the email ID does not contain a domain name, the back end recognizes the user's organization as <b>Default</b> organization.</p>
+        </Admonition>
+    </p>
+
+* The organization that uploaded users to the application. 
+
+    <p>  
+        <Admonition type="note">
+        <p>If their email IDs do not contain a domain name, the back end still recognizes the user belonging to that organization.</p>
+        </Admonition>
+    </p>
+
+## Types of Policies
+
+|Types of Policies|Description|
+| ----------- | ----------- |
+|All|An organization can set their policy as **All** to achieve the following:<ul><li>Allow other organizations' mentees to access their mentors or sessions.</li><li>Allow their mentees conditional access to other organization's mentors or sessions.</li></ul>|
+|Current|An organization can set their policy as **Current** to achieve the following:<ul><li>Allow their mentees to access only their mentors and sessions.</li><li>Deny mentees of other organizations to access their sessions or mentors.</li></ul>|
+|Associated|The **Associated** policy involves two or more organizations. Mentees can only access mentors or sessions of these associated organizations.|
+
+
+
