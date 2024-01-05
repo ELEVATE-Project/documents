@@ -10,7 +10,7 @@ import Intro from './media/intro.png';
 >
 
 <Admonition type="tip">
-<p>You can download the <PartialExample mentored /> mobile application from <a href="https://play.google.com/store/apps/details?id=org.elevate.mentoring">Google Play Store</a>.</p>
+<p>To experience the <PartialExample mentored /> capability, you can explore the reference application in the <a href="https://mentored.shikshalokam.org/auth/landing">sandbox environment</a>.</p>
 </Admonition>
 
 ## Overview
