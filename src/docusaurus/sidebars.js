@@ -299,6 +299,11 @@ const sidebars = {
           label: 'Source Code Repositories', // sidebar label
         },
       ]
+    },
+    {
+      type: 'doc',
+      id: 'discussions', // document ID
+      label: 'Discussions', // sidebar label
     }
   ]
 };

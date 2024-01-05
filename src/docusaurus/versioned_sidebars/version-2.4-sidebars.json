@@ -267,6 +267,11 @@
           "label": "Source Code Repositories"
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "discussions",
+      "label": "Discussions"
     }
   ]
 }
