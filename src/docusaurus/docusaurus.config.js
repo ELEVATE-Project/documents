@@ -103,6 +103,33 @@ const config = {
         // Options here
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'userservice',
+        path: 'userservice',
+        routeBasePath: 'userservice',
+        sidebarPath: require.resolve('./sidebarsUserservice.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'notificationservice',
+        path: 'notificationservice',
+        routeBasePath: 'notificationservice',
+        sidebarPath: require.resolve('./sidebarsNotificationservice.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'schedulerservice',
+        path: 'schedulerservice',
+        routeBasePath: 'schedulerservice',
+        sidebarPath: require.resolve('./sidebarsSchedulerservice.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -132,7 +159,27 @@ const config = {
             label: 'Mentor',
   //          logo: 'img/mentoring-logo.png',
         },
-        
+        {
+          type: 'doc',
+          docId: 'settingup-userservice',
+          docsPluginId: 'userservice',
+          position: 'left',
+          label: 'User Service',
+        },
+        {
+          type: 'doc',
+          docId: 'settingup-notificationsservice',
+          docsPluginId: 'notificationservice',
+          position: 'left',
+          label: 'Notification Service',
+        },
+        {
+          type: 'doc',
+          docId: 'settingup-schedulerservice',
+          docsPluginId: 'schedulerservice',
+          position: 'left',
+          label: 'Scheduler Service',
+        }, 
         {
           href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',

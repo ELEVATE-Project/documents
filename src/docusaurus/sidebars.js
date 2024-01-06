@@ -69,6 +69,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'settingup-bbb', // document ID
+          label: 'Setting up the BigBlueButton Service (Optional)', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'settingup-mobileapplication', // document ID
           label: 'Customizing the Mobile Application', // sidebar label
         },
@@ -76,32 +81,6 @@ const sidebars = {
           type: 'doc',
           id: 'settingup-webportal', // document ID
           label: 'Customizing the Web Portal', // sidebar label
-        },
-        {
-          type: 'category',
-          label: 'Setting up the Supporting Microservices (Optional)',
-          items: [
-            {
-              type: 'doc',
-              id: 'settingup-bbb', // document ID
-              label: 'Setting up the BigBlueButton Service', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'settingup-notificationsservice', // document ID
-              label: 'Setting up the Notifications Service', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'settingup-schedulerservice', // document ID
-              label: 'Setting up the Scheduler Service', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'settingup-userservice', // document ID
-              label: 'Setting up the User Service', // sidebar label
-            },
-          ]
         },
       ]
     },

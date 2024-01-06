@@ -1,4 +1,3 @@
-import PartialExample from './_elevate.mdx';
 import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';

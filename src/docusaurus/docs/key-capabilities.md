@@ -16,23 +16,54 @@ Through group mentoring, mentees can access upskilling and capacity-building opp
 
 One of the most important things to recognise about **mentoring as an approach to learning** is that it is incredibly diverse and can have a formal or informal setup. 
 
-| Feature | Description |
-| ----------- | ----------- |
-|Search for Mentor Connect| Mentees can search for mentors and establish connections.|
-|Schedule Sessions | Users registered as mentors can create and publish the schedule for mentoring sessions.|
-|Discover Sessions | Registered users can easily search and discover upcoming mentoring sessions.|
-|Request a Session|Users registered as mentees (and mentors) can enroll in public sessions hosted by mentors.|
-|Conduct Live Sessions|Mentors can conduct live group mentoring sessions.|
-|Join Live Session|Every user is a mentee (by default) and can join sessions hosted by mentors.|
-|Record Sessions|All sessions can be recorded and archived on the organizations's cloud storage.|
-|Session Quality and Feedback|Users can provide feedback on the **quality of interaction** and rate the session.|
-|Manage Users and Roles | Users with administrative privileges can create and manage users. To learn more, see [User Services](settingup-userservice.md). |
+<table>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Search for Mentor Connect</td>
+<td>Mentees can search for mentors and establish connections.</td>
+</tr>
+<tr>
+<td>Schedule Sessions</td>
+<td>Users registered as mentors can create and publish the schedule for mentoring sessions.</td>
+</tr>
+<tr>
+<td>Discover Sessions</td>
+<td>Registered users can easily search and discover upcoming mentoring sessions.</td>
+</tr>
+<tr>
+<td>Request a Session</td>
+<td>Users registered as mentees (and mentors) can enroll in public sessions hosted by mentors.</td>
+</tr>
+<tr>
+<td>Conduct Live Sessions</td>
+<td>Mentors can conduct live group mentoring sessions.</td>
+</tr>
+<tr>
+<td>Join Live Session</td>
+<td>Every user is a mentee (by default) and can join sessions hosted by mentors.</td>
+</tr>
+<tr>
+<td>Record Sessions</td>
+<td>All sessions can be recorded and archived on the organizations's cloud storage.</td>
+</tr>
+<tr>
+<td>Session Quality and Feedback</td>
+<td>Users can provide feedback on the <b>quality of interaction</b> and rate the session.</td>
+</tr>
+<tr>
+<td>Manage Users and Roles</td>
+<td>Users with administrative privileges can create and manage users. To learn more, see <a href="/userservice/settingup-userservice" target="_self">User Service</a>.</td>
+</tr>
+</table>
 
 In addition to the <PartialExample mentored /> microservice, the building block provides additional microservices such as:
 
-* <a href="settingup-userservice">User Service</a>
-* <a href="settingup-notificationsservice">Notifications Service</a>
-* <a href="settingup-schedulerservice">Scheduler Service</a> 
+* <a href="/userservice/settingup-userservice" target="_self">User Service</a>.
+* <a href="/notificationservice/settingup-notificationsservice" target="_self">Notifications Service</a>.
+* <a href="/schedulerservice/settingup-schedulerservice" target="_self">Scheduler Service</a>.
 
 The <PartialExample mentored />  building block can be deployed as a stand-alone capability or used in conjunction with other learning and development management solutions. 
 
