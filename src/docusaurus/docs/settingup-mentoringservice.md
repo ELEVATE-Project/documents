@@ -322,5 +322,5 @@ To set up a docker service with remote dependencies:
 |--------------|-----------|
 |API Documentation|https://elevate-apis.shikshalokam.org/mentoring/api-doc|
 |Supporting Service: User Service|https://github.com/ELEVATE-Project/user.git|
-|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|
+|Supporting Service: Notification Service|https://github.com/ELEVATE-Project/notification.git|
 |Supporting Service: Scheduler Service|https://github.com/ELEVATE-Project/scheduler.git|

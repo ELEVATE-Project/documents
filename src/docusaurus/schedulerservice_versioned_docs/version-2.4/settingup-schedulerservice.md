@@ -199,4 +199,4 @@ You can set up the Scheduler Service on a local system in one of the following w
 |--------------|-----------|
 |Mentor Service|https://github.com/ELEVATE-Project/mentoring.git|
 |Supporting Service: User Service|https://github.com/ELEVATE-Project/user.git|
-|Supporting Service: Notification Service|https://github.com/ELEVATE-Project/notification.git|
+|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|

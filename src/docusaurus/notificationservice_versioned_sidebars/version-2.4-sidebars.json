@@ -1,0 +1,9 @@
+{
+  "tutoriSidebar": [
+    {
+      "type": "doc",
+      "id": "settingup-notificationsservice",
+      "label": "Setting up the Notifications Service"
+    }
+  ]
+}

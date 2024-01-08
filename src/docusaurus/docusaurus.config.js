@@ -110,6 +110,15 @@ const config = {
         path: 'userservice',
         routeBasePath: 'userservice',
         sidebarPath: require.resolve('./sidebarsUserservice.js'),
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: '2.5',
+          },
+          '2.4': {
+            label: '2.4',
+          },
+        },
       },
     ],
     [
@@ -119,6 +128,15 @@ const config = {
         path: 'notificationservice',
         routeBasePath: 'notificationservice',
         sidebarPath: require.resolve('./sidebarsNotificationservice.js'),
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: '2.5',
+          },
+          '2.4': {
+            label: '2.4',
+          },
+        },
       },
     ],
     [
@@ -128,6 +146,15 @@ const config = {
         path: 'schedulerservice',
         routeBasePath: 'schedulerservice',
         sidebarPath: require.resolve('./sidebarsSchedulerservice.js'),
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: '2.5',
+          },
+          '2.4': {
+            label: '2.4',
+          },
+        },
       },
     ],
   ],
@@ -168,7 +195,7 @@ const config = {
         },
         {
           type: 'doc',
-          docId: 'settingup-notificationsservice',
+          docId: 'settingup-notificationservice',
           docsPluginId: 'notificationservice',
           position: 'left',
           label: 'Notification Service',

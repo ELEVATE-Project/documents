@@ -27,7 +27,7 @@ Optionally, you can set up the following supporting services:
 
 * [Install Apache Kafka on Ubuntu 20.04](https://www.digitalocean.com/community) (Search for *Install Apache Kafka on Ubuntu 20.04* in the **Community** search box.).
 * <a href="/userservice/settingup-userservice" target="_self">Set up User Service</a>.
-* <a href="/notificationservice/settingup-notificationsservice" target="_self">Set up Notifications Service</a>.
+* <a href="/notificationservice/settingup-notificationservice" target="_self">Set up Notification Service</a>.
 * <a href="/schedulerservice/settingup-schedulerservice" target="_self">Set up Scheduler Service</a>.
 * [Set up BigBlueButton Service](settingup-bbb).
 

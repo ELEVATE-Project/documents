@@ -263,4 +263,4 @@ You can set up the User Service on a local system in one of the following ways:
 |API Documentation|https://elevate-apis.shikshalokam.org/user/api-doc|
 |Mentor Service|https://github.com/ELEVATE-Project/mentoring.git|
 |Supporting Service: Scheduler Service|https://github.com/ELEVATE-Project/scheduler.git|
-|Supporting Service: Notification Service|https://github.com/ELEVATE-Project/notification.git|
+|Supporting Service: Notifications Service|https://github.com/ELEVATE-Project/notification.git|

@@ -11,5 +11,5 @@ Join our discussion forums to seek assistance on microservices from our developm
 |User Service|https://github.com/ELEVATE-Project/user/discussions|
 |Interface Service|https://github.com/ELEVATE-Project/interface-service/discussions|
 |Scheduler Service|https://github.com/ELEVATE-Project/scheduler/discussions|
-|Notifications Service|https://github.com/ELEVATE-Project/notification/discussions|
+|Notification Service|https://github.com/ELEVATE-Project/notification/discussions|
 |Utils Service|https://github.com/ELEVATE-Project/utils/discussions|

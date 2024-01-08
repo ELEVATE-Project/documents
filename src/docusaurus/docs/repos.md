@@ -23,7 +23,7 @@ Optionally, you can download the source code for the following services:
 
 https://github.com/ELEVATE-Project/user.git
 
-### Notifications Service
+### Notification Service
 
 https://github.com/ELEVATE-Project/notification.git
 

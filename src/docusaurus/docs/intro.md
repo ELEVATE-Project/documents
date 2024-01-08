@@ -50,4 +50,4 @@ If <PartialExample mentored /> is being hosted as a stand-alone capability and n
 
 * User Management
 * Scheduler 
-* Notifications
+* Notification

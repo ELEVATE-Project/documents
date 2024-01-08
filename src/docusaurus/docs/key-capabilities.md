@@ -62,7 +62,7 @@ One of the most important things to recognise about **mentoring as an approach t
 In addition to the <PartialExample mentored /> microservice, the building block provides additional microservices such as:
 
 * <a href="/userservice/settingup-userservice" target="_self">User Service</a>.
-* <a href="/notificationservice/settingup-notificationsservice" target="_self">Notifications Service</a>.
+* <a href="/notificationservice/settingup-notificationservice" target="_self">Notification Service</a>.
 * <a href="/schedulerservice/settingup-schedulerservice" target="_self">Scheduler Service</a>.
 
 The <PartialExample mentored />  building block can be deployed as a stand-alone capability or used in conjunction with other learning and development management solutions. 

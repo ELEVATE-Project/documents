@@ -17,8 +17,8 @@ const sidebars = {
     tutoriSidebar: [
       {
         type: 'doc',
-        id: 'settingup-notificationsservice',
-        label: 'Setting up the Notifications Service',
+        id: 'settingup-notificationservice',
+        label: 'Setting up the Notification Service',
       },
     ],
   };

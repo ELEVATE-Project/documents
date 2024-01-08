@@ -1,0 +1,14 @@
+{
+  "tutoriSidebar": [
+    {
+      "type": "doc",
+      "id": "settingup-mongodb",
+      "label": "Setting up MongoDB 4.1.4"
+    },
+    {
+      "type": "doc",
+      "id": "settingup-schedulerservice",
+      "label": "Setting up the Scheduler Service"
+    }
+  ]
+}
