@@ -1,7 +1,7 @@
 import ProfileIcon from './media/profile-icon.png';
 import BurgerMenu from './media/burgermenu-icon.png'
 import ViewMenteeProfile from './media/viewprofile-mentee.png'
-import PortalAppMenu from './media/portal-applicationmenu.png'
+import PortalAppMenu from './media/portal-menteeapplicationmenu.png'
 import EditMenteeProfile from './media/editmenteeprofile.png'
 import PortalEditMenteeProfile from './media/portal-editmenteeprofile.png'
 import CreateProfileOptions from './media/createprofile-options.png'
@@ -21,29 +21,20 @@ On the Profile page, you can do the following actions:
 
 ## Viewing the Profile Page
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
-<p><b>To view the Profile page, do one of the following actions:</b></p>
+To view the Profile page, do one of the following actions:
+
 <ul>
+<li>Go to the <b>Application</b> menu and select <b>Profile</b>.
+<p>
+    <img src={PortalAppMenu} />
+</p>
+</li>
 <li>Go to the <b>Profile</b> tab.
 <p>
     <img src={ProfileIcon} />
 </p>
 </li>
-<li>Go to the <b>Application</b> menu <div class="inlineImg"><img src={BurgerMenu}/></div> and tap <b>View profile</b>.
-<p>
-    <img src={ViewMenteeProfile} />
-</p>
-</li>
 </ul>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<p>To view the Profile page, go to the <b>Application</b> menu on the top-right corner of the page and select <b>My profile</b>.</p>
-<p>
-    <img src={PortalAppMenu} />
-</p>
-</TabItem>
-</Tabs>
 
 ## Updating your Profile
 
@@ -51,64 +42,8 @@ On the Profile page, you can do the following actions:
 <p>You can use the application only after updating your profile.</p>
 </Admonition> 
 
-<b>To update your profile, do as follows:</b>
+**To update your profile, do as follows:**
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
-<ol>
-<li>On the Profile page, tap <b>Edit profile</b>.
-<p>
-    <img src={EditMenteeProfile} />
-</p>
-</li>
-<li>Optionally, to update your profile picture, tap <b>Add image</b> and do one of the following actions:
-    <ul>
-    <li>To take a picture, select <b>Take Photo</b>.</li>
-    <li>To upload an image, select <b>Choose from library</b>.</li>
-    <li>To remove the existing image, select <b>Remove current photo</b>.</li>
-    </ul>
-</li>
-<li>Enter the information in the following boxes:
-    <ul>
-    <li><b>Your experience in years</b></li>
-    <li><b>Tell us about yourself</b></li>
-    <li><b>Education qualification</b></li>
-    </ul>
-</li>
-<li>To select your location, do as follows:
-    <ol>
-    <li>Tap the <b>Select your location</b> menu.</li>
-    <li>Select the location and tap <b>Ok</b>.</li>
-    </ol>
-</li>
-<li>Select an option in the following boxes:
-<ul>
-<li><b>Your role</b></li>
-<li><b>Your expertise</b></li>
-<li><b>Languages</b></li>
-</ul>
-<p>
-    <Admonition type="tip">
-    <ul>
-    <li>To cancel the selection, tap the option again.</li>
-    <li>To add a new option, do as follows:
-        <ol>
-        <li>Tap <b>+ Add</b> and enter the new option.</li>
-        <li>Tap <b>Ok</b>.</li>
-        </ol>
-    </li>
-    <li>To select all the options, turn on the toggle.</li>
-    </ul>
-    </Admonition>
-</p>
-<p>
-    <img src={CreateProfileOptions} />
-</p>
-</li> 
-<li>Tap <b>Submit</b>. The profile details are updated.</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
 <ol>
 <li>On the Profile page, click <b>Edit profile</b>.
 <p>
@@ -155,5 +90,3 @@ On the Profile page, you can do the following actions:
 </li>
 <li>Click <b>Submit</b>. The profile details are updated.</li>
 </ol>
-</TabItem>
-</Tabs>
