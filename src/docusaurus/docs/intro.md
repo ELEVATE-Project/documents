@@ -31,6 +31,8 @@ This gap needs to be bridged through a network of mentors and experts available 
 <p>Upskilling ASHA project: ASHA (Accredited Social Health Activist) workers are the frontline health caretakers in the public healthcare system. Capacity building of ASHA is a continuous process and requires knowledge of handling practical situations. ASHAs are associated with Auxiliary Nurse Midwives (ANMs) who mentor and guide them. Mentor capability ensures that ASHA workers always have access to their mentor (ANM) for continued guidance and support.</p>
 </Admonition>
 
+Mentoring fosters a sense of belonging, motivation, and confidence among learners, as they receive encouragement, feedback, and recognition from their mentors.
+
 ## Mentor Building Block
 
 <PartialExample mentored /> building block facilitates the development of a mentoring network by enabling online interactions between mentees and mentors in the ecosystem. Using the network, mentees can <b>search for and discover experts</b> and seek guidance for professional development. <div class="wrapText"><img src={Intro} /></div>
