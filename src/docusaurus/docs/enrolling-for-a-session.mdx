@@ -4,6 +4,7 @@ import MentorProfileEnroll from './media/mentorprofile-enroll.png'
 import SessionDetailsEnroll from './media/sessiondetailsenroll.png'
 import SessionTileEnroll from './media/sessiontile-enroll.png'
 import SearchSessions from './media/search-sessions.png'
+import PortalSearchSessions from './media/portal-searchsessions.png'
 import CancelEnrollment from './media/cancel-enrollment.png'
 import PortalMentorProfileEnroll from './media/portal-mentorprofileenroll.png'
 import PortalEnrollButton from './media/portal-enrollbutton.png'
@@ -25,8 +26,6 @@ You can explore and sign up for <PartialExample mentored /> sessions in your cho
 </ul>
 </Admonition>
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
 <p>You can enroll for a session in one of the following ways:</p>
 <ul>
 <li>Using the <b>All sessions</b> tab</li>
@@ -37,74 +36,20 @@ You can explore and sign up for <PartialExample mentored /> sessions in your cho
 <h2>Using the All Sessions Tab</h2>
 <ol>
 <li>On the Home page, go to the <b>All sessions</b> tab.</li>
-<li>Find a session of interest and tap <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
-<p>
-    <img src={EnrollButton} />
-</p>
-</li>
-</ol>
-<h2>Using the Mentor Profile</h2>
-<Admonition type="note">
-<p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
-</Admonition>
-<p><b>To enroll for a session using the mentor profile, do as follows:</b></p>
-<ol>
-<li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
-<li>Tap <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
-<p>
-    <img src={MentorProfileEnroll} />
-</p>
-</li>
-</ol>
-<h2>Using the Session Details Page</h2>
-<ol>
-<li>Find a session from the <b>All sessions</b> tab or the Mentor Profile page.</li>
-<li>Tap the session tile to view the Session Details page.
-<p>
-    <img src={SessionTileEnroll} />
-</p>
-</li>
-<li>Tap <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
-<p>
-    <img src={SessionDetailsEnroll} />
-</p>
-</li>
-</ol>
-<h2>Using the Search Bar</h2>
-<ol>
-<li>In the <b>Search</b> bar of the Home page, tap the <b>All Sessions</b> tab.
-<p>
-    <img src={SearchSessions} />
-</p>
-</li>
-<li>Type the session name and tap the <b>Search</b> button.</li>
-<li>Tap <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<p>You can enroll for a session in one of the following ways:</p>
-<ul>
-<li>Using the <b>Home</b> tab</li>
-<li>Using the mentor profile</li>
-<li>Using the Session details page</li>
-</ul>
-<h2>Using the Home Tab</h2>
-<ol>
-<li>Go to the <b>Home</b> tab.</li>
-<li>Find a session and click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab.
+<li>Find a session of interest and click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
 <p>
     <img src={PortalEnrollButton} />
 </p>
 </li>
 </ol>
 <h2>Using the Mentor Profile</h2>
-<Admonition type="note">
+<Admonition type="info">
 <p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
 </Admonition>
 <p><b>To enroll for a session using the mentor profile, do as follows:</b></p>
 <ol>
-<li>On the Mentor Profile page, go to the Upcoming sessions section.</li>
-<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab.
+<li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
+<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
 <p>
     <img src={PortalMentorProfileEnroll} />
 </p>
@@ -112,16 +57,16 @@ You can explore and sign up for <PartialExample mentored /> sessions in your cho
 </ol>
 <h2>Using the Session Details Page</h2>
 <ol>
-<li>Find a session from the <b>Home</b> tab or the Mentor Profile page.</li>
-<li>Do one of the following actions: 
-    <ul>
-    <li>Click the session tile to view the Session details page.
-    <p>
-        <img src={PortalSessionTileEnroll} />
-    </p>
-    </li>
-    <li>Click the <b>View details</b> link to view the Session details page.</li>
-    </ul>
+<li>Find a session from the <b>All sessions</b> tab or the Mentor Profile page.</li>
+<li>Click the session tile to view the Session Details page.
+<p>
+    <img src={PortalSessionTileEnroll} />
+</p>
+</li>
+<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
+<p>
+    <img src={PortalSessionTileEnroll} />
+</p>
 </li>
 <li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
 <p>
@@ -129,8 +74,16 @@ You can explore and sign up for <PartialExample mentored /> sessions in your cho
 </p>
 </li>
 </ol>
-</TabItem>
-</Tabs>
+<h2>Using the Search Bar</h2>
+<ol>
+<li>In the <b>Search</b> bar of the Home page, click the <b>Sessions</b> tab.
+<p>
+    <img src={PortalSearchSessions} />
+</p>
+</li>
+<li>Type the session name and click the <b>Search</b> button.</li>
+<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.</li>
+</ol>
 
 ## Cancelling Your Enrollment
 
@@ -140,37 +93,13 @@ You can explore and sign up for <PartialExample mentored /> sessions in your cho
 
 <p><b>To cancel your enrollment, do as follows:</b></p>
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
 <li>On your Home page, go to the <b>Enrolled sessions</b> tab.</li>
-<li>Tap the session tile.</li>
-<li>Tap <b>Unenroll</b>. 
-<p>
-    <img src={CancelEnrollment} />
-</p>
-</li>
-<li>Tap <b>Cancel</b> on the confirmation dialog. The session is removed from the <b>Enrolled sessions</b> tab of the Home page.</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<ol>
-<li>Go to the <b>Enrolled sessions</b> tab.</li>
-<li>Do one of the following actions: 
-    <ul>
-    <li>Click the session tile to view the Session details page.</li>
-    <li>Click the <b>View details</b> link to view the Session details page.</li>
-    </ul>
-</li>
+<li>Click the session tile.</li>
 <li>Click <b>Unenroll</b>.
 <p>
     <img src={PortalCancelEnrollment} />
 </p>
 </li>
-<li>Click <b>Unenroll</b> on the confirmation dialog. The session is removed from the <b>Enrolled sessions</b> tab.</li>
+<li>Click <b>Unenroll</b> on the confirmation dialog. The session is removed from the <b>Enrolled sessions</b> tab of the Home page.</li>
 </ol>
-</TabItem>
-</Tabs>
-
-
- 

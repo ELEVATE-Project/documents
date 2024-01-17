@@ -107,7 +107,11 @@ const sidebars = {
           type: 'category',
           label: 'How Organization Administrators Can Manage Users',
           items: [
-
+            {
+              type: 'doc',
+              id: 'aboutorganizationadministrator', // document ID
+              label: 'Organization Administrator', // sidebar label
+            },
             {
               type: 'doc',
               id: 'managementorrequests', // document ID
