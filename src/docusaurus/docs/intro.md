@@ -51,7 +51,7 @@ It can be leveraged to upskill and build capability in academia, government orga
 
 >
 
-If <PartialExample mentored /> is being hosted as a stand-alone capability and not as part of an existing platform, you can leverage the following services: 
+If <PartialExample mentored /> is being hosted as a standalone capability and not as part of an existing platform, you can leverage the following services: 
 
 * User Management
 * Scheduler 

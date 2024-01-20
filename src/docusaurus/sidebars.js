@@ -79,8 +79,8 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'settingup-webportal', // document ID
-          label: 'Customizing the Web Portal', // sidebar label
+          id: 'settingup-pwa', // document ID
+          label: 'Customizing the PWA', // sidebar label
         },
       ]
     },
@@ -97,6 +97,11 @@ const sidebars = {
           type: 'doc',
           id: 'using-the-application', // document ID
           label: 'About the Application', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'gettingstarted', // document ID
+          label: 'Getting Started with the Application', // sidebar label
         },
         {
           type: 'doc',

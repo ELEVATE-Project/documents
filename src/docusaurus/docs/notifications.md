@@ -27,7 +27,7 @@ Mentees will receive email notifications:
 Organization administrators will receive email notifications:
 
 * When they are assigned organization administrator permissions.
-* After they upload a list of users to the portal. In the email notification, they can view the CSV file containing the following information about the list of users uploaded to the portal:
+* After they upload a list of users to the portal. In the email notification, they can view the CSV file containing the following information about the list of users uploaded to the application:
 
     * Assigned user ID
     * Whether the user uploaded to the portal already exists
