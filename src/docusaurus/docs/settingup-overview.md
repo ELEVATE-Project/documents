@@ -7,7 +7,7 @@ import Admonition from '@theme/Admonition';
 
 The <PartialExample mentored /> capability is enabled by the <PartialExample mentored /> microservice which can be set up in any cloud environment or in an on-premise setup. 
 
-In addition, you can also set up a reference implementation (portal) and customize the look and feel based on your needs. See [Customize the Web Portal](settingup-webportal) to learn more.
+In addition, you can also set up a reference implementation (PWA) and customize the look and feel based on your needs. See [Customize the PWA](settingup-pwa) to learn more.
 
 Other services such as User, Notification, Scheduler, and BigBlueButton are optional. The <PartialExample mentored /> service can work with one or more existing implementations of the same.
 
@@ -21,7 +21,7 @@ To host a customized instance of <PartialExample mentored />:
 2. [Install Node.js on Ubuntu 20.04](https://serverspace.io) (Search for *Install node.js on Ubuntu 20.04* in the Tutorials section.).
 3. [Set up <PartialExample mentored /> service](settingup-mentoringservice).
 4. [Customize the <PartialExample mentored /> mobile application](settingup-mobileapplication).
-5. [Customize the Web Portal](settingup-webportal).
+5. [Customize the PWA](settingup-pwa).
 
 Optionally, you can set up the following supporting services:
 
