@@ -3,6 +3,8 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Customizing the PWA
 
+The <PartialExample mentored /> PWA is developed using the Ionic framework along with the Capacitor runtime, which makes it easy to run applications across mobile and web platforms.
+
 ## Dependencies
 
 | Requirement         | Description    |
@@ -11,16 +13,18 @@ import CodeBlock from '@theme/CodeBlock';
 | Ionic Framework | <ul><li>@ionic/angular 6.7.5</li> <li>@angular-devkit/build-angular : 13.2.6 </li><li> @angular-devkit/schematics : 13.2.6 </li><li>@angular/cli : 13.2.6 </li><li> @ionic/angular-toolkit : 6.1.0 </li></ul>|
 | Capacitor | <ul><li>Capacitor CLI : 5.5.1 </li><li>@capacitor/android : 5.5.1 </li><li>@capacitor/core : 5.5.1 </li><li>@capacitor/ios : 5.5.1 </li></ul>
 | Utility | <ul><li>cordova-res : 0.15.4</li><li>native-run : 1.7.4 </li></ul>
-| System | <ul><li>Node.js: v18.18.2 (/home/user/.nvm/versions/node/v18.18.2/bin/node)</li><li>npm: 10.2.0</li></ul>|
+| System | <ul><li>Node.js: v18.18.2</li><li>npm: 10.2.0</li></ul>|
 
 ## Setting up the Command Line Interface (CLI)
 
 1. Install the Ionic framework.
+
     ```
     npm install -g ionic
     ```
 
-2. Install the Ionic framework.
+2. Install the Ionic client.
+
     ```
     npm install -g @ionic/cli
     ```
@@ -39,11 +43,11 @@ import CodeBlock from '@theme/CodeBlock';
 
 ## Setting up the Project
 
-1. Clone the [repository](https://github.com/ELEVATE-Project/mentorED-Portal.git).
+1. Clone the [repository](https://github.com/ELEVATE-Project/mentoring-mobile-app.git).
 
-2. Checkout to the latest branch (**release-2.5.0**).
+2. Change to the latest GitHub branch (**release-2.5.0**).
 
-3. Create a file named **environment.ts** in the  `src/environments` folder and add the necessary variables.
+3. Create a file named **environment.ts** in the `src/environments` folder and add the necessary variables.
 
 4. Go to project folder and run `npm i`.
 
@@ -73,21 +77,15 @@ import CodeBlock from '@theme/CodeBlock';
 4. Run the project on your local system using the following command:
 
     ```
-    ionic capacitor sync
+    ionic serve
 
     ```
 
 ## Debugging the Application
 
-1. Open Google Chrome and type the following command: 
+1. Open the application on the web browser.
 
-    ```
-
-    chrome://inspect
-
-    ```
-
-2. Select the application.
+2. Inspect using Chrome dev tools or any other alternatives.
 
 ## Deploying the Application
 
@@ -107,7 +105,6 @@ To deploy the application, you need the following files:
         staging: true/false,
         dev: true/false,
         baseUrl: '<base-url>',
-        sqliteDBName: '<db-name>', (if you have)
         deepLinkUrl: '<deeplink-url>',
         privacyPolicyUrl: '<privacy-policy-url>',
         termsOfServiceUrl: '<term-of-service-url>'

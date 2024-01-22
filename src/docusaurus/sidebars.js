@@ -74,11 +74,6 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'settingup-mobileapplication', // document ID
-          label: 'Customizing the Mobile Application', // sidebar label
-        },
-        {
-          type: 'doc',
           id: 'settingup-pwa', // document ID
           label: 'Customizing the PWA', // sidebar label
         },

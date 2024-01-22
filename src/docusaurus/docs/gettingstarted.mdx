@@ -1,4 +1,10 @@
 import PartialExample from './_mentored.mdx';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ReactPlayer from 'react-player';
+import portalOverview from './media/portaloverview.mp4';
+import mobileOverview from './media/mobileoverview.mp4';
+import Admonition from '@theme/Admonition';
 
 # Getting Started with Mentor
 
@@ -16,6 +22,15 @@ After an organization administrator adds you to the platform and assigns a role 
   </p>
 
 * On the web browser, select the <b>Install</b> option to install the application on your device.
+
+<Tabs>
+<TabItem value="mentor portal" label="Web Portal" default>
+<ReactPlayer playing controls url={portalOverview} loop="false" />
+</TabItem>
+<TabItem value="mentor mobile application" label="Mobile App">
+<ReactPlayer playing controls url={mobileOverview} loop="false" />
+</TabItem>
+</Tabs>
 
 <p>To learn more about signing up and accessing the <PartialExample mentored /> capabilities, refer to the following sections:</p>
 
