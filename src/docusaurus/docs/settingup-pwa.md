@@ -99,16 +99,17 @@ To deploy the application, you need the following files:
 
 ```jsx
 
-    export const environment = {
-        production: true/false,
-        name: '<name>',
-        staging: true/false,
-        dev: true/false,
-        baseUrl: '<base-url>',
-        deepLinkUrl: '<deeplink-url>',
-        privacyPolicyUrl: '<privacy-policy-url>',
-        termsOfServiceUrl: '<term-of-service-url>'
-    };
+export const environment = {
+ production: true/false,
+ name: '<name>',
+ staging: true/false,
+ dev: true/false,
+ baseUrl: '<base-url>',
+ sqliteDBName: '<db-name> (if you have)',
+ deepLinkUrl: '<deeplink-url>',
+ privacyPolicyUrl:'<privacy-policy-url>',
+ termsOfServiceUrl:'<term-of-service-url>'
+};
 
 ```
 
@@ -116,23 +117,21 @@ To deploy the application, you need the following files:
 
 ```json
 {
-    "apps": [
-        {
-            "name": "</APP_NAME>",
-            "script": "server.js",
-            "args": [],
-            "instances": "1",
-            "exec_mode": "cluster",
-            "watch": false,
-            "merge_logs": "cluster",
-            "watch": false,
-            "merge_logs": true,
-            "env": {
-                "NODE_ENV": "production",
-                "PORT": <PORT_NO>,
-            }
-        }
-    ]
+ "apps": [
+   {
+     "name": "<APP_NAME>",
+     "script": "server.js",
+     "args": [],
+     "instances": "1",
+     "exec_mode": "cluster",
+     "watch": false,
+     "merge_logs": true,
+     "env": {
+       "NODE_ENV": "production",
+       "PORT": <PORT_NO>
+     }
+   }
+ ]
 }
 
 ```
@@ -146,14 +145,17 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 7601;
 
+
 app.use(express.static(path.join(__dirname, 'www')));
 
+
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'www', 'index.html'));
-});
+   res.sendFile(path.join(__dirname, 'www', 'index.html'));
+ });
+
 
 app.listen(port, () => {
-    console.log(`Server is running on ${Port}`);
+ console.log(`Server is running on port ${port}`);
 });
 
 ```
