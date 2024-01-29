@@ -82,7 +82,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'policyarchitecture', // document ID
-      label: 'Policy Architecture', // sidebar label
+      label: 'Multi-Tenant Architecture', // sidebar label
     }, 
     {
       type: 'category',

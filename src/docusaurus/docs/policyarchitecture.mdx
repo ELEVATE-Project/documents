@@ -1,16 +1,11 @@
 import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
 
-# Policy Architecture
+# Multi-Tenant Architecture
 
-From the back end, organizations can configure policies to deny or allow:
+The <PartialExample mentored /> application has a multi-tenant architecture, and organizations can host their own instance of the application. Organizations can manage access to their sessions and mentors for mentees from other organizations.
 
-* A user's access to mentors or sessions of their organization.
-
-* Mentees from accessing mentors or sessions of other organizations.
-
-Organizations can independently deny or allow access to mentors and sessions. If mentor access is denied, users cannot view the mentor profiles in the Mentor Directory. If session access is denied, users cannot view the session hosted by the mentors of an organization.
-
-Before providing policy-based access, the users and organization are identified based on:
+The organization and its users are identified based on:
 
 * The **domain name** in the email ID of registered users. 
 
@@ -28,7 +23,15 @@ Before providing policy-based access, the users and organization are identified 
         </Admonition>
     </p>
 
-## Types of Policies
+## Policy Architecture
+
+From the back end, organizations can configure policies to deny or allow:
+
+* A user's access to mentors or sessions of their organization.
+
+* Mentees from accessing mentors or sessions of other organizations.
+
+Organizations can independently deny or allow access to mentors and sessions. If mentor access is denied, users cannot view the mentor profiles in the Mentor Directory. If session access is denied, users cannot view the session hosted by the mentors of an organization.
 
 |Types of Policies|Description|
 | ----------- | ----------- |

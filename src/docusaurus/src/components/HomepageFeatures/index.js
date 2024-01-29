@@ -21,7 +21,7 @@ const FeatureList = [
     Svg: require('@site/static/img/observations.svg').default,
     description: (
       <>
-        This building enables mentors to seek observations and conduct surveys using different types of questions 
+        This building block enables mentors to seek observations and conduct surveys using different types of questions 
         and provides the ability to access and record data, using they can derive learnings and plan improvement journeys.
       </>
     ),
