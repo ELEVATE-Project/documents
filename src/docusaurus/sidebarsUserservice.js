@@ -17,11 +17,6 @@ const sidebars = {
   tutoriSidebar: [
     {
       type: 'doc',
-      id: 'settingup-mongodb',
-      label: 'Setting up MongoDB 4.1.4',
-    },
-    {
-      type: 'doc',
       id: 'settingup-userservice',
       label: 'Setting up the User Service',
     },

@@ -47,6 +47,11 @@ const sidebars = {
           label: 'Key Capabilities', // sidebar label
         },
       ]
+    }, 
+    {
+      type: 'doc',
+      id: 'policyarchitecture', // document ID
+      label: 'Multi-Tenant Architecture', // sidebar label
     },  
     {
       type: 'category',
@@ -79,11 +84,6 @@ const sidebars = {
         },
       ]
     },
-    {
-      type: 'doc',
-      id: 'policyarchitecture', // document ID
-      label: 'Multi-Tenant Architecture', // sidebar label
-    }, 
     {
       type: 'category',
       label: 'Using the Application',

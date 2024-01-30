@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'Mentoring',
-    Svg: require('@site/static/img/mentoring-logo.svg').default,
+    Svg: require('@site/static/img/mentor.svg').default,
     description: (
       <>
        This building block enables virtual mentorship in the sphere of education at scale. 
