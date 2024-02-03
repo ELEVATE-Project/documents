@@ -6,9 +6,8 @@ import Admonition from '@theme/Admonition';
 You can set up the user service to include the following user management capabilities to the application:
 
 * Create and manage users and roles.
-* Setting a default user role.
-* Configure a sample file to upload a list of users to a platform.
-* Configure email templates to invite users to a platform.
+* Configure a capability to upload a list of users to the application.
+* Configure notification templates for user workflows.
 
 To set up the User service, do as follows:
 

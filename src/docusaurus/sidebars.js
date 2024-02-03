@@ -64,16 +64,6 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'settingup-mongodb', // document ID
-          label: 'Setting up MongoDB 4.1.4', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'settingup-mentoringservice', // document ID
-          label: 'Setting up the Mentor Service', // sidebar label
-        },
-        {
-          type: 'doc',
           id: 'settingup-bbb', // document ID
           label: 'Setting up the BigBlueButton Service (Optional)', // sidebar label
         },

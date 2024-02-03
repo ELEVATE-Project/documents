@@ -3,7 +3,11 @@ import Admonition from '@theme/Admonition';
 
 # Setting up the Notification Service
 
-You can set up the Notifications service to configure the sender's email ID and send email notifications.
+You can set up the Notification service to:
+
+* Send emails using SendGrid.
+
+* Configure the sender's email ID.
 
 To set up Notification Service on a local system, do as follows:
 
