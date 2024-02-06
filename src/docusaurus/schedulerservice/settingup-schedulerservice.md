@@ -5,7 +5,7 @@ import PartialExample from './_mentored.mdx';
 
 You can set up the Scheduler service to execute tasks at a specific time or interval or at repeated intervals.
 
-For example, using the Scheduler service, <PartialExample mentored /> service can be reminded to send notifications to mentors and mentees before a session starts.
+For example, using the Scheduler service, the <PartialExample mentored /> service can be reminded to send notifications to mentors and mentees before a session starts.
 
 See Setting up Scheduler Service to learn more.
 

@@ -5,7 +5,7 @@ import Admonition from '@theme/Admonition';
 
 You can set up the Notification service to:
 
-* Send emails using SendGrid.
+* Send emails using [Twilio SendGrid](https://sendgrid.com/en-us).
 
 * Configure the sender's email ID.
 
