@@ -3,7 +3,7 @@ import Admonition from '@theme/Admonition';
 
 # Setting up the User Service
 
-You can set up the user service to include the following user management capabilities to the application:
+System administrators can set up the user service to include the following user management capabilities to the application:
 
 * Create and manage users and roles.
 * Configure a capability to upload a list of users to the application.

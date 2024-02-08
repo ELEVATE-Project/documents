@@ -3,9 +3,9 @@ import Admonition from '@theme/Admonition';
 
 # Setting up the Notification Service
 
-You can set up the Notification service to:
+System administrators can set up the Notification service to:
 
-* Send emails using [Twilio SendGrid](https://sendgrid.com/en-us).
+* Send emails using [Twilio® SendGrid](https://sendgrid.com/en-us).
 
 * Configure the sender's email ID.
 
