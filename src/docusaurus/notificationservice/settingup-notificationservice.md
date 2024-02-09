@@ -9,7 +9,7 @@ System administrators can set up the Notification service to:
 
 * Configure the sender's email ID.
 
-To set up Notification Service on a local system, do as follows:
+To set up Notification service on a local system, do as follows:
 
 1. Set up PostgreSQL.
 

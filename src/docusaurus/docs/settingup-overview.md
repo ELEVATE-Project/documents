@@ -14,7 +14,7 @@ Other services such as User, Notification, Scheduler, and BigBlueButton are opti
 To host a customized instance of <PartialExample mentored />:
 
 1. Set up PostgreSQL.
-2. [Install Node.js® on Ubuntu 20.04](https://serverspace.io) (Search for *Install node.js on Ubuntu 20.04* in the Tutorials section.).
+2. [Install Node.js® on Ubuntu 20.04](https://serverspace.io) (Search for *Install Node.js on Ubuntu 20.04* in the Tutorials section.).
 3. Set up <PartialExample mentored /> service.
 4. [Customize the PWA](settingup-pwa).
 
