@@ -55,7 +55,7 @@ One of the most important things to recognise about **mentoring as an approach t
 </tr>
 <tr>
 <td>Manage Users and Roles</td>
-<td>Users with administrative privileges can create and manage users. To learn more, see <a href="/userservice/settingup-userservice" target="_self">User Service</a>.</td>
+<td>Users with system administrator privileges can create and manage users. To learn more, see <a href="/userservice/settingup-userservice" target="_self">User Service</a>.</td>
 </tr>
 </table>
 
@@ -65,7 +65,7 @@ In addition to the <PartialExample mentored /> microservice, the building block 
 * <a href="/notificationservice/settingup-notificationservice" target="_self">Notification Service</a>.
 * <a href="/schedulerservice/settingup-schedulerservice" target="_self">Scheduler Service</a>.
 
-The <PartialExample mentored />  building block can be deployed as a standalone capability or used in conjunction with other learning and development management solutions. 
+The <PartialExample mentored /> building block can be deployed as a standalone capability or used in conjunction with other learning and development management solutions. 
 
 An instance of <PartialExample mentored /> (sandbox solution) is created to demonstrate some of the capabilities. This document provides the <a href="using-the-application">user guide</a> for the reference solution (<PartialExample mentored />).
 

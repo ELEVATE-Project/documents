@@ -67,11 +67,6 @@ const sidebars = {
           id: 'settingup-bbb', // document ID
           label: 'Setting up the BigBlueButton Service (Optional)', // sidebar label
         },
-        {
-          type: 'doc',
-          id: 'settingup-pwa', // document ID
-          label: 'Customizing the PWA', // sidebar label
-        },
       ]
     },
     {
@@ -104,13 +99,13 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'managementorrequests', // document ID
-              label: 'Managing Requests to be a Mentor', // sidebar label
+              id: 'bulkupload', // document ID
+              label: 'Uploading Users to the Application', // sidebar label
             },
             {
               type: 'doc',
-              id: 'bulkupload', // document ID
-              label: 'Uploading Users to the Application', // sidebar label
+              id: 'managementorrequests', // document ID
+              label: 'Managing Requests to be a Mentor', // sidebar label
             },
           ]
         },
