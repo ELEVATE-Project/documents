@@ -105,7 +105,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'managementorrequests', // document ID
-              label: 'Managing Requests to be a Mentor', // sidebar label
+              label: 'Managing Requests to Become a Mentor', // sidebar label
             },
           ]
         },
@@ -185,7 +185,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'request-beamentor', // document ID
-              label: 'Requesting to be a Mentor', // sidebar label
+              label: 'Requesting to Become a Mentor', // sidebar label
             },
             {
               type: 'doc',
