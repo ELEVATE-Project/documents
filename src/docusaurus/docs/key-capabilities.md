@@ -55,7 +55,7 @@ One of the most important things to recognise about **mentoring as an approach t
 </tr>
 <tr>
 <td>Manage Users and Roles</td>
-<td>Users with system administrator privileges can create and manage users. To learn more, see <a href="/userservice/settingup-userservice" target="_self">User Service</a>.</td>
+<td>Users with organization administrator privileges can create and manage users.</td>
 </tr>
 </table>
 
