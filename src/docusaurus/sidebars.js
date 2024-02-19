@@ -52,23 +52,12 @@ const sidebars = {
       type: 'doc',
       id: 'policyarchitecture', // document ID
       label: 'Multi-Tenant Architecture', // sidebar label
-    },  
+    }, 
     {
-      type: 'category',
-      label: 'Hosting and Customizing Your Instance',
-      items: [
-        {
-          type: 'doc',
-          id: 'settingup-overview', // document ID
-          label: 'Overview', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'settingup-bbb', // document ID
-          label: 'Setting up the BigBlueButton Service (Optional)', // sidebar label
-        },
-      ]
-    },
+      type: 'doc',
+      id: 'settingup-overview', // document ID
+      label: 'Hosting and Customizing Your Instance', // sidebar label
+    }, 
     {
       type: 'category',
       label: 'Using the Application',

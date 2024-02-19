@@ -13,7 +13,7 @@ To set up Notification service on a local system, do as follows:
 
 1. Set up PostgreSQL.
 
-2. Set up the Notification service.
+2. [Set up the Notification service](https://github.com/ELEVATE-Project/notification/blob/master/README.md).
 
 ## Additional Resources
 

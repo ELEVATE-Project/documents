@@ -7,7 +7,7 @@ System administrators can set up the Scheduler service to execute tasks at a spe
 
 For example, using the Scheduler service, the <PartialExample mentored /> service can be configured to send notifications to mentors and mentees before a session starts.
 
-See Setting up Scheduler service to learn more.
+See [Setting up Scheduler service](https://github.com/ELEVATE-Project/scheduler/blob/master/README.md) to learn more.
 
 ## Additional Resources
 

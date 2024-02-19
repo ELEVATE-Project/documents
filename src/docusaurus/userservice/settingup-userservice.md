@@ -13,7 +13,7 @@ To set up the User service, do as follows:
 
 1. Set up the PostgreSQL.
 
-2. Set up the User service.
+2. [Set up the User service](https://github.com/ELEVATE-Project/user/blob/master/README.md).
 
 ## Additional Resources
 
