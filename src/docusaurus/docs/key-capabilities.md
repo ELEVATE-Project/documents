@@ -55,7 +55,7 @@ One of the most important things to recognise about **mentoring as an approach t
 </tr>
 <tr>
 <td>Manage Users and Roles</td>
-<td>Users with organization administrator privileges can create and manage users.</td>
+<td>Users with Organization Administrator privileges can create and manage users.</td>
 </tr>
 </table>
 
