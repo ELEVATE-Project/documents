@@ -3,41 +3,49 @@ import PartialExample from './_mentored.mdx';
 
 # Multi-Tenant Architecture
 
-The <PartialExample mentored /> platform has a multi-tenant architecture, and adopters can set up the application using the microservices and create multiple organizations. Organizations can manage access to their sessions and mentors for mentees from other organizations.
+The <PartialExample mentored /> platform has a multi-tenant architecture, and adopters can:
 
-The organization and its users are identified based on:
+1. Set up the application using the microservices.
 
-* The **domain name** in the email ID of registered users. 
+2. Create multiple organizations and assign administrators for each organization. 
 
-    <p>  
-        <Admonition type="note">
-        <p>If the email ID does not belong to the organizational domain, the application assigns the user's organization as <b>Default</b>.</p>
-        </Admonition>
-    </p>
+3. Configure policies for organizations to manage access to their sessions and mentors.
 
-* The organization that uploaded users to the application. See [Uploading Users to the Application](bulkupload) to learn more.
+![](media/saasarchitecture.png)
 
-    <p>  
-        <Admonition type="note">
-        <p>In this case, all email IDs irrespective of whether they belong to the organization or not, are treated as organizational users.</p>
-        </Admonition>
-    </p>
+## Default Organization
 
-* Whether the users have signed up using an invite received from their organization.
+After setting up the application, a **Default** organization is created. Users who are not part of any organization are added to **Default** and the system administrator acts as the organization administrator.
 
-    <p>  
-        <Admonition type="note">
-        <p>Users who sign up through a link received from their contacts are identified as mentees of <b>Default</b> organization.</p>
-        </Admonition>
-    </p>
+<p>  
+    <Admonition type="info">
+    <p>See the following topics to learn more about the Organization Administrator role:</p>
+    <ul>
+    <li><a href="bulkupload">Uploading Users to the Application</a></li>
+    <li><a href="managementorrequests">Managing Requests to Become a Mentor</a></li>
+    </ul>
+    </Admonition>
+</p>
+
+## Assigning Users to Organizations
+
+Users who sign up using a shared link are assigned a mentee (default) role. The mentee's organization is detected based on the organizational domain in the email ID.
+
+If the organization uploads email IDs to the platform, the users would receive email invites. The administrator can pre-register email IDs that belong to corporate as well as public domains. After signup, such users are detected as organizational users in the application.
+
+<p>  
+    <Admonition type="note">
+    <p>If the email ID of a signed up user is not registered by the organization or if it does not belong to the organizational domain, the user is added to the <b>Default</b> organization.</p>
+    </Admonition>
+</p>
 
 ## Policy Architecture
 
-From the back end, organizations can configure policies to deny or allow:
+From the back end, organizations can configure policies to:
 
-* Users from accessing mentors or sessions of their organization.
+* Provide all registered users conditional access to mentors or sessions, irrespective of the organizations to which they belong.
 
-* Mentees from accessing mentors or sessions of other organizations.
+* Provide their own mentees conditional access to mentors and sessions of other organizations.
 
 Organizations can independently deny or allow access to mentors and sessions. If mentor access is denied, users cannot view the mentor profiles in the Mentor Directory. If session access is denied, users cannot view the session hosted by the mentors of an organization.
 

@@ -13,7 +13,7 @@ Other services such as User, Notification, Scheduler, and BigBlueButton are opti
 
 To host a customized instance of <PartialExample mentored />:
 
-1. Set up PostgreSQL.
+1. [Set up PostgreSQL](https://github.com/ELEVATE-Project/mentoring/blob/master/README.md).
 2. [Install Node.js® on Ubuntu 20.04](https://serverspace.io) (Search for *Install Node.js on Ubuntu 20.04* in the Tutorials section.).
 3. [Set up <PartialExample mentored /> service](https://github.com/ELEVATE-Project/mentoring/blob/master/README.md).
 4. [Set up Interface service](https://github.com/ELEVATE-Project/interface-service/blob/main/README.md).
@@ -26,4 +26,15 @@ Optionally, to set up supporting services do as follows:
 * <a href="/notificationservice/settingup-notificationservice" target="_self">Set up Notification Service</a>.
 * <a href="/schedulerservice/settingup-schedulerservice" target="_self">Set up Scheduler Service</a>.
 * [Set up BigBlueButton Service](https://github.com/ELEVATE-Project/mentoring/blob/master/README.md).
+
+## Additional Resources
+
+|To learn more| See the following links|
+|--------------|-----------|
+|API Documentation|https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc|
+|<PartialExample mentored /> Service|https://github.com/ELEVATE-Project/mentoring.git|
+|Interface Service|https://github.com/ELEVATE-Project/interface-service|
+|Supporting Service: User Service|https://github.com/ELEVATE-Project/user.git|
+|Supporting Service: Notification Service|https://github.com/ELEVATE-Project/notification.git|
+|Supporting Service: Scheduler Service|https://github.com/ELEVATE-Project/scheduler.git|
 
