@@ -8,7 +8,7 @@ Mentors will receive email notifications:
 * When an organization administrator assigns them the role of a mentor.
 * When they sign up on <PartialExample mentored />.
 * On the number of participants who have enrolled for the session.
-* When none of the participants have enrolled for the session.
+* If the session does not have any enrolled participants.
 * On upcoming sessions that they have created.
 * When the request to delete their account is accepted.
 
