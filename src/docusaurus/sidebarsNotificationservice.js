@@ -20,6 +20,11 @@ const sidebars = {
         id: 'settingup-notificationservice',
         label: 'Setting up the Notification Service',
       },
+      {
+        type: 'doc',
+        id: 'database-notificationservice',
+        label: 'Database Design',
+      },
     ],
   };
   

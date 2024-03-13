@@ -20,6 +20,11 @@ const sidebars = {
       id: 'settingup-userservice',
       label: 'Setting up the User Service',
     },
+    {
+      type: 'doc',
+      id: 'database-userservice',
+      label: 'Database Design',
+    },
   ],
 };
 
