@@ -1,7 +1,10 @@
 import PartialExample from './_mentored.mdx';
 import MentorDirectoryIcon from './media/mentordirectory-icon.PNG';
+import BurgerMenu from './media/burgermenu-icon.png'
+import PortalAppMenu from './media/portal-applicationmenumentors.png';
 import MentorProfilePage from './media/mentorprofilepage.png'
 import SearchMentor from './media/searchmentordirectory.PNG'
+import PortalSearchMentor from './media/portal-searchmentordirectory.png'
 import UpcomingSession from './media/mentordirectory-upcomingsessions.png'
 import MentorProfileLink from './media/shareprofile.png'
 import PortalMentorProfilePage from './media/portal-mentorprofilepage.png'
@@ -26,85 +29,72 @@ On the Mentor Directory, you can do the following actions:
 
 ## Viewing the Mentor Profile
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
 <p>You can discover mentors and view their profile in one of the following ways:</p>
+
 <ul>
-<li>Using the <b>Mentors</b> tab</li>
+<li>Using the Mentor Directory</li>
 <li>Using the <b>Search</b> bar</li>
 </ul>
-<h3>Using the Mentors Tab</h3> 
+
+### Using the Mentor Directory
+
 <p>The Mentor Directory lists mentor profiles in an alphabetical order. You can also search for mentors using the <b>Search</b> bar.</p>
-<p><b>To view the mentor profile using the Mentors tab, do as follows:</b></p>
+
 <ol>
+<li>To view the mentor directory, do any one of the following actions:
+<ul>
+<li>Do one of the following actions:
+<ul>
+<li>Select <b>Mentors</b> from the <b>Application</b> menu.</li>
+<li>Go to the <b>Application</b> menu <img src={BurgerMenu}/> and select <b>Mentors</b>.</li>
+</ul>
+<p>
+    <img src={PortalAppMenu} />
+</p>
+</li>
 <li>Go to the <b>Mentors</b> tab.
 <p>
     <img src={MentorDirectoryIcon} />
 </p> 
 </li>
-<li>Find a mentor and tap the mentor profile tile.</li>
+</ul>
+</li>
+<li>Find a mentor and click the mentor profile tile.</li>
 <li>Go to the <b>About</b> tab to view the profile details.
-<p>
-    <img src={MentorProfilePage} />
-</p>
-</li>
-</ol>
-<h3>Using the Search Bar</h3>
-<ol>
-<li>In the Search bar of the Home page, tap the <b>Mentor Profile</b> tab. 
-<p>
-    <img src={SearchMentor} />
-</p>
-</li>
-<li>Type the mentor’s name and tap the <b>Search</b> button.</li>
-<li>Tap the mentor profile tile.</li>
-<li>Go to the <b>About</b> tab to view the profile details.
-<p>
-    <img src={MentorProfilePage} />
-</p>
-</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal"> 
-<p>The Mentor Directory lists mentor profiles in an alphabetical order.</p>
-<p><b>To view the mentor profile, do as follows:</b></p>
-<ol>
-<li>Go to the <b>Mentor directory</b> tab.
-<p>
-    <Admonition type="tip">
-    <p>To find mentor profiles in alphabetical order, click the tab containing the first letter of the mentor's name.</p>
-    </Admonition>
-</p>
-</li>
-<li>Find a mentor and click <b>View profile</b>. The Mentor profile page appears.
 <p>
     <img src={PortalMentorProfilePage} />
 </p>
 </li>
 </ol>
-</TabItem>
-</Tabs>
 
-## Finding Sessions Created by a Mentor
+### Using the Search Bar
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
-<li>On the Mentor Directory, tap the mentor profile tile.</li>
-<li>Go to the <b>Upcoming sessions</b> tab to view the sessions created by the mentor.
+<li>In the Search bar of the Home page, click the <b>Mentors</b> tab. 
 <p>
-    <img src={UpcomingSession} />
+    <img src={PortalSearchMentor} />
+</p>
+</li>
+<li>Type the mentor’s name and click the <b>Search</b> button.</li>
+<li>Click the mentor profile tile.</li>
+<li>Go to the <b>About</b> tab to view the profile details.
+<p>
+    <img src={PortalMentorProfilePage} />
 </p>
 </li>
 </ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<p>On the Mentor Profile page, go to the Upcoming sessions section to view the sessions created by the mentor.</p>
+
+## Finding Sessions Created by a Mentor
+
+<ol>
+<li>On the Mentor Directory, click the mentor profile tile.</li>
+<li>Go to the <b>Upcoming sessions</b> tab to view the sessions created by the mentor.
 <p>
     <img src={PortalUpcomingSession} />
 </p>
-</TabItem>
-</Tabs>
+</li>
+</ol>
+
 <Admonition type="info">
 <p>To learn more about enrolling and joining sessions using the mentor profile, see the following topics:</p>
 <ul>
@@ -119,26 +109,11 @@ On <PartialExample mentored />, you can share mentor profile links with your con
 
 **To share mentor profile links, do as follows:**
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
-<li>On the Mentor profile page, tap <b>Share profile</b>.</li>
+<li>On the Mentor profile page, click <b>Share profile</b> to copy the mentor profile link.</li>
 <li>Share the mentor profile link with your contacts.
 <p>
-    <img src={MentorProfileLink} />
+    <img src={PortalMentorProfilePage} />
 </p>
 </li>
-</ol> 
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<ol>
-<li>On the Mentor profile page, click <b>Share profile</b>.</li>
-<li>To copy the link, click <b>Copy link</b>.
-<p>
-    <img src={PortalMentorProfileLink} />
-</p>
-</li>
-<li>Share the mentor profile link with your contacts.</li>
-</ol> 
-</TabItem>
-</Tabs>
+</ol>

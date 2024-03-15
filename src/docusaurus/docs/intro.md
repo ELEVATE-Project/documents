@@ -26,7 +26,12 @@ This gap needs to be bridged through a network of mentors and experts available 
 <Admonition type="info">
 <p>The government has undertaken many initiatives to drive learners online, like the National Digital Educational Architecture (NDEAR), PM eVIDYA Program, Samagra Shiksha Scheme, ‘ShaGun’, DIKSHA, SWAYAM, Shiksha Van, E-Pathshala, National Repository of Open Educational Resources (NROER), and to upskill them with emerging technologies such as National Digital Literacy Mission (NDLM) and FutureSkills (NASSCOM).</p>
 <p>The National Education Policy (2020) has identified the need to create a marketplace where mentors and mentees discover one another and engage for guidance and professional development. The National Mentoring Mission (NMM) envisions a large, decentralized, tech-assisted mentoring structure at different levels of the education and upskilling ecosystem. The NMM encourages the use of digital technologies to make the initiative auto-scalable, diverse, inclusive, and context-aware.</p>
+<p>Many upskilling programs have been rolled out to develop digital skills. Digital skills are critical for teachers to leverage learning platforms like <a href="https://diksha.gov.in/index.html">DIKSHA</a> and SWAYAM and access OERs. Digital mentoring programs can leverage the expertise available in the community to upskill teachers to acquire digital skills.</p>
+<p><PartialExample mentored /> capability’s great strength is the diversity of programs and domains where mentors and mentees work together.</p>
+<p>Upskilling ASHA project: ASHA (Accredited Social Health Activist) workers are the frontline health caretakers in the public healthcare system. Capacity building of ASHA is a continuous process and requires knowledge of handling practical situations. ASHAs are associated with Auxiliary Nurse Midwives (ANMs) who mentor and guide them. Mentor capability ensures that ASHA workers always have access to their mentor (ANM) for continued guidance and support.</p>
 </Admonition>
+
+Mentoring fosters a sense of belonging, motivation, and confidence among learners, as they receive encouragement, feedback, and recognition from their mentors.
 
 ## Mentor Building Block
 
@@ -46,8 +51,8 @@ It can be leveraged to upskill and build capability in academia, government orga
 
 >
 
-If <PartialExample mentored /> is being hosted as a stand-alone capability and not as part of an existing platform, you can leverage the following services: 
+If <PartialExample mentored /> is being hosted as a standalone capability and not as part of an existing platform, you can leverage the following services: 
 
 * User Management
 * Scheduler 
-* Notifications
+* Notification

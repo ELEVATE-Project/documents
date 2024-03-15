@@ -1,5 +1,3 @@
 # Database Design
 
-
-![](media/schema-elevate.drawio.png)
-
+![](media/db-mentor.png)

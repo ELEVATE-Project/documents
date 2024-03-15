@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'Mentoring',
-    Svg: require('@site/static/img/mentoring-logo.svg').default,
+    Svg: require('@site/static/img/mentor.svg').default,
     description: (
       <>
        This building block enables virtual mentorship in the sphere of education at scale. 
@@ -21,7 +21,7 @@ const FeatureList = [
     Svg: require('@site/static/img/observations.svg').default,
     description: (
       <>
-        This building enables mentors to seek observations and conduct surveys using different types of questions 
+        This building block enables mentors to seek observations and conduct surveys using different types of questions 
         and provides the ability to access and record data, using they can derive learnings and plan improvement journeys.
       </>
     ),

@@ -1,4 +1,3 @@
-import PartialExample from './_elevate.mdx';
 import Version from './_version.mdx';
 import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';
@@ -76,7 +75,7 @@ You can set up the Scheduler Service on a local system in one of the following w
      KAFKA_URL = host.docker.external:9092
     ```
 
-2. Find **host.docker.internal** IP address and use it as the bind IP. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
+2. Find **host.docker.internal** IP address and use it as the bind IP. See <a href="settingup-mongodb">Setting up MongoDB 4.1.4</a> to learn more.
 
     <Admonition type="note">
     <p>Steps to find <b>host.docker.internal</b> IP address and location of <b>mongod.conf</b> is operating system specific. Refer <a href="https://stackoverflow.com/questions/22944631/how-to-get-the-ip-address-of-the-docker-host-from-inside-a-docker-container">this Stack Overflow discussion thread</a> for more information.</p>
@@ -115,7 +114,7 @@ You can set up the Scheduler Service on a local system in one of the following w
      KAFKA_URL = 11.2.3.45:9092
     ```
 
-2. Set the bind IP using the steps given in [Setting up MongoDB 4.1.4](settingup-mongodb.md). For more information, search for *Configure Remote Access for MongoDB on Ubuntu 20.04* in [DigitalOcean Community](https://www.digitalocean.com/community).
+2. Set the bind IP using the steps given in <a href="settingup-mongodb">Setting up MongoDB 4.1.4</a>. For more information, search for *Configure Remote Access for MongoDB on Ubuntu 20.04* in [DigitalOcean Community](https://www.digitalocean.com/community).
 
     <Admonition type="note">
     <p>Instructions might differ based on the MongoDB version and operating system.</p>
@@ -142,7 +141,7 @@ You can set up the Scheduler Service on a local system in one of the following w
 
     * [Nodejs](https://nodejs.org) (Install Nodejs from the Download section.)
 
-    * [MongoDB](settingup-mongodb.md)
+    * <a href="settingup-mongodb">MongoDB</a>
 
 2. Clone the **Scheduler service** repository.
 
@@ -176,7 +175,7 @@ You can set up the Scheduler Service on a local system in one of the following w
     
     ```
 
-4. Start MongoDB locally. See [Setting up MongoDB 4.1.4](settingup-mongodb.md) to learn more.
+4. Start MongoDB locally. See <a href="settingup-mongodb">Setting up MongoDB 4.1.4</a> to learn more.
 
     <Admonition type="note">
     <p>This might vary based on your host operating system and the method used.</p>

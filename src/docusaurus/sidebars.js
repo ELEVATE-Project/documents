@@ -47,64 +47,17 @@ const sidebars = {
           label: 'Key Capabilities', // sidebar label
         },
       ]
-    },
+    }, 
     {
-      type: 'category',
-      label: 'Hosting and Customizing Your Instance',
-      items: [
-        {
-          type: 'doc',
-          id: 'settingup-overview', // document ID
-          label: 'Overview', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'settingup-mongodb', // document ID
-          label: 'Setting up MongoDB 4.1.4', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'settingup-mentoringservice', // document ID
-          label: 'Setting up the Mentor Service', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'settingup-mobileapplication', // document ID
-          label: 'Customizing the Mobile Application', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'settingup-webportal', // document ID
-          label: 'Customizing the Web Portal', // sidebar label
-        },
-        {
-          type: 'category',
-          label: 'Setting up the Supporting Microservices (Optional)',
-          items: [
-            {
-              type: 'doc',
-              id: 'settingup-bbb', // document ID
-              label: 'Setting up the BigBlueButton Service', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'settingup-notificationsservice', // document ID
-              label: 'Setting up the Notifications Service', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'settingup-schedulerservice', // document ID
-              label: 'Setting up the Scheduler Service', // sidebar label
-            },
-            {
-              type: 'doc',
-              id: 'settingup-userservice', // document ID
-              label: 'Setting up the User Service', // sidebar label
-            },
-          ]
-        },
-      ]
-    },
+      type: 'doc',
+      id: 'policyarchitecture', // document ID
+      label: 'Multi-Tenant Architecture', // sidebar label
+    }, 
+    {
+      type: 'doc',
+      id: 'settingup-overview', // document ID
+      label: 'Hosting and Customizing Your Instance', // sidebar label
+    }, 
     {
       type: 'category',
       label: 'Using the Application',
@@ -116,11 +69,35 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'gettingstarted', // document ID
+          label: 'Getting Started with the Application', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'notifications', // document ID
           label: 'Notifications', // sidebar label
         },
-
-
+        {
+          type: 'category',
+          label: 'How Organization Administrators Can Manage Users',
+          items: [
+            {
+              type: 'doc',
+              id: 'aboutorganizationadministrator', // document ID
+              label: 'Organization Administrator', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'bulkupload', // document ID
+              label: 'Uploading Users to the Application', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'managementorrequests', // document ID
+              label: 'Managing Requests to Become a Mentor', // sidebar label
+            },
+          ]
+        },
         {
           type: 'category',
           label: 'How Mentors Can Use the Application',
@@ -193,6 +170,11 @@ const sidebars = {
               type: 'doc',
               id: 'creating-and-managing-mentee-profile', // document ID
               label: 'Creating a Profile', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'request-beamentor', // document ID
+              label: 'Requesting to Become a Mentor', // sidebar label
             },
             {
               type: 'doc',

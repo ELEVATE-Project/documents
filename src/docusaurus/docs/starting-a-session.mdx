@@ -3,7 +3,7 @@ import NewSession from './media/newsession.png'
 import StartSessionButton from './media/startsession.png'
 import PortalStartButton from './media/portal-startbutton.png'
 import PortalNewSession from './media/portal-newsession.png'
-import PortalSessionDetailsStart from './media/portal-sessiondetailsstart.png'
+import PortalStartSessionButton from './media/portal-sessiondetailsstart.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
@@ -27,26 +27,9 @@ You can start a session in one of the following ways:
 * Using the shared link
 
 ## Using the Start Button
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
+
 <ol>
 <li>On your Home page, go the <b>Created sessions</b> tab.</li>
-<li>Find the session.</li>
-<li>Tap <b>Start</b>. The meeting window appears.
-<p>
-   <Admonition type="tip">    
-   <p>If an error occurs, go back to <PartialExample mentored /> and tap <b>Start</b>.</p>
-   </Admonition>
-</p>
-<p>
-   <img src={StartButton} />
-</p>
-</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<ol>
-<li>Go the <b>Created sessions</b> tab.</li>
 <li>Find the session.</li>
 <li>Click <b>Start</b>. The meeting window appears.
 <p>
@@ -59,79 +42,39 @@ You can start a session in one of the following ways:
 </p>
 </li>
 </ol>
-</TabItem>
-</Tabs>
 
 ## Using the Session Details Page
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
 <ol>
 <li>On your Home page, go the <b>Created sessions</b> tab.</li>
-<li>Tap the session tile to view the Session Details page.
+<li>Click the session tile to view the Session Details page.
 <p>
-   <img src={NewSession} />
+   <img src={PortalNewSession} />
 </p>
 </li>
-<li>Tap <b>Start session</b>. The meeting window appears.
+<li>Click <b>Start session</b>. The meeting window appears.
 <p>
-   <img src={StartSessionButton} />
-</p>
-</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
-<ol>
-<li>Go the <b>Created sessions</b> tab.</li>
-<li>Do one of the following actions:
-   <ul>
-   <li>Click the session tile to view the Session details page.
-   <p>
-      <img src={PortalNewSession} />
-   </p>
-   </li>
-   <li>Click the <b>View details</b> link to view the Session details page.</li>
-   </ul>
-</li>
-<li>Click <b>Start</b>.The meeting window appears.
-<p>
-   <img src={PortalSessionDetailsStart} />
+   <img src={PortalStartSessionButton} />
 </p>
 </li>
 </ol>
-</TabItem>
-</Tabs>
 
 ## Using the Shared Link
 
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
-<ol>
-<li>Tap the session link which was shared with your contacts or on social media.</li> 
-<li>Tap <b>Start session</b>. The meeting window appears.
-<p>
-   <img src={StartSessionButton} />
-</p>
-</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal">
 <ol>
 <li>Click the session link which was shared with your contacts or on social media.</li> 
-<li>Click <b>Start</b>. The meeting window appears.
+<li>Click <b>Start session</b>. The meeting window appears.
 <p>
-   <img src={PortalSessionDetailsStart} />
+   <img src={PortalStartSessionButton} />
 </p>
 </li>
 </ol>
-</TabItem>
-</Tabs>
 
 <p>
    <Admonition type="info">    
    <p>To configure the meeting settings, see any one of the following sections:</p>
    <ul>
-   <li><a href="#configuring-the-bigbluebutton-settings">Configuring the BigBlueButton Settings</a></li>
+   <li><a href="https://bigbluebutton.org">BigBlueButton Tutorials</a>. To view the tutorials, go to the <b>Teachers</b> menu and select <b>Tutorials</b>.</li>
    <li><a href="https://support.google.com/">Google Meet Support</a></li>
    <li><a href="https://www.whatsapp.com/">WhatsApp Help Center</a></li>
    <li><a href="https://zoom.us/">Zoom Support Center</a></li>
@@ -139,153 +82,12 @@ You can start a session in one of the following ways:
    </Admonition>
 </p>
 
-## Configuring the BigBlueButton Settings
+## Usage Guidelines
 
-During the session, you can configure the following BigBlueButton meeting settings:
+- Unmute your microphone only when necessary.
 
-* Configure the microphone.
-* Configure other participants' microphones.
-* Configure the webcam.
-* Disable session recording.
-
-### Configuring Your Microphone
-
-1. To connect your microphone, click the **Microphone** option and select **Yes**. 
-
-   <Admonition type="note"> 
-   <p>Microphone may turn on by default.</p>
-   </Admonition>
-
-2.	To mute your microphone, click the **Microphone** button. Click again to unmute it.
-
-### Configuring the Participants' Microphones
-
-1. Go to the **User list toggle**.
-
-2. To mute the microphone, do any one of the following actions:
-
-   * Click the **Manage users** icon and select **Mute all users except presenter** to mute the participants' microphones.
-
-   * Click the participant's name and select **Mute user** to mute a specific participant's microphone.
-
-### Configuring the Webcam
-
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
-<ol>
-<li>To turn on the webcam, tap the <b>Webcam</b> button.</li>
-<li>Tap <b>Start sharing</b>. Before turning on your webcam, you can change the webcam (you can use either your front or rear camera of your phone) and background. 
-<p>  
-   <Admonition type="note">
-   <ul>
-   <li>The webcam may turn on by default.</li>
-   <li>To change your webcam and background, tap the <b>Webcam</b> button, make changes, and close the window.</li>
-   </ul>
-   </Admonition>
-</p>
-</li>
-<li>To turn it off, tap the <b>Webcam</b> button and tap <b>Stop sharing</b>.</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal" default>
-<ol>
-<li>To turn on the webcam, click the <b>Webcam</b> button.</li>
-<li>Click <b>Start sharing</b>. Before turning on your webcam, you can change the webcam and background settings. 
-<p> 
-   <Admonition type="note">
-   <ul>
-   <li>The webcam may turn on by default.</li>
-   <li>To change your webcam and background, do as follows:
-      <ol>
-      <li>Click the upward arrow on the <b>Webcam</b> button.</li>
-      <li>Select <b>Open advanced settings</b> option.</li>
-      <li>Change the background and close the Webcam settings window.</li>
-      </ol>
-   </li>
-   </ul>
-   </Admonition>
-</p>
-</li>
-<li>To turn it off, click the <b>Webcam</b> button.</li>
-</ol>
-</TabItem>
-</Tabs>
-
-### Checking the Quality of Your Internet Connection 
-
-The **Connection status** icon located on the top portion of the window indicates the quality of your internet connection.
-
-### Disabling Session Recording
-
-To pause the recording, click the **Record** button and click **Yes**. Click the button again to resume recording.
-
-### Leaving the Session
-
-<Tabs>
-<TabItem value="mentored mobile application" label="Mobile App" default>
-<ol>
-<li>Go to the <b>Options</b> menu and select <b>Leave meeting</b>.</li>
-<li>Tap <b>Ok</b>. The <PartialExample mentored /> Home page appears.
-<p>
-   <Admonition type="note">    
-   <p>If you leave the meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and click <b>Start</b>.</p>
-   </Admonition>
-</p>
-</li>
-</ol>
-</TabItem>
-<TabItem value="mentored portal" label="Web Portal" default>
-<ol>
-<li>Go to the <b>Options</b> menu and select <b>Leave meeting</b>.</li>
-<li>Click <b>Ok</b>. The <PartialExample mentored /> Home page appears.
-<p>
-   <Admonition type="note">    
-   <p>If you leave the meeting unintentionally (by closing the meeting tab), go back to <PartialExample mentored /> and click <b>Start</b>.</p>
-   </Admonition>
-</p> 
-<p>
-   <Admonition type="caution">
-   <p>If the session is extended beyond the scheduled end time, you cannot rejoin if you leave the meeting after the scheduled end time.</p>
-   </Admonition>
-</p>
-</li>
-</ol>
-</TabItem>
-</Tabs>
-
-### Ending the Session
-
-**To end the session, do as follows:**
-
-1. Go to the **Options** menu and select **End meeting**.
-
-2. Click **End session for all users** button.
-
-3. Click **Ok**. The <PartialExample mentored /> Home page appears and the session moves to the Past sessions section of the **Created Sessions** tab.
-
-### Best Practices
-
-- Unmute your [microphone](#configuring-the-microphone) only when necessary.
-
-- Maintain a neat background and attire before you turn on your [webcam](#configuring-the-webcam). 
+- Maintain a neat background and attire before you turn on your webcam. 
 
 - Use respectful language while sharing any information. 
 
-## Using BigBlueButton Features
-
-The BigBlueButton application provides more features which are as follows:
-
-* Managing meeting settings
-* Managing users
-* Adding user status
-* Sending chat messages
-* Sharing notes
-* Presenting a file
-* Using the whiteboard
-* Starting a poll
-* Selecting a random user
-* Creating breakout rooms
-
-<Admonition type="info">
-<p>To learn more, see <a href="https://bigbluebutton.org">BigBlueButton Tutorials</a>. To view the tutorials, go to the <b>Teachers</b> menu and select <b>Tutorials</b>.</p>
-</Admonition>
+- If you leave a BigBlueButton meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and click <b>Start</b>.
