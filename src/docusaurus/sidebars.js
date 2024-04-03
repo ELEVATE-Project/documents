@@ -100,6 +100,17 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'How Session Managers Can Manage Sessions',
+          items: [
+            {
+              type: 'doc',
+              id: 'assignsessionstomentors', // document ID
+              label: 'Assigning Sessions to a Mentor', // sidebar label
+            },
+          ]
+        },
+        {
+          type: 'category',
           label: 'How Mentors Can Use the Application',
           items: [
 

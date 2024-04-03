@@ -1,0 +1,132 @@
+import JoinButton from './media/joinbutton.png';
+import SessionDetailsJoin from './media/sessiondetailsjoin.png'
+import SessionTileJoin from './media/sessiontile-join.png'
+import SearchSession from './media/search-sessions.png'
+import MentorProfileJoin from './media/mentorprofile-join.png'
+import PortalJoinButton from './media/portal-joinbutton.png';
+import PortalSessionTileJoin from './media/portal-sessiontilejoin.png'
+import PortalSearchSessions from './media/portal-searchsessions.png'
+import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
+import PortalMentorProfileJoin from './media/portal-mentorprofilejoin.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+import JoinStepPortal from './_joinsessionstep-portal.mdx';
+import JoinStepMobileApp from './_joinsessionstep-mobileapp.mdx';
+
+# Joining a Session
+
+After enrolling, you can join when the mentor starts the session.
+
+<Admonition type="note">
+You can join the session anytime within the time allocated for the session.
+</Admonition>
+
+<p>You can join a session in one of the following ways:</p>
+<ul>
+<li>Using the <b>Enrolled sessions</b> tab</li>
+<li>Using the <b>All sessions</b> tab</li>
+<li>Using the mentor profile</li>
+<li>Using the Session Details page</li>
+<li>Using the <b>Search</b> bar</li>
+</ul>
+
+## Using the Enrolled Sessions Tab
+
+<ol>
+<li>On the Home page, go to the <b>Enrolled sessions</b> tab.</li>
+<li>Find the session.</li>
+<li>Click <b>Join</b>.
+<p>
+    <Admonition type="tip">    
+    <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Join</b>.</p>
+    </Admonition>
+</p>
+<p>
+    <img src={PortalJoinButton} />
+</p>
+</li>
+<JoinStepPortal />
+</ol>
+
+## Using the All Sessions Tab
+
+<ol>   
+<li>On the Home page, go to the <b>All Sessions</b> tab.</li> 
+<li>Find an enrolled session.</li>
+<li>Click <b>Join</b>.
+<p>
+    <img src={PortalJoinButton} />
+</p>
+</li>
+<JoinStepPortal />
+</ol>
+
+## Using the Session Details Page
+
+<ol>
+<li>Find an enrolled session from the <b>All Sessions</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
+<li>Click the session tile to view the Session Details page.
+<p>
+    <img src={PortalSessionTileJoin} />
+</p>
+</li>
+<li>Click <b>Join</b>.
+<p>
+    <img src={PortalSessionDetailsJoin} />
+</p>
+</li>
+<JoinStepPortal />
+</ol>
+
+## Using the Search bar
+
+<ol>
+<li>Click the <b>Sessions</b> tab.
+<p>
+    <img src={PortalSearchSessions} />
+</p>
+</li>
+<li>Type the session name and click the <b>Search</b> button.</li>
+<li>Click <b>Join</b>.</li>
+<JoinStepPortal />
+</ol>
+
+## Using the Mentor Profile
+
+<Admonition type="info">    
+<p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
+</Admonition>
+<p><b>To join a session using the mentor profile, do as follows:</b></p>
+<ol>
+<li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
+<li>Click <b>Join</b>.
+<p>
+    <img src={PortalMentorProfileJoin} />
+</p>
+</li>
+<JoinStepPortal />
+</ol>
+
+<p>
+   <Admonition type="info">    
+   <p>To configure the meeting settings, see any one of the following sections:</p>
+   <ul>
+   <li><a href="https://bigbluebutton.org">BigBlueButton Tutorials</a>. To view the tutorials, go to the <b>Teachers</b> menu and select <b>Tutorials</b>.</li>
+   <li><a href="https://support.google.com/">Google Meet Support</a></li>
+   <li><a href="https://www.whatsapp.com/">WhatsApp Help Center</a></li>
+   <li><a href="https://zoom.us/">Zoom Support Center</a></li>
+   </ul>
+   </Admonition>
+</p>
+
+## Usage Guidelines
+
+- Unmute your microphone only when necessary.
+
+- Maintain a neat background and attire before you turn on your webcam. 
+
+- Use respectful language while sharing any information.
+
+- If you leave a BigBlueButton meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and click <b>Join</b>.

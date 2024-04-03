@@ -1,10 +1,6 @@
 import PartialExample from './_mentored.mdx';
-import SessionDetails from './media/create_session.png';
+import BurgerMenu from './media/burgermenu-icon.png'
 import SelectDateAndTime from './media/selectdateandtime.png';
-import SessionDetailsOptions from './media/createsession-options.png'
-import AddMeetingLink from './media/addmeetinglink.png'
-import NewSession from './media/newsession.png'
-import EditAndDeleteSession from './media/edit-session.PNG'
 import PortalSessionDetails from './media/portal-createsession.png'
 import PortalSessionDetailsOptions from './media/portal-createsessionoptions.png'
 import PortalAddMeetingLink from './media/portal-addmeetinglink.png'
@@ -14,19 +10,15 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
 
-# Setting up a Session
+# Assigning Sessions to a Mentor
 
-To share your skills and knowledge with your mentees, you can create a <PartialExample mentored /> session and add requisite details such as:
-
-* The topic for the session
-* The session schedule
-* A creative graphic or image to attract the attention of mentees
-* The meeting platform
+By creating and assigning sessions to a mentor, you can gain an oversight to the mentoring program at an organization and track the progress of sessions.
 
 **To create a session, do as follows:**
 
 <ol>
-<li>On the Home page, go to <b>My mentoring sessions</b> tab.</li>
+<li>Go to the <b>Application</b> menu <img src={BurgerMenu}/> and select <b>Workspace</b>.</li>
+<li>On the <b>Workspace</b> page, click <b>Manage session</b>.</li>
 <li>Click <b>Create session</b>.
 <p>
     <img src={PortalSessionDetails} />
@@ -45,6 +37,48 @@ To share your skills and knowledge with your mentees, you can create a <PartialE
     </ul>
 </li>
 <li>Enter the session information in the <b>Session title</b> and <b>Description</b> boxes.</li>
+<li>Select the session type, do as follows:
+    <ul>
+    <li>Click the <b>Session type</b> box.</li>
+    <li>Select the session type from the <b>Session type</b> dropdown and click <b>Ok</b>.</li>
+    </ul>
+</li>
+<li>To assign a mentor, do as follows:
+    <ul>
+    <li>Click <b>+ Add mentor</b>. The Mentor list window appears.</li>
+    <li>Find a mentor from the list and click <b>Add</b>.</li>
+    </ul>
+    <p>  
+        <Admonition type="note">
+        <p>To change the assigned mentor, click the mentor's name on the Create a new session page and add a new mentor. You cannot change the assigned mentor after publishing the session.</p>
+        </Admonition>
+    </p>
+</li>
+<li>To invite mentees, do as follows:
+    <ul>
+    <li>Click <b>+ Add mentee</b>. The Mentee list window appears.</li>
+    <li>Find a mentor from the list and click <b>Add</b>.</li>
+    </ul>
+    <p>  
+        <Admonition type="tip">
+        <ul>
+        <li>It is optional to invite mentees to a Public session.</li>
+        <li>To add another mentee, click <b>+ Add New Mentee</b> and add mentees from the list.</li>
+        <li>To remove a mentee, click the mentee's name and click <b>Remove</b> on the Mentee list window.</li>
+        </ul>
+        </Admonition>
+    </p>
+</li>
+<p>  
+    <Admonition type="tip">
+    <p>You can find mentees or mentors from the list faster by:</p>
+    <ul>
+    <li>Searching for the mentor or mentee in the <b>Search</b> box.</li>
+    <li>Using filters such as the user's organization or designation.</li>
+    <li>Changing the number of users listed on the page using the <b>Items per page</b> dropdown.</li>
+    </ul>
+    </Admonition>
+</p>
 <li>To schedule a session, do as follows:
     <ol>
     <li>Click the <b>Start date</b> and <b>End date</b> boxes.</li>
@@ -139,79 +173,12 @@ To share your skills and knowledge with your mentees, you can create a <PartialE
 <li>Click <b>Submit</b>. The meeting information is added.
 <p>
     <Admonition type="tip">
-    <ul>
-    <li>You can find the new sessions on the <b>My mentoring sessions</b> tab on the Home page.</li>
-    <li>To create more sessions, click the <b>Click here to create a new session</b> button and repeat steps 1 to 10.</li>
-    <li>You can also find your completed sessions in the My mentoring sessions section of the <b>My mentoring sessions</b> tab.</li>
-    </ul>
-    </Admonition>
-</p>
-<p>
-    <img src={PortalNewSession} />
-</p>
-</li>
-</ol>
-
-## Editing a Session
-
-<ol>
-<li>To edit the session details, click the session tile to view the Session Details page.</li>
-<li>Click <b>Edit</b>. The Edit session details page appears.
-<p>
-    <img src={PortalEditAndDeleteSession} />
-</p>
-</li>
-</ol>
-<h3>Editing the Session Details</h3>
-<p>
-<Admonition type="note">
-<p>You can edit the session details only until the start of the session.</p>
-</Admonition>
-</p>
-<ol>
-<li>On the Edit session details page, go to the <b>Edit session</b> tab.</li>
-<li>Make the necessary changes to the session information.</li>
-<li>Optionally, to update your session image, click <b>Add image</b> and do one of the following actions:
-    <ul>
-    <li>To take a picture, select <b>Take Photo</b>.</li>
-    <li>To upload an image, select <b>Choose from library</b>.</li>
-    <li>To remove the existing image, select <b>Remove current photo</b>.</li>
-    </ul>
-<p>  
-    <Admonition type="tip">
-    <p>Select an image that is relevant to the session topic.</p>
+    <p>You can find the new sessions and track their progress on the Session list page.</p>
     </Admonition>
 </p>
 </li>
-<li>Click <b>Save</b>. The session details are updated.</li>
-</ol>
-<h3>Editing the Meeting Information</h3>
-<p>
-<Admonition type="tip">
-<p>After starting the session, you can go back to <PartialExample mentored /> and edit the meeting information. The session that you have started appears as <i>Live</i> on the <b>My mentoring sessions</b> tab.</p>
-</Admonition>
-</p>
-<ol>
-<li>On the Edit Session Details page, go to the <b>Meeting link</b> tab and make the necessary changes.</li>
-<li>Click <b>Save</b>. The meeting information is updated.</li>
 </ol>
 
-## Deleting a Session
-
-<Admonition type="note">
-<p>You can delete the session only until the start of the session.</p>
-</Admonition>
-
-**To delete the session, do as follows:**
-
-<ol>
-<li>Click the session tile and click <b>Delete</b>.
-<p>
-    <img src={PortalEditAndDeleteSession} />
-</p>
-</li>
-<li>Click <b>Yes delete</b> on the confirmation dialog. The session is cancelled and is removed from the <b>My mentoring sessions</b> tab of the Home page.</li>
-</ol>
 
 
 
