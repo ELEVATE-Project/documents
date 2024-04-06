@@ -266,6 +266,22 @@ const sidebars = {
           ]
         },
         {
+          "type": "category",
+          "label": "Account Security",
+          "items": [
+            {
+              "type": "doc",
+              "id": "accountloginactivity",
+              "label": "Viewing the Account Login Activity"
+            },
+            {
+              "type": "doc",
+              "id": "changepassword",
+              "label": "Changing the Account Password"
+            },
+          ]
+        },
+        {
           type: 'doc',
           id: 'faq', // document ID
           label: 'FAQs', // sidebar label
