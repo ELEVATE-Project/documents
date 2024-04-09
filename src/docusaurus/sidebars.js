@@ -104,9 +104,19 @@ const sidebars = {
           items: [
             {
               type: 'doc',
+              id: 'aboutsessionmanager', // document ID
+              label: 'Session Manager', // sidebar label
+            },
+            {
+              type: 'doc',
               id: 'assignsessionstomentors', // document ID
               label: 'Assigning Sessions to a Mentor', // sidebar label
             },
+            {
+              type: 'doc',
+              id: 'manageassignedsession', // document ID
+              label: 'Managing the Assigned Sessions', // sidebar label
+            }
           ]
         },
         {

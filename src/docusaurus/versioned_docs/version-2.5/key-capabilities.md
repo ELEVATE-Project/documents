@@ -14,7 +14,7 @@ Through group mentoring, mentees can access upskilling and capacity-building opp
 
 ## Capabilities of Mentor
 
-One of the most important things to recognise about **mentoring as an approach to learning** is that it is incredibly diverse and can have a formal or informal setup. 
+One of the most important things to recognize about **mentoring as an approach to learning** is that it is incredibly diverse and can have a formal or informal setup. 
 
 <table>
 <tr>
