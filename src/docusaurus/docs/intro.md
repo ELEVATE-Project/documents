@@ -41,7 +41,7 @@ Mentoring fosters a sense of belonging, motivation, and confidence among learner
 
 The capability endeavours to build a marketplace for mentors and mentees where mentees discover (trusted) mentors, establish a connection, and join mentoring sessions. Thereafter, the mentor and mentee rate the session and share their feedback. 
 
-Currently, only mentor-driven interactions (group mentoring) can be carried out using the <PartialExample mentored /> building block.
+Currently, only mentor-driven interactions (group and one-on-one mentoring) can be carried out using the <PartialExample mentored /> building block.
 
 The long-term vision of the <PartialExample mentored /> building block is to create a country-wide pool of academic experts in different subjects and areas of knowledge to support the workforce. The <PartialExample mentored /> building block has the potential to address the **skill gap** in all sectors of the economy. It encourages a cross-section of ideas and information sharing and opens avenues for cross-learning and interdisciplinary growth. 
 
