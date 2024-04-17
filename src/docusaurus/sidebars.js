@@ -79,7 +79,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'How Organization Administrators Can Manage Users',
+          label: 'Managing Users for an Organization',
           items: [
             {
               type: 'doc',
@@ -100,7 +100,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'How Session Managers Can Manage Sessions',
+          label: 'Managing Sessions for an Organization',
           items: [
             {
               type: 'doc',

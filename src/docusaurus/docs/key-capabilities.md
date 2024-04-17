@@ -6,7 +6,7 @@ Using the <PartialExample mentored /> building block, domain experts or mentors 
 
 >
 
-<PartialExample mentored /> currently supports group and one-on-one mentoring interactions.In group mentoring, a group of mentees get associated to a mentor in a session. The mentor creates sessions and publish them on the platform. The session follows a format similar to a webinar. However, it encourages a long-term relationship between mentors and mentees. 
+<PartialExample mentored /> currently supports group and one-on-one mentoring interactions. In group mentoring, a group of mentees get associated to a mentor in a session. The mentor creates sessions and publish them on the platform. The session follows a format similar to a webinar. However, it encourages a long-term relationship between mentors and mentees. 
 
 >
 
@@ -14,7 +14,7 @@ Through group mentoring, mentees can access upskilling and capacity-building opp
 
 >
 
-On the other hand, a one-on-one mentoring session involves assigning a mentee to a mentor. Thereby, mentees can address their goals and concerns about their professional development and receive personalized guidance from the mentor.
+On the other hand, a one-on-one mentoring session involves assigning a mentee to a mentor. Through one-on-one mentoring, mentees can address their goals and concerns about their professional development and receive personalized guidance from the mentor.
 
 ## Capabilities of Mentor
 
