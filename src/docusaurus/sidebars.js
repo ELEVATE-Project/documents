@@ -116,6 +116,11 @@ const sidebars = {
               type: 'doc',
               id: 'manageassignedsession', // document ID
               label: 'Managing the Assigned Sessions', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'joinassignedsession', // document ID
+              label: 'Joining Sessions that Are Assigned to Mentors', // sidebar label
             }
           ]
         },
