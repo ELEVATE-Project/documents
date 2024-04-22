@@ -74,6 +74,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'typesofsessions', // document ID
+          label: 'Types of Sessions', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'notifications', // document ID
           label: 'Notifications', // sidebar label
         },
@@ -109,8 +114,8 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'assignsessionstomentors', // document ID
-              label: 'Assigning Sessions to a Mentor', // sidebar label
+              id: 'createsession-sessionmanager', // document ID
+              label: 'Creating Sessions', // sidebar label
             },
             {
               type: 'doc',
