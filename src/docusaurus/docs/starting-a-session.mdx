@@ -2,8 +2,10 @@ import StartButton from './media/startbutton.png';
 import NewSession from './media/newsession.png'
 import StartSessionButton from './media/startsession.png'
 import PortalStartButton from './media/portal-startbutton.png'
+import AssignedStartButton from './media/assignedsessiontile.png'
 import PortalNewSession from './media/portal-newsession.png'
 import PortalStartSessionButton from './media/portal-sessiondetailsstart.png'
+import AssignedStartSessionButton from './media/assignedsessiondetailsstart.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
@@ -43,9 +45,18 @@ You can start a session in one of the following ways:
    <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Start</b>.</p>
    </Admonition>
 </p>
-<p>
-   <img src={PortalStartButton} />
-</p>
+   <Tabs>
+   <TabItem value="created session" label="Session Created by the Mentor" default>
+   <p>
+      <img src={PortalStartButton} />
+   </p>
+   </TabItem>
+   <TabItem value="assigned session" label="Session Assigned to the Mentor">
+   <p>
+      <img src={AssignedStartButton} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
 </ol>
 
@@ -59,9 +70,18 @@ You can start a session in one of the following ways:
 </p>
 </li>
 <li>Click <b>Start session</b>. The meeting window appears.
-<p>
-   <img src={PortalStartSessionButton} />
-</p>
+   <Tabs>
+   <TabItem value="created session" label="Session Created by the Mentor" default>
+   <p>
+      <img src={PortalStartSessionButton} />
+   </p>
+   </TabItem>
+   <TabItem value="assigned session" label="Session Assigned to the Mentor">
+   <p>
+      <img src={AssignedStartSessionButton} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
 </ol>
 

@@ -5,8 +5,10 @@ import SearchSession from './media/search-sessions.png'
 import MentorProfileJoin from './media/mentorprofile-join.png'
 import PortalJoinButton from './media/portal-joinbutton.png';
 import PortalSessionTileJoin from './media/portal-sessiontilejoin.png'
+import InvitedSessionTileJoin from './media/invitedsessiontile.png'
 import PortalSearchSessions from './media/portal-searchsessions.png'
 import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
+import InvitedSessionDetailsJoin from './media/invitedsessiondetailsjoin.png'
 import PortalMentorProfileJoin from './media/portal-mentorprofilejoin.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -57,9 +59,18 @@ On the **Enrolled sessions** tab, you can find the:
     <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Join</b>.</p>
     </Admonition>
 </p>
-<p>
-    <img src={PortalJoinButton} />
-</p>
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalJoinButton} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionTileJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
 <JoinStepPortal />
 </ol>
@@ -87,9 +98,18 @@ On the **Enrolled sessions** tab, you can find the:
 </p>
 </li>
 <li>Click <b>Join</b>.
-<p>
-    <img src={PortalSessionDetailsJoin} />
-</p>
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalSessionDetailsJoin} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionDetailsJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
 <JoinStepPortal />
 </ol>
