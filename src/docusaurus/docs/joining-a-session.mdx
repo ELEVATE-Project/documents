@@ -19,7 +19,7 @@ import JoinStepMobileApp from './_joinsessionstep-mobileapp.mdx';
 
 # Joining a Session
 
-You can join your enrolled or invited sessions when the mentor starts the session.
+You can join your enrolled or invited session when the mentor starts the session.
 
 <Admonition type="note">
 You can join the session anytime within the time allocated for the session.
@@ -77,13 +77,30 @@ On the **Enrolled sessions** tab, you can find the:
 
 ## Using the All Sessions Tab
 
+On the **All sessions** tab, you can find the list of Public sessions to which you have enrolled or were invited by a session manager.
+
+<p>
+    <Admonition type="tip">    
+    <p>To identify your invited sessions, you can look for the session tile that is labelled as <i>invited</i>.</p>
+    </Admonition>
+</p>
+
 <ol>   
 <li>On the Home page, go to the <b>All Sessions</b> tab.</li> 
-<li>Find an enrolled session.</li>
+<li>Find the session.</li>
 <li>Click <b>Join</b>.
-<p>
-    <img src={PortalJoinButton} />
-</p>
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalJoinButton} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionTileJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
 <JoinStepPortal />
 </ol>
@@ -91,7 +108,7 @@ On the **Enrolled sessions** tab, you can find the:
 ## Using the Session Details Page
 
 <ol>
-<li>Find an enrolled session from the <b>All Sessions</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
+<li>Find the session from the <b>All Sessions</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
 <li>Click the session tile to view the Session Details page.
 <p>
     <img src={PortalSessionTileJoin} />
