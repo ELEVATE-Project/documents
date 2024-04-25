@@ -7,11 +7,11 @@ Mentors will receive email notifications:
 
 * When an organization administrator assigns them the role of a mentor.
 * When they sign up on <PartialExample mentored />.
-* On upcoming sessions that they have created.
 * When a session manager:
     * Assigns them a Public or Private session.
     * Updates the session details. Mentors will receive email notifications containing the revised session details.
     * Cancels the session.
+* To remind them to host their upcoming sessions.
 * When the request to delete their account is accepted.
 
 Mentees will receive email notifications:
@@ -22,11 +22,11 @@ Mentees will receive email notifications:
 * When they enroll for a session or cancel their enrollment.
 * When the mentor updates the session schedule or details.
 * When the mentor cancels the session.
-* About upcoming sessions, which they have signed up for.
 * When a session manager:
     * Invites them for a session.
     * Updates the session details. Mentees will receive email notifications containing the revised session details.
     * Cancels the session.
+* To remind them to join the enrolled or invited sessions.
 * When the request to delete their account is accepted.
 * When the enrollment to sessions is cancelled after account deletion.
 
