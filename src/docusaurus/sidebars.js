@@ -115,17 +115,17 @@ const sidebars = {
             {
               type: 'doc',
               id: 'createsession-sessionmanager', // document ID
-              label: 'Creating Sessions', // sidebar label
+              label: 'Creating Sessions for an Organization', // sidebar label
             },
             {
               type: 'doc',
               id: 'manageassignedsession', // document ID
-              label: 'Managing the Assigned Sessions', // sidebar label
+              label: 'Managing Sessions That Are Assigned to Mentors', // sidebar label
             },
             {
               type: 'doc',
               id: 'joinassignedsession', // document ID
-              label: 'Joining Sessions that Are Assigned to Mentors', // sidebar label
+              label: 'Joining Sessions That Are Assigned to Mentors', // sidebar label
             }
           ]
         },
@@ -157,7 +157,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'inviting-mentorsandmentees-host', // document ID
-              label: 'Inviting Mentors and Mentees', // sidebar label
+              label: 'Promoting Your Public Sessions', // sidebar label
             },
             {
               type: 'doc',
@@ -225,7 +225,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'inviting-mentorsandmentees-participants', // document ID
-              label: 'Sharing Session Invites to Your Contacts', // sidebar label
+              label: 'Promoting Public Sessions with Your Contacts', // sidebar label
             },
             {
               type: 'doc',
