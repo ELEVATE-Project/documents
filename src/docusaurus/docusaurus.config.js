@@ -117,6 +117,9 @@ const config = {
         lastVersion: 'current',
         versions: {
           current: {
+            label: '2.6',
+          },
+          '2.5': {
             label: '2.5',
           },
           '2.4': {

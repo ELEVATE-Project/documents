@@ -120,12 +120,12 @@ const sidebars = {
             {
               type: 'doc',
               id: 'manageassignedsession', // document ID
-              label: 'Managing Sessions That Are Assigned to Mentors', // sidebar label
+              label: 'Managing Sessions Assigned to Mentors', // sidebar label
             },
             {
               type: 'doc',
               id: 'joinassignedsession', // document ID
-              label: 'Joining Sessions That Are Assigned to Mentors', // sidebar label
+              label: 'Joining Sessions Assigned to Mentors', // sidebar label
             }
           ]
         },
