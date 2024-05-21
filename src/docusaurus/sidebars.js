@@ -52,7 +52,43 @@ const sidebars = {
       type: 'doc',
       id: 'policyarchitecture', // document ID
       label: 'Multi-Tenant Architecture', // sidebar label
-    }, 
+    },
+    {
+      type: 'category',
+      label: 'Set up Organizations Using APIs',
+      items: [
+        {
+          type: 'doc',
+          id: 'api-overview', // document ID
+          label: 'Overview', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-setupsystemadministrator', // document ID
+          label: 'Creating a System Administrator Account', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-organizationadminlogin', // document ID
+          label: 'Logging in to the Organization Administrator Account', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-setuporganizations', // document ID
+          label: 'Setting up Organizations', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-setpolicies', // document ID
+          label: 'Configuring Policies for Organizations', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-manageorganizations', // document ID
+          label: 'Managing Organizations', // sidebar label
+        }
+      ]
+    },
     {
       type: 'doc',
       id: 'settingup-overview', // document ID

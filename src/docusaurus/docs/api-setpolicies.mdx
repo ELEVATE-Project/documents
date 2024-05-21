@@ -1,0 +1,262 @@
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
+# Setting Policies for an Organization
+
+Organization administrators can set policies for their organizations. To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
+
+**HTTP Request**
+
+Method: POST
+
+  ```
+  {{url}}/mentoring/v1/org-admin/setOrgPolicies
+
+  ```
+
+**Request Body**
+
+<table>
+<tr>
+    <th>Payload Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>session_visibility_policy</td>
+    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td>
+    <ul>
+    <li>Manage whether your organization’s sessions should be visible to users from other organizations.</li>
+    <li>Manage whether your organization’s mentees should be visible to session managers from other organizations.</li>
+    </ul>
+    <p>Required</p>
+    </td>
+</tr>
+<tr>
+    <td>mentor_visibility_policy</td>
+    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td><p>Manage whether your organization’s mentors should be visible to users from other organizations.</p><p>Required.</p></td>
+</tr>
+<tr>
+    <td>external_session_visibility_policy</td>
+    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td>
+    <ul>
+    <li>Manage whether your organization’s users can view sessions of other organizations.</li>
+    <li>Manage whether your organization’s session managers can view mentees of other organizations.</li>
+    </ul>
+    <p>Required</p>
+    </td>
+</tr>
+<tr>
+    <td>external_mentor_visibility_policy</td>
+    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td><p>Manage whether your organization’s users can view mentors from other organizations.</p><p>Required.</p></td>
+</tr>
+<tr>
+    <td>allow_mentor_override</td>
+    <td><p><b>Boolean</b></p><p>The default value is <i>false</i>.</p></td>
+    <td>Not supported in the current version.</td>
+</tr>
+</table>
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameters</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>Information such as the organization ID and the policies configured for the organization.</li>
+    <li>The feedback forms configured for an organization in the <b>mentee_feedback_question_set</b> and <b>mentor_feedback_question_set</b> keys.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The API request ID in the <b>correlation</b> key.</li>
+    <li>The <b>meetingPlatform</b> key shows if the BigBlueButton meeting platform is enabled.</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+## Viewing Policies Configured for an Organization
+
+Organization administrators can view the policies configured for their organization.
+
+**HTTP Request**
+
+Method: POST
+
+  ```
+  {{url}}/mentoring/v1/org-admin/getOrgPolicies
+
+  ```
+
+**Request Body**
+
+This method does not require a request body.
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameters</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>Information such as the organization ID and the policies configured for the organization.</li>
+    <li>Feedback forms configured for an organization in the <b>mentee_feedback_question_set</b> and <b>mentor_feedback_question_set</b> keys.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The API request ID in the <b>correlation</b> key.</li>
+    <li>The <b>meetingPlatform</b> key shows if the BigBlueButton meeting platform is enabled.</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+## Configuring Associated Organizations
+
+If you have configured the **Associated** policy for an organization, you can specify it's associated organizations. For example, if organization A is associated with organizations B, you can set an <b>Associated</b> policy for organization A and configure Organizations B as the associated organization.
+
+**HTTP Request**
+
+Method: POST
+
+  ```
+  {{url}}/mentoring/v1/org-admin/setOrgPolicies
+
+  ```
+
+**Request Body**
+
+<p>
+<Admonition type="note">    
+<p>After creating new organizations, the organization IDs are generated in the <b>id</b> key.</p>
+</Admonition>
+</p>
+
+<table>
+<tr>
+    <th>Payload Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>related_organization_ids</td>
+    <td><b>Array of integers</b></td>
+    <td><p>One or more associated organizations' IDs. For example, ID of organization B.</p><p>Example: <i>"related_organization_ids": [4]</i></p></td>
+</tr>
+<tr>
+    <td>organization_id</td>
+    <td><b>Integer</b></td>
+    <td><p>Organization that has an <b>Associated</b> policy. For example, ID of organization A.</p><p>Example: "<i>1</i>"</p></td>
+</tr>
+</table>
+
+**Request Header** 
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameters</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>Information such as the configured policies.</li>
+    <li>The <b>mentee_feedback_question_set</b> and <b>mentor_feedback_question_set</b> keys specify the feedback forms configured for an organization.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The API request ID in the <b>correlation</b> key.</li>
+    <li>The <b>meetingPlatform</b> key specifies if the BigBlueButton meeting platform is enabled.</li>
+    </ul>
+    </td>
+  </tr>
+</table>

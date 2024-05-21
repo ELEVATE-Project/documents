@@ -1,0 +1,438 @@
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
+# Creating a New Organization
+
+System administrators can do the following actions:
+
+* Create multiple organizations.
+
+* Invite an organization administrator to the new organization. After receiving the email invite, the Organization Administrator user can sign up using the application's link provided in the email.
+
+**HTTP Request**
+
+Method: POST
+
+  ```
+  {{url}}/user/v1/organization/create
+
+  ```
+
+**Request Body**
+
+<table>
+<tr>
+    <th>Payload Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>name</td>
+    <td><b>String</b></td>
+    <td><p>The organization's name. Required.</p><p>Example: <i>ShikshaLokam</i></p></td>
+</tr>
+<tr>
+    <td>code</td>
+    <td><b>String</b></td>
+    <td><p>Unique code for the organization. Required.</p><p>Example: <i>shiksha20</i></p></td>
+</tr>
+<tr>
+    <td>description</td>
+    <td><b>String</b></td>
+    <td><p>Description of the organization. Required.</p><p>Example: <i>Empowering educational leadership.</i></p></td>
+</tr>
+<tr>
+    <td>domains</td>
+    <td><b>Array of strings</b></td>
+    <td><p>One or more organizational domains. Required.</p><p>Example: <i>"domains": ["shikshalokam.com"]</i></p>
+    <Admonition type="tip">  
+    <p>You must configure the organizational domains so that when users sign up to the application, their organizations are detected based on the organizational domain in their email IDs.</p>
+    <p>To learn more, see <a href="policyarchitecture#assigning-users-to-organizations">Assigning Users to an Organization</a>.</p>
+    </Admonition>
+    </td>
+</tr>
+<tr>
+    <td>admin_email</td>
+    <td><b>String</b></td>
+    <td><p>Email ID to which the organization administrator would receive the invite. Optional.</p><p>Example: <i>admin@shikshalokam.com</i></p></td>
+</tr>
+</table>
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns a `200 OK` response code. If the organization already exists, this method returns a `400 Bad Request` response code.
+
+<table>
+  <tr>
+    <th>Response Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>Contains the organization's ID.</li>
+    <li>Details in the request body such as name and code.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>The API request ID in the <b>correlation</b> key.</td>
+  </tr>
+</table>
+
+## Obtaining Organizations' Details
+
+System administrators can obtain an organization's details such as organization ID, name, and code. 
+
+<p>
+<Admonition type="note">    
+<p>For actions such as assigning an organization administrator and setting policies, the request body must include the organization ID.</p>
+</Admonition>
+</p>
+
+**HTTP Request**
+
+Method: GET
+
+```
+
+{{url}}/user/v1/organization/list?{page}&{limit}&{search}
+
+```
+
+<table>
+<tr>
+    <th>Path Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>page</td>
+    <td><b>Integer</b></td>
+    <td><p>The page number. Optional.</p><p>Example: <i>page=1</i></p><p>If not provided, a default page <i>1</i> is applied.</p></td>
+</tr>
+<tr>
+    <td>limit</td>
+    <td><b>Integer</b></td>
+    <td><p>The number of records (entries of organizations). Optional.</p><p>Example: <i>limit=2</i></p><p>If not provided, a default limit <i>100</i> is applied.</p></td>
+</tr>
+<tr>
+    <td>search</td>
+    <td><b>String</b></td>
+    <td><p>Specify the organization's name to obtain the details for a specific organization. Optional.</p><p>Example: <i>search=ShikshaLokam</i></p></td>
+</tr>
+</table>
+
+**Request Body**
+
+This method does not require a request body.
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns a `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    It contains the following:
+    <ul>
+    <li>The organization's details such as ID, name, and code.</li>
+    <li>The total number of organization entries.</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+## Obtaining Users' Details
+
+System administrators can obtain the list of users and their details such as name, user ID, and email. 
+
+<p>
+<Admonition type="note">    
+<p>For actions such as assigning an organization administrator to a registered user, the request body must include the user ID or email.</p>
+</Admonition>
+</p>
+
+### Obtaining the List of User IDs
+
+**HTTP Request**
+
+Method: GET
+
+```
+
+{{url}}user/v1/account/list?{type}&{page}&{limit}&{search}
+
+```
+
+<table>
+<tr>
+    <th>Path Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>type</td>
+    <td><b>String</b></td>
+    <td><p>The user's role (mentor or mentee). Required.</p><p>Example: <i>type=mentor</i></p></td>
+</tr>
+<tr>
+    <td>page</td>
+    <td><b>Integer</b></td>
+    <td><p>The page number. Optional.</p><p>Example: <i>page=1</i></p><p>If not provided, a default page <i>1</i> is applied.</p></td>
+</tr>
+<tr>
+    <td>limit (optional)</td>
+    <td><b>Integer</b></td>
+    <td><p>The number of records (user entries). Optional.</p><p>Example: <i>limit=2</i></p><p>If not provided, a default limit <i>100</i> is applied.</p></td>
+</tr>
+<tr>
+    <td>search (optional)</td>
+    <td><b>String</b></td>
+    <td><p>Specify the user's name to obtain the user ID of a specific user. Optional.</p><p>Example: <i>search=John</i></p></td>
+</tr>
+</table>
+
+**Request Body**
+
+This method does not require a request body.
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns a `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    It contains the following:
+    <ul>
+    <li>The key for the first alphabet in the user's name.</li>
+    <li>The user's details such as ID, name, and profile image.</li>
+    <li>The total number of user entries.</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+### Obtaining Users' Email IDs
+
+**HTTP Request**
+
+Method: GET
+
+```
+
+/user/v1/user/read/{user_id}
+
+```
+
+|Path Parameter|Data Type|Description|
+|---|---|---|
+|user_id|Integer|<p>Specify the ID of the user whose details you want to obtain. Required.</p><p>Example: <i>1</i></p>|
+
+**Request Body**
+
+This method does not require a request body.
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns a `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>The user's details such as name, email, and role.</td>
+  </tr>
+</table>
+
+## Assigning Organization Administrators
+
+After creating organizations, system administrators can add Organization Administrator users to an organization in one of the following ways:
+
+* Invite an organization administrator to a new organization. After receiving the email invite, the Organization Administrator user can sign up using the application's link provided in the email.
+
+* Assign Organization Administrator privileges to a registered user.
+
+**HTTP Request**
+
+Method: POST
+
+  ```
+  {{url}}/user/v1/admin/addOrgAdmin
+
+  ```
+
+**Request Body**
+
+<table>
+  <tr>
+    <th>Payload Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><b>String</b></td>
+    <td>
+    <ul>
+    <li>Email ID of the Organization Administrator user who is invited to the new organization.</li>
+    <li>Email ID of the user who is assigned Organization Administrator privileges.</li>
+    </ul>
+    <p>Optional</p>
+    <p>Example: <i>john@shikshalokam.org</i></p>
+    </td>
+  </tr>
+  <tr>
+  <td>user_id</td>
+  <td><b>Integer</b></td>
+  <td><p>Instead of email, you can also specify the ID of the user who is assigned Organization Administrator privileges. Optional</p><p>Example: "<i>1</i>"</p></td>
+  </tr>
+  <tr>
+    <td>organization_id</td>
+    <td><b>Integer</b></td>
+    <td><p>ID of the organization to which the organization administrator should be assigned. Required.</p><p>Example: "<i>12</i>"</p></td>
+  </tr>
+</table>
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns a `200 OK` response code.
+
+<table>
+  <tr>
+    <th>Response Parameters</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The organization ID and user ID.</li> 
+    <li>The <b>user_roles</b> key specifies the following:
+      <ul>
+      <li>Mentor or mentee role with the associated ID.
+      <p>
+      <Admonition type="note">
+      <p>A mentee (default) role is assigned to organization administrators who were invited to new organizations.</p>
+      </Admonition>
+      </p>
+      </li>
+      <li>Organization administrator role with the associated ID.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>The API request ID in the <b>correlation</b> key.</td>
+  </tr>
+</table>

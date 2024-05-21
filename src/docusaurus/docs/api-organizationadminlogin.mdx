@@ -1,0 +1,77 @@
+# Logging in to the Organization Administrator Account
+
+After receiving the application's link through email, you must sign up on the application. See the [Signing up](aboutorganizationadministrator#signing-up) section to learn more.
+
+For actions such as setting policies for an organization or deactivating users, organization administrators must log in to their account.
+
+**HTTP Request**
+
+Method: POST
+
+  ```
+  {{url}}/user/v1/account/login
+
+  ```
+
+**Request Body**
+
+<table>
+  <tr>
+    <th>Payload Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><b>String</b></td>
+    <td><p>The login email ID. Required.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td><b>String</b></td>
+    <td><p>The login password. Required</p><p>Example: "<i>Password@123</i>"</p></td>
+  </tr>
+</table>
+
+**Request Header**
+
+|Key|Value|Description|
+|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+
+**Response**
+
+If successful, this method returns a `200 OK` response code. If the email or password is invalid, this method returns a `400 Bad Request` response code.
+
+<table>
+  <tr>
+    <th>Response Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>responseCode</td>
+    <td><b>String</b></td>
+    <td>A success response.</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td><b>String</b></td>
+    <td>A success message.</td>
+  </tr>
+  <tr>
+    <td>result</td>
+    <td><b>Object</b></td>
+    <td><p>It includes the following JWTs:</p>
+    <ul>
+    <li>An <b>access_token</b> that is used for authentication.</li>
+    <li>A <b>refresh_token</b> that is used for generating new access tokens.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td><b>Object</b></td>
+    <td>User's information such as ID, email, and name.</td>
+  </tr>
+</table>
