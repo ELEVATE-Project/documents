@@ -3,7 +3,7 @@ import PartialExample from './_mentored.mdx';
 
 # Creating a System Administrator Account
 
-Before setting up organizations, adopters can create an account for the System Administrator user.
+To create organisations and for other administrative workflows, adopters must create a system administrator account.
 
 **HTTP Request**
 
@@ -21,34 +21,39 @@ Method: POST
     <th>Payload Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
   </tr>
   <tr>
     <td>name</td>
     <td><b>String</b></td>
-    <td><p>The system administrator's name. Required.</p><p>Example: "<i>Peter</i>"</p></td>
+    <td><p>The system administrator's name.</p><p>Example: "<i>Peter</i>"</p></td>
+    <td>True</td>
   </tr>
   <tr>
     <td>email</td>
     <td><b>String</b></td>
-    <td><p>The system administrator's email ID. Required.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+    <td><p>The system administrator's email ID.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+    <td>True</td>
   </tr>
   <tr>
     <td>password</td>
     <td><b>String</b></td>
-    <td><p>The password for the new account. Required.</p><p>Example: "<i>Password@123</i>"</p></td>
+    <td><p>The password for the new account.</p><p>Example: "<i>Password@123</i>"</p></td>
+    <td>True</td>
   </tr>
   <tr>
     <td>secret_code</td>
     <td><b>String</b></td>
-    <td><p>Unique code set by the adopter. Required.</p><p>Example: "<i>W5bF7gesuS0xsNWmpsKy</i>"</p></td>
+    <td><p>Instance-specific random code set in the ENVs.</p><p>Example: "<i>W5bF7gesuS0xsNWmpsKy</i>"</p></td>
+    <td>True</td>  
   </tr>
 </table>
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|internal_access_token|{{internal_access_token}}|Unique access token that is set for an instance by the adopter. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|internal_access_token|{{internal_access_token}}|Instance-specific internal access token for interservice network calls or communication.|True|
 
 **Response**
 
@@ -80,8 +85,8 @@ If successful, this method returns `201 Created` response code. If the System Ad
     <td><b>Object</b></td>
     <td>
     <ul>
-    <li>The login form's version in the <b>formsVersion</b> key.</li>
-    <li>The API request ID in the <b>correlation</b> key.</li>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
     </ul>
     </td>
   </tr>
@@ -107,16 +112,19 @@ Method: POST
     <th>Payload Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
   </tr>
   <tr>
     <td>email</td>
     <td><b>String</b></td>
-    <td><p>The login email ID of the System Administrator account. Required.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+    <td><p>The login email ID of the System Administrator account.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+    <td>True</td>  
   </tr>
   <tr>
     <td>password</td>
     <td><b>String</b></td>
-    <td><p>The login password of the System Administrator account. Required.</p><p>Example: "<i>Password@123</i>"</p></td>
+    <td><p>The login password of the System Administrator account.</p><p>Example: "<i>Password@123</i>"</p></td>
+    <td>True</td>
   </tr>
 </table>
 
@@ -154,5 +162,15 @@ If successful, this method returns a `200 OK` response code. If the email or pas
     <td>user</td>
     <td><b>Object</b></td>
     <td>User's information such as ID, email, and name.</td>
+  </tr>
+    <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
   </tr>
 </table>

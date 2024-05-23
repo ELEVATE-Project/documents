@@ -20,24 +20,21 @@ Method: POST
     <th>Payload Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
   </tr>
   <tr>
     <td>email</td>
     <td><b>String</b></td>
-    <td><p>The login email ID. Required.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+    <td><p>The login email ID.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
+    <td>True</td>
   </tr>
   <tr>
     <td>password</td>
     <td><b>String</b></td>
-    <td><p>The login password. Required</p><p>Example: "<i>Password@123</i>"</p></td>
+    <td><p>The login password.</p><p>Example: "<i>Password@123</i>"</p></td>
+    <td>True</td>
   </tr>
 </table>
-
-**Request Header**
-
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
 
 **Response**
 
@@ -73,5 +70,15 @@ If successful, this method returns a `200 OK` response code. If the email or pas
     <td>user</td>
     <td><b>Object</b></td>
     <td>User's information such as ID, email, and name.</td>
+  </tr>
+    <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
   </tr>
 </table>

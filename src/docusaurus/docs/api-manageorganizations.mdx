@@ -1,6 +1,9 @@
 # Updating Organizations' Details
 
-Organization administrators can update their organizations details such as name and description. Whereas, system administrators can configure the associated organizations for organizations with a **Associated** policy in addition to updating organizations' details. 
+Organization administrators can update their organizations details such as name and description. Whereas, system administrators can do the following actions:
+
+* Configure organizations that are related through an **Associated** policy.
+* Update an organizations' details. 
 
 To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
 
@@ -13,9 +16,9 @@ Method: PATCH
 
 ```
 
-|Path Parameter|Data Type|Description|
-|---|---|---|
-|organization_id|Integer|Only system administrators should specify the ID of the organization for which they want to update the details. Optional.|
+|Path Parameter|Data Type|Description|Required|
+|---|---|---|---|
+|organization_id|Integer|Only system administrators should specify the ID of the organization for which they want to update the details. Example: <i>12</i>|False|
 
 **Request Body**
 
@@ -24,30 +27,34 @@ Method: PATCH
     <th>Payload Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
 </tr>
 <tr>
     <td>name</td>
     <td><b>String</b></td>
-    <td><p>Updated organization's name. Required.</p><p>Example: <i>ShikshaLokam</i></p></td>
+    <td><p>Updated organization's name.</p><p>Example: "<i>ShikshaLokam</i>"</p></td>
+    <td>Optional</td>
 </tr>
 <tr>
     <td>description</td>
     <td><b>String</b></td>
-    <td><p>Updated description of the organization. Required.</p><p>Example: <i>Empowering educational leadership.</i></p></td>
+    <td><p>Updated description of the organization.</p><p>Example: "<i>Empowering educational leadership.</i>"</p></td>
+    <td>Optional</td>
 </tr>
 <tr>
     <td>related_orgs</td>
     <td><b>Array of integers</b></td>
-    <td><p>For organizations with an <b>Associated</b> policy, only system administrators can configure the associated organizations. Optional</p><p>Example: <i>"related_orgs": [3,4]</i></p>
+    <td><p>Only system administrators can specify the IDs of organizations that are related through an <b>Associated</b> policy.</p><p>Example: <i>[3,4]</i></p>
+    <td>Optional</td>
     </td>
 </tr>
 </table>
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -74,6 +81,16 @@ If successful, this method returns a `200 OK` response code. If the organization
     <td><b>Array of strings</b></td>
     <td>Does not return any data.</td>
   </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
+  </tr>
 </table>
 
 ## Deactivating Organizations
@@ -87,9 +104,9 @@ Method: POST
 
   ```
 
-|Path Parameter|Data Type|Description|
-|---|---|---|
-|organization_id|Integer|<p>ID of the organization that you want to deactivate. Required.</p><p>Example: <i>[12]</i></p>|
+|Path Parameter|Data Type|Description|Required|
+|---|---|---|---|
+|organization_id|Integer|<p>ID of the organization that you want to deactivate.</p><p>Example: <i>12</i></p>|True|
 
 **Request Body**
 
@@ -97,9 +114,9 @@ This method does not require a request body.
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -124,7 +141,17 @@ If successful, this method returns a `202 Accepted` response code. If the organi
   <tr>
     <td>result</td>
     <td><b>Array of objects</b></td>
-    <td><b>deactivated_users</b> key specifies the number of users at the organization. The user accounts are also deactivated.</td>
+    <td>The <b>deactivated_users</b> key specifies the number of users at the organization whose accounts are deactivated.</td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
   </tr>
 </table>
 
@@ -142,15 +169,15 @@ Method: POST
 ```
 **Request Body**
 
-|Body Parameter|Data Type|Description|
-|---|---|---|
-|id|Array of integers|<p>ID of users whose accounts you want to deactivate. Required.</p><p>Example: <i>[1,2]</i></p>|
+|Body Parameter|Data Type|Description|Required|
+|---|---|---|---|
+|id|Array of integers|<p>ID of users whose accounts you want to deactivate.</p><p>Example: <i>[1,2]</i></p>|True|
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -176,5 +203,15 @@ If successful, this method returns a `202 Accepted` response code. If the user i
     <td>result</td>
     <td><b>Array of strings</b></td>
     <td>Does not return any data.</td>
+  </tr>
+  <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
   </tr>
 </table>

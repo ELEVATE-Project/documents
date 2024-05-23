@@ -25,44 +25,50 @@ Method: POST
     <th>Payload Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
 </tr>
 <tr>
     <td>name</td>
     <td><b>String</b></td>
-    <td><p>The organization's name. Required.</p><p>Example: <i>ShikshaLokam</i></p></td>
+    <td><p>The organization's name.</p><p>Example: "<i>ShikshaLokam</i>"</p></td>
+    <td>True</td>
 </tr>
 <tr>
     <td>code</td>
     <td><b>String</b></td>
-    <td><p>Unique code for the organization. Required.</p><p>Example: <i>shiksha20</i></p></td>
+    <td><p>Unique code for the organization.</p><p>Example: "<i>shiksha20</i>"</p></td>
+    <td>True</td>
 </tr>
 <tr>
     <td>description</td>
     <td><b>String</b></td>
-    <td><p>Description of the organization. Required.</p><p>Example: <i>Empowering educational leadership.</i></p></td>
+    <td><p>Description of the organization.</p><p>Example: "<i>Empowering educational leadership</i>"</p></td>
+    <td>True</td>
 </tr>
 <tr>
     <td>domains</td>
     <td><b>Array of strings</b></td>
-    <td><p>One or more organizational domains. Required.</p><p>Example: <i>"domains": ["shikshalokam.com"]</i></p>
+    <td><p>One or more organizational domains.</p><p>Example: <i>["shikshalokam.com"]</i></p>
     <Admonition type="tip">  
     <p>You must configure the organizational domains so that when users sign up to the application, their organizations are detected based on the organizational domain in their email IDs.</p>
     <p>To learn more, see <a href="policyarchitecture#assigning-users-to-organizations">Assigning Users to an Organization</a>.</p>
     </Admonition>
     </td>
+    <td>True</td>
 </tr>
 <tr>
     <td>admin_email</td>
     <td><b>String</b></td>
-    <td><p>Email ID to which the organization administrator would receive the invite. Optional.</p><p>Example: <i>admin@shikshalokam.com</i></p></td>
+    <td><p>Email ID to which the organization administrator would receive the invite.</p><p>Example: "<i>admin@shikshalokam.com</i>"</p></td>
+    <td>False</td>
 </tr>
 </table>
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -97,7 +103,12 @@ If successful, this method returns a `200 OK` response code. If the organization
   <tr>
     <td>meta</td>
     <td><b>Object</b></td>
-    <td>The API request ID in the <b>correlation</b> key.</td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
   </tr>
 </table>
 
@@ -126,21 +137,25 @@ Method: GET
     <th>Path Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
 </tr>
 <tr>
     <td>page</td>
     <td><b>Integer</b></td>
-    <td><p>The page number. Optional.</p><p>Example: <i>page=1</i></p><p>If not provided, a default page <i>1</i> is applied.</p></td>
+    <td><p>The page number.</p><p>Example: <i>page=2</i></p><p>If not provided, a default <i>page=1</i> is applied.</p></td>
+    <td>False</td>
 </tr>
 <tr>
     <td>limit</td>
     <td><b>Integer</b></td>
-    <td><p>The number of records (entries of organizations). Optional.</p><p>Example: <i>limit=2</i></p><p>If not provided, a default limit <i>100</i> is applied.</p></td>
+    <td><p>The number of records (entries of organizations) per page.</p><p>Example: <i>limit=10</i></p><p>If not provided, a default <i>limit=100</i> is applied.</p></td>
+    <td>False</td>
 </tr>
 <tr>
     <td>search</td>
     <td><b>String</b></td>
-    <td><p>Specify the organization's name to obtain the details for a specific organization. Optional.</p><p>Example: <i>search=ShikshaLokam</i></p></td>
+    <td><p>Specify the organization's name to obtain the details for a specific organization.</p><p>Example: <i>search=ShikshaLokam</i></p></td>
+    <td>False</td>
 </tr>
 </table>
 
@@ -150,9 +165,9 @@ This method does not require a request body.
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -181,6 +196,7 @@ If successful, this method returns a `200 OK` response code.
     It contains the following:
     <ul>
     <li>The organization's details such as ID, name, and code.</li>
+    <li>The policies configured for the organization.</li>
     <li>The total number of organization entries.</li>
     </ul>
     </td>
@@ -214,26 +230,31 @@ Method: GET
     <th>Path Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
 </tr>
 <tr>
     <td>type</td>
     <td><b>String</b></td>
-    <td><p>The user's role (mentor or mentee). Required.</p><p>Example: <i>type=mentor</i></p></td>
+    <td><p>The role (mentor or mentee) of the user whose ID you want to obtain.</p><p>Example: <i>type=mentor</i></p></td>
+    <td>True</td>
 </tr>
 <tr>
     <td>page</td>
     <td><b>Integer</b></td>
-    <td><p>The page number. Optional.</p><p>Example: <i>page=1</i></p><p>If not provided, a default page <i>1</i> is applied.</p></td>
+    <td><p>The page number.</p><p>Example: <i>page=2</i></p><p>If not provided, a default <i>page=1</i> is applied.</p></td>
+    <td>False</td>  
 </tr>
 <tr>
-    <td>limit (optional)</td>
+    <td>limit</td>
     <td><b>Integer</b></td>
-    <td><p>The number of records (user entries). Optional.</p><p>Example: <i>limit=2</i></p><p>If not provided, a default limit <i>100</i> is applied.</p></td>
+    <td><p>The number of records (user entries) per page.</p><p>Example: <i>limit=10</i></p><p>If not provided, a default <i>limit=100</i> is applied.</p></td>
+    <td>False</td>
 </tr>
 <tr>
-    <td>search (optional)</td>
+    <td>search</td>
     <td><b>String</b></td>
-    <td><p>Specify the user's name to obtain the user ID of a specific user. Optional.</p><p>Example: <i>search=John</i></p></td>
+    <td><p>Specify the user's name to obtain the user ID of a specific user.</p><p>Example: <i>search=John</i></p></td>
+    <td>False</td>
 </tr>
 </table>
 
@@ -243,9 +264,9 @@ This method does not require a request body.
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -279,6 +300,16 @@ If successful, this method returns a `200 OK` response code.
     </ul>
     </td>
   </tr>
+    <tr>
+    <td>meta</td>
+    <td><b>Object</b></td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
+  </tr>
 </table>
 
 ### Obtaining Users' Email IDs
@@ -293,9 +324,9 @@ Method: GET
 
 ```
 
-|Path Parameter|Data Type|Description|
-|---|---|---|
-|user_id|Integer|<p>Specify the ID of the user whose details you want to obtain. Required.</p><p>Example: <i>1</i></p>|
+|Path Parameter|Data Type|Description|Required|
+|---|---|---|---|
+|user_id|Integer|<p>Specify the ID of the user whose details you want to obtain.</p><p>Example: <i>1</i></p>|True|
 
 **Request Body**
 
@@ -303,9 +334,9 @@ This method does not require a request body.
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -358,36 +389,36 @@ Method: POST
     <th>Payload Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
+    <th>Required</th>
   </tr>
   <tr>
     <td>email</td>
     <td><b>String</b></td>
     <td>
-    <ul>
-    <li>Email ID of the Organization Administrator user who is invited to the new organization.</li>
-    <li>Email ID of the user who is assigned Organization Administrator privileges.</li>
-    </ul>
-    <p>Optional</p>
-    <p>Example: <i>john@shikshalokam.org</i></p>
+    <p>Email ID of the Organization Administrator user who is invited to the new organization or of the user who is assigned Organization Administrator privileges.</p>
+    <p>Example: "<i>john@shikshalokam.org</i>"</p>
     </td>
+    <td>False</td>   
   </tr>
   <tr>
   <td>user_id</td>
   <td><b>Integer</b></td>
-  <td><p>Instead of email, you can also specify the ID of the user who is assigned Organization Administrator privileges. Optional</p><p>Example: "<i>1</i>"</p></td>
+  <td><p>Instead of email, you can also specify the ID of the user who is assigned Organization Administrator privileges.</p><p>Example: "<i>1</i>"</p></td>
+  <td>False</td>  
   </tr>
   <tr>
     <td>organization_id</td>
     <td><b>Integer</b></td>
-    <td><p>ID of the organization to which the organization administrator should be assigned. Required.</p><p>Example: "<i>12</i>"</p></td>
+    <td><p>ID of the organization to which the organization administrator should be assigned.</p><p>Example: "<i>12</i>"</p></td>
+    <td>True</td>   
   </tr>
 </table>
 
 **Request Header**
 
-|Key|Value|Description|
-|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response. Required.|
+|Key|Value|Description|Required|
+|---|---|---|---|
+|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
 
 **Response**
 
@@ -433,6 +464,11 @@ If successful, this method returns a `200 OK` response code.
   <tr>
     <td>meta</td>
     <td><b>Object</b></td>
-    <td>The API request ID in the <b>correlation</b> key.</td>
+    <td>
+    <ul>
+    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>correlation</b> key specifies the API request ID.</li>
+    </ul>
+    </td>
   </tr>
 </table>
