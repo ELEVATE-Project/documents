@@ -69,18 +69,13 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'api-organizationadminlogin', // document ID
-          label: 'Logging in to the Organization Administrator Account', // sidebar label
-        },
-        {
-          type: 'doc',
           id: 'api-setuporganizations', // document ID
           label: 'Setting up Organizations', // sidebar label
         },
         {
           type: 'doc',
           id: 'api-setpolicies', // document ID
-          label: 'Configuring Policies for Organizations', // sidebar label
+          label: 'Setting Policies for Organizations', // sidebar label
         },
         {
           type: 'doc',

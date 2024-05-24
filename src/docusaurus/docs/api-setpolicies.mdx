@@ -3,7 +3,19 @@ import PartialExample from './_mentored.mdx';
 
 # Setting Policies for an Organization
 
-Organization administrators can set policies for their organizations. To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
+Organization administrators can do any one of the following actions:
+
+* Set policies for their organization.
+* Update their organization's policies.
+ 
+To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
+
+<Admonition type="note">
+<ol>
+<li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li>
+<li>They must log in to generate an access_token.</li>
+</ol>
+</Admonition>
 
 **HTTP Request**
 
@@ -25,42 +37,48 @@ Method: POST
 </tr>
 <tr>
     <td>session_visibility_policy</td>
-    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td><p><b>String</b></p></td>
     <td>
     <ul>
     <li>Manage whether your organization’s sessions should be visible to users from other organizations.</li>
     <li>Manage whether your organization’s mentees should be visible to session managers from other organizations.</li>
     </ul>
+    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p><p>If a value is not provided, a default <b>Current</b> policy is applied.</p>
     </td>
-    <td>False</td>    
+    <td>True</td>    
 </tr>
 <tr>
     <td>mentor_visibility_policy</td>
-    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
-    <td><p>Manage whether your organization’s mentors should be visible to users from other organizations.</p></td>
+    <td><p><b>String</b></p></td>
+    <td><p>Manage whether your organization’s mentors should be visible to users from other organizations.</p>
+    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p><p>If a value is not provided, a default <b>Current</b> policy is applied.</p>
+    </td>
     <td>True</td>
 </tr>
 <tr>
     <td>external_session_visibility_policy</td>
-    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td><p><b>String</b></p></td>
     <td>
     <ul>
     <li>Manage whether your organization’s users can view sessions of other organizations.</li>
     <li>Manage whether your organization’s session managers can view mentees of other organizations.</li>
     </ul>
+    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p><p>If a value is not provided, a default <b>Current</b> policy is applied.</p>
     </td>
     <td>True</td>  
 </tr>
 <tr>
     <td>external_mentor_visibility_policy</td>
-    <td><p><b>String</b></p><p>Accepted values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
-    <td><p>Manage whether your organization’s users can view mentors from other organizations.</p></td>
+    <td><p><b>String</b></p></td>
+    <td><p>Manage whether your organization’s users can view mentors from other organizations.</p>
+    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p><p>If a value is not provided, a default <b>Current</b> policy is applied.</p>
+    </td>
     <td>True</td>  
 </tr>
 <tr>
     <td>allow_mentor_override</td>
-    <td><p><b>Boolean</b></p><p>The default value is <i>false</i>.</p></td>
-    <td>Not supported in the current version.</td>
+    <td><p><b>Boolean</b></p></td>
+    <td>Not supported in the current version. The default value is <i>false</i>.</td>
     <td>True</td>  
 </tr>
 </table>
@@ -116,6 +134,13 @@ If successful, this method returns `200 OK` response code.
 ## Viewing Policies Configured for an Organization
 
 Organization administrators can view the policies configured for their organization.
+
+<Admonition type="note">
+<ol>
+<li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li>
+<li>They must log in to generate an access_token.</li>
+</ol>
+</Admonition>
 
 **HTTP Request**
 

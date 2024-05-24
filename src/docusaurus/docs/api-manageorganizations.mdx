@@ -1,11 +1,18 @@
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
 # Updating Organizations' Details
 
-Organization administrators can update their organizations details such as name and description. Whereas, system administrators can do the following actions:
+Organization administrators and system administrators can update their organizations details such as name and description. 
 
-* Configure organizations that are related through an **Associated** policy.
-* Update an organizations' details. 
+Additionally, system administrators can also configure organizations that are related through an **Associated** policy. To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
 
-To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
+<Admonition type="note">
+<ol>
+<li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li>
+<li>They must log in to generate an access_token.</li>
+</ol>
+</Admonition>
 
 **HTTP Request**
 
@@ -33,20 +40,19 @@ Method: PATCH
     <td>name</td>
     <td><b>String</b></td>
     <td><p>Updated organization's name.</p><p>Example: "<i>ShikshaLokam</i>"</p></td>
-    <td>Optional</td>
+    <td>False</td>
 </tr>
 <tr>
     <td>description</td>
     <td><b>String</b></td>
     <td><p>Updated description of the organization.</p><p>Example: "<i>Empowering educational leadership.</i>"</p></td>
-    <td>Optional</td>
+    <td>False</td>
 </tr>
 <tr>
     <td>related_orgs</td>
     <td><b>Array of integers</b></td>
-    <td><p>Only system administrators can specify the IDs of organizations that are related through an <b>Associated</b> policy.</p><p>Example: <i>[3,4]</i></p>
-    <td>Optional</td>
-    </td>
+    <td><p>Only system administrators can specify the IDs of organizations that are related through an <b>Associated</b> policy.</p><p>Example: <i>[3,4]</i></p></td>
+    <td>False</td>
 </tr>
 </table>
 
@@ -94,6 +100,8 @@ If successful, this method returns a `200 OK` response code. If the organization
 </table>
 
 ## Deactivating Organizations
+
+System administrators can deactivate organizations that no longer exists.
 
 **HTTP Request**
 
@@ -158,6 +166,13 @@ If successful, this method returns a `202 Accepted` response code. If the organi
 ## Deactivating Users
 
 If a user leaves the organization, the organization administrator can deactivate the user's account.
+
+<Admonition type="note">
+<ol>
+<li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li>
+<li>They must log in to generate an access_token.</li>
+</ol>
+</Admonition>
 
 **HTTP Request**
 

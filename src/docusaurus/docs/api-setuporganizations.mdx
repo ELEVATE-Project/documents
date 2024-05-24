@@ -398,13 +398,13 @@ Method: POST
     <p>Email ID of the Organization Administrator user who is invited to the new organization or of the user who is assigned Organization Administrator privileges.</p>
     <p>Example: "<i>john@shikshalokam.org</i>"</p>
     </td>
-    <td>False</td>   
+    <td>True</td>   
   </tr>
   <tr>
   <td>user_id</td>
   <td><b>Integer</b></td>
-  <td><p>Instead of email, you can also specify the ID of the user who is assigned Organization Administrator privileges.</p><p>Example: "<i>1</i>"</p></td>
-  <td>False</td>  
+  <td><p>Instead of the user's email ID, you can also specify the ID of the user who is assigned Organization Administrator privileges.</p><p>Example: "<i>1</i>"</p></td>
+  <td>True</td>  
   </tr>
   <tr>
     <td>organization_id</td>
@@ -448,14 +448,14 @@ If successful, this method returns a `200 OK` response code.
     <li>The organization ID and user ID.</li> 
     <li>The <b>user_roles</b> key specifies the following:
       <ul>
-      <li>Mentor or mentee role with the associated ID.
+      <li>Mentor or mentee role and its associated ID.
       <p>
       <Admonition type="note">
       <p>A mentee (default) role is assigned to organization administrators who were invited to new organizations.</p>
       </Admonition>
       </p>
       </li>
-      <li>Organization administrator role with the associated ID.</li>
+      <li>Organization administrator role and its associated ID.</li>
       </ul>
     </li>
     </ul>
