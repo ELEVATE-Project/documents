@@ -10,12 +10,12 @@ Organization administrators can do any one of the following actions:
  
 To learn more about the types of policies that can be configured, see [Policy Architecture](policyarchitecture#policy-architecture).
 
-<Admonition type="note">
-<ol>
-<li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li>
-<li>They must log in to generate an access_token.</li>
-</ol>
-</Admonition>
+:::note
+
+1. After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
+2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
+
+:::
 
 **HTTP Request**
 
@@ -78,7 +78,7 @@ Method: POST
 <tr>
     <td>allow_mentor_override</td>
     <td><p><b>Boolean</b></p></td>
-    <td>Not supported in the current version. The default value is <i>false</i>.</td>
+    <td>Specify the value as <i>false</i> as this key is not supported in the current version.</td>
     <td>True</td>  
 </tr>
 </table>
@@ -135,12 +135,12 @@ If successful, this method returns `200 OK` response code.
 
 Organization administrators can view the list of policies configured for their organization.
 
-<Admonition type="note">
-<ol>
-<li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li>
-<li>They must log in to generate an access_token.</li>
-</ol>
-</Admonition>
+:::note
+
+1. After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
+2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
+
+:::
 
 **HTTP Request**
 
