@@ -38,7 +38,7 @@ One of the most important things to recognize about **mentoring as an approach t
 <td>Registered users can easily search and discover upcoming mentoring sessions.</td>
 </tr>
 <tr>
-<td>Request a Session</td>
+<td>Enroll for a Session</td>
 <td>Users registered as mentees (and mentors) can enroll in Public sessions hosted by mentors.</td>
 </tr>
 <tr>
