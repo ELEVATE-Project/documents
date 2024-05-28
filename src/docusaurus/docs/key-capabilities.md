@@ -26,8 +26,8 @@ One of the most important things to recognize about **mentoring as an approach t
 <th>Description</th>
 </tr>
 <tr>
-<td>Search for Mentor Connect</td>
-<td>Mentees can search for mentors and establish connections.</td>
+<td>Search for Mentors</td>
+<td>Mentees can look up mentors in their chosen area of expertise.</td>
 </tr>
 <tr>
 <td>Schedule Sessions</td>

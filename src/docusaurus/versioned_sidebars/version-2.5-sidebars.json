@@ -188,7 +188,7 @@
             },
             {
               "type": "doc",
-              "id": "mentor-deleteaccountrequest",
+              "id": "mentee-deleteaccountrequest",
               "label": "Deleting the Account"
             }
           ]

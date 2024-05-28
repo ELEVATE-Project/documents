@@ -280,7 +280,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'mentor-deleteaccountrequest', // document ID
+              id: 'mentee-deleteaccountrequest', // document ID
               label: 'Deleting the Account', // sidebar label
             }
           ]
