@@ -61,6 +61,7 @@ Method: PATCH
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -85,7 +86,7 @@ If successful, this method returns a `200 OK` response code. If the organization
   <tr>
     <td>result</td>
     <td><b>Array of strings</b></td>
-    <td>Does not return any data.</td>
+    <td>[ ]</td>
   </tr>
   <tr>
     <td>meta</td>
@@ -125,6 +126,7 @@ This method does not require a request body.
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -187,12 +189,14 @@ Method: POST
 |Body Parameter|Data Type|Description|Required|
 |---|---|---|---|
 |id|Array of integers|<p>ID of users whose accounts you want to deactivate.</p><p>Example: <i>[1,2]</i></p>|True|
+|email|Array of strings|<p>Instead of user IDs, you can also specify the email IDs of users whose accounts you want to deactivate.</p><p>Example: <i>[john@shikshalokam.org, clara@shikshalokam.org]</i></p>|True|
 
 **Request Header**
 
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -217,7 +221,7 @@ If successful, this method returns a `202 Accepted` response code. If the user i
   <tr>
     <td>result</td>
     <td><b>Array of strings</b></td>
-    <td>Does not return any data.</td>
+    <td>[ ]</td>
   </tr>
   <tr>
     <td>meta</td>

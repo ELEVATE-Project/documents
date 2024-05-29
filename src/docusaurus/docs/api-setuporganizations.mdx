@@ -5,7 +5,7 @@ import PartialExample from './_mentored.mdx';
 
 System administrators can do the following actions:
 
-* Create multiple organizations.
+* Create an organization.
 
 * Invite an organization administrator to the new organization. After receiving the email invite, the Organization Administrator user can sign up using the application's link provided in the email.
 
@@ -69,6 +69,7 @@ Method: POST
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -128,7 +129,7 @@ Method: GET
 
 ```
 
-{{url}}/user/v1/organization/list?{page}&{limit}&{search}
+{{url}}/user/v1/organization/list?page={page}&limit={limit}&search={search}
 
 ```
 
@@ -168,6 +169,7 @@ This method does not require a request body.
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -205,11 +207,11 @@ If successful, this method returns a `200 OK` response code.
 
 ## Obtaining Users' Details
 
-System administrators can obtain the list of users and their details such as name, user ID, and email. 
+System administrators or organization administrators can obtain the list of users and their details such as name, user ID, and email. 
 
 <p>
 <Admonition type="note">    
-<p>For actions such as assigning an organization administrator to a registered user, the request body must include the user ID or email.</p>
+<p>For actions such as assigning Organization Administrator privileges to a registered user and deactivating users at an organization, the request body must include the user ID or email.</p>
 </Admonition>
 </p>
 
@@ -221,7 +223,7 @@ Method: GET
 
 ```
 
-{{url}}user/v1/account/list?{type}&{page}&{limit}&{search}
+{{url}}/user/v1/account/list?type={type}&page={page}&limit={limit}&search={search}
 
 ```
 
@@ -267,6 +269,7 @@ This method does not require a request body.
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -320,7 +323,7 @@ Method: GET
 
 ```
 
-/user/v1/user/read/{user_id}
+{{url}}/user/v1/user/read/{user_id}
 
 ```
 
@@ -337,6 +340,7 @@ This method does not require a request body.
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -419,6 +423,7 @@ Method: POST
 |Key|Value|Description|Required|
 |---|---|---|---|
 |X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 

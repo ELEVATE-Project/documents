@@ -54,6 +54,7 @@ Method: POST
 |Key|Value|Description|Required|
 |---|---|---|---|
 |internal_access_token|{{internal_access_token}}|An instance-specific, internal access token which is used for interservice network calls or communication.|True|
+|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
 
 **Response**
 
@@ -78,7 +79,7 @@ If successful, this method returns `201 Created` response code. If the System Ad
   <tr>
     <td>result</td>
     <td><b>Array of strings</b></td>
-    <td>Does not return any data.</td>
+    <td>[ ]</td>
   </tr>
   <tr>
     <td>meta</td>
