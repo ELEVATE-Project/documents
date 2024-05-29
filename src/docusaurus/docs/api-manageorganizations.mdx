@@ -23,9 +23,20 @@ Method: PATCH
 
 ```
 
-|Path Parameter|Data Type|Description|Required|
-|---|---|---|---|
-|organization_id|Integer|<p>Only system administrators should specify the ID of the organization for which they want to update the details.</p><p>Example: <i>12</i></p>|False|
+<table>
+  <tr>
+    <th>Path Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Required</th>
+  </tr>
+  <tr>
+    <td>organization_id</td>
+    <td>Integer</td>
+    <td><p>Only system administrators should specify the ID of the organization for which they want to update the details.</p><p>Example: <i>12</i></p></td>
+    <td>False</td>
+  </tr>
+</table>
 
 **Request Body**
 
@@ -59,9 +70,9 @@ Method: PATCH
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
-|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
+|---|:---:|---|---|
+|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
+|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -113,9 +124,20 @@ Method: POST
 
   ```
 
-|Path Parameter|Data Type|Description|Required|
-|---|---|---|---|
-|organization_id|Integer|<p>ID of the organization that you want to deactivate.</p><p>Example: <i>12</i></p>|True|
+<table>
+  <tr>
+    <th>Path Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Required</th>
+  </tr>
+  <tr>
+    <td>organization_id</td>
+    <td>Integer</td>
+    <td><p>ID of the organization that you want to deactivate.</p><p>Example: <i>12</i></p></td>
+    <td>True</td>
+  </tr>
+</table>
 
 **Request Body**
 
@@ -124,9 +146,9 @@ This method does not require a request body.
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
-|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
+|---|:---:|---|---|
+|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
+|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -186,17 +208,33 @@ Method: POST
 ```
 **Request Body**
 
-|Body Parameter|Data Type|Description|Required|
-|---|---|---|---|
-|id|Array of integers|<p>ID of users whose accounts you want to deactivate.</p><p>Example: <i>[1,2]</i></p>|True|
-|email|Array of strings|<p>Instead of user IDs, you can also specify the email IDs of users whose accounts you want to deactivate.</p><p>Example: <i>[john@shikshalokam.org, clara@shikshalokam.org]</i></p>|True|
+<table>
+  <tr>
+    <th>Body Parameter</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Required</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Array of integers</td>
+    <td><p>ID of users whose accounts you want to deactivate.</p><p>Example: <i>[1,2]</i></p></td>
+    <td>True</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>Array of strings</td>
+    <td><p>Instead of user IDs, you can also specify the email IDs of users whose accounts you want to deactivate.</p><p>Example: <i>[john@shikshalokam.org, clara@shikshalokam.org]</i></p></td>
+    <td>True</td>
+  </tr>
+</table>
 
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|---|---|---|
-|X-auth-token|bearer {{access_token}}|access_token received from the login response.|True|
-|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
+|---|:---:|---|---|
+|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
+|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
