@@ -33,8 +33,8 @@ Method: PATCH
   <tr>
     <td>organization_id</td>
     <td>Integer</td>
-    <td><p>Only system administrators should specify the ID of the organization for which they want to update the details.</p><p>Example: <i>12</i></p></td>
-    <td>False</td>
+    <td><p>Users should specify the organization ID to update the organization's details.</p><p>Example: <i>12</i></p></td>
+    <td>True</td>
   </tr>
 </table>
 
@@ -104,7 +104,7 @@ If successful, this method returns a `200 OK` response code. If the organization
     <td><b>Object</b></td>
     <td>
     <ul>
-    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
     <li>The <b>correlation</b> key specifies the API request ID.</li>
     </ul>
     </td>
@@ -180,7 +180,7 @@ If successful, this method returns a `202 Accepted` response code. If the organi
     <td><b>Object</b></td>
     <td>
     <ul>
-    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
     <li>The <b>correlation</b> key specifies the API request ID.</li>
     </ul>
     </td>
@@ -266,7 +266,7 @@ If successful, this method returns a `202 Accepted` response code. If the user i
     <td><b>Object</b></td>
     <td>
     <ul>
-    <li>The <b>formsVersion</b> key specifies the version of a User service form.</li>
+    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
     <li>The <b>correlation</b> key specifies the API request ID.</li>
     </ul>
     </td>
