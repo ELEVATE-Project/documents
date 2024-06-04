@@ -5,8 +5,10 @@ import SearchSession from './media/search-sessions.png'
 import MentorProfileJoin from './media/mentorprofile-join.png'
 import PortalJoinButton from './media/portal-joinbutton.png';
 import PortalSessionTileJoin from './media/portal-sessiontilejoin.png'
+import InvitedSessionTileJoin from './media/invitedsessiontile.png'
 import PortalSearchSessions from './media/portal-searchsessions.png'
 import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
+import InvitedSessionDetailsJoin from './media/invitedsessiondetailsjoin.png'
 import PortalMentorProfileJoin from './media/portal-mentorprofilejoin.png'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -17,13 +19,17 @@ import JoinStepMobileApp from './_joinsessionstep-mobileapp.mdx';
 
 # Joining a Session
 
-After enrolling, you can join when the mentor starts the session.
+After the mentor starts the sessions, you can join:
+
+* Public sessions to which you have enrolled or were invited by a session manager.
+* Private sessions to which you were invited.
 
 <Admonition type="note">
 You can join the session anytime within the time allocated for the session.
 </Admonition>
 
 <p>You can join a session in one of the following ways:</p>
+
 <ul>
 <li>Using the <b>Enrolled sessions</b> tab</li>
 <li>Using the <b>All sessions</b> tab</li>
@@ -32,7 +38,22 @@ You can join the session anytime within the time allocated for the session.
 <li>Using the <b>Search</b> bar</li>
 </ul>
 
+<Admonition type="note">
+<ul>
+<li>Private sessions to which you were invited are listed only on the <b>Enrolled sessions</b> tab.</li>
+<li>On the <b>Enrolled sessions</b> tab, you can click the session title to join the session <a href="#using-the-session-details-page">using the Session Details page</a>.</li> 
+</ul>
+</Admonition>
+
 ## Using the Enrolled Sessions Tab
+
+<p>
+    <Admonition type="tip">    
+    <p>To look for sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
+    </Admonition>
+</p>
+
+**To join sessions using the Enrolled sessions tab, do as follows:**
 
 <ol>
 <li>On the Home page, go to the <b>Enrolled sessions</b> tab.</li>
@@ -43,53 +64,47 @@ You can join the session anytime within the time allocated for the session.
     <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Join</b>.</p>
     </Admonition>
 </p>
-<p>
-    <img src={PortalJoinButton} />
-</p>
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalJoinButton} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionTileJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
 <JoinStepPortal />
 </ol>
 
 ## Using the All Sessions Tab
 
+<p>
+    <Admonition type="tip">    
+    <p>To look for sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
+    </Admonition>
+</p>
+
 <ol>   
 <li>On the Home page, go to the <b>All Sessions</b> tab.</li> 
-<li>Find an enrolled session.</li>
+<li>Find the session.</li>
 <li>Click <b>Join</b>.
-<p>
-    <img src={PortalJoinButton} />
-</p>
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalJoinButton} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionTileJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
 </li>
-<JoinStepPortal />
-</ol>
-
-## Using the Session Details Page
-
-<ol>
-<li>Find an enrolled session from the <b>All Sessions</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
-<li>Click the session tile to view the Session Details page.
-<p>
-    <img src={PortalSessionTileJoin} />
-</p>
-</li>
-<li>Click <b>Join</b>.
-<p>
-    <img src={PortalSessionDetailsJoin} />
-</p>
-</li>
-<JoinStepPortal />
-</ol>
-
-## Using the Search bar
-
-<ol>
-<li>Click the <b>Sessions</b> tab.
-<p>
-    <img src={PortalSearchSessions} />
-</p>
-</li>
-<li>Type the session name and click the <b>Search</b> button.</li>
-<li>Click <b>Join</b>.</li>
 <JoinStepPortal />
 </ol>
 
@@ -98,6 +113,7 @@ You can join the session anytime within the time allocated for the session.
 <Admonition type="info">    
 <p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
 </Admonition>
+
 <p><b>To join a session using the mentor profile, do as follows:</b></p>
 <ol>
 <li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
@@ -106,6 +122,45 @@ You can join the session anytime within the time allocated for the session.
     <img src={PortalMentorProfileJoin} />
 </p>
 </li>
+<JoinStepPortal />
+</ol>
+
+## Using the Session Details Page
+
+<ol>
+<li>Find the session from the <b>All Sessions</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
+<li>Click the session tile to view the Session Details page.
+<p>
+    <img src={PortalSessionTileJoin} />
+</p>
+</li>
+<li>Click <b>Join</b>.
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalSessionDetailsJoin} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionDetailsJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
+</li>
+<JoinStepPortal />
+</ol>
+
+## Using the Search bar
+
+<ol>
+<li>In the Search bar of the Home page, click the <b>Sessions</b> tab.
+<p>
+    <img src={PortalSearchSessions} />
+</p>
+</li>
+<li>Type the session name and click the <b>Search</b> button.</li>
+<li>Click <b>Join</b>.</li>
 <JoinStepPortal />
 </ol>
 

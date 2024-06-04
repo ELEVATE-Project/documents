@@ -17,7 +17,7 @@ To host a customized instance of <PartialExample mentored />:
 2. [Install Node.js® on Ubuntu 20.04](https://serverspace.io) (Search for *Install Node.js on Ubuntu 20.04* in the Tutorials section.).
 3. [Set up <PartialExample mentored /> service](https://github.com/ELEVATE-Project/mentoring/blob/master/README.md).
 4. [Set up Interface service](https://github.com/ELEVATE-Project/interface-service/blob/main/README.md).
-5. [Customize the PWA](https://github.com/ELEVATE-Project/mentoring-mobile-app/blob/release-2.5.0/README.md).
+5. [Customize the PWA](https://github.com/ELEVATE-Project/mentoring-mobile-app/blob/master/README.md).
 
 Optionally, to set up supporting services do as follows:
 

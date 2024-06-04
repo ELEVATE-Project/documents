@@ -52,7 +52,38 @@ const sidebars = {
       type: 'doc',
       id: 'policyarchitecture', // document ID
       label: 'Multi-Tenant Architecture', // sidebar label
-    }, 
+    },
+    {
+      type: 'category',
+      label: 'Set up Organizations Using APIs',
+      items: [
+        {
+          type: 'doc',
+          id: 'api-overview', // document ID
+          label: 'Overview', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-setupsystemadministrator', // document ID
+          label: 'Creating a System Administrator Account', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-setuporganizations', // document ID
+          label: 'Setting up Organizations', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-setpolicies', // document ID
+          label: 'Setting Policies for Organizations', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-manageorganizations', // document ID
+          label: 'Managing Organizations', // sidebar label
+        }
+      ]
+    },
     {
       type: 'doc',
       id: 'settingup-overview', // document ID
@@ -74,12 +105,17 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'typesofsessions', // document ID
+          label: 'Types of Sessions', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'notifications', // document ID
           label: 'Notifications', // sidebar label
         },
         {
           type: 'category',
-          label: 'How Organization Administrators Can Manage Users',
+          label: 'Managing Users for an Organization',
           items: [
             {
               type: 'doc',
@@ -96,6 +132,32 @@ const sidebars = {
               id: 'managementorrequests', // document ID
               label: 'Managing Requests to Become a Mentor', // sidebar label
             },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Managing Sessions for an Organization',
+          items: [
+            {
+              type: 'doc',
+              id: 'aboutsessionmanager', // document ID
+              label: 'Session Manager', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'createsession-sessionmanager', // document ID
+              label: 'Creating Sessions for an Organization', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'manageassignedsession', // document ID
+              label: 'Managing Sessions Assigned to Mentors', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'joinassignedsession', // document ID
+              label: 'Joining Sessions Assigned to Mentors', // sidebar label
+            }
           ]
         },
         {
@@ -126,7 +188,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'inviting-mentorsandmentees-host', // document ID
-              label: 'Inviting Mentors and Mentees', // sidebar label
+              label: 'Promoting Your Public Sessions', // sidebar label
             },
             {
               type: 'doc',
@@ -194,7 +256,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'inviting-mentorsandmentees-participants', // document ID
-              label: 'Sharing Session Invites to Your Contacts', // sidebar label
+              label: 'Promoting Public Sessions with Your Contacts', // sidebar label
             },
             {
               type: 'doc',
@@ -218,7 +280,7 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'mentor-deleteaccountrequest', // document ID
+              id: 'mentee-deleteaccountrequest', // document ID
               label: 'Deleting the Account', // sidebar label
             }
           ]
@@ -252,6 +314,22 @@ const sidebars = {
               "id": "view-helpvideos",
               "label": "Viewing the Help Videos"
             }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Account Security",
+          "items": [
+            {
+              "type": "doc",
+              "id": "accountloginactivity",
+              "label": "Viewing the Account Login Activity"
+            },
+            {
+              "type": "doc",
+              "id": "changepassword",
+              "label": "Changing the Account Password"
+            },
           ]
         },
         {

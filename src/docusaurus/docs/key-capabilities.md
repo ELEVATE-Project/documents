@@ -6,11 +6,15 @@ Using the <PartialExample mentored /> building block, domain experts or mentors 
 
 >
 
-<PartialExample mentored /> currently supports group mentoring interactions where a group of mentees get associated to a mentor in a session. The mentor creates sessions and publish them on the platform. The session follows a format similar to a webinar. However, it encourages a long-term relationship between mentors and mentees.
+<PartialExample mentored /> currently supports group and one-on-one mentoring interactions. In group mentoring, a group of mentees get associated to a mentor in a session. The mentor creates sessions and publish them on the platform. The session follows a format similar to a webinar. However, it encourages a long-term relationship between mentors and mentees. 
 
 >
 
 Through group mentoring, mentees can access upskilling and capacity-building opportunities. It also opens doors for interdisciplinary skill development. 
+
+>
+
+On the other hand, a one-on-one mentoring session involves assigning a mentee to a mentor. Through one-on-one mentoring, mentees can address their goals and concerns about their professional development and receive personalized guidance from the mentor.
 
 ## Capabilities of Mentor
 
@@ -22,8 +26,8 @@ One of the most important things to recognize about **mentoring as an approach t
 <th>Description</th>
 </tr>
 <tr>
-<td>Search for Mentor Connect</td>
-<td>Mentees can search for mentors and establish connections.</td>
+<td>Search for Mentors</td>
+<td>Mentees can look up mentors in their chosen area of expertise.</td>
 </tr>
 <tr>
 <td>Schedule Sessions</td>
@@ -34,12 +38,12 @@ One of the most important things to recognize about **mentoring as an approach t
 <td>Registered users can easily search and discover upcoming mentoring sessions.</td>
 </tr>
 <tr>
-<td>Request a Session</td>
-<td>Users registered as mentees (and mentors) can enroll in public sessions hosted by mentors.</td>
+<td>Enroll for a Session</td>
+<td>Users registered as mentees (and mentors) can enroll in Public sessions hosted by mentors.</td>
 </tr>
 <tr>
 <td>Conduct Live Sessions</td>
-<td>Mentors can conduct live group mentoring sessions.</td>
+<td>Mentors can conduct live group or one-on-one mentoring sessions.</td>
 </tr>
 <tr>
 <td>Join Live Session</td>
@@ -56,6 +60,10 @@ One of the most important things to recognize about **mentoring as an approach t
 <tr>
 <td>Manage Users and Roles</td>
 <td>Users with Organization Administrator privileges can create and manage users.</td>
+</tr>
+<tr>
+<td>Manage Sessions</td>
+<td>Users with Session Manager privileges can assign sessions to mentors and manage the sessions.</td>
 </tr>
 </table>
 
