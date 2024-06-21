@@ -48,12 +48,7 @@ Method: POST
 <tr>
     <td>domains</td>
     <td><b>Array of strings</b></td>
-    <td><p>One or more organizational domains.</p><p>Example: <i>["shikshalokam.com"]</i></p>
-    <Admonition type="tip">  
-    <p>You must configure the organizational domains so that when users sign up to the application, their organizations are detected based on the organizational domain in their email IDs.</p>
-    <p>To learn more, see <a href="policyarchitecture#assigning-users-to-organizations">Assigning Users to an Organization</a>.</p>
-    </Admonition>
-    </td>
+    <td><p>One or more organizational domains.</p><p>Example: <i>["shikshalokam.com"]</i></p><p><Admonition type="tip">You must configure the organizational domains so that when users sign up to the application, their organizations are detected based on the organizational domain in their email IDs. To learn more, see <a href="policyarchitecture#assigning-users-to-organizations">Assigning Users to an Organization</a>.</Admonition></p></td>
     <td>True</td>
 </tr>
 <tr>
@@ -67,9 +62,9 @@ Method: POST
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
-|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -94,22 +89,12 @@ If successful, this method returns a `200 OK` response code. If the organization
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td>
-    <ul>
-    <li>Contains the organization's ID.</li>
-    <li>Details in the request body such as name and code.</li>
-    </ul>
-    </td>
+    <td><ul><li>Contains the organization's ID.</li><li>Details in the request body such as name and code.</li></ul></td>
   </tr>
   <tr>
     <td>meta</td>
     <td><b>Object</b></td>
-    <td>
-    <ul>
-    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
-    <li>The <b>correlation</b> key specifies the API request ID.</li>
-    </ul>
-    </td>
+    <td><ul><li>The <b>formsVersion</b> key specifies the versions of User service forms.</li><li>The <b>correlation</b> key specifies the API request ID.</li></ul></td>
   </tr>
 </table>
 
@@ -167,9 +152,9 @@ This method does not require a request body.
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
-|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -194,14 +179,7 @@ If successful, this method returns a `200 OK` response code.
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td>
-    It contains the following:
-    <ul>
-    <li>The organization's details such as ID, name, and code.</li>
-    <li>The policies configured for the organization.</li>
-    <li>The total number of organization entries.</li>
-    </ul>
-    </td>
+    <td>It contains the following:<ul><li>The organization's details such as ID, name, and code.</li><li>The policies configured for the organization.</li><li>The total number of organization entries.</li></ul></td>
   </tr>
 </table>
 
@@ -284,13 +262,14 @@ Method: GET
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
-|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
 If successful, this method returns a `200 OK` response code.
+
 
 <table>
   <tr>
@@ -311,19 +290,7 @@ If successful, this method returns a `200 OK` response code.
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td>
-    It contains the following:
-    <ul>
-    <li>The key for the first alphabet in the user's name.</li>
-    <li>The user's details such as user ID, name, and email.</li>
-    <li>The total number of user entries.</li>
-    </ul>
-    <p>
-    <Admonition type="tip">    
-    <p>If the response is empty or does not include the specific user's details, you may want to recheck the role specified in the request path.</p>
-    </Admonition>
-    </p>
-    </td>
+    <td><ul><li>The key for the first alphabet in the user's name.</li><li>The user's details such as user ID, name, and email.</li><li>The total number of user entries.</li><Admonition type="tip">    <p>If the response is empty or does not include the specific user's details, you may want to recheck the role specified in the request path.</p></Admonition></ul></td>
   </tr>
     <tr>
     <td>meta</td>
@@ -366,10 +333,7 @@ Method: POST
   <tr>
     <td>email</td>
     <td><b>String</b></td>
-    <td>
-    <p>Email ID of the Organization Administrator user who is invited to the new organization or of the user who is assigned Organization Administrator privileges.</p>
-    <p>Example: "<i>john@shikshalokam.org</i>"</p>
-    </td>
+    <td><p>Email ID of the Organization Administrator user who is invited to the new organization or of the user who is assigned Organization Administrator privileges.</p><p>Example: "<i>john@shikshalokam.org</i>"</p></td>
     <td>True</td>   
   </tr>
   <tr>
@@ -389,9 +353,9 @@ Method: POST
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
-|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -416,32 +380,11 @@ If successful, this method returns a `200 OK` response code.
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td>
-    <ul>
-    <li>The organization ID and user ID.</li> 
-    <li>The <b>user_roles</b> key specifies the following:
-      <ul>
-      <li>Mentor or mentee role and its associated ID.
-      <p>
-      <Admonition type="note">
-      <p>A mentee (default) role is assigned to organization administrators who were invited to new organizations.</p>
-      </Admonition>
-      </p>
-      </li>
-      <li>Organization administrator role and its associated ID.</li>
-      </ul>
-    </li>
-    </ul>
-    </td>
+    <td><ul><li>The organization ID and user ID.</li><li>The <b>user_roles</b> key specifies the following:</li><ul><li>Mentor or mentee role and its associated ID.</li><p><Admonition type="note"><p>A mentee (default) role is assigned to organization administrators who were invited to new organizations.</p></Admonition></p><li>Organization administrator role and its associated ID.</li></ul></ul></td>
   </tr>
   <tr>
     <td>meta</td>
     <td><b>Object</b></td>
-    <td>
-    <ul>
-    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
-    <li>The <b>correlation</b> key specifies the API request ID.</li>
-    </ul>
-    </td>
+    <td><ul><li>The <b>formsVersion</b> key specifies the versions of User service forms.</li><li>The <b>correlation</b> key specifies the API request ID.</li></ul></td>
   </tr>
 </table>

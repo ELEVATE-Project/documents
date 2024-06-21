@@ -52,9 +52,9 @@ Method: POST
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|internal_access_token|{{internal_access_token}}|An instance-specific, internal access token which is used for interservice network calls or communication.|True|
-|accept-language|{{hi}}|The response obtained will be in Hindi. If not provided, the response will be in English (default).|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -84,12 +84,7 @@ If successful, this method returns `201 Created` response code. If the System Ad
   <tr>
     <td>meta</td>
     <td><b>Object</b></td>
-    <td>
-    <ul>
-    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
-    <li>The <b>correlation</b> key specifies the API request ID.</li>
-    </ul>
-    </td>
+    <td><ul><li>The <b>formsVersion</b> key specifies the versions of User service forms.</li><li>The <b>correlation</b> key specifies the API request ID.</li></ul></td>
   </tr>
 </table>
 
@@ -152,12 +147,7 @@ If successful, this method returns a `200 OK` response code. If the email or pas
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td><p>It includes the following JWTs:</p>
-    <ul>
-    <li>An <b>access_token</b> that is used for authentication.</li>
-    <li>A <b>refresh_token</b> that is used for generating new access tokens.</li>
-    </ul>
-    </td>
+    <td><p>It includes the following JWTs:</p><ul><li>An <b>access_token</b> that is used for authentication.</li><li>A <b>refresh_token</b> that is used for generating new access tokens.</li></ul></td>
   </tr>
   <tr>
     <td>user</td>
@@ -167,11 +157,6 @@ If successful, this method returns a `200 OK` response code. If the email or pas
     <tr>
     <td>meta</td>
     <td><b>Object</b></td>
-    <td>
-    <ul>
-    <li>The <b>formsVersion</b> key specifies the versions of User service forms.</li>
-    <li>The <b>correlation</b> key specifies the API request ID.</li>
-    </ul>
-    </td>
+    <td><ul><li>The <b>formsVersion</b> key specifies the versions of User service forms.</li><li>The <b>correlation</b> key specifies the API request ID.</li></ul></td>
   </tr>
 </table>

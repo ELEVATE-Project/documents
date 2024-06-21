@@ -50,9 +50,7 @@ Method: POST
 <tr>
     <td>mentor_visibility_policy</td>
     <td><p><b>String</b></p></td>
-    <td><p>Manage whether your organization’s mentors should be visible to users from other organizations.</p>
-    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p>
-    </td>
+    <td><p>Manage whether your organization’s mentors should be visible to users from other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
     <td>True</td>
 </tr>
 <tr>
@@ -70,9 +68,7 @@ Method: POST
 <tr>
     <td>external_mentor_visibility_policy</td>
     <td><p><b>String</b></p></td>
-    <td><p>Manage whether your organization’s users can view mentors from other organizations.</p>
-    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p>
-    </td>
+    <td><p>Manage whether your organization’s users can view mentors from other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
     <td>True</td>  
 </tr>
 <tr>
@@ -86,9 +82,9 @@ Method: POST
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
-|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 
@@ -159,9 +155,9 @@ This method does not require a request body.
 **Request Header**
 
 |Key|Value|Description|Required|
-|---|:---:|---|---|
-|X-auth-token|bearer {{access_token}} &nbsp;&nbsp;|access_token received from the login response.|True|
-|accept-language &nbsp;&nbsp;|{{hi}}|<p>The response obtained will be in Hindi.</p><p>If not provided, the response will be in English (default).</p>|False|
+|---|---|---|---|
+|<p class='nowrap'>X-auth-token</p>|<p class='nowrap'>`bearer {{access_token}}`</p>|<p>The access_token received from the login response.</p>|True|
+|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
 
 **Response**
 

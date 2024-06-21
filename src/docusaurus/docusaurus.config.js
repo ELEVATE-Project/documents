@@ -44,26 +44,6 @@ const config = {
             label: '2.5',
             path: '2.5',
           },
-          "2.4": {
-            label: '2.4',
-            path: '2.4',
-          },
-          "2.3": {
-            label: '2.3',
-            path: '2.3',
-          },
-          "2.2": {
-            label: '2.2',
-            path: '2.2',
-          },
-          '2.1': {
-            label: '2.1',
-            path: '2.1',
-          },
-          '2.0': {
-            label: '2.0',
-            path: '2.0',
-          }
         }
        // lastVersion: '2.0',
         // versions: {
@@ -122,9 +102,6 @@ const config = {
           '2.5': {
             label: '2.5',
           },
-          '2.4': {
-            label: '2.4',
-          },
         },
       },
     ],
@@ -140,9 +117,6 @@ const config = {
           current: {
             label: '2.5',
           },
-          '2.4': {
-            label: '2.4',
-          },
         },
       },
     ],
@@ -157,9 +131,6 @@ const config = {
         versions: {
           current: {
             label: '2.5',
-          },
-          '2.4': {
-            label: '2.4',
           },
         },
       },
