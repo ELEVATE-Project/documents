@@ -1,0 +1,117 @@
+import StartButton from './media/startbutton.png';
+import NewSession from './media/newsession.png'
+import StartSessionButton from './media/startsession.png'
+import PortalStartButton from './media/portal-startbutton.png'
+import AssignedStartButton from './media/assignedsessiontile.png'
+import PortalNewSession from './media/portal-newsession.png'
+import PortalStartSessionButton from './media/portal-sessiondetailsstart.png'
+import AssignedStartSessionButton from './media/assignedsessiondetailsstart.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
+# Starting a Session 
+
+You can find Public or Private sessions that you have created or were assigned by a session manager by accessing the **My Mentoring Sessions** tab on the Home page. You can host these sessions through a configured meeting platform.
+
+<p>
+    <Admonition type="tip">    
+    <p>To look for sessions that were assigned to you by a session manager, check the session tile that is labelled as <i>assigned</i>.</p>
+    </Admonition>
+</p>
+
+<Admonition type="note">
+<ul>
+<li>You can start the session only 10 minutes before the scheduled time.</li>
+<li>You can start the session anytime within the time allocated for the session.</li>
+</ul>
+</Admonition>
+
+You can start a session in one of the following ways:
+
+* Using the **Start** button
+* Using the Session Details page
+* Using the shared link to start a Public session
+
+## Using the Start Button
+
+<ol>
+<li>On your Home page, go the <b>My mentoring sessions</b> tab.</li>
+<li>Find the session.</li>
+<li>Click <b>Start</b>. The meeting window appears.</li>
+<p>
+   <Admonition type="tip">    
+   <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Start</b>.</p>
+   </Admonition>
+</p>
+<p>
+   <Tabs>
+   <TabItem value="created session" label="Session Created by the Mentor" default>
+   <p>
+      <img src={PortalStartButton} />
+   </p>
+   </TabItem>
+   <TabItem value="assigned session" label="Session Assigned to the Mentor">
+   <p>
+      <img src={AssignedStartButton} />
+   </p>
+   </TabItem>
+   </Tabs>
+</p>
+</ol>
+
+## Using the Session Details Page
+
+<ol>
+<li>On your Home page, go the <b>My mentoring sessions</b> tab.</li>
+<li>Click the session tile to view the Session Details page.</li>
+<p>
+   <img src={PortalNewSession} />
+</p>
+<li>Click <b>Start session</b>. The meeting window appears.</li>
+   <Tabs>
+   <TabItem value="created session" label="Session Created by the Mentor" default>
+   <p>
+      <img src={PortalStartSessionButton} />
+   </p>
+   </TabItem>
+   <TabItem value="assigned session" label="Session Assigned to the Mentor">
+   <p>
+      <img src={AssignedStartSessionButton} />
+   </p>
+   </TabItem>
+   </Tabs>
+</ol>
+
+## Using the Shared Link to Start a Public Session
+
+<ol>
+<li>Click the session link which was shared with your contacts or on social media. The Session Details page appears.</li>
+<p>
+   <img src={PortalStartSessionButton} />
+</p>
+<li>Click <b>Start session</b>. The meeting window appears.</li>
+</ol>
+
+<p>
+   <Admonition type="info">    
+   <p>To configure the meeting settings, see any one of the following sections:</p>
+   <ul>
+   <li><a href="https://bigbluebutton.org">BigBlueButton Tutorials</a>. To view the tutorials, go to the <b>Teachers</b> menu and select <b>Tutorials</b>.</li>
+   <li><a href="https://support.google.com/">Google Meet Support</a></li>
+   <li><a href="https://www.whatsapp.com/">WhatsApp Help Center</a></li>
+   <li><a href="https://zoom.us/">Zoom Support Center</a></li>
+   </ul>
+   </Admonition>
+</p>
+
+## Usage Guidelines
+
+- Unmute your microphone only when necessary.
+
+- Maintain a neat background and attire before you turn on your webcam. 
+
+- Use respectful language while sharing any information. 
+
+- If you leave a BigBlueButton meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and click <b>Start</b>.

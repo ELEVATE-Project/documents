@@ -38,13 +38,7 @@ Method: POST
 <tr>
     <td>session_visibility_policy</td>
     <td><p><b>String</b></p></td>
-    <td>
-    <ul>
-    <li>Manage whether your organization’s sessions should be visible to users from other organizations.</li>
-    <li>Manage whether your organization’s mentees should be visible to session managers from other organizations.</li>
-    </ul>
-    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p>
-    </td>
+    <td><p>Manage whether your organization’s sessions should be visible to users from other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
     <td>True</td>    
 </tr>
 <tr>
@@ -54,21 +48,27 @@ Method: POST
     <td>True</td>
 </tr>
 <tr>
+    <td>mentee_visibility_policy</td>
+    <td><p><b>String</b></p></td>
+    <td><p>Manage whether your organization’s mentees should be visible to session managers from other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td>True</td>
+</tr>
+<tr>
     <td>external_session_visibility_policy</td>
     <td><p><b>String</b></p></td>
-    <td>
-    <ul>
-    <li>Manage whether your organization’s users can view sessions of other organizations.</li>
-    <li>Manage whether your organization’s session managers can view mentees of other organizations.</li>
-    </ul>
-    <p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p>
-    </td>
+    <td><p>Manage whether your organization’s users can view sessions of other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
     <td>True</td>  
 </tr>
 <tr>
     <td>external_mentor_visibility_policy</td>
     <td><p><b>String</b></p></td>
     <td><p>Manage whether your organization’s users can view mentors from other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
+    <td>True</td>  
+</tr>
+<tr>
+    <td>external_mentee_visibility_policy</td>
+    <td><p><b>String</b></p></td>
+    <td><p>Manage whether your organization’s session managers can view mentees of other organizations.</p><p>Valid values:<ul><li><i>ALL</i></li><li><i>CURRENT</i></li><li><i>ASSOCIATED</i></li></ul></p></td>
     <td>True</td>  
 </tr>
 <tr>

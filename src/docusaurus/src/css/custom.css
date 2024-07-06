@@ -67,3 +67,7 @@ li {
 .nowrap {
   white-space: nowrap;
 }
+
+h4 {
+  font-size: 16pt;
+}

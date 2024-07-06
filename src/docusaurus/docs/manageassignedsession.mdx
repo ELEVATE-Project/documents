@@ -1,18 +1,21 @@
 import Admonition from '@theme/Admonition';
+import BulkUploadTable from './_sessionbulkuploadtable.mdx';
 
 # Managing Sessions Assigned to Mentors
 
-On the Session list section, session managers can carry out the following activities:
+Session managers can carry out the following activities:
 
-* View the details such as the session's schedule, the number of enrollments, and the type of session.
+* After publishing sessions, you can view their details such as the session's schedule, the number of enrollments, and the type of session.
 * Track the session's progress using the following session statuses:
     * Upcoming: The mentor is yet to host the session.
     * Live: The mentor has started the session.
     * Completed: The mentor completed the session.
-* Edit the session information.
+* Update the session information.
 * Delete the session. 
 
-To view the Session list section, do as follows:
+## Tracking the Number of Enrollments
+
+You can view the number of mentees who have enrolled or those who were invited to the session.
 
 1. Do one of the following actions:
 
@@ -20,7 +23,9 @@ To view the Session list section, do as follows:
 
     * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
 
-2. Click **Manage sessions**. The Session list section appears.
+2. Click **Manage sessions**. 
+
+3. Go to the **Create sessions** tab. The Session list section appears.
 
     <p>
     <Admonition type="tip">
@@ -35,19 +40,15 @@ To view the Session list section, do as follows:
 
     ![](media/sessionlistsection.png)
 
-## Tracking the Number of Enrollments
+3. On the Session list section, do any one of the following actions:
 
-You can view the number of mentees who have enrolled or those who were invited to the session.
+    * View the **Mentee count** value.
 
-On the Session list section, do any one of the following actions:
+        ![](media/sessionlistsection.png)
 
-* View the **Mentee count** value.
+    * Click ![](media/sessionlist-view.png) and view the **Mentee count** value on the Session Details page.
 
-    ![](media/sessionlistsection.png)
-
-* Click ![](media/sessionlist-view.png) and view the **Mentee count** value on the Session Details page.
-
-    ![](media/assignedsessiondetails.png)
+        ![](media/assignedsessiondetails.png)
 
 ## Viewing the List of Mentees
 
@@ -56,25 +57,32 @@ On the Mentee list window, you can do the following actions:
 * View mentees' details.
 * Check whether the mentees have enrolled for the session or have been invited to the session.
 
-**To view the list of mentees, do as follows:**
+1. Do one of the following actions:
 
-* On the Session list section, find a session and click the **Mentee count** value. The Mentee list window appears.
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
+
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
+
+2. Click **Manage sessions**. 
+
+3. Go to the **Create sessions** tab. The Session list section appears.
 
     <p>
     <Admonition type="tip">
-    <p>Click the <b>Download</b> link to download the mentee list as a CSV file.</p>
+    <p>From the list, you can find sessions by:</p>
+        <ul>
+        <li>Using filters such as the status or type of session.</li>
+        <li>Changing the number of sessions listed on the page using the <b>Items per page</b> dropdown.</li>
+        </ul>
+    <p>Click the <b>Download</b> link to download the session list as a CSV file.</p>
     </Admonition>
     </p>
 
-    ![](media/menteeenrollmentlist.png)
+    ![](media/sessionlistsection.png)
 
-* Do the following actions:
-    
-    1. Click ![](media/sessionlist-view.png). The Session Details page appears.
+3. To view the list of mentees, do any one of the following actions:
 
-        ![](media/assignedsessiondetails.png)
-
-    2. Click **View list**. The Mentee list window appears. 
+    * On the Session list section, find a session and click the **Mentee count** value. The Mentee list window appears.
 
         <p>
         <Admonition type="tip">
@@ -84,29 +92,100 @@ On the Mentee list window, you can do the following actions:
 
         ![](media/menteeenrollmentlist.png)
 
+    * Do the following actions:
+        
+        1. Click ![](media/sessionlist-view.png). The Session Details page appears.
+
+            ![](media/assignedsessiondetails.png)
+
+        2. Click **View list**. The Mentee list window appears. 
+
+            <p>
+            <Admonition type="tip">
+            <p>Click the <b>Download</b> link to download the mentee list as a CSV file.</p>
+            </Admonition>
+            </p>
+
+            ![](media/menteeenrollmentlist.png)
+
 ## Viewing the Mentor Profile page
 
 On the Mentor Profile page, you can view a mentor's details such as the number of sessions hosted and the rating received for sessions.
 
-To view the Mentor Profile page, click the mentor's name on the Session list section.
+To view the Mentor Profile page, do as follows:
 
-![](media/portal-mentorprofilepage.png)
+1. Do one of the following actions:
 
-## Editing a Session
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
 
-To view the Edit session details page, do one of the following actions:
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
 
-* In the Session list section, click ![](media/sessionlist-edit.png).
+2. Click **Manage sessions**. 
 
-* Do the following actions:
+3. Go to the **Create sessions** tab. The Session list section appears.
 
-    1. On the Session list section, click ![](media/sessionlist-view.png). The Session Details page appears.
+    <p>
+    <Admonition type="tip">
+    <p>From the list, you can find sessions by:</p>
+        <ul>
+        <li>Using filters such as the status or type of session.</li>
+        <li>Changing the number of sessions listed on the page using the <b>Items per page</b> dropdown.</li>
+        </ul>
+    <p>Click the <b>Download</b> link to download the session list as a CSV file.</p>
+    </Admonition>
+    </p>
 
-        ![](media/assignedsessiondetails.png)
+    ![](media/sessionlistsection.png)
 
-    2. Click **Edit**.
+4. Click the mentor's name.
 
-### Editing the Session Information
+    ![](media/portal-mentorprofilepage.png)
+
+## Updating Session Details 
+
+You can edit sessions using any one of the following methods:
+
+* Using the Session List section
+* Using Bulk Upload
+
+### Using the Session List Section
+
+1. Do one of the following actions:
+
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
+
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
+
+2. Click **Manage sessions**. 
+
+3. Go to the **Create sessions** tab.The Session list section appears.
+
+    <p>
+    <Admonition type="tip">
+    <p>From the list, you can find sessions by:</p>
+        <ul>
+        <li>Using filters such as the status or type of session.</li>
+        <li>Changing the number of sessions listed on the page using the <b>Items per page</b> dropdown.</li>
+        </ul>
+    <p>Click the <b>Download</b> link to download the session list as a CSV file.</p>
+    </Admonition>
+    </p>
+
+    ![](media/sessionlistsection.png)
+
+4. To view the Edit session details page, do one of the following actions:
+
+    * Click ![](media/sessionlist-edit.png).
+
+    * Do the following actions:
+
+        1. Click ![](media/sessionlist-view.png). The Session Details page appears.
+
+            ![](media/assignedsessiondetails.png)
+
+        2. Click **Edit**.
+
+#### Updating the Session Information
 
 <p>
 <Admonition type="note">
@@ -141,7 +220,7 @@ To view the Edit session details page, do one of the following actions:
 
 5. Click **Save**. The session details are updated.
 
-### Editing the Meeting Information
+#### Updating the Meeting Information
 
 <p>
 <Admonition type="tip">
@@ -155,17 +234,101 @@ To view the Edit session details page, do one of the following actions:
 
 2. Click <b>Submit</b>. The meeting information is updated.
 
-## Deleting a Session
+### Using Bulk Upload
+
+To update multiple sessions, you can upload a CSV file containing the list of updates in the session or meeting information to the application.
+
+>
+
+**To edit sessions using bulk upload, do as follows:**
+
+1. Do one of the following actions:
+
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
+
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
+
+2. Click **Manage sessions**.
+
+3. Go to the **Bulk upload** tab.
+
+4. Click **Download sample CSV** to download the sample CSV file. The downloaded sample file contains sample information that you must clear before adding the session details. 
+
+5. Enter the details of only those sessions that need to be updated.
+
+    <p>
+    <Admonition type="tip">
+    <p>If you had created sessions using bulk upload, open the respective CSV file.</p>
+    </Admonition>
+    </p>
+
+6. To update the details, do as follows:
+
+    1. Enter *Edit* in the **Action** column.
+
+    2. Enter the session ID in the **Session ID** column.
+
+        <p>
+        <Admonition type="tip">
+        <p>You can find the session ID in the session list section or in the CSV file that you have received after uploading a list of sessions to the application.</p>
+        </Admonition>
+        </p>
+
+    3. Make the necessary changes as per the following table:
+
+        <BulkUploadTable />
+
+3. On the **Bulk upload** tab, click **Upload CSV** and select the CSV file containing the edited session details.
+
+    <p>
+    <Admonition type="note">
+    <p>After updating sessions, you will receive a CSV file in your email that displays details such as:</p>
+    <ul>
+    <li>Session ID</li>
+    <li>Session status (<i>Valid</i> or <i>Invalid</i>)</li>
+    <li>Status message</li>
+    </ul>
+    <p>If the details entered in the uploaded CSV need corrections, the session status would be <i>invalid</i> and the session is not updated. In such cases, refer to the status message and reupload the respective file with the updated details.</p>
+    </Admonition>
+    </p>
+
+## Deleting Sessions
+
+You can delete sessions using any one of the following methods:
+
+* Using the Session List section
+* Using Bulk Upload
 
 <Admonition type="note">
 <p>You can delete the session only until the mentor starts the session.</p>
 </Admonition>
 
-**To delete the session, do as follows:**
+### Using the Session List Section
 
-1. To delete the session, do one of the following actions:
+1. Do one of the following actions:
 
-    * In the Session list section, click ![](media/sessionlist-delete.png).
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
+
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
+
+2. Click **Manage sessions**. The Session list section appears.
+
+    <p>
+    <Admonition type="tip">
+    <p>From the list, you can find sessions by:</p>
+        <ul>
+        <li>Using filters such as the status or type of session.</li>
+        <li>Changing the number of sessions listed on the page using the <b>Items per page</b> dropdown.</li>
+        </ul>
+    <p>Click the <b>Download</b> link to download the session list as a CSV file.</p>
+    </Admonition>
+    </p>
+
+    ![](media/sessionlistsection.png)
+
+3. To delete the session, do one of the following actions:
+
+    * Click ![](media/sessionlist-delete.png).
 
     * Do the following actions:
 
@@ -175,4 +338,55 @@ To view the Edit session details page, do one of the following actions:
 
         2. Click **Delete**.
 
-2. Click <b>Yes delete</b> on the confirmation dialog. The session is cancelled and is removed from the Session list section.
+4. Click <b>Yes delete</b> on the confirmation dialog. The session is cancelled and is removed from the Session list section.
+
+### Using Bulk Upload
+
+To delete multiple sessions, you can upload a CSV file containing the list of sessions to be deleted to the application.
+
+1. Do one of the following actions:
+
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
+
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Workspace</b>.
+
+2. Go to the **Bulk upload** tab.
+
+3. Click **Download sample CSV** to download the sample CSV file. The downloaded sample file contains information that you must clear before adding the session details.
+
+    <p>
+    <Admonition type="tip">
+    <p>If you had created sessions using bulk upload, open the respective CSV file.</p>
+    </Admonition>
+    </p>
+
+5. Do as follows:
+
+    1. Enter *Delete* in the **Action** column.
+
+    2. In the **Session ID** column, enter the session IDs of the session that you want to delete.
+
+        <p>
+        <Admonition type="tip">
+        <p>You can find the session ID in the session list section or in the CSV file that you have received after uploading a list of sessions to the application.</p>
+        </Admonition>
+        </p>
+        <p>
+        <Admonition type="note">
+        <p>The file must include only those sessions that should be deleted from the application.</p>
+        </Admonition>
+        </p>
+
+3. On the **Bulk upload** tab, click **Upload CSV** and select the CSV file containing the list of sessions to be deleted.
+
+    <p>
+    <Admonition type="note">
+    <p>After deleting sessions, you will receive a CSV file in your email that displays details such as:</p>
+    <ul>
+    <li>Session ID</li>
+    <li>Session status (<i>Valid</i> or <i>Invalid</i>)</li>
+    <li>Status message</li>
+    </ul>
+    <p>If the details entered in the uploaded CSV are incorrect, the session status would be <i>invalid</i> and the session will not be deleted. In such cases, refer to the status message that and reupload the CSV file with the correct details.</p>
+    </Admonition>
+    </p>

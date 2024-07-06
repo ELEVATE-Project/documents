@@ -1,5 +1,6 @@
 import PartialExample from './_mentored.mdx';
 import Admonition from '@theme/Admonition';
+import BulkUploadTable from './_sessionbulkuploadtable.mdx';
 
 # Creating Sessions for an Organization
 
@@ -10,21 +11,29 @@ You can create Public or Private sessions for an organization and do the followi
 * Add the session information such as the session topic and schedule.
 * Add the meeting platform.
 
-**To create a session, do as follows:**
+You can create sessions using any one of the following methods:
 
+* Using the **Create session** button
+* Using bulk upload
+
+## Using the Create Session Button
+
+**To create a session, do as follows:**
 
 1. Do one of the following actions:
 
     * Select <b>Workspace</b> from the <b>Application</b> menu.
     * Go to the <b>Application</b> menu ![](media/burgermenu-icon.png) and select <b>Workspace</b>.
 
-2. On the <b>Workspace</b> page, click <b>Manage session</b>.
+2. On the Workspace page, click <b>Manage session</b>.
 
-3. Click <b>Create session</b>. The Create a new session page appears.
+3. Go to the **Create sessions** tab.
+
+4. Click the <b>Create session</b> button. The Create a new session page appears.
 
     ![](media/assignsession.png)
 
-4. Optionally, to add a session image, click <b>Add image</b> and do one of the following actions:
+5. Optionally, to add a session image, click <b>Add image</b> and do one of the following actions:
 
     * To take a picture, select <b>Take Photo</b>.
     * To upload an image, select <b>Choose from library</b>.
@@ -34,9 +43,9 @@ You can create Public or Private sessions for an organization and do the followi
         </Admonition>
         </p>
 
-5. Enter the session information in the <b>Session title</b> and <b>Description</b> boxes.
+6. Enter the session information in the <b>Session title</b> and <b>Description</b> boxes.
 
-6. To select the type of session, do as follows:
+7. To select the type of session, do as follows:
 
     1. Click the <b>Session type</b> box.
     2. Select the session type from the <b>Session type</b> dropdown and click <b>Ok</b>.
@@ -47,7 +56,7 @@ You can create Public or Private sessions for an organization and do the followi
         </Admonition>
     </p>
 
-7. To assign the session to a mentor, do as follows:
+8. To assign the session to a mentor, do as follows:
 
     1. Click <b>+ Add mentor</b>. The Mentor list window appears.
     2. Find a mentor from the list and click <b>Add</b>.
@@ -56,7 +65,7 @@ You can create Public or Private sessions for an organization and do the followi
         <Admonition type="tip">
         <p>To assign the session to a different mentor, do as follows:</p>
         <ol>
-        <li>In the <b>+ Add mentor</b> box, click the mentor's name was previously selected.</li>
+        <li>In the <b>+ Add mentor</b> box, click the mentor's name that was previously selected.</li>
         <li>Find a new mentor and click <b>Add</b>.</li>
         </ol>
         </Admonition>
@@ -80,7 +89,7 @@ You can create Public or Private sessions for an organization and do the followi
         </Admonition>
     </p>
 
-8. To invite mentees, do as follows:
+9. To invite mentees, do as follows:
 
     1. Click <b>+ Add mentee</b>. The Mentee list window appears.
     2. Find a mentee from the list and click <b>Add</b>.
@@ -89,7 +98,10 @@ You can create Public or Private sessions for an organization and do the followi
 
     <p>  
         <Admonition type="tip">
-        <p>It is optional to invite mentees to a Public session.</p>
+        <ul>
+        <li>It is optional to invite mentees to a Public session.</li>
+        <li>To facilitate one-on-one mentoring, you can set up Private sessions consisting of an invited mentee.</li>
+        </ul>
         </Admonition>
     </p>
     <p>  
@@ -98,7 +110,7 @@ You can create Public or Private sessions for an organization and do the followi
         </Admonition>
     </p>
 
-9. To schedule a session, do as follows:
+10. To schedule a session, do as follows:
 
     1. Click the <b>Start date</b> and <b>End date</b> boxes.
     2. Select the date and time from the date and time picker.
@@ -110,7 +122,7 @@ You can create Public or Private sessions for an organization and do the followi
         </Admonition>
     </p>
 
-10. Select an option from the following boxes:
+11. Select an option from the following boxes:
 
     * <b>Recommended for</b>
     * <b>Categories</b>
@@ -132,7 +144,7 @@ You can create Public or Private sessions for an organization and do the followi
 
     ![](media/portal-createsessionoptions.png)  
 
-11. Click <b>Publish and add link</b>. The session is published on the platform and participants can now view your session.
+12. Click <b>Publish and add link</b>. The session is published on the platform and participants can now view your session.
 
     <p>
         <Admonition type="note">
@@ -152,7 +164,7 @@ You can create Public or Private sessions for an organization and do the followi
         </Admonition>
     </p>
 
-12. On the <b>Meeting link</b> tab, select a meeting platform from the <b>Add meeting link</b> menu.
+13. On the <b>Meeting link</b> tab, select a meeting platform from the <b>Add meeting link</b> menu.
     
     <p>
         <Admonition type="note">
@@ -183,13 +195,64 @@ You can create Public or Private sessions for an organization and do the followi
     </tr>
     </table>
 
-13. Click <b>Submit</b>. The meeting information is added.
+14. Click <b>Submit</b>. The meeting information is added.
 
     <p>
         <Admonition type="tip">
         <p>You can find the sessions that are assigned to mentors and track their progress on the Session list section.</p>
         </Admonition>
     </p>
+
+## Using Bulk Upload
+
+For an organization's mentorship program, you can create multiple sessions by uploading a CSV file containing a list of sessions and their details such as: 
+
+* The mentors to whom the sessions are assigned
+* The mentees who are invited for the sessions
+* The sessions' information such as session title and schedule
+* The meeting platforms configured for the sessions
+
+**To create sessions through bulk upload, do as follows:**
+
+1. Do one of the following actions:
+
+    * Select <b>Workspace</b> from the <b>Application</b> menu.
+    * Go to the <b>Application</b> menu ![](media/burgermenu-icon.png) and select <b>Workspace</b>.
+
+2. On the Workspace page, click **Manage session**.
+
+3. Go to the **Bulk upload** tab.
+
+4. Click **Download sample CSV** to download the sample CSV file. The downloaded sample file contains information that you must clear before adding the session details.
+
+5. Open the downloaded CSV file and clear the sample details.
+
+6. Enter *Create* in the **Action** column.
+
+7. Leave the **Session ID** column as blank.
+
+8. Enter the session information as per the following table:
+
+    <BulkUploadTable />
+
+9. On the **Bulk upload** tab, click **Upload CSV** and select the CSV file containing the list of sessions. To view the published sessions and their session IDs, go to the **Create sessions** tab.
+
+    <p>
+    <Admonition type="note">
+    <p>After creating sessions, you will receive a CSV file in your email that displays details such as:</p>
+    <ul>
+    <li>Session ID</li>
+    <li>Session status (<i>Published</i> or <i>Invalid</i>)</li>
+    <li>Status message</li>
+    </ul>
+    <p>If the details entered in the uploaded CSV need corrections, the session status would be <i>invalid</i> and the session is not published. In such cases, refer to the status message and reupload the respective file with the updated details.</p>
+    </Admonition>
+    </p>
+
+
+
+
+
 
 
 
