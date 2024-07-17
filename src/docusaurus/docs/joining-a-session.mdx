@@ -1,8 +1,3 @@
-import JoinButton from './media/joinbutton.png';
-import SessionDetailsJoin from './media/sessiondetailsjoin.png'
-import SessionTileJoin from './media/sessiontile-join.png'
-import SearchSession from './media/search-sessions.png'
-import MentorProfileJoin from './media/mentorprofile-join.png'
 import PortalJoinButton from './media/portal-joinbutton.png';
 import PortalSessionTileJoin from './media/portal-sessiontilejoin.png'
 import InvitedSessionTileJoin from './media/invitedsessiontile.png'
@@ -27,15 +22,13 @@ After the mentor starts the sessions, you can join:
 You can join the session anytime within the time allocated for the session.
 </Admonition>
 
-<p>You can join a session in one of the following ways:</p>
+You can join a session in one of the following ways:
 
-<ul>
-<li>Using the <b>Enrolled sessions</b> tab</li>
-<li>Using the <b>All sessions</b> tab</li>
-<li>Using the mentor profile</li>
-<li>Using the Session Details page</li>
-<li>Using the <b>Search</b> bar</li>
-</ul>
+* Using the **Enrolled sessions** tab
+* Using the **All sessions** tab
+* Using the mentor profile
+* Using the Session Details page
+* Using the **Search** box
 
 <Admonition type="note">
 <ul>
@@ -46,18 +39,17 @@ You can join the session anytime within the time allocated for the session.
 
 ## Using the Enrolled Sessions Tab
 
-<p>
-    <Admonition type="tip">    
-    <p>To look for sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
-    </Admonition>
-</p>
+<Admonition type="tip">    
+<p>To look for sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
+</Admonition>
 
 **To join sessions using the Enrolled sessions tab, do as follows:**
 
-<ol>
-<li>On the Home page, go to the <b>Enrolled sessions</b> tab.</li>
-<li>Find the session.</li>
-<li>Click <b>Join</b>.</li>
+1. On the Home page, go to the **Enrolled sessions** tab.
+
+2. Find the session.
+
+3. Click **Join**.
 <p>
     <Admonition type="tip">    
     <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Join</b>.</p>
@@ -75,21 +67,22 @@ You can join the session anytime within the time allocated for the session.
    </p>
    </TabItem>
    </Tabs>
-<JoinStepPortal />
-</ol>
+
+4. <JoinStepPortal />
 
 ## Using the All Sessions Tab
 
-<p>
-    <Admonition type="tip">    
-    <p>To look for sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
-    </Admonition>
-</p>
+<Admonition type="tip">    
+<p>To look for Public sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
+</Admonition>
 
-<ol>   
-<li>On the Home page, go to the <b>All Sessions</b> tab.</li> 
-<li>Find the session.</li>
-<li>Click <b>Join</b>.</li>
+**To join sessions using the All sessions tab, do as follows:**
+  
+1. On the Home page, go to the **All Sessions** tab.
+
+2. Find the session.
+
+3. Click **Join**.
    <Tabs>
    <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
     <p>
@@ -102,8 +95,8 @@ You can join the session anytime within the time allocated for the session.
    </p>
    </TabItem>
    </Tabs>
-<JoinStepPortal />
-</ol>
+
+4. <JoinStepPortal />
 
 ## Using the Mentor Profile
 
@@ -111,25 +104,30 @@ You can join the session anytime within the time allocated for the session.
 <p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
 </Admonition>
 
-<p><b>To join a session using the mentor profile, do as follows:</b></p>
-<ol>
-<li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
-<li>Click <b>Join</b>.</li>
-<p>
-    <img src={PortalMentorProfileJoin} />
-</p>
-<JoinStepPortal />
-</ol>
+**To join a Public session using the mentor profile, do as follows:**
+
+1. On the Mentor Profile page, go to the **Upcoming sessions** tab.
+
+2. Click **Join**.
+
+    <p>
+        <img src={PortalMentorProfileJoin} />
+    </p>
+
+3. <JoinStepPortal />
 
 ## Using the Session Details Page
 
-<ol>
-<li>Find the session from the <b>All Sessions</b> tab, <b>Enrolled Sessions</b> tab, or the Mentor Profile page.</li>
-<li>Click the session tile to view the Session Details page.</li>
-<p>
-    <img src={PortalSessionTileJoin} />
-</p>
-<li>Click <b>Join</b>.</li>
+1. Find the session from the **All Sessions** tab, **Enrolled Sessions** tab, or the Mentor Profile page.
+
+2. Click the session tile to view the Session Details page.
+
+    <p>
+        <img src={PortalSessionTileJoin} />
+    </p>
+
+3. Click **Join**.
+
    <Tabs>
    <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
     <p>
@@ -142,20 +140,52 @@ You can join the session anytime within the time allocated for the session.
    </p>
    </TabItem>
    </Tabs>
-<JoinStepPortal />
-</ol>
 
-## Using the Search bar
+4. <JoinStepPortal />
 
-<ol>
-<li>In the Search bar of the Home page, click the <b>Sessions</b> tab.</li>
-<p>
-    <img src={PortalSearchSessions} />
-</p>
-<li>Type the session name and click the <b>Search</b> button.</li>
-<li>Click <b>Join</b>.</li>
-<JoinStepPortal />
-</ol>
+## Using the Search box
+
+1. To find Public sessions to which you have enrolled or were invited, do any one of the following actions:
+
+    * Enter a search keyword such as the session title in the **Search** box and press **Enter**. The search results appear as session tiles. 
+    
+    * To search for sessions based on a specific category, do as follows:
+
+        1. Specify the search category using the following methods:
+
+            <table>
+            <tr>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Search Category</td>
+                <td>Click the <b>Search</b> box and select a search category such as <b>Mentor name</b>.</td>
+            </tr>
+            <tr>
+                <td>Filter</td>
+                <td><ol><li>Click on <b>Filter</b>.</li><li>Select one or more filter checkboxes and click <b>Apply</b>.</li><p><Admonition type="tip"><p>To clear filters, do one of the following actions:</p><ul><li>Clear the filter checkbox.</li><li>Click <b>Clear all</b> to clear all the applied filters.</li></ul></Admonition></p></ol></td>
+            </tr>
+            </table>
+        
+        2. Enter the search keyword. Based on the specified search category, the search results display the session tiles.
+
+            <p>
+                <img src={PortalSearchSessions} />
+            </p>
+
+    <Admonition type="tip">
+    <p>If there are multiple search results, you can find the respective session using the following ways:</p>
+    <ul>
+    <li>Viewing the search results on different pages by clicking the <b>Next</b> or <b>Previous</b> buttons.</li>
+    <li>Changing the number of search results listed on the page using the <b>Items per page</b> dropdown.</li>
+    <li>Applying filters.</li>
+    </ul>
+    </Admonition>
+
+2. Click **Join**.
+
+3. <JoinStepPortal />
 
 <p>
    <Admonition type="info">    
