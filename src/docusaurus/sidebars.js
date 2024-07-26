@@ -286,49 +286,49 @@ const sidebars = {
           ]
         },
         {
-          "type": "doc",
-          "id": "change-language",
-          "label": "Changing the Language Settings"
+          type: 'doc',
+          id: 'change-language',
+          label: 'Changing the Language Settings',
         },
         {
-          "type": "category",
-          "label": "Support",
-          "items": [
+          type: 'category',
+          label: 'Support',
+          items: [
             {
-              "type": "doc",
-              "id": "report-signuporloginissue",
-              "label": "Reporting Sign up and Log in Issues"
+              type: 'doc',
+              id: 'report-signuporloginissue',
+              label: 'Reporting Sign up and Log in Issues'
             },
             {
-              "type": "doc",
-              "id": "report-an-issue",
-              "label": "Reporting an Issue"
+              type: 'doc',
+              id: 'report-an-issue',
+              label: 'Reporting an Issue'
             },
             {
-              "type": "doc",
-              "id": "using-faq",
-              "label": "Using the FAQ Page"
+              type: 'doc',
+              id: 'using-faq',
+              label: 'Using the FAQ Page'
             },
             {
-              "type": "doc",
-              "id": "view-helpvideos",
-              "label": "Viewing the Help Videos"
+              type: 'doc',
+              id: 'view-helpvideos',
+              label: 'Viewing the Help Videos'
             }
           ]
         },
         {
-          "type": "category",
-          "label": "Account Security",
-          "items": [
+          type: 'category',
+          label: 'Account Security',
+          items: [
             {
-              "type": "doc",
-              "id": "accountloginactivity",
-              "label": "Viewing the Account Login Activity"
+              type: 'doc',
+              id: 'accountloginactivity',
+              label: 'Viewing the Account Login Activity'
             },
             {
-              "type": "doc",
-              "id": "changepassword",
-              "label": "Changing the Account Password"
+              type: 'doc',
+              id: 'changepassword',
+              label: 'Changing the Account Password'
             },
           ]
         },
@@ -336,6 +336,17 @@ const sidebars = {
           type: 'doc',
           id: 'faq', // document ID
           label: 'FAQs', // sidebar label
+        },
+        {
+          type: 'category',
+          label: 'Troubleshooting',
+          items: [
+            {
+              type: 'doc',
+              id: 'bulkupload-invalidsession',
+              label: 'Invalid Sessions During Bulk Upload',
+            },
+          ]
         },
       ]
     },
