@@ -65,22 +65,27 @@ const sidebars = {
         {
           type: 'doc',
           id: 'api-setupsystemadministrator', // document ID
-          label: 'Creating a System Administrator Account', // sidebar label
+          label: 'Create a System Administrator Account', // sidebar label
         },
         {
           type: 'doc',
           id: 'api-setuporganizations', // document ID
-          label: 'Setting up Organizations', // sidebar label
+          label: 'Create Organizations', // sidebar label
         },
         {
           type: 'doc',
           id: 'api-setpolicies', // document ID
-          label: 'Setting Policies for Organizations', // sidebar label
+          label: 'Set Policies for Organizations', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'api-defaultrules', // document ID
+          label: 'Set Default Rules for Organizations', // sidebar label
         },
         {
           type: 'doc',
           id: 'api-manageorganizations', // document ID
-          label: 'Managing Organizations', // sidebar label
+          label: 'Manage Organizations', // sidebar label
         }
       ]
     },
