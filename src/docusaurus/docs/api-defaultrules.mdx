@@ -17,8 +17,6 @@ By setting default rules that matches users with sessions based on the **Languag
 
 * Mentees can view sessions hosted by a mentor who match their languages of preference.
 
-## Create Default Rules
-
 :::note
 
 1. After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
@@ -56,13 +54,13 @@ Method: POST
 <tr>
     <td>is_target_from_sessions_mentor</td>
     <td><p><b>Boolean</b></p></td>
-    <td><p>This is applicable only to default rules for session access.</p><p>If the value is specified as <i>true</i>, the <b>requester_field</b> and <b>target_field</b> from the session host's profile are evaluated.</p>.</td>
+    <td><p>This is applicable only to default rules for session access.</p><p>If the value is specified as <i>true</i>, the <b>requester_field</b> and <b>target_field</b> from the session host's profile are evaluated.</p><p>Example: users are matched to sessions based on the languages specified on the session host's profile.</p>.</td>
     <td>False</td>
 </tr>
 <tr>
     <td>target_field</td>
     <td><p><b>String</b></p></td>
-    <td><p>Enter the <b>value</b> of the entity type from the Session Details page or mentor profile page that should be evaluated with the <b>requester_field</b>.</p><p>Example: To match users to sessions based on language, enter <i>"medium"</i>.</p><p><Admonition type="note"><p>If the value of <b>is_target_from_sessions_mentor</b> is set to <i>True</i>, use the value of the entity type from the profile page.For example, enter <i>"ln"</i> as users are matched to sessions based on matching languages on the session host's profile.</p></Admonition></p></td>
+    <td><p>Enter the <b>value</b> of the entity type from the Session Details page or mentor profile page that should be evaluated with the <b>requester_field</b>.</p><p>Example: To match users to sessions based on language, enter <i>"medium"</i>.</p><p><Admonition type="note"><p>If the value of <b>is_target_from_sessions_mentor</b> is set to <i>True</i>, use the value of the entity type from the profile page. For example, enter <i>"ln"</i> as users are matched to sessions based on the languages specified on the session host's profile.</p></Admonition></p></td>
     <td>True</td>
 </tr>
 <tr>
