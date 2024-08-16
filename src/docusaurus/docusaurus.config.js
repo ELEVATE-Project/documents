@@ -144,15 +144,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
+
+/*
+    algolia: {
         appId: '766d56f13dd1e82f43253559b7c86636',
-        apiKey: 'supabase',
-        indexName: 'supabase',
-        contextualSearch: false,
-        searchParameters: {
-          facetFilters: ['language:en', ['filter1', 'filter2'], 'filter3'],
-        },
+       apiKey: 'supabase',
+       indexName: 'supabase',
+       contextualSearch: false,
+       searchParameters: {
+         facetFilters: ['language:en', ['filter1', 'filter2'], 'filter3'],
       },
+    },
+*/
+
       navbar: {
  //       title: 'Elevate',
         logo: {

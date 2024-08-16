@@ -1,5 +1,6 @@
 import PartialExample from './_mentored.mdx';
 import Admonition from '@theme/Admonition';
+import RequestBody from './_api-defaultrulepayload.mdx';
 
 # Set Default Rules for an Organization
 
@@ -17,12 +18,11 @@ By setting default rules that match users with sessions based on their preferred
 
 1. After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
 2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
-3. Before setting default rules to an entity type, obtain the **value** of that entity type from `{{url}}/mentoring/v1/entity-type/read`. 
-
-  The entity type should be as follows:
-    * Contains a fixed range of entities.
-    * Set as mandatory.
-    * Set as a search filter.
+3. Obtain the values of entity types for which you want to set the default rule. The entity types should be as follows:
+  * Contain a fixed range of entities.
+  * Set as mandatory.
+  * Set as search filters.
+  * Contain identical entities. For example, entity types such as **Languages** and **Medium** have identical entities.
 
 :::
 
@@ -37,77 +37,7 @@ Method: POST
 
 **Request Body**
 
-<table>
-<tr>
-    <th>Payload Parameter</th>
-    <th>Data Type</th>
-    <th>Description</th>
-    <th>Required</th>
-</tr>
-<tr>
-    <td>type</td>
-    <td><p><b>String</b></p></td>
-    <td><p>Specify whether you want to set default rules to filter mentors or sessions.</p><p>Valid values:<ul><li><i>"mentor"</i></li><li><i>"session"</i></li></ul></p></td>
-    <td>True</td>    
-</tr>
-<tr>
-    <td>is_target_from_sessions_mentor</td>
-    <td><p><b>Boolean</b></p></td>
-    <td><p>This is applicable only to default rules for session access.</p><p>If the value is specified as <i>true</i>, the <b>requester_field</b> and <b>target_field</b> from the session host's profile are evaluated.</p><p>Example: Users are matched to sessions based on the languages specified on the session host's profile.</p>.</td>
-    <td>False</td>
-</tr>
-<tr>
-    <td>target_field</td>
-    <td><p><b>String</b></p></td>
-    <td><p>Enter the <b>value</b> of the entity type from the Session Details page or mentor profile page that should be evaluated with the <b>requester_field</b>.</p><p>Example: To match users to sessions based on language, enter <i>"medium"</i>.</p><p><Admonition type="note"><p>If the value of <b>is_target_from_sessions_mentor</b> is set to <i>True</i>, use the value of the entity type from the profile page. For example, enter <i>"ln"</i> as users are matched to sessions based on the languages specified on the session host's profile.</p></Admonition></p></td>
-    <td>True</td>
-</tr>
-<tr>
-    <td>requester_field</td>
-    <td><p><b>String</b></p></td>
-    <td><p>Enter the <b>value</b> of the entity type from the user's profile page. This field is evaluated against the <b>target_field</b>.</p><p>Example: To match users to sessions based on language, enter <i>"ln"</i>.</p><p><Admonition type="note"><p>The list of entities specified in <b>requester_field</b> and <b>target_field</b> entity types must be identical. For example, entity types such as <b>Languages</b> and <b>Your Role</b> cannot be evaluated.</p></Admonition></p></td>
-    <td>True</td>  
-</tr>
-<tr>
-    <td>operator</td>
-    <td><p><b>String</b></p></td>
-    <td><p>Specify the condition based on which <b>target_field</b> and <b>requester_field</b> entities are to be evaluated.</p><p>To check for matching or unmatching <b>requester_field</b> and <b>target_field</b>entities, specify any one of the following:<ul><li><i>"equals"</i></li><li><i>"notEquals"</i></li></ul>To match <b>target_field</b> with <b>requester_field</b> containing one or more entities, specify any one of the following: <ul><li><i>"contains"</i></li><li><i>"containedBy"</i></li><li><i>"overlap"</i></li></ul><p>See <a href="#array-operators">Array Operators</a> to learn more.</p>To compare numerical entities of <b>target_field</b> to that of the <b>requester_field</b>, specify any one of the following:<ul><li><i>"lessThan"</i></li><li><i>"greaterThan"</i></li><li><i>"lessThanOrEqual"</i></li><li><i>"greaterThanOrEqual"</i></li></ul></p></td>
-    <td>True</td>
-</tr>
-<tr>
-    <td>requester_roles</td>
-    <td><p><b>String</b></p></td>
-    <td><p>Specify an existing user role to whom the default rules will not apply. If not provided, the configurations in <b>requester_roles_config</b> will be applicable to all user roles.</p><p>Valid values for existing roles:<ul><li><i>session_manager</i></li><li><i>org_admin</i></li><li><i>mentor</i></li><li><i>mentee</i></li></ul></p></td>
-    <td>False</td>  
-</tr>
-<tr>
-    <td>requester_roles_config</td>
-    <td><p><b>Object</b></p></td>
-    <td><p>To exclude the user roles specified in <b>requester_roles</b>, specify the following:</p><p><i>"exclude": "true"</i></p><p>If not provided, the default rules will be applicable to all user roles.</p></td>
-    <td>False</td>  
-</tr>
-</table>
-
-##### Array Operators
-
-<table>
-<tr>
-    <th>Array Operators</th>
-    <th>Description</th>
-</tr>
-<tr>
-    <td>contains</td>
-    <td><p>Checks whether the <b>target_field</b> contains entities of <b>requester_field</b>.</p><p>Example: "<i>[English, Hindi]</i>" in the <b>target_field</b> can be matched with "<i>[English]</i>", "<i>[Hindi]</i>", or "<i>[English, Hindi]</i>" in the <b>requester_field</b>.</p></td>
-</tr>
-<tr>
-    <td>containedBy</td>
-    <td><p>Checks whether the <b>target_field</b> entities are contained in the <b>requester_field</b>.</p><p>Example: "<i>[English]</i>" in the <b>target_field</b> can be matched with "<i>[English]</i>" or "<i>[English, Hindi]</i>" in the <b>requester_field</b>.</p></td>
-</tr>
-<tr>
-    <td>overlap</td>
-    <td><p>Checks for overlapping entities between the <b>target_field</b> and <b>requester_field</b>.</p><p>Example: "<i>[English, Hindi]</i>" in the <b>target_field</b> can be matched with "<i>[English, Kannada]</i>" in the <b>requester_field</b>.</p></td>
-</tr>
-</table>
+<RequestBody />
 
 **Request Header**
 
@@ -156,11 +86,7 @@ If successful, this method returns `201 Created` response code. If the default r
 
 ## Get Default Rules
 
-You can obtain list of default rules and their IDs.
-
-<Admonition type="note">
-To update or delete default rules, the path must include the default rule ID parameter.
-</Admonition>
+To update or delete default rules for an organization, the organization administrator can obtain the list of default rules and their IDs.
 
 **HTTP Request**
 
@@ -264,11 +190,7 @@ Method: PATCH
 
 **Request Body**
 
-Refer to the request body parameters in <a href="#create-default-rules">Create Default Rules</a>.
-
-<Admonition type="note">
-All the payload parameters are optional. You can specify only those parameters whose value need to be updated.
-</Admonition>
+<RequestBody />
 
 **Request Header**
 
