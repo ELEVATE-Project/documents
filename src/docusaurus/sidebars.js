@@ -84,6 +84,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'api-entitytype', // document ID
+          label: 'Create Entity Types', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'api-manageorganizations', // document ID
           label: 'Manage Organizations', // sidebar label
         }
