@@ -1,34 +1,27 @@
 import PartialExample from './_mentored.mdx';
 import Admonition from '@theme/Admonition';
 
-# Create Entity Types
+# Create Entities
 
-In <PartialExample mentored /> service, entity types refer to the properties of sessions or mentors. The entity type labels are displayed as fields on the profile and session creation pages.
+On the profile or session creation pages, organization administrators can create organization-specific entities that are mapped to entity types. 
 
-For example:
+In the select fields of session or profile creation pages, the entity labels appear as options.
 
-  * Session properties include category and medium.
+:::note Prerequisites
 
-  * Mentor properties include role and expertise.
+Organization administrators must do the following actions:
 
-System administrators can create new entity types to achieve the following:
+  1. After receiving the application's link through email, sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
+  2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
 
-  * Define custom properties for sessions or mentors.
-
-  * Add new text fields and select fields (such as single-select or multi-select fields) on the profile or session creation pages.
-
-  * Define new default rules. See <a href="api-defaultrules">Set Default Rules for an Organization</a> to learn more.
-
-    <Admonition type="note">
-    You can set default rules only for multi-select fields with a fixed range.
-    </Admonition>
+:::
 
 **HTTP Request**
 
 Method: POST
 
   ```
-  {{url}}/mentoring/v1/entity-type/create
+  {{url}}/mentoring/v1/entity/create
 
   ```
 
@@ -44,50 +37,20 @@ Method: POST
   <tr>
     <td>value</td>
     <td><b>String</b></td>
-    <td><p>Specify a value for the entity type.</p><p>Example: "<i>medium</i>"</p></td>
+    <td><p>Specify a value for the entity.</p><p>Example: "<i>en</i>"</p></td>
     <td>True</td>
   </tr>
   <tr>
     <td>label</td>
     <td><b>String</b></td>
-    <td><p>The name of the field.</p><p>Example: "<i>Medium</i>"</p></td>
+    <td><p>The name of the option.</p><p>Example: "<i>English</i>"</p></td>
     <td>True</td>
   </tr>
   <tr>
-    <td>allow_filtering</td>
-    <td><b>Boolean</b></td>
-    <td><p>To add the new entity type as a search filter, set it to <i>"True"</i>.</p><p><Admonition type="note">To set default rules, you must add the entity type as a search filter.</Admonition></p></td>
+    <td>entity_type_id</td>
+    <td><b>Integer</b></td>
+    <td><p>Specify the ID entity type (or field) that should contain the entity.</p><p>Example: "<i>2</i>"</p></td>
     <td>False</td>
-  </tr>
-  <tr>
-    <td>data_type</td>
-    <td><b>String</b></td>
-    <td><p>Specify the allowed data type for entities that are mapped to the entity type.</p><p>Accepted values:</p><ul><li>Array data types: "<i>ARRAY[STRING]</i>", "<i>ARRAY[INTEGER]</i>", or "<i>ARRAY[TEXT]</i>"</li><li>String data types: "<i>STRING</i>" or "<i>TEXT</i>"</li><li>Numeric data types: "<i>INTEGER</i>" or "<i>BIGINT</i>"</li><li>"<i>BOOLEAN</i>"</li><li>JSON data types: "<i>JSON</i>" or "<i>JSONB</i>"</li></ul></td>
-    <td>True</td>  
-  </tr>
-  <tr>
-    <td>model_names</td>
-    <td><b>Array</b></td>
-    <td><p>Specify whether the field should be added to profile creation page or session creation page.</p><p>Accepted values:</p><p>For profile pages, enter any one of the following:</p><ul><li>"<i>MentorExtension</i>" for mentor profile creation page</li><li>"<i>UserExtension</i>" for user profile page.</li></ul><p>For session creation, enter "<i>Session</i>".</p></td>
-    <td>True</td>  
-  </tr>
-  <tr>
-    <td>required</td>
-    <td><b>Boolean</b></td>
-    <td><p>To set the field as mandatory, enter <i>true</i>.</p><p><Admonition type="note">To set default rules, you must set the field as mandatory.</Admonition></p></td>
-    <td>True</td>  
-  </tr>
-  <tr>
-    <td>allow_custom_entities</td>
-    <td><b>Boolean</b></td>
-    <td><p>To allow users to add custom options or entities in multi-select fields, enter <i>true</i>.</p><p><Admonition type="note">To set default rules, the multi-select filed must contain a fixed range of entities.</Admonition></p></td>
-    <td>True</td>  
-  </tr>
-  <tr>
-    <td>status</td>
-    <td><b>String</b></td>
-    <td><p>To enable the entity type, specify <i>ACTIVE</i>.</p></td>
-    <td>True</td>  
   </tr>
 </table>
 
@@ -100,7 +63,7 @@ Method: POST
 
 **Response**
 
-If successful, this method returns `201 Created` response code. If the entity type already exists, this method returns a `400 Bad Request` response code.
+If successful, this method returns `201 Created` response code. If the entity already exists, this method returns a `400 Bad Request` response code.
 
 <table>
   <tr>
@@ -121,7 +84,7 @@ If successful, this method returns `201 Created` response code. If the entity ty
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td><p>Information such as the entity type ID and details in the request body such as label and value.</p></td>
+    <td><p>Information such as the entity ID and details in the request body such as label and value.</p></td>
   </tr>
   <tr>
     <td>meta</td>
@@ -129,27 +92,16 @@ If successful, this method returns `201 Created` response code. If the entity ty
     <td>
     <ul>
     <li>The API request ID in the <b>correlation</b> key.</li>
-    <li>The <b>meetingPlatform</b> key specifies if the BigBlueButton meeting platform is enabled.</li>
     <li>The <b>formsVersion</b> key specifies the versions of <PartialExample mentored /> service forms.</li>
+    <li>The <b>meetingPlatform</b> key specifies if the BigBlueButton meeting platform is enabled.</li>
     </ul>
     </td>
   </tr>
 </table>
 
-## Get Entity Types
+## Get Entities
 
-To update or delete entity types, system administrators can obtain the details of entity types such as the ID and value.
-
-Before setting default rules, organization administrators can obtain the **value** of the entity types.
-
-:::note Prerequisites
-
-Organization administrators must do the following actions:
-
-  1. After receiving the application's link through email, sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
-  2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
-
-:::
+To update or delete entities, organization administrators can obtain the details of entities such as ID and value.
 
 **HTTP Request**
 
@@ -157,26 +109,28 @@ Method: GET
 
 ```
 
-{{url}}/mentoring/v1/entity-type/read
+{{url}}/mentoring/v1/entity/read
 
 ```
 
-**Request Body**
-
 <table>
 <tr>
-    <th>Payload Parameter</th>
+    <th>Path Parameter</th>
     <th>Data Type</th>
     <th>Description</th>
     <th>Required</th>
 </tr>
 <tr>
-    <td>value</td>
+    <td>id</td>
     <td><b>Integer</b></td>
-    <td><p>To view the details of a specific entity type, enter the entity type value.</p><p>Example: <i>id=2</i></p><p>If not provided, a list of all available entity types will be obtained.</p></td>
+    <td><p>To view the details of a specific entity, enter the entity ID.</p><p>Example: <i>id=2</i></p><p>If not provided, a list of all available entities will be obtained.</p></td>
     <td>False</td>
 </tr>
 </table>
+
+**Request Body**
+
+This method does not require a request body.
 
 **Request Header**
 
@@ -208,7 +162,7 @@ If successful, this method returns a `200 OK` response code.
   <tr>
     <td>result</td>
     <td><b>Array of objects</b></td>
-    <td><p>Information about the entity type such as the ID and value.</p></td>
+    <td><p>Information such as the entity ID and details in the request body such as label and value.</p></td>
   </tr>
   <tr>
     <td>meta</td>
@@ -223,16 +177,16 @@ If successful, this method returns a `200 OK` response code.
   </tr>
 </table>
 
-## Update Entity Types
+## Update Entities
 
 **HTTP Request**
 
-Method: POST
+Method: PUT
 
-```
-{{url}}/mentoring/v1/entity-type/update/{id}
+  ```
+  {{url}}/mentoring/v1/entity/update
 
-```
+  ```
 
 <table>
 <tr>
@@ -244,14 +198,14 @@ Method: POST
 <tr>
     <td>id</td>
     <td><b>Integer</b></td>
-    <td><p>ID of the entity type that you want to update.</p><p>Example: <i>id=2</i></p></td>
+    <td><p>Enter the ID of the entity that you want to update.</p><p>Example: <i>id=2</i></p><p>If not provided, a list of all available entities will be obtained.</p></td>
     <td>False</td>
 </tr>
 </table>
 
 **Request Body**
 
-Refer to the request body parameters in <a href="#create-entity-types">Create Entity Types</a>.
+Refer to the request body parameters in <a href="#create-entities">Create Entities</a>.
 
 <Admonition type="note">
 All the payload parameters are optional. You can specify only those parameters whose value need to be updated.
@@ -266,11 +220,11 @@ All the payload parameters are optional. You can specify only those parameters w
 
 **Response**
 
-If successful, this method returns a `201 created` response code. If the entity type was not found, this method returns a `400 Bad Request` response code.
+If successful, this method returns `201 Created` response code. If the entity is not found, this method returns a `400 Bad Request` response code.
 
 <table>
   <tr>
-    <th>Response Parameter</th>
+    <th>Response Parameters</th>
     <th>Data Type</th>
     <th>Description</th>
   </tr>
@@ -287,7 +241,7 @@ If successful, this method returns a `201 created` response code. If the entity 
   <tr>
     <td>result</td>
     <td><b>Object</b></td>
-    <td><p>Information such as the entity type ID, organization ID, and the updated details of the entity type.</p></td>
+    <td><p>Information such as the entity ID and details in the request body such as label and value.</p></td>
   </tr>
   <tr>
     <td>meta</td>
@@ -302,17 +256,17 @@ If successful, this method returns a `201 created` response code. If the entity 
   </tr>
 </table>
 
-## Delete Entity Types
+## Delete Entities
 
 **HTTP Request**
 
 Method: DELETE
 
-```
+  ```
+  {{url}}/mentoring/v1/entity/delete
 
-{{url}}/mentoring/v1/default-rule/delete/{id}
+  ```
 
-```
 <table>
 <tr>
     <th>Path Parameter</th>
@@ -323,7 +277,7 @@ Method: DELETE
 <tr>
     <td>id</td>
     <td><b>Integer</b></td>
-    <td><p>ID of the entity type that you want to delete.</p><p>Example: <i>id=2</i></p></td>
+    <td><p>Enter the ID of the entity that you want to delete.</p><p>Example: <i>id=2</i></p><p>If not provided, a list of all available entities will be obtained.</p></td>
     <td>False</td>
 </tr>
 </table>
@@ -341,11 +295,11 @@ This method does not require a request body.
 
 **Response**
 
-If successful, this method returns a `202 Accepted` response code. If the entity type was not found, this method returns a `400 Bad Request` response code.
+If successful, this method returns `201 Created` response code. If the entity is not found, this method returns a `400 Bad Request` response code.
 
 <table>
   <tr>
-    <th>Response Parameter</th>
+    <th>Response Parameters</th>
     <th>Data Type</th>
     <th>Description</th>
   </tr>
@@ -361,8 +315,8 @@ If successful, this method returns a `202 Accepted` response code. If the entity
   </tr>
   <tr>
     <td>result</td>
-    <td><b>	Array of strings</b></td>
-    <td>[ ]</td>
+    <td><b>Object</b></td>
+    <td><p>Information such as the entity ID and details in the request body such as label and value.</p></td>
   </tr>
   <tr>
     <td>meta</td>
@@ -376,6 +330,3 @@ If successful, this method returns a `202 Accepted` response code. If the entity
     </td>
   </tr>
 </table>
-
-
-
