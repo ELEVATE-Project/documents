@@ -6,23 +6,25 @@ import RequestBody from './_api-defaultrulepayload.mdx';
 
 Organization administrators can set default rules or conditions based on which the system filters out the mentors or sessions on the application. Therefore, users within the organization can only view mentors or sessions that satisfy the default rules.
 
-By setting default rules that match users with mentors based on their preferred languages, users can view only the mentor profiles that match their languages of preference.
+Examples:
 
-By setting default rules that match users with sessions based on their preferred languages, organizations can achieve any one of the following:
+* By setting default rules that match users with mentors based on their preferred languages, users can view only the mentor profiles that match their languages of preference.
 
-  * Users can view sessions where the language of instruction matches their languages of preference.
+* By setting default rules that match users with sessions based on their preferred languages, organizations can achieve any one of the following:
 
-  * Mentees can view sessions hosted by a mentor who match their languages of preference.
+    * Users can view sessions where the language of instruction matches their languages of preference.
+
+    * Mentees can view sessions hosted by a mentor who match their languages of preference.
 
 :::note Prerequisites
 
 1. After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
 2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
 3. Obtain the values of entity types for which you want to set the default rule. The entity types should be as follows:
-  * Contain a fixed range of entities.
-  * Set as mandatory.
-  * Set as search filters.
-  * Contain identical entities. For example, entity types such as **Languages** and **Medium** have identical entities.
+    * Contain a fixed range of entities.
+    * Set as mandatory.
+    * Set as search filters.
+    * Contain identical entities. For example, entity types such as **Languages** and **Medium** have identical entities.
 
 :::
 
@@ -38,6 +40,27 @@ Method: POST
 **Request Body**
 
 <RequestBody />
+
+##### Array Operators
+
+<table>
+<tr>
+    <th>Array Operators</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>contains</td>
+    <td><p>Checks whether the target_field contains the entities of requester_field.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English]</i>", "<i>[Hindi]</i>", or "<i>[English, Hindi]</i>" in the requester_field.</p></td>
+</tr>
+<tr>
+    <td>containedBy</td>
+    <td><p>Checks whether the target_field entities are contained in the requester_field.</p><p>Example: "<i>[English]</i>" in the target_field can be matched with "<i>[English]</i>" or "<i>[English, Hindi]</i>" in the requester_field.</p></td>
+</tr>
+<tr>
+    <td>overlap</td>
+    <td><p>Checks for overlapping entities between the target_field and requester_field.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English, Kannada]</i>" in the requester_field.</p></td>
+</tr>
+</table>
 
 **Request Header**
 

@@ -62,13 +62,13 @@ Method: POST
   <tr>
     <td>data_type</td>
     <td><b>String</b></td>
-    <td><p>Specify the allowed data type for entities that are mapped to the entity type.</p><p>Accepted values:</p><ul><li>Array data types: "<i>ARRAY[STRING]</i>", "<i>ARRAY[INTEGER]</i>", or "<i>ARRAY[TEXT]</i>"</li><li>String data types: "<i>STRING</i>" or "<i>TEXT</i>"</li><li>Numeric data types: "<i>INTEGER</i>" or "<i>BIGINT</i>"</li><li>"<i>BOOLEAN</i>"</li><li>JSON data types: "<i>JSON</i>" or "<i>JSONB</i>"</li></ul></td>
+    <td><p>Specify the allowed data type for entities that are mapped to the entity type.</p><p>Valid values:</p><ul><li>Array data types: "<i>ARRAY[STRING]</i>", "<i>ARRAY[INTEGER]</i>", or "<i>ARRAY[TEXT]</i>"</li><li>String data types: "<i>STRING</i>" or "<i>TEXT</i>"</li><li>Numeric data types: "<i>INTEGER</i>" or "<i>BIGINT</i>"</li><li>"<i>BOOLEAN</i>"</li><li>JSON data types: "<i>JSON</i>" or "<i>JSONB</i>"</li></ul></td>
     <td>True</td>  
   </tr>
   <tr>
     <td>model_names</td>
     <td><b>Array</b></td>
-    <td><p>Specify whether the field should be added to profile creation page or session creation page.</p><p>Accepted values:</p><p>For profile pages, enter any one of the following:</p><ul><li>"<i>MentorExtension</i>" for mentor profile creation page</li><li>"<i>UserExtension</i>" for user profile page.</li></ul><p>For session creation, enter "<i>Session</i>".</p></td>
+    <td><p>Specify whether the field should be added to profile creation page or session creation page.</p><p>Valid values:</p><p>For profile pages, enter any one of the following:</p><ul><li>"<i>MentorExtension</i>" for mentor profile creation page</li><li>"<i>UserExtension</i>" for user profile page.</li></ul><p>For session creation, enter "<i>Session</i>".</p></td>
     <td>True</td>  
   </tr>
   <tr>
@@ -80,13 +80,7 @@ Method: POST
   <tr>
     <td>allow_custom_entities</td>
     <td><b>Boolean</b></td>
-    <td><p>To allow users to add custom options or entities in multi-select fields, enter <i>true</i>.</p><p><Admonition type="note">To set default rules, the multi-select filed must contain a fixed range of entities.</Admonition></p></td>
-    <td>True</td>  
-  </tr>
-  <tr>
-    <td>status</td>
-    <td><b>String</b></td>
-    <td><p>To enable the entity type, specify <i>ACTIVE</i>.</p></td>
+    <td><p>To allow users to add custom options or entities in multi-select fields, enter <i>true</i>.</p><p><Admonition type="note">To set default rules, the multi-select field must contain a fixed range of entities.</Admonition></p></td>
     <td>True</td>  
   </tr>
 </table>

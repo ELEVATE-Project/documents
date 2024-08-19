@@ -17,7 +17,7 @@ import Admonition from '@theme/Admonition';
 <tr>
     <td>is_target_from_sessions_mentor</td>
     <td><p><b>Boolean</b></p></td>
-    <td><p>This is applicable only to default rules for session access.</p><p>If the value is specified as <i>true</i>, the <b>requester_field</b> and <b>target_field</b> from the session host's profile are evaluated.</p><p>Example: Users are matched to sessions based on the languages specified on the session host's profile.</p>.</td>
+    <td><p>This is applicable only to default rules for sessions.</p><p>If the value is set to <i>true</i>, <b>target_field</b> from the session host's profile is evaluated with the <b>requester_field</b>.</p><p>Example: Users are matched to sessions based on the languages specified on the session host's profile.</p></td>
     <td>False</td>
 </tr>
 <tr>
@@ -49,26 +49,5 @@ import Admonition from '@theme/Admonition';
     <td><p><b>Object</b></p></td>
     <td><p>To exclude the user roles specified in <b>requester_roles</b>, specify the following:</p><p><i>"exclude": "true"</i></p><p>If not provided, the default rules will be applicable to all user roles.</p></td>
     <td>False</td>  
-</tr>
-</table>
-
-##### Array Operators
-
-<table>
-<tr>
-    <th>Array Operators</th>
-    <th>Description</th>
-</tr>
-<tr>
-    <td>contains</td>
-    <td><p>Checks whether the target_field contains entities of requester_field.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English]</i>", "<i>[Hindi]</i>", or "<i>[English, Hindi]</i>" in the requester_field.</p></td>
-</tr>
-<tr>
-    <td>containedBy</td>
-    <td><p>Checks whether the target_field entities are contained in the requester_field.</p><p>Example: "<i>[English]</i>" in the target_field can be matched with "<i>[English]</i>" or "<i>[English, Hindi]</i>" in the requester_field.</p></td>
-</tr>
-<tr>
-    <td>overlap</td>
-    <td><p>Checks for overlapping entities between the target_field and requester_field.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English, Kannada]</i>" in the requester_field.</p></td>
 </tr>
 </table>
