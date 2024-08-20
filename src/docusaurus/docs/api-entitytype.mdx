@@ -3,7 +3,7 @@ import Admonition from '@theme/Admonition';
 
 # Create Entity Types
 
-In <PartialExample mentored /> service, entity types refer to the properties of sessions or mentors. The entity type labels are displayed as fields on the profile and session creation pages.
+In <PartialExample mentored /> service, entity types refer to the properties of sessions or mentors. The labels assigned to entity types appear as fields on the profile and session creation pages.
 
 For example:
 
@@ -68,7 +68,7 @@ Method: POST
   <tr>
     <td>model_names</td>
     <td><b>Array</b></td>
-    <td><p>Specify whether the field should be added to profile creation page or session creation page.</p><p>Valid values:</p><p>For profile pages, enter any one of the following:</p><ul><li>"<i>MentorExtension</i>" for mentor profile creation page</li><li>"<i>UserExtension</i>" for user profile page.</li></ul><p>For session creation, enter "<i>Session</i>".</p></td>
+    <td><p>Specify whether the field should be added to profile creation page or session creation page.</p><p>Valid values:</p><p>To add the field on the profile creation page, enter any one of the following:</p><ul><li>"<i>MentorExtension</i>" for mentor profile page</li><li>"<i>UserExtension</i>" for user profile page.</li></ul><p>To add the field on the session creation page, enter "<i>Session</i>".</p></td>
     <td>True</td>  
   </tr>
   <tr>
@@ -80,8 +80,8 @@ Method: POST
   <tr>
     <td>allow_custom_entities</td>
     <td><b>Boolean</b></td>
-    <td><p>To allow users to add custom options or entities in multi-select fields, enter <i>true</i>.</p><p><Admonition type="note">To set default rules, the multi-select field must contain a fixed range of entities.</Admonition></p></td>
-    <td>True</td>  
+    <td><p>To allow users to add custom options or entities in multi-select fields, enter <i>true</i>.</p><p><Admonition type="note">To set default rules, do not specify this parameter.</Admonition></p></td>
+    <td>False</td>  
   </tr>
 </table>
 

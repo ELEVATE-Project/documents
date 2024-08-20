@@ -20,12 +20,13 @@ Examples:
 
 1. After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.
 2. Log in using `{{url}}/user/v1/account/login` to generate an access_token.
-3. Obtain the values of entity types for which you want to set the default rule. The entity types should be as follows:
+3. To set or modify default rules for entity types, obtain their values. The entity types should be as follows:
     * Contain a fixed range of entities.
     * Set as mandatory.
     * Set as search filters.
     * Contain identical entities. For example, entity types such as **Languages** and **Medium** have identical entities.
 
+    To learn more about obtaining the values of entity types, see <a href="api-entitytype#get-entity-types">Get Entity Types</a>.
 :::
 
 **HTTP Request**
@@ -40,27 +41,6 @@ Method: POST
 **Request Body**
 
 <RequestBody />
-
-##### Array Operators
-
-<table>
-<tr>
-    <th>Array Operators</th>
-    <th>Description</th>
-</tr>
-<tr>
-    <td>contains</td>
-    <td><p>Checks whether the target_field contains the entities of requester_field.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English]</i>", "<i>[Hindi]</i>", or "<i>[English, Hindi]</i>" in the requester_field.</p></td>
-</tr>
-<tr>
-    <td>containedBy</td>
-    <td><p>Checks whether the target_field entities are contained in the requester_field.</p><p>Example: "<i>[English]</i>" in the target_field can be matched with "<i>[English]</i>" or "<i>[English, Hindi]</i>" in the requester_field.</p></td>
-</tr>
-<tr>
-    <td>overlap</td>
-    <td><p>Checks for overlapping entities between the target_field and requester_field.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English, Kannada]</i>" in the requester_field.</p></td>
-</tr>
-</table>
 
 **Request Header**
 
@@ -333,4 +313,25 @@ If successful, this method returns a `202 Accepted` response code. If the defaul
     </ul>
     </td>
   </tr>
+</table>
+
+## Array Operators
+
+<table>
+<tr>
+    <th>Array Operators</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>contains</td>
+    <td><p>Checks whether the <b>target_field</b> contains the entities of <b>requester_field</b>.</p><p>Example: "<i>[English, Hindi]</i>" in the <b>target_field</b> can be matched with "<i>[English]</i>", "<i>[Hindi]</i>", or "<i>[English, Hindi]</i>" in the <b>requester_field</b>.</p></td>
+</tr>
+<tr>
+    <td>containedBy</td>
+    <td><p>Checks whether the <b>target_field</b> entities are contained in the <b>requester_field</b>.</p><p>Example: "<i>[English]</i>" in the <b>target_field</b> can be matched with "<i>[English]</i>" or "<i>[English, Hindi]</i>" in the <b>requester_field</b>.</p></td>
+</tr>
+<tr>
+    <td>overlap</td>
+    <td><p>Checks for overlapping entities between the <b>target_field</b> and <b>requester_field</b>.</p><p>Example: "<i>[English, Hindi]</i>" in the target_field can be matched with "<i>[English, Kannada]</i>" in the requester_field.</p></td>
+</tr>
 </table>

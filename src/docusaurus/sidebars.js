@@ -74,6 +74,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'api-manageorganizations', // document ID
+          label: 'Manage Organizations', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'api-setpolicies', // document ID
           label: 'Set Policies for Organizations', // sidebar label
         },
@@ -91,11 +96,6 @@ const sidebars = {
           type: 'doc',
           id: 'api-entity', // document ID
           label: 'Create Entities', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-manageorganizations', // document ID
-          label: 'Manage Organizations', // sidebar label
         }
       ]
     },
