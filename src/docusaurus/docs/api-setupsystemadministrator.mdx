@@ -3,160 +3,17 @@ import PartialExample from './_mentored.mdx';
 
 # Create a System Administrator Account
 
-To create organizations and for other administrative workflows, adopters must create a system administrator account.
-
-**HTTP Request**
-
-Method: POST
-
-  ```
-  {{url}}/user/v1/admin/create
-
-  ```
-
-**Request Body**
-
 <table>
   <tr>
-    <th>Payload Parameter</th>
-    <th>Data Type</th>
+    <th>API Reference</th>
     <th>Description</th>
-    <th>Required</th>
-  </tr>
-  <tr>
-    <td>name</td>
-    <td><b>String</b></td>
-    <td><p>The system administrator's name.</p><p>Example: "<i>Peter</i>"</p></td>
-    <td>True</td>
-  </tr>
-  <tr>
-    <td>email</td>
-    <td><b>String</b></td>
-    <td><p>The system administrator's email ID.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
-    <td>True</td>
-  </tr>
-  <tr>
-    <td>password</td>
-    <td><b>String</b></td>
-    <td><p>The password for the new account.</p><p>Example: "<i>Password@123</i>"</p></td>
-    <td>True</td>
-  </tr>
-  <tr>
-    <td>secret_code</td>
-    <td><b>String</b></td>
-    <td><p>Instance-specific random code set in the ENVs.</p><p>Example: "<i>W5bF7gesuS0xsNWmpsKy</i>"</p></td>
-    <td>True</td>  
-  </tr>
-</table>
-
-**Request Header**
-
-|Key|Value|Description|Required|
-|---|---|---|---|
-|<p class='nowrap'>internal_access_token</p>|<p class='nowrap'>`{{internal_access_token}}`</p>|<p>An instance-specific, internal access token which is used for interservice network calls or communication.</p>|True|
-|<p class='nowrap'>accept-language</p>|<p>`{{hi}}`</p>|<p>The response obtained will be in Hindi. If not provided, the response will be in English (default).</p>|False|
-
-**Response**
-
-If successful, this method returns `201 Created` response code. If the System Administrator user already exists, this method returns a `406 Not Acceptable` response code.
-
-<table>
-  <tr>
-    <th>Response Parameters</th>
-    <th>Data Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>responseCode</td>
-    <td><b>String</b></td>
-    <td>A success response.</td>
-  </tr>
-  <tr>
-    <td>message</td>
-    <td><b>String</b></td>
-    <td>A success message.</td>
-  </tr>
-  <tr>
-    <td>result</td>
-    <td><b>Array of strings</b></td>
-    <td>[ ]</td>
-  </tr>
-  <tr>
-    <td>meta</td>
-    <td><b>Object</b></td>
-    <td><ul><li>The <b>formsVersion</b> key specifies the versions of User service forms.</li><li>The <b>correlation</b> key specifies the API request ID.</li></ul></td>
-  </tr>
-</table>
-
-## Log in to the System Administrator Account
-
-After the System Administrator account is created, system administrators must log in to their account.
-
-**HTTP Request**
-
-Method: POST
-
-  ```
-  {{url}}/user/v1/admin/login
-
-  ```
-
-**Request Body**
-
-<table>
-  <tr>
-    <th>Payload Parameter</th>
-    <th>Data Type</th>
-    <th>Description</th>
-    <th>Required</th>
-  </tr>
-  <tr>
-    <td>email</td>
-    <td><b>String</b></td>
-    <td><p>The login email ID of the System Administrator account.</p><p>Example: "<i>peter@shikshalokam.com</i>"</p></td>
-    <td>True</td>  
-  </tr>
-  <tr>
-    <td>password</td>
-    <td><b>String</b></td>
-    <td><p>The login password of the System Administrator account.</p><p>Example: "<i>Password@123</i>"</p></td>
-    <td>True</td>
-  </tr>
-</table>
-
-**Response**
-
-If successful, this method returns a `200 OK` response code. If the email or password is invalid, this method returns a `400 Bad Request` response code.
-
-<table>
-  <tr>
-    <th>Response Parameter</th>
-    <th>Data Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>responseCode</td>
-    <td><b>String</b></td>
-    <td>A success response.</td>
-  </tr>
-  <tr>
-    <td>message</td>
-    <td><b>String</b></td>
-    <td>A success message.</td>
-  </tr>
-  <tr>
-    <td>result</td>
-    <td><b>Object</b></td>
-    <td><p>It includes the following JWTs:</p><ul><li>An <b>access_token</b> that is used for authentication.</li><li>A <b>refresh_token</b> that is used for generating new access tokens.</li></ul></td>
-  </tr>
-  <tr>
-    <td>user</td>
-    <td><b>Object</b></td>
-    <td>User's information such as ID, email, and name.</td>
   </tr>
     <tr>
-    <td>meta</td>
-    <td><b>Object</b></td>
-    <td><ul><li>The <b>formsVersion</b> key specifies the versions of User service forms.</li><li>The <b>correlation</b> key specifies the API request ID.</li></ul></td>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/Admin-APIs/paths/~1user~1v1~1admin~1login/post">Create System Administrator Account</a></td>
+    <td><p>To create organizations and for other administrative workflows, adopters must create a system administrator account.</p></td>
+  </tr>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/Admin-APIs/paths/~1user~1v1~1admin~1login/post">System Administrator Login</a></td>
+    <td><p>After the System Administrator account is created, system administrators must log in to generate an access_token.</p></td>
   </tr>
 </table>

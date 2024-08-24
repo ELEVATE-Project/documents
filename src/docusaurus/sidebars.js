@@ -55,7 +55,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Set up Organizations Using APIs',
+      label: 'API Reference',
       items: [
         {
           type: 'doc',
@@ -89,14 +89,9 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'api-entitytype', // document ID
-          label: 'Create Entity Types', // sidebar label
+          id: 'api-entitytypeandentity', // document ID
+          label: 'Create Entity Types and Entities', // sidebar label
         },
-        {
-          type: 'doc',
-          id: 'api-entity', // document ID
-          label: 'Create Entities', // sidebar label
-        }
       ]
     },
     {
