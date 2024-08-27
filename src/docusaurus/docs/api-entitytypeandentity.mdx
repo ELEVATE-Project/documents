@@ -31,6 +31,11 @@ For example:
     <th>Description</th>
   </tr>
   <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/User-APIs/paths/~1user~1v1~1account~1login/post">Organization Administrator Login</a></td>
+    <td><p>To carry out administrative functions in the back end such as creating entity types, organization administrators must do the following:</p>
+    <ol><li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li><li>Using APIs, log in to generate an access_token.</li></ol></td>
+  </tr>
+  <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1create/post">Create Entity Types</a></td>
     <td><p>System administrators or organization administrators can create new entity types to achieve the following:</p><ul><li>Define custom properties for sessions or mentors.</li><li>Add new text fields and select fields on the profile or session creation pages.</li><li>Set new default rules for entity types containing a fixed range of entities.</li></ul><p><Admonition type="note"><p>Only system administrators can set the entity type as a search filter on the application.</p></Admonition></p></td>
   </tr>
@@ -55,25 +60,25 @@ For example:
     <th>API Reference</th>
     <th>Description</th>
   </tr>
-    <tr>
+  <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/User-APIs/paths/~1user~1v1~1account~1login/post">Organization Administrator Login</a></td>
-    <td><p>To carry out administrative functions in the back end such as setting  policies and default rules, organization administrators must do the following:</p>
+    <td><p>To carry out administrative functions in the back end such as creating entities, organization administrators must do the following:</p>
     <ol><li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li><li>Using APIs, log in to generate an access_token.</li></ol></td>
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1create/post">Create Entities</a></td>
-    <td><p>Organization administrators can create new entities to achieve the following:</p><ul><li>Define new domain-specific entities and map them to an entity type.</li><li>Add new options to the select fields of session or profile creation pages.</li></ul></td>
+    <td><p>System administrators or organization administrators can create new entities to achieve the following:</p><ul><li>Define new domain-specific entities and map them to an entity type.</li><li>Add new options to the select fields of session or profile creation pages.</li></ul></td>
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1read~1%7Bid%7D/post">Read Entities</a></td>
-    <td>To update or delete entities, organization administrators can obtain the details of entities such as ID and value.</td>
+    <td>To update or delete entities, system administrators or organization administrators can obtain the details of entities such as ID and value.</td>
   </tr>
-    <tr>
+  <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1update~1%7Bid%7D/put">Update Entities</a></td>
-    <td>Organization administrators can modify the existing entities.</td>
+    <td>System administrators or organization administrators can modify the existing entities.</td>
   </tr>
-    <tr>
-    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1delete~1%7Bid%7D/delete">Delete Entity Types</a></td>
-    <td>Organization administrators can delete entities that are no longer needed.</td>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1delete~1%7Bid%7D/delete">Delete Entities</a></td>
+    <td>System administrators or organization administrators can delete entities that are no longer needed.</td>
   </tr>
 </table>
