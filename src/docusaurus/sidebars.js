@@ -84,8 +84,8 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'api-defaultrules', // document ID
-          label: 'Set Default Rules for Organizations', // sidebar label
+          id: 'api-setrules', // document ID
+          label: 'Set Rules for Mentor and Session Discovery', // sidebar label
         },
         {
           type: 'doc',

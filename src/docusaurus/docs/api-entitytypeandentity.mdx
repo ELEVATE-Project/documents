@@ -15,13 +15,17 @@ The types of fields are as follows:
 
   * Multi-select fields: Users can select multiple options.
 
-For entity types containing a fixed range of options, each option is known as an entity. The labels assigned to entities appear as options in the select fields of session or profile creation pages.
+For entity types containing a fixed range of options, each option is known as an entity. The labels assigned to entities appear as options in the single-select or multi-select fields of session or profile creation pages.
 
 For example:
 
   * For a session entity type such as Category, the entities include Communication and Life Skills.
 
   * For a session entity type such as Language, the entities include English and Hindi.
+
+<Admonition type="tip">
+<p>For a given entity type, each organization can define a set of domain-specific entities.</p><p>For example, for an entity type such as <b>Role</b>, the entities defined in the educational domain would include <b>teacher</b> and <b>headmaster</b>. Whereas, the entities defined in the healthcare domain would include <b>physician</b> and <b>specialist</b>.</p>
+</Admonition>
 
 ## Create and Manage Entity Types
 
@@ -37,19 +41,19 @@ For example:
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1create/post">Create Entity Types</a></td>
-    <td><p>System administrators or organization administrators can create new entity types to achieve the following:</p><ul><li>Define custom properties for sessions or mentors.</li><li>Add new text fields and select fields on the profile or session creation pages.</li><li>Set new default rules for entity types containing a fixed range of entities.</li></ul><p><Admonition type="note"><p>Only system administrators can set the entity type as a search filter on the application.</p></Admonition></p></td>
+    <td><p>System administrators or organization administrators can create new entity types to achieve the following:</p><ul><li>Define domain-specific properties for sessions or mentors.</li><li>Add new text fields, and single-select or multi-select fields on the profile or session creation pages.</li><li>Set new default rules for entity types containing a fixed range of entities.</li></ul><p><Admonition type="note"><p>Only system administrators can set the entity type as searchable and filterable on the application.</p></Admonition></p></td>
   </tr>
   <tr>
-    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1read/get">Read Entity Types</a></td>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1read/get">Get Entity Types</a></td>
     <td>To update or delete entity types, system administrators or organization administrators can obtain the details of entity types such as the ID and value.</td>
   </tr>
     <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1update~1%7Bid%7D/post">Update Entity Types</a></td>
-    <td>System administrators or organization administrators can modify the existing entity types.</td>
+    <td><p>System administrators or organization administrators can modify the existing entity types as per the organization's requirements.</p><p><Admonition type="note"><p>The entity types updated by an organization administrator apply only to their specific organization.</p></Admonition></p></td>
   </tr>
     <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1delete~1%7Bid%7D/delete">Delete Entity Types</a></td>
-    <td>System administrators or organization administrators can delete entity types that are no longer needed.</td>
+    <td><p>System administrators or organization administrators can delete entity types that are no longer needed.</p><p><Admonition type="note"><p>The entity types deleted by an organization administrator are applicable only to their specific organization.</p></Admonition></p></td>
   </tr>
 </table>
 
@@ -67,18 +71,18 @@ For example:
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1create/post">Create Entities</a></td>
-    <td><p>System administrators or organization administrators can create new entities to achieve the following:</p><ul><li>Define new domain-specific entities and map them to an entity type.</li><li>Add new options to the select fields of session or profile creation pages.</li></ul></td>
+    <td><p>System administrators or organization administrators can create new entities to achieve the following:</p><ul><li>Define new domain-specific entities and map them to an entity type.</li><li>Add new options to the single-select or multi-select fields of session or profile creation pages.</li></ul></td>
   </tr>
   <tr>
-    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1read~1%7Bid%7D/post">Read Entities</a></td>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1read~1%7Bid%7D/post">Get Entities</a></td>
     <td>To update or delete entities, system administrators or organization administrators can obtain the details of entities such as ID and value.</td>
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1update~1%7Bid%7D/put">Update Entities</a></td>
-    <td>System administrators or organization administrators can modify the existing entities.</td>
+    <td><p>System administrators or organization administrators can modify the existing entities as per the organization's requirements.</p><p><Admonition type="note"><p>The entities updated by an organization administrator apply only to their specific organization.</p></Admonition></p></td>
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity/paths/~1mentoring~1v1~1entity~1delete~1%7Bid%7D/delete">Delete Entities</a></td>
-    <td>System administrators or organization administrators can delete entities that are no longer needed.</td>
+    <td><p>System administrators or organization administrators can delete entities that are no longer needed.</p><p><Admonition type="note"><p>The entities deleted by an organization administrator are applicable only to their specific organization.</p></Admonition></p></td>
   </tr>
 </table>
