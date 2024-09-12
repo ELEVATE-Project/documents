@@ -1,96 +1,111 @@
-import ProfileIcon from './media/profile-icon.png';
-import BurgerMenu from './media/burgermenu-icon.png'
-import ViewMenteeProfile from './media/viewprofile-mentee.png'
-import PortalAppMenu from './media/portal-menteeapplicationmenu.png'
-import EditMenteeProfile from './media/editmenteeprofile.png'
-import PortalEditMenteeProfile from './media/portal-editmenteeprofile.png'
-import CreateProfileOptions from './media/createprofile-options.png'
-import PortalCreateProfileOptions from './media/portal-createprofileoptions.png'
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
+import FormFieldsNote from './_formfieldscustomizability.mdx';
 
-# Creating and Managing a Mentee Profile
+# Creating a Mentee Profile
 
-On the Profile page, you can do the following actions:
+To access the application's features such as enrolling for mentoring sessions, you must provide your profile information after:
 
-<ul>
-<li>Update your profile.</li>
-<li>View the number of sessions attended.</li>
-</ul>
+* Signing up to the application.
 
-## Viewing the Profile Page
+* Logging in to the application if:
+
+  * Your profile is incomplete.
+  * Your organization requires additional mandatory information on your profile.
+
+**To create your profile, do as follows:**
+
+1. After signing up or logging in, click **Continue** on the **Setup profile** dialog.
+
+2. Optionally, to add a profile image, do any one of the following actions:
+
+    * Click <b>Add image</b> and select the image.
+    * To remove an existing image, click <b>Remove image</b>.
+
+3. Enter the following information:
+
+    * <b>Your experience in years</b>
+    * <b>Tell us about yourself</b>
+    * <b>Education qualification</b>
+
+    <FormFieldsNote />
+
+4. To select your location, click the <b>Select your location</b> box and select the location from the menu.
+
+5. Select an option from the following:
+
+    * <b>Your role</b>
+    * <b>Your expertise</b>
+    * <b>Languages</b>
+
+    <p>
+        <Admonition type="tip">
+        <ul>
+        <li>To cancel the selection, click the option again.</li>
+        <li>To add a new option, do as follows:</li>
+            <ol>
+            <li>Click <b>+ Add</b> or <b>+ Other</b> and enter the new option.</li>
+            <li>Click <b>Ok</b>.</li>
+            </ol>
+        <li>To select all the options, turn on the toggle.</li>
+        </ul>
+        </Admonition>
+    </p>
+
+    ![](media/portal-createprofileoptions.png)
+
+6. Click <b>Submit</b>. You have created your profile.
+
+## Accessing the Profile Page
+
+On the profile page, you can do the following actions:
+
+* Update your profile.
+* View the number of sessions attended.
+* View your assigned roles.
 
 To view the Profile page, do one of the following actions:
 
-<ul>
-<li>Do one of the following actions:
-<ul>
-<li>Select <b>Profile</b> from the <b>Application</b> menu.</li>
-<li>Go to the <b>Application</b> menu <img src={BurgerMenu}/> and select <b>Profile</b>.</li>
-</ul>
-<p>
-    <img src={PortalAppMenu} />
-</p>
-</li>
-<li>Go to the <b>Profile</b> tab.
-<p>
-    <img src={ProfileIcon} />
-</p>
-</li>
-</ul>
+* Do one of the following actions:
 
-## Updating your Profile
+    * Select <b>Profile</b> from the <b>Application</b> menu.
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and select <b>Profile</b>.
 
-<Admonition type="note"> 
-<p>You can use the application only after updating your profile.</p>
-</Admonition> 
+    ![](media/portal-menteeapplicationmenu.png)
 
-**To update your profile, do as follows:**
+* Go to the <b>Profile</b> tab.
 
-<ol>
-<li>On the Profile page, click <b>Edit profile</b>.
-<p>
-    <img src={PortalEditMenteeProfile} />
-</p>
-</li>
-<li>Optionally, to update your profile picture, do any one of the following actions: 
-<ul>
-<li>Click <b>Add image</b> and select the image.</li>
-<li>To remove an existing image, click <b>Remove image</b>.</li>
-</ul>
-</li>
-<li>Enter the information in the following boxes:
-    <ul>
-    <li><b>Your experience in years</b></li>
-    <li><b>Tell us about yourself</b></li>
-    <li><b>Education qualification</b></li>
-    </ul>
-</li>
-<li>To select your location, click the <b>Select your location</b> box and select the location from the menu.</li>
-<li>Select an option in the following boxes:
-    <ul>
-    <li><b>Your role</b></li>
-    <li><b>Your expertise</b></li>
-    <li><b>Languages</b></li>
-    </ul>
-<p>
-    <Admonition type="tip">
-    <ul>
-    <li>To cancel the selection, click the option again.</li>
-    <li>To add a new option, do as follows:
-        <ol>
-        <li>Click <b>+ Add new</b> and enter the new option.</li>
-        <li>Click <b>Ok</b>.</li>
-        </ol>
-    </li>
-    <li>To select all the options, turn on the toggle.</li>
-    </ul>
-    </Admonition>
-</p>
-<p>
-    <img src={PortalCreateProfileOptions} />
-</p>
-</li>
-<li>Click <b>Submit</b>. The profile details are updated.</li>
-</ol>
+    ![](media/profile-icon.png)
+
+###  Updating Your Profile
+
+**To modify your current profile information, do as follows:**
+
+1. Click <b>Edit profile</b> on the Profile page.
+
+    ![](media/portal-editmenteeprofile.png)
+
+2. Make the necessary changes to:
+
+    * Your profile information.
+
+    * Your profile image. To update the profile image, do any one of the following actions:
+
+        * Click <b>Add image</b> and select the image.
+        * To remove an existing image, click <b>Remove image</b>.
+
+3. Click <b>Submit</b>. Your profile is updated.
+
+### Viewing Your Assigned roles
+
+You can view the list of additional roles (such as mentor, session manager, and organization administrator) that are assigned to you by an organization.
+
+To view the list of assigned roles, do any one of the following actions:
+
+* Click the **View roles** link on the Profile page.
+
+* Do one of the following actions:
+
+    * Click the **View roles** link on the <b>Application</b> menu
+    * Go to the <b>Application</b> menu ![burger menu](media/burgermenu-icon.png) and click **View roles** link.
+
+![](media/viewroles-mentee.png)

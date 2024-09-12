@@ -1,0 +1,67 @@
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+
+# Multi-Tenant Architecture
+
+The <PartialExample mentored /> platform has a multi-tenant architecture, and adopters can:
+
+1. Set up the application using the microservices.
+
+2. Create multiple organizations and assign administrators for each organization.
+
+![](media/saasarchitecture.png)
+
+## Default Organization
+
+After setting up the application, a **Default** organization is created. Users who are not part of any organization are added to **Default** and the system administrator acts as the organization administrator.
+
+<p>  
+    <Admonition type="info">
+    <p>See the following topics to learn more about the Organization Administrator role:</p>
+    <ul>
+    <li><a href="bulkupload">Uploading Users to the Application</a></li>
+    <li><a href="managementorrequests">Managing Requests to Become a Mentor</a></li>
+    </ul>
+    </Admonition>
+</p>
+
+## Assigning Users to Organizations
+
+Users who sign up using a shared link are assigned a mentee (default) role. The mentee's organization is detected based on the organizational domain in the email ID.
+
+If the organization uploads email IDs to the platform, the users would receive email invites. The administrator can pre-register email IDs that belong to corporate as well as public domains. After signing up, such users are detected as organizational users in the application.
+
+<p>  
+    <Admonition type="note">
+    <p>After signing up, if the email ID is not registered by the organization or if it does not belong to the organizational domain, the user is added to the <b>Default</b> organization.</p>
+    </Admonition>
+</p>
+
+## Policy Architecture
+
+Organization administrators can use policies to manage access to mentees, mentors, and sessions across organizations.
+
+<p>  
+  <Admonition type="info">
+  <p>To learn more about configuring policies for an organization, see <a href="api-setpolicies">Setting Policies for an Organization Using APIs</a>.</p>
+  </Admonition>
+</p>
+
+<table>
+  <tr>
+    <th>Types of Policies</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td><p>If the policy is set to <b>All</b>, the organization’s mentees, mentors, or sessions can be accessed by other organizations. Similarly, the organization’s users can access mentees, mentors, or sessions of other organizations.</p><p><Admonition type="note"><p>Restrictions set by other organizations will be applicable for users.</p></Admonition></p></td>
+  </tr>
+  <tr>
+    <td>Current</td>
+    <td><p>If the policy is set to <b>Current</b>, only users belonging to the organization can access the mentors, mentees, or sessions. Similarly, the organization’s users cannot access mentees, mentors, or sessions of other organizations.</p></td>
+  </tr>
+  <tr>
+    <td>Associated</td>
+    <td><p>The <b>Associated</b> policy provides users with access to mentors, mentees, or sessions across multiple organizations.</p><p>For example, if organizations A and B are linked with the <b>Associated</b> policy, only users belonging to these two organizations can access the mentors, mentees, or sessions of both organizations.</p></td>
+  </tr>
+</table>

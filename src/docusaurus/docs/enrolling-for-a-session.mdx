@@ -1,19 +1,6 @@
 import PartialExample from './_mentored.mdx';
-import EnrollButton from './media/enrollbutton.png';
-import MentorProfileEnroll from './media/mentorprofile-enroll.png'
-import SessionDetailsEnroll from './media/sessiondetailsenroll.png'
-import SessionTileEnroll from './media/sessiontile-enroll.png'
-import SearchSessions from './media/search-sessions.png'
-import PortalSearchSessions from './media/portal-searchsessions.png'
-import CancelEnrollment from './media/cancel-enrollment.png'
-import PortalMentorProfileEnroll from './media/portal-mentorprofileenroll.png'
-import PortalEnrollButton from './media/portal-enrollbutton.png'
-import PortalSessionTileEnroll from './media/portal-sessiontileenroll.png'
-import PortalSessionDetailsEnroll from './media/portal-sessiondetailsenroll.png'
-import PortalCancelEnrollment from './media/portal-cancelenrollment.png'
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
+import SearchSession from './_searchsession.mdx';
 
 # Enrolling for a Session
 
@@ -27,66 +14,51 @@ You can explore Public sessions on <PartialExample mentored /> and sign up for s
 </ul>
 </Admonition>
 
-<p>You can enroll for Public sessions in one of the following ways:</p>
-<ul>
-<li>Using the <b>All sessions</b> tab</li>
-<li>Using the mentor profile</li>
-<li>Using the Session details page</li>
-<li>Using the <b>Search</b> bar</li>
-</ul>
+You can enroll for Public sessions in one of the following ways:
+
+* Using the **All sessions** tab
+* Using the mentor profile
+* Using the Session details page
+* Using the **Search** box
 
 ## Using the All Sessions Tab
-<ol>
-<li>On the Home page, go to the <b>All sessions</b> tab.</li>
-<li>Find a session of interest and click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
-<p>
-    <img src={PortalEnrollButton} />
-</p>
-</li>
-</ol>
+
+1. On the Home page, go to the **All sessions** tab.
+
+2. Find a session of interest and click **Enroll**. The enrolled sessions are listed on the **Enrolled sessions** tab of the Home page.
+
+    ![](media/portal-enrollbutton.png)
 
 ## Using the Mentor Profile
 
 <Admonition type="info">
 <p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
 </Admonition>
-<p><b>To enroll for a session using the mentor profile, do as follows:</b></p>
-<ol>
-<li>On the Mentor Profile page, go to the <b>Upcoming sessions</b> tab.</li>
-<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
-<p>
-    <img src={PortalMentorProfileEnroll} />
-</p>
-</li>
-</ol>
+
+**To enroll for a session using the mentor profile, do as follows:**
+
+1. On the Mentor Profile page, go to the **Upcoming sessions** tab.
+
+2. Click **Enroll**. The enrolled sessions are listed on the **Enrolled sessions** tab of the Home page.
+
+    ![](media/portal-mentorprofileenroll.png)
 
 ## Using the Session Details Page
 
-<ol>
-<li>Find a session from the <b>All sessions</b> tab or the Mentor Profile page.</li>
-<li>Click the session tile to view the Session Details page.
-<p>
-    <img src={PortalSessionTileEnroll} />
-</p>
-</li>
-<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
-<p>
-    <img src={PortalSessionDetailsEnroll} />
-</p>
-</li>
-</ol>
+1. Find a session from the **All sessions** tab or the Mentor Profile page.
 
-## Using the Search Bar
+2. Click the session tile to view the Session Details page.
 
-<ol>
-<li>In the <b>Search</b> bar of the Home page, click the <b>Sessions</b> tab.
-<p>
-    <img src={PortalSearchSessions} />
-</p>
-</li>
-<li>Type the session name and click the <b>Search</b> button.</li>
-<li>Click <b>Enroll</b>. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.</li>
-</ol>
+    ![](media/portal-sessiontileenroll.png)
+
+3. Click **Enroll**. The enrolled sessions are listed on the **Enrolled sessions** tab of the Home page.
+
+    ![](media/portal-sessiondetailsenroll.png)
+
+## Using the Search Box
+
+1. <SearchSession />
+2. Click **Enroll**. The enrolled sessions are listed on the <b>Enrolled sessions</b> tab of the Home page.
 
 ## Cancelling Your Enrollment
 
@@ -97,15 +69,14 @@ You can explore Public sessions on <PartialExample mentored /> and sign up for s
 </ul>
 </Admonition>
 
-<p><b>To cancel your enrollment, do as follows:</b></p>
+**To cancel your enrollment, do as follows:**
 
-<ol>
-<li>On your Home page, go to the <b>Enrolled sessions</b> tab.</li>
-<li>Click the session tile.</li>
-<li>Click <b>Unenroll</b>.
-<p>
-    <img src={PortalCancelEnrollment} />
-</p>
-</li>
-<li>Click <b>Unenroll</b> on the confirmation dialog. The session is removed from the <b>Enrolled sessions</b> tab of the Home page.</li>
-</ol>
+1. On your Home page, go to the **Enrolled sessions** tab.
+
+2. Click the session tile.
+
+3. Click **Unenroll**.
+
+    ![](media/portal-cancelenrollment.png)
+
+4. Click **Unenroll** on the confirmation dialog. The session is removed from the **Enrolled sessions** tab of the Home page.

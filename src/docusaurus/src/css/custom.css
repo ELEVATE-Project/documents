@@ -59,3 +59,23 @@
   float: right; 
   padding: 10px;
 }
+
+/* Spacing after list item */
+
+li {
+  margin-bottom: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+h4 {
+  font-size: 16pt;
+}
+
+/* Created for database design */
+
+.dbDigr {
+  width: 1100px; 
+}

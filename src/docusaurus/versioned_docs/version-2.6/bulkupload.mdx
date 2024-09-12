@@ -1,0 +1,53 @@
+import Admonition from '@theme/Admonition';
+
+# Uploading Users to the Application
+
+Using a CSV file, organization administrators can upload the list of users to the application to:
+
+* Invite new users with preassigned roles (mentor and mentee).
+
+* Invite new users (mentor or mentee) with Session Manager privileges.
+
+* Invite registered users to the organization. After uploading the list of registered users, they are assigned an organization.
+
+* Allow registered users to host sessions by changing the role to mentor.
+
+* Provide Session Manager privileges to a registered user.
+
+**To upload users to the application, do as follows:**
+
+1. Do one of the following actions:
+    * Select **Workspace** from the **Application** menu.
+    * Go to the **Application** menu ![burger menu](media/burgermenu-icon.png) and select **Workspace**.
+
+2. On the Workspace page, click **Manage user**.
+
+3. On the **Bulk Upload** tab, click **Download sample CSV** to download the sample CSV file.
+
+    ![](media/orgadmin-bulkupload.png)
+
+4. Open the downloaded CSV file and clear the sample details.
+
+5. Enter the user's information such as:
+
+    * Name
+    * Email ID
+    * Assigned role
+
+    <Admonition type="note">
+    <p>To assign Session Manager permissions to a user, enter the role in one of the following formats:</p>
+    <ul>
+    <li>mentee,session_manager</li>
+    <li>mentor,session_manager</li>
+    </ul>
+    </Admonition>
+ 
+6. On the **Bulk Upload** tab, click **Upload CSV** and upload the file containing the list of users.
+
+    <Admonition type="tip">
+    <p>You will receive an email notification containing a CSV file with the following information about the listed users:</p>
+    <ul>
+    <li>Assigned user ID</li>
+    <li>Whether the user uploaded to the application already exists</li>
+    </ul>
+    </Admonition>
