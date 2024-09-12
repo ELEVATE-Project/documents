@@ -1,0 +1,38 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ReactPlayer from 'react-player';
+import portalOverview from './media/portaloverview.mp4';
+import mobileOverview from './media/mobileoverview.mp4';
+import Admonition from '@theme/Admonition';
+import ProductName from './_projects.mdx';
+
+# Getting Started with Projects
+
+After receiving the application's link, you can get started using one of the following ways:
+
+* Click the link to view the portal on the web browser.
+
+  <p>
+    <Admonition type="note">
+    <ul>
+    <li>If the web portal does not load, update your web browser and retry.</li>
+    <li>The supported web browsers are Google Chrome, Firefox, and Safari.</li>
+    </ul>
+    </Admonition>
+  </p>
+
+* To install the application on your device, do one of the following actions:
+
+    * Select the <b>Install</b> option on the web browser.
+    * Select the <b>Add to Home screen</b> option on the web browser.
+
+<Tabs>
+<TabItem value="projects portal" label="Web Portal" default>
+<ReactPlayer playing controls url={portalOverview} loop="false" />
+</TabItem>
+<TabItem value="projects mobile application" label="Mobile App">
+<ReactPlayer playing controls url={mobileOverview} loop="false" />
+</TabItem>
+</Tabs>
+
+To learn more about signing up and accessing the <productName /> capabilities, refer <a href="signup">Signing up on Projects</a>.
