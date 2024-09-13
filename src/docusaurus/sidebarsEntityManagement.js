@@ -18,7 +18,7 @@ const sidebars = {
       {
         type: 'doc',
         id: 'setup-entitymanagementservice',
-        label: 'Setting up entity Management Service',
+        label: 'Setting up Entity Management Service',
       },
     ],
   };

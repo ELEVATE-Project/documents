@@ -92,11 +92,6 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'subtasks', // document ID
-          label: 'Managing Subtasks', // sidebar label
-        },
-        {
-          type: 'doc',
           id: 'share-projectsandtasks', // document ID
           label: 'Sharing Projects and Tasks', // sidebar label
         },
