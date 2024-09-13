@@ -112,15 +112,6 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'reports',
-        path: 'reports',
-        routeBasePath: 'reports',
-        sidebarPath: require.resolve('./sidebarsReports.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'userservice',
         path: 'userservice',
         routeBasePath: 'userservice',
@@ -221,13 +212,6 @@ const config = {
           docsPluginId: 'observationsorsurveys',
           position: 'left',
           label: 'Observations/Surveys',
-        },
-        {
-          type: 'doc',
-          docId: 'intro',
-          docsPluginId: 'reports',
-          position: 'left',
-          label: 'Reports',
         },
         {
           type: 'dropdown',
