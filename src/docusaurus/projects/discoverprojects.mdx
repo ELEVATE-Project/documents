@@ -1,8 +1,5 @@
-import ProjectDetails from './media/projectdetails.png'
-import TaskDetails from './media/taskdetails.png'
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
+import ProjectAndTaskDetails from './_projectandtaskdetails.mdx'
 
 # Discovering Projects
 
@@ -20,25 +17,7 @@ You can discover projects using any one of the following ways:
     <p>For more information on installing the mobile app, see <a href="gettingstarted">Getting Started with Projects</a>.</p>
     </Admonition>
 
-<Tabs>
-<TabItem value="project" label="Project Details" default>
-<p>On the <b>Project details</b> tab, you can view the following details:</p>
-<ul>
-<li>Project's information such as objective, recommended for, duration, and learning resources that provide additional information about the project.</li>
-<li>If the Project includes certificates, the criteria for earning certificates are specified.</li>
-</ul>
-<img src={ProjectDetails} />
-</TabItem>
-<TabItem value="task" label="Task Details">
-<p>On the <b>Task details</b> tab, you can view the following details:</p>
-<ul>
-<li>The mandatory and non-mandatory tasks.</li>
-<li>Relevant learning resources.</li>
-<li>Scheduled date of completion, if specified.</li>
-</ul>
-<img src={TaskDetails} />
-</TabItem>
-</Tabs>
+<ProjectAndTaskDetails />
 
 ## Starting Your Discovered Projects
 
