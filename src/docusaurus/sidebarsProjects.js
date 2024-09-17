@@ -104,6 +104,11 @@ const sidebars = {
           type: 'doc',
           id: 'accesscertificates', // document ID
           label: 'Accessing Certificates', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'projectreport', // document ID
+          label: 'Accessing Reports', // sidebar label
         }
       ]
     },
