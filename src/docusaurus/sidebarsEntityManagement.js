@@ -20,6 +20,11 @@ const sidebars = {
         id: 'setup-entitymanagementservice',
         label: 'Setting up Entity Management Service',
       },
+      {
+        type: 'doc',
+        id: 'database-entitymanagement',
+        label: 'Database Design',
+      },
     ],
   };
   

@@ -110,6 +110,22 @@ const sidebars = {
           id: 'projectreport', // document ID
           label: 'Accessing Reports', // sidebar label
         }
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Additional Technical Resources',
+      items: [
+        {
+          type: 'doc',
+          id: 'database-projects', // document ID
+          label: 'Database Design', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'repos', // document ID
+          label: 'Source Code Repositories', // sidebar label
+        }
       ]
     },
   ]
