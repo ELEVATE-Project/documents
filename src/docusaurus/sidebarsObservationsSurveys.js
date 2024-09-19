@@ -20,6 +20,11 @@ const sidebars = {
         id: 'intro',
         label: 'Introduction',
       },
+      {
+        type: 'doc',
+        id: 'settingup-overview',
+        label: 'Hosting and Customizing Your Instance',
+      },
     ],
   };
   
