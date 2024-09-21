@@ -16,14 +16,46 @@ const sidebars = {
     // By default, Docusaurus generates a sidebar from the docs folder structure
     tutorialSidebar: [
       {
-        type: 'doc',
-        id: 'intro',
-        label: 'Introduction',
-      },
+        type: 'category',
+        label: 'Getting Started',
+        items: [
+          {
+            type: 'doc',
+            id: 'intro', // document ID
+            label: 'Introduction', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'technicalarchitecture', // document ID
+            label: 'Architecture', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'key-capabilities', // document ID
+            label: 'Key Capabilities', // sidebar label
+          },
+        ]
+      }, 
       {
         type: 'doc',
         id: 'settingup-overview',
         label: 'Hosting and Customizing Your Instance',
+      },
+      {
+        type: 'category',
+        label: 'Using the Application',
+        items: [
+          {
+            type: 'doc',
+            id: 'using-the-application', // document ID
+            label: 'About the Application', // sidebar label
+          },
+        ]
+      },
+      {
+        type: 'doc',
+        id: 'repos', // document ID
+        label: 'Source Code Repositories', // sidebar label
       },
     ],
   };
