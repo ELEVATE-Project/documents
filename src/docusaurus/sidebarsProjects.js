@@ -72,8 +72,8 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'assignedprojects', // document ID
-          label: 'Accessing Assigned Projects', // sidebar label
+          id: 'accessprojects', // document ID
+          label: 'Accessing Projects', // sidebar label
         },
         {
           type: 'doc',

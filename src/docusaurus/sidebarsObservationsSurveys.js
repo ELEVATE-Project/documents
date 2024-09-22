@@ -50,6 +50,16 @@ const sidebars = {
             id: 'using-the-application', // document ID
             label: 'About the Application', // sidebar label
           },
+          {
+            type: 'doc',
+            id: 'accesssurvey', // document ID
+            label: 'Accessing Surveys', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'startsurvey', // document ID
+            label: 'Adding Responses to Surveys', // sidebar label
+          },
         ]
       },
       {
