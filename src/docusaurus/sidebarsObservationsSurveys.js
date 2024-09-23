@@ -57,6 +57,26 @@ const sidebars = {
           },
           {
             type: 'doc',
+            id: 'gettingstarted', // document ID
+            label: 'Getting Started with the Application', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'signup', // document ID
+            label: 'Signing up', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'login', // document ID
+            label: 'Logging in', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'profile', // document ID
+            label: 'Updating Your Profile', // sidebar label
+          },
+          {
+            type: 'doc',
             id: 'accesssurvey', // document ID
             label: 'Accessing Surveys', // sidebar label
           },
