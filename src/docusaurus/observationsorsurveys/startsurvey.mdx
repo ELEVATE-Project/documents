@@ -1,4 +1,6 @@
 import Admonition from '@theme/Admonition';
+import SliderQuestion from './media/sliderquestion.png'
+import MatrixQuestion from './media/matrixquestion.png'
 
 # Adding Responses to Surveys
 
@@ -14,12 +16,12 @@ import Admonition from '@theme/Admonition';
         <th>Response</th>
     </tr>
     <tr>
-        <td>MCQ (Multiple-Choice Question)</td>
-        <td><p>Allows you to select one or more options.</p><p>In some cases, You will be posed with questions based on the option selected in the previous MCQ. For example, if you select <i>Yes</i> to a question such as <i>Do you wish to pursue higher education?</i>, you may be posed with questions where you can select the university you want to apply.</p></td>
+        <td>Single-select or multi-select questions</td>
+        <td><p>Allows you to select one or more options.</p><p>In some cases, You will be posed with questions based on the option selected in the previous question. For example, if you select <i>Yes</i> to a question such as <i>Do you wish to pursue higher education?</i>, you may be posed with questions where you can select the university you want to apply.</p></td>
     </tr>
     <tr>
         <td>Slider question</td>
-        <td>Drag the slider to select the numerical value.</td>
+        <td><p>Drag the slider to select the numerical value.</p><p><img src={SliderQuestion} /></p></td>
     </tr>
     <tr>
         <td>Date-type question</td>
@@ -31,7 +33,7 @@ import Admonition from '@theme/Admonition';
     </tr>
     <tr>
         <td>Matrix question</td>
-        <td><p>Click on <b>Add Matrix</b> to define parameters and add your responses for each. For example, for a question such as <i>How much do you rate the training program?</i> you can add parameters such as topics covered during the training and provide a rating for each parameter.</p><p>To add or modify responses to a matrix question, do as follows:</p><ol><li>Click <b>Add Matrix</b>.</li><li>Click the parameter and add your responses in formats such as entering text or selecting an option, as specified by the question.</li><li>Click <b>Submit</b>. Your responses are saved.</li></ol><p>To delete a parameter, click the <b>Remove instance</b> icon.</p></td>
+        <td><p>You can define parameters and provide responses for each one. For example, for a question such as <i>How much do you rate the training program?</i> you can add parameters such as topics covered during the training and provide a rating for each parameter.</p><p><img src={MatrixQuestion} /></p><p>To add or modify responses to a matrix question, do as follows:</p><ol><li>Click <b>Add</b>.</li><li>Click the parameter and add your responses in formats such as entering text or selecting an option, as specified by the question.</li><li>Click <b>Submit</b>. Your responses are saved.</li></ol><p>To delete a parameter, click the <b>Remove instance</b> icon.</p></td>
     </tr>
     </table>
 
@@ -41,7 +43,7 @@ import Admonition from '@theme/Admonition';
 
     2. Read the content policy and select the checkbox to confirm that the uploaded evidence complies with the content policy.
 
-5. Optionally, to provide additional information about the response selected, click **Add remarks** and add the information.
+5. Optionally, to provide additional information about your response, click **Add remarks** and add the information.
 
 6. Click **Save**.
 
@@ -57,7 +59,7 @@ You can gain clarity on the expected response for a question using any one of th
 
 * View the tip (or prompt) that is provided along with the question.
 
-* Click **Hint** 
+* Click **Hint** ![](media/hint.png).
 
 ## Using the Question Map
 
@@ -67,7 +69,9 @@ You can access the Question Map to do the following actions:
 
 * Navigate to a specific question on a page.
 
-To view the Question map, click .
+To view the Question map, click **Question Map**.
+
+![](media/questionmap.png)
 
 ## Submitting the Responses
 

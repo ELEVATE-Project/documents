@@ -42,6 +42,11 @@ const sidebars = {
         label: 'Hosting and Customizing Your Instance',
       },
       {
+        type: 'doc',
+        id: 'createquestionnaires', // document ID
+        label: 'Creating Questionnaires for Surveys', // sidebar label
+      },
+      {
         type: 'category',
         label: 'Using the Application',
         items: [
@@ -59,6 +64,11 @@ const sidebars = {
             type: 'doc',
             id: 'startsurvey', // document ID
             label: 'Adding Responses to Surveys', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'surveyreports', // document ID
+            label: 'Accessing Survey Reports', // sidebar label
           },
         ]
       },
