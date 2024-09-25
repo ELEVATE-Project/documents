@@ -98,9 +98,20 @@ const sidebars = {
         ]
       },
       {
-        type: 'doc',
-        id: 'repos', // document ID
-        label: 'Source Code Repositories', // sidebar label
+        type: 'category',
+        label: 'Additional Technical Resources',
+        items: [
+          {
+            type: 'doc',
+            id: 'database-survey', // document ID
+            label: 'Database Design', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'repos', // document ID
+            label: 'Source Code Repositories', // sidebar label
+          }
+        ]
       },
     ],
   };
