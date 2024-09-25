@@ -72,8 +72,8 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'accessprojects', // document ID
-          label: 'Accessing Projects', // sidebar label
+          id: 'viewprojects', // document ID
+          label: 'Viewing Projects', // sidebar label
         },
         {
           type: 'doc',
@@ -102,14 +102,19 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'accesscertificates', // document ID
-          label: 'Accessing Certificates', // sidebar label
+          id: 'viewcertificates', // document ID
+          label: 'Viewing Certificates', // sidebar label
         },
         {
           type: 'doc',
           id: 'projectreport', // document ID
-          label: 'Accessing Reports', // sidebar label
-        }
+          label: 'Viewing Reports', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'faq', // document ID
+          label: 'FAQs', // sidebar label
+        },
       ],
     },
     {

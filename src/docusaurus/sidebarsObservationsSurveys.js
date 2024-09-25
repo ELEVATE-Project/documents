@@ -77,8 +77,8 @@ const sidebars = {
           },
           {
             type: 'doc',
-            id: 'accesssurvey', // document ID
-            label: 'Accessing Surveys', // sidebar label
+            id: 'viewsurvey', // document ID
+            label: 'Viewing Surveys', // sidebar label
           },
           {
             type: 'doc',
@@ -88,7 +88,12 @@ const sidebars = {
           {
             type: 'doc',
             id: 'surveyreports', // document ID
-            label: 'Accessing Survey Reports', // sidebar label
+            label: 'Viewing Survey Reports', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'faq', // document ID
+            label: 'FAQs', // sidebar label
           },
         ]
       },
