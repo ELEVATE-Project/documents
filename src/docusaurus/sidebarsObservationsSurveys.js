@@ -44,7 +44,7 @@ const sidebars = {
       {
         type: 'doc',
         id: 'createquestionnaires', // document ID
-        label: 'Creating Questionnaires for Surveys', // sidebar label
+        label: 'Creating Questionnaires', // sidebar label
       },
       {
         type: 'category',
