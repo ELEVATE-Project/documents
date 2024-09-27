@@ -51,7 +51,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'policyarchitecture', // document ID
-      label: 'Multi-Tenant Architecture', // sidebar label
+      label: 'Setting up Organizational Rules and Policies', // sidebar label
     },
     {
       type: 'category',
@@ -61,21 +61,6 @@ const sidebars = {
           type: 'doc',
           id: 'api-overview', // document ID
           label: 'Overview', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-setupsystemadministrator', // document ID
-          label: 'Create a System Administrator Account', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-setuporganizations', // document ID
-          label: 'Create Organizations', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-manageorganizations', // document ID
-          label: 'Manage Organizations', // sidebar label
         },
         {
           type: 'doc',

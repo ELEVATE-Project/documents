@@ -1,5 +1,4 @@
 import Admonition from '@theme/Admonition';
-import PartialExample from './_mentored.mdx';
 
 # Manage Organizations
 
@@ -18,7 +17,7 @@ After creating organizations, administrators can manage the organization's detai
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/Organization/operation/updateOrganization">Update Organizations</a></td>
-    <td><p>System administrators can update an organization's details such as name and description.</p><p>They can also specify organizations that are related through an Associated policy. To learn more about the types of policies that can be configured, see <a href="policyarchitecture#policy-architecture">Policy Architecture</a></p></td>
+    <td><p>System administrators can update an organization's details such as name and description and specify its associated organizations.</p></td>
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/Admin-APIs/paths/~1user~1v1~1admin~1deactivateOrg~1%7Bid%7D/post">Deactivate Organizations</a></td>
@@ -36,7 +35,7 @@ After creating organizations, administrators can manage the organization's detai
     <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/User-APIs/paths/~1user~1v1~1account~1login/post">Organization Administrator Login</a></td>
     <td><p>To carry out administrative functions in the back end such as updating the organization's details, organization administrators must do the following:</p>
-    <ol><li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li><li>Using APIs, log in to generate an access_token.</li></ol></td>
+    <ol><li>After receiving the application's link through email, organization administrators must sign up on the application.</li><li>Using APIs, log in to generate an access_token.</li></ol></td>
   </tr>
   <tr>
     <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/Organization/paths/~1user~1v1~1organization~1list/get">Get Organization Details</a></td>
