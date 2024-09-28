@@ -52,6 +52,11 @@ const sidebars = {
       items: [
         {
           type: 'doc',
+          id: 'using-the-application', // document ID
+          label: 'About the Application', // sidebar label
+        },
+        {
+          type: 'doc',
           id: 'gettingstarted', // document ID
           label: 'Getting Started with the Application', // sidebar label
         },
