@@ -94,6 +94,24 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'projects',
+        path: 'projects',
+        routeBasePath: 'projects',
+        sidebarPath: require.resolve('./sidebarsProjects.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'observationsorsurveys',
+        path: 'observationsorsurveys',
+        routeBasePath: 'observationsorsurveys',
+        sidebarPath: require.resolve('./sidebarsObservationsSurveys.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'userservice',
         path: 'userservice',
         routeBasePath: 'userservice',
@@ -139,6 +157,15 @@ const config = {
         },
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'entitymanagementservice',
+        path: 'entitymanagementservice',
+        routeBasePath: 'entitymanagementservice',
+        sidebarPath: require.resolve('./sidebarsEntityManagement.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -174,25 +201,49 @@ const config = {
         },
         {
           type: 'doc',
-          docId: 'settingup-userservice',
-          docsPluginId: 'userservice',
+          docId: 'intro',
+          docsPluginId: 'projects',
           position: 'left',
-          label: 'User Service',
+          label: 'Projects',
         },
         {
           type: 'doc',
-          docId: 'settingup-notificationservice',
-          docsPluginId: 'notificationservice',
+          docId: 'intro',
+          docsPluginId: 'observationsorsurveys',
           position: 'left',
-          label: 'Notification Service',
+          label: 'Observations/Surveys',
         },
         {
-          type: 'doc',
-          docId: 'settingup-schedulerservice',
-          docsPluginId: 'schedulerservice',
+          type: 'dropdown',
+          label: 'Supporting Services',
           position: 'left',
-          label: 'Scheduler Service',
-        }, 
+          items: [
+            {
+              type: 'doc',
+              docId: 'settingup-userservice',
+              docsPluginId: 'userservice',
+              label: 'User Service',
+            },
+            {
+              type: 'doc',
+              docId: 'settingup-notificationservice',
+              docsPluginId: 'notificationservice',
+              label: 'Notification Service',
+            },
+            {
+              type: 'doc',
+              docId: 'settingup-schedulerservice',
+              docsPluginId: 'schedulerservice',
+              label: 'Scheduler Service',
+            },
+            {
+              type: 'doc',
+              docId: 'setup-entitymanagementservice',
+              docsPluginId: 'entitymanagementservice',
+              label: 'Entity Management Service',
+            },
+          ],
+        },         
         {
           href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',

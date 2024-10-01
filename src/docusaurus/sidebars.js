@@ -47,58 +47,49 @@ const sidebars = {
           label: 'Key Capabilities', // sidebar label
         },
       ]
-    }, 
-    {
-      type: 'doc',
-      id: 'policyarchitecture', // document ID
-      label: 'Multi-Tenant Architecture', // sidebar label
-    },
-    {
-      type: 'category',
-      label: 'API Reference',
-      items: [
-        {
-          type: 'doc',
-          id: 'api-overview', // document ID
-          label: 'Overview', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-setupsystemadministrator', // document ID
-          label: 'Create a System Administrator Account', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-setuporganizations', // document ID
-          label: 'Create Organizations', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-manageorganizations', // document ID
-          label: 'Manage Organizations', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-setpolicies', // document ID
-          label: 'Set Policies for Organizations', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-setrules', // document ID
-          label: 'Set Rules for Mentor and Session Discovery', // sidebar label
-        },
-        {
-          type: 'doc',
-          id: 'api-entitytypeandentity', // document ID
-          label: 'Create Entity Types and Entities', // sidebar label
-        },
-      ]
     },
     {
       type: 'doc',
       id: 'settingup-overview', // document ID
       label: 'Hosting and Customizing Your Instance', // sidebar label
-    }, 
+    },
+    {
+      type: 'category',
+      label: 'Setting up Organizational Rules and Policies',
+      items: [
+        {
+          type: 'doc',
+          id: 'policyarchitecture', // document ID
+          label: 'About Organizational Rules and Policies', // sidebar label
+        },
+        {
+          type: 'category',
+          label: 'API Reference',
+          items: [
+            {
+              type: 'doc',
+              id: 'api-overview', // document ID
+              label: 'Overview', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'api-setpolicies', // document ID
+              label: 'Set Policies for Organizations', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'api-setrules', // document ID
+              label: 'Set Rules for Mentor and Session Discovery', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'api-entitytypeandentity', // document ID
+              label: 'Create Entity Types and Entities', // sidebar label
+            },
+          ]
+        },
+      ]
+    },
     {
       type: 'category',
       label: 'Using the Application',

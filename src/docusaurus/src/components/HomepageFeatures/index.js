@@ -25,8 +25,8 @@ const FeatureList = [
         and provides the ability to access and record data, using they can derive learnings and plan improvement journeys.
       </>
     ),
-    linkUrl: '',
-    linkUrlText: '',
+    linkUrl: '/observationsorsurveys/intro',
+    linkUrlText: 'Click here to learn more',
   },
   {
     title: 'Projects',
@@ -37,8 +37,8 @@ const FeatureList = [
        to manage and monitor improvements.
       </>
     ),
-    linkUrl: '',
-    linkUrlText: '',
+    linkUrl: '/projects/intro',
+    linkUrlText: 'Click here to learn more',
   },
   {
     title: 'Reports',
