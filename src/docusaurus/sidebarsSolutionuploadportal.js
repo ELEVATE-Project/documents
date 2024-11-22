@@ -18,19 +18,24 @@ const sidebars = {
       {
         type: 'doc',
         id: 'settingup-templates',
-        label: 'Setting up Solution Templates',
+        label: 'Introduction',
       },
 
       {
         type: 'doc',
         id: 'download-upload templates',
-        label: 'Download/Upload Templates',
+        label: 'Creating Solutions',
     },
     {
       type: 'doc',
       id: 'view-solutions',
       label: 'View Solutions',
-  }
+  },
+  {
+    type: 'doc',
+    id: 'hosting-solutionuploadportal',
+    label: 'Hosting and Customizing Your Instance',
+    }  
      
     ],
   };

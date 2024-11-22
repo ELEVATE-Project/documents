@@ -1,0 +1,118 @@
+# Hosting Solution Upload Portal
+
+
+The application consists of two components:
+
+1. Backend: A Python-based service that handles data and storage.
+2. Frontend: An Angular-based web application for user interactions.
+
+## Repositories
+* Backend Repository: https://github.com/ELEVATE-Project/solution-upload-portal-service
+
+* 
+Frontend Repository: https://github.com/ELEVATE-Project/solution-upload-portal
+
+## How to set up the backend using Python and MongoDB
+Repository: <a href="https://github.com/ELEVATE-Project/solution-upload-portal-service">solution-upload-portal-service</a>.
+
+
+
+The backend is a Python service for data upload validation and creating the Solutions. Development and deployment are centralized on the main branch.
+
+#### Backend Requirements
+1. Python Dependencies
+2. MongoDB Data Restore
+
+#### Python Dependencies
+
+Two methods are available for installing Python dependencies:
+
+1. Using Conda (Recommended)    
+
+   **conda env create -f environment.yml**   
+   **conda activate templateValidation**   
+     
+      
+2. Using Virtual Environment
+
+  **python -m venv env_name**    
+  **source env_name/bin/activate**    
+  **pip install -r requirements.txt**  
+     
+
+#### MongoDB Data Restore
+
+To restore MongoDB data:
+
+1. Navigate to the data directory.
+2. Run the following command:
+   mongorestore --host localhost --port 27017 --db solutionUpload --gzip ./
+
+#### Execution
+
+Navigate to the backend source folder and run the following command:    
+**cd apiServices/src/main/**    
+**python app.py**   
+
+
+#### Sample .env File
+
+FLASK_APP = app.py    
+FLASK_RUN_PORT = 5000    
+HOSTIP = "Add server IP address"   
+mongoURL = "Add server MongoDB URL"   
+db = templateValidation    
+userCollection = users   
+conditionsCollection = conditions  
+validationsCollection = validation  
+sampleTemplatesCollection = sampleTemplates   
+
+#### Authentication
+SECRET_KEY = "98bcbfb0f82aff815f17d5bfed66c1f4"
+admin-token = "16c6a8b5cbad36c887e74eed42454241
+
+## How to set up the frontend using Angular CLI
+
+Repository: <a href="https://github.com/ELEVATE-Project/solution-upload-portal">solution-upload-portal</a>. 
+
+The frontend is developed using Angular and requires Angular CLI version 13.3.9.
+
+#### Development Server
+
+To start the development server:   
+   **ng serve**   
+   Access the application at: http://localhost:4200/   
+   The server automatically reloads on source file changes.
+
+#### Code Scaffolding
+
+Use the Angular CLI to generate components or other entities:  
+ng generate component component-name   
+Replace component-name with the desired component's name.
+
+#### Build
+
+To build the project:   
+   ng build   
+   The build artifacts will be located in the dist/ directory.
+
+#### Unit Tests
+
+Run unit tests using Karma:   
+ng test
+
+#### End-to-End Tests
+
+Run end-to-end tests:    
+ng e2e
+
+**Note**: Install an appropriate e2e testing package before running this command.
+
+#### Additional Notes
+
+1. Follow best practices for both backend and frontend deployments.
+2. Secure environment variables and sensitive data.
+
+
+
+
