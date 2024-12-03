@@ -166,6 +166,15 @@ const config = {
         sidebarPath: require.resolve('./sidebarsEntityManagement.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'solutionuploadportal',
+        path: 'solutionuploadportal',
+        routeBasePath: 'solutionuploadportal',
+        sidebarPath: require.resolve('./sidebarsSolutionuploadportal.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -242,6 +251,13 @@ const config = {
               docsPluginId: 'entitymanagementservice',
               label: 'Entity Management Service',
             },
+            {
+              type: 'doc',
+              docId: 'settingup-templates',
+              docsPluginId: 'solutionuploadportal',
+              label: 'Solution Upload Portal',
+            },
+
           ],
         },         
         {

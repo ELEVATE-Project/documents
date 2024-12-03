@@ -1,0 +1,104 @@
+# Hosting and Customizing Solution Upload Portal
+
+The Solution Upload Portal simplifies the creation, validation and publishing of various solution types.
+This can be set up in any cloud environment. 
+
+
+The application consists of two components:
+
+
+1. Backend: A Python-based service that handles data and storage.
+2. Frontend: An Angular-based web application for user interactions.
+
+To host and customize the Solution Upload Portal:
+
+1. Install Python on Ubuntu or Windows.
+   * <a href="https://phoenixnap.com/kb/how-to-install-python-3-ubuntu">Install Python</a> and configure it for the backend service.
+
+2. Set up MongoDB.
+   * <a href="https://www.mongodb.com/docs/manual/installation/">Install MongoDB</a> and configure it for the backend service.
+
+3. Set up the backend service.
+   * <a href="https://github.com/ELEVATE-Project/solution-upload-portal-service"> Backend Repository</a>
+
+   * Install the necessary Python dependencies using either <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html">Conda</a> or a Python virtual environment.
+
+4. Set up the frontend service.
+   * <a href="https://github.com/ELEVATE-Project/solution-upload-portal"> Frontend Repository</a>
+
+      Install Angular CLI:  
+      This project was generated with <a href="https://github.com/angular/angular-cli"> Angular CLI </a> version 13.3.9.   
+      Build and serve the frontend application.  
+      
+## Customizing the Portal
+
+   You can customize the look and feel of the Solution Upload Portal based on the requirements. 
+
+1. To customize the backend:
+
+    * Update <a href="https://github.com/ELEVATE-Project/solution-upload-portal-service/blob/main/README.md"> .env</a> variables in the backend service to match the server configurations.
+    * Add or modify the API endpoints as per the requirements.
+
+2. To customize the frontend:
+
+   * Use Angular's CLI to generate or modify components:   
+
+      **```bash**     
+      **ng generate component component-name**   
+      **```**   
+   * Update styles and themes in the <a href="https://github.com/ELEVATE-Project/solution-upload-portal/blob/main/src/styles.scss"> src/styles.scss </a> file.
+
+   * Deploy the customized code to your preferred hosting service.
+
+3. To integrate it with other systems:
+
+   * Embed the frontend application into an existing portal.
+   * Use API integrations to connect the backend service with other systems.
+
+
+## Additional Resources
+
+|To learn more| See the following links|  
+|--------------|-----------|  
+|Python Official Documentation|https://www.python.org/doc/|
+|Angular Official Documentation|https://angular.io/docs|
+|MongoDB Official Documentation|https://www.mongodb.com/docs/manual/|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
