@@ -1,0 +1,351 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "intro",
+          "label": "Introduction"
+        },
+        {
+          "type": "doc",
+          "id": "technicalarchitecture",
+          "label": "Architecture"
+        },
+        {
+          "type": "doc",
+          "id": "key-capabilities",
+          "label": "Key Capabilities"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "settingup-overview",
+      "label": "Hosting and Customizing Your Instance"
+    },
+    {
+      "type": "category",
+      "label": "Setting up Organizational Rules and Policies",
+      "items": [
+        {
+          "type": "doc",
+          "id": "policyarchitecture",
+          "label": "About Organizational Rules and Policies"
+        },
+        {
+          "type": "category",
+          "label": "API Reference",
+          "items": [
+            {
+              "type": "doc",
+              "id": "api-overview",
+              "label": "Overview"
+            },
+            {
+              "type": "doc",
+              "id": "api-setpolicies",
+              "label": "Set Policies for Organizations"
+            },
+            {
+              "type": "doc",
+              "id": "api-setrules",
+              "label": "Set Rules for Mentor and Session Discovery"
+            },
+            {
+              "type": "doc",
+              "id": "api-entitytypeandentity",
+              "label": "Create Entity Types and Entities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Using the Application",
+      "items": [
+        {
+          "type": "doc",
+          "id": "using-the-application",
+          "label": "About the Application"
+        },
+        {
+          "type": "doc",
+          "id": "gettingstarted",
+          "label": "Getting Started with the Application"
+        },
+        {
+          "type": "doc",
+          "id": "typesofsessions",
+          "label": "Types of Sessions"
+        },
+        {
+          "type": "doc",
+          "id": "notifications",
+          "label": "Notifications"
+        },
+        {
+          "type": "category",
+          "label": "Managing Users for an Organization",
+          "items": [
+            {
+              "type": "doc",
+              "id": "aboutorganizationadministrator",
+              "label": "Organization Administrator"
+            },
+            {
+              "type": "doc",
+              "id": "bulkupload",
+              "label": "Uploading Users to the Application"
+            },
+            {
+              "type": "doc",
+              "id": "managementorrequests",
+              "label": "Managing Requests to Become a Mentor"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Managing Sessions for an Organization",
+          "items": [
+            {
+              "type": "doc",
+              "id": "aboutsessionmanager",
+              "label": "Session Manager"
+            },
+            {
+              "type": "doc",
+              "id": "createsession-sessionmanager",
+              "label": "Creating Sessions for an Organization"
+            },
+            {
+              "type": "doc",
+              "id": "manageassignedsession",
+              "label": "Managing Sessions Assigned to Mentors"
+            },
+            {
+              "type": "doc",
+              "id": "joinassignedsession",
+              "label": "Joining Sessions Assigned to Mentors"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "How Mentors Can Use the Application",
+          "items": [
+            {
+              "type": "doc",
+              "id": "signing-up-as-a-mentor",
+              "label": "Signing up as a Mentor"
+            },
+            {
+              "type": "doc",
+              "id": "logging-in-mentor",
+              "label": "Logging in"
+            },
+            {
+              "type": "doc",
+              "id": "creating-and-managing-mentor-profile",
+              "label": "Creating a Profile"
+            },
+            {
+              "type": "doc",
+              "id": "setting-up-a-session",
+              "label": "Setting up a Session"
+            },
+            {
+              "type": "doc",
+              "id": "inviting-mentorsandmentees-host",
+              "label": "Promoting Your Public Sessions"
+            },
+            {
+              "type": "doc",
+              "id": "starting-a-session",
+              "label": "Starting a Session"
+            },
+            {
+              "type": "doc",
+              "id": "dashboard-for-mentors",
+              "label": "Dashboard"
+            },
+            {
+              "type": "doc",
+              "id": "feedbackformentors",
+              "label": "Providing Feedback on a Session"
+            },
+            {
+              "type": "doc",
+              "id": "mentor-deleteaccountrequest",
+              "label": "Deleting the Account"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "How Mentees Can Use the Application",
+          "items": [
+            {
+              "type": "doc",
+              "id": "signing-up-as-a-mentee",
+              "label": "Signing up as a Mentee"
+            },
+            {
+              "type": "doc",
+              "id": "logging-in-mentee",
+              "label": "Logging in"
+            },
+            {
+              "type": "doc",
+              "id": "creating-and-managing-mentee-profile",
+              "label": "Creating a Profile"
+            },
+            {
+              "type": "doc",
+              "id": "request-beamentor",
+              "label": "Requesting to Become a Mentor"
+            },
+            {
+              "type": "doc",
+              "id": "mentor-directory",
+              "label": "Using the Mentor Directory"
+            },
+            {
+              "type": "doc",
+              "id": "viewmentorprofilelink",
+              "label": "Using a Shared Link to View a Mentor Profile"
+            },
+            {
+              "type": "doc",
+              "id": "enrolling-for-a-session",
+              "label": "Enrolling for a Session"
+            },
+            {
+              "type": "doc",
+              "id": "inviting-mentorsandmentees-participants",
+              "label": "Promoting Public Sessions with Your Contacts"
+            },
+            {
+              "type": "doc",
+              "id": "joining-a-session",
+              "label": "Joining a Session"
+            },
+            {
+              "type": "doc",
+              "id": "joining-sessions-using-a-shared-link",
+              "label": "Using a Shared Link to Join a Session"
+            },
+            {
+              "type": "doc",
+              "id": "dashboard-for-mentees",
+              "label": "Dashboard"
+            },
+            {
+              "type": "doc",
+              "id": "feedbackformentees",
+              "label": "Providing Feedback on a Session"
+            },
+            {
+              "type": "doc",
+              "id": "mentee-deleteaccountrequest",
+              "label": "Deleting the Account"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "change-language",
+          "label": "Changing the Language Settings"
+        },
+        {
+          "type": "category",
+          "label": "Support",
+          "items": [
+            {
+              "type": "doc",
+              "id": "report-signuporloginissue",
+              "label": "Reporting Sign up and Log in Issues"
+            },
+            {
+              "type": "doc",
+              "id": "report-an-issue",
+              "label": "Reporting an Issue"
+            },
+            {
+              "type": "doc",
+              "id": "using-faq",
+              "label": "Using the FAQ Page"
+            },
+            {
+              "type": "doc",
+              "id": "view-helpvideos",
+              "label": "Viewing the Help Videos"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Account Security",
+          "items": [
+            {
+              "type": "doc",
+              "id": "accountloginactivity",
+              "label": "Viewing the Account Login Activity"
+            },
+            {
+              "type": "doc",
+              "id": "changepassword",
+              "label": "Changing the Account Password"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "faq",
+          "label": "FAQs"
+        },
+        {
+          "type": "category",
+          "label": "Troubleshooting",
+          "items": [
+            {
+              "type": "doc",
+              "id": "bulkupload-invalidsession",
+              "label": "Invalid Sessions During Bulk Upload"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Additional Technical Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "apidocumentation",
+          "label": "API Documentation"
+        },
+        {
+          "type": "doc",
+          "id": "databasedesign",
+          "label": "Database Design"
+        },
+        {
+          "type": "doc",
+          "id": "repos",
+          "label": "Source Code Repositories"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "discussions",
+      "label": "Discussions"
+    }
+  ]
+}
