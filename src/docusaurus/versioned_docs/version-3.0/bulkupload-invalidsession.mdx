@@ -1,0 +1,63 @@
+import Admonition from '@theme/Admonition';
+
+# Troubleshooting Invalid Sessions
+
+If session managers have received invalid messages on the session status CSV file after uploading sessions to the platform, they can use this guide to make the necessary corrections and upload the file again.
+
+<table>
+<tr>
+    <th>Invalid Status Message</th>
+    <th>Errors</th>
+</tr>
+<tr>
+    <td>Mandatory fields &lt;name of the column&gt; not filled</td>
+    <td><p>You have not provided one or more mandatory information specified in the invalid message. For example: If you have not entered the session date, you will receive the invalid message 'Mandatory fields date not filled'.</p></td>
+</tr>
+<tr>
+    <td>Invalid &lt;name of the column&gt;</td>
+    <td><p>You have entered the information in the wrong column or in the incorrect format. Here are some examples:</p><ul><li>If you enter the mentee's email ID in the <b>Mentor</b> column, the invalid message would be <i>Invalid mentor email</i>.</li><li>If the date entered is wrong or in the incorrect format, the invalid message would be <i>Invalid date</i>.</li></ul></td>
+</tr>
+<tr>
+    <td>User not found</td>
+    <td>You have added a non-existent mentor or mentee.</td>
+</tr>
+<tr>
+    <td>Below minimum session time</td>
+    <td>You must create a session with a session duration of at least 30 minutes.</td>
+</tr>
+<tr>
+    <td>Only &lt;number&gt; mentees are allowed</td>
+    <td>The number of invited mentees exceeded the session enrollment limit.</td>
+</tr>
+<tr>
+    <td>Invalid row action</td>
+    <td>You have entered <i>Create</i> in the <b>Action</b> column and have specified an existing session ID in the <b>ID</b> column.</td>
+</tr>
+<tr>
+    <td>Session not found</td>
+    <td>While editing or deleting sessions, you have entered a non-existent session ID.</td>
+</tr>
+<tr>
+    <td>Cannot edit mentor and type</td>
+    <td>You cannot edit the session type or the mentor after publishing the session.</td>
+</tr>
+<tr>
+    <td>Cannot delete live session</td>
+    <td>While deleting sessions, you have added the session ID of an ongoing (live) session.</td>
+</tr>
+<tr>
+    <td>Session creation limit exceeded for given mentor</td>
+    <td><p>You will receive this error due to the following reasons:</p><ul><li>Duplicate sessions: The mentor is already assigned a session during the specified time.</li><li>Successive sessions: If a mentor is assigned a session from 3 pm to 4 pm, you cannot assign another session starting from 4 pm.</li></ul></td>
+</tr>
+</table>
+
+<Admonition type="info">
+<p>To look up guidelines on entering the session information in the bulk upload CSV file, see the bulk upload table in any one of the following sections:</p>
+<ul>
+<li><a href="createsession-sessionmanager#using-bulk-upload">Creating a Session Using Bulk Upload</a></li>
+<li><a href="manageassignedsession#updating-session-details">Updating a Session Using Bulk Upload</a></li>
+</ul>
+</Admonition>
+
+
+
