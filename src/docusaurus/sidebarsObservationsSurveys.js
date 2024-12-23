@@ -77,6 +77,17 @@ const sidebars = {
           },
           {
             type: 'doc',
+            id: 'viewobservation', // document ID
+            label: 'Viewing Observations', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'using-observationwithrubrics', // document ID
+            label: 'Using Observations with Rubrics', // sidebar label
+          },
+
+          {
+            type: 'doc',
             id: 'viewsurvey', // document ID
             label: 'Viewing Surveys', // sidebar label
           },
