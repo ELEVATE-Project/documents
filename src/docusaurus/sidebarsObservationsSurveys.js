@@ -80,6 +80,13 @@ const sidebars = {
             id: 'viewobservation', // document ID
             label: 'Viewing Observations', // sidebar label
           },
+
+          {
+            type: 'doc',
+            id: 'using-observationwithoutrubrics', // document ID
+            label: 'Using Observations without Rubrics', // sidebar label
+          },
+
           {
             type: 'doc',
             id: 'using-observationwithrubrics', // document ID
