@@ -84,13 +84,13 @@ const sidebars = {
           {
             type: 'doc',
             id: 'using-observationwithoutrubrics', // document ID
-            label: 'Using Observations without Rubrics', // sidebar label
+            label: 'Observations without Rubrics', // sidebar label
           },
 
           {
             type: 'doc',
             id: 'using-observationwithrubrics', // document ID
-            label: 'Using Observations with Rubrics', // sidebar label
+            label: 'Observations with Rubrics', // sidebar label
           },
 
           {
