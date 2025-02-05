@@ -109,22 +109,23 @@ const sidebars = {
                 id: 'aboutprogramdashboard',
                 label: 'About Program Dashboard',
               },
-              
-                {
-                  type: 'doc',
-                  id: 'pmstatusreport', // document ID
-                  label: 'Status Report', // sidebar label
-                },
-                {
+              {
+                type: 'doc',
+                id: 'pmimpprojectstatusoverview', // document ID
+                label: 'Improvement Project Report', // sidebar label
+              },
+                
+              {
                   type: 'doc',
                   id: 'pmtaskreport', // document ID
                   label: 'Task Report', // sidebar label
                 },
                 {
                   type: 'doc',
-                  id: 'pmimpprojectstatusoverview', // document ID
-                  label: 'Improvement Projects Status Overview', // sidebar label
+                  id: 'pmstatusreport', // document ID
+                  label: 'Status Report', // sidebar label
                 },
+                
               ]
             },
                {
