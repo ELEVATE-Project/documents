@@ -139,16 +139,17 @@ const sidebars = {
                       id: 'aboutstatedashboard',                                          
                       label: 'About State Dashboard',
                     },
+
+                    {
+                      type: 'doc',
+                      id: 'stimprovement', // document ID
+                      label: 'Improvement Project Report [Karnataka]', // sidebar label
+                    }, 
                     {type: 'doc',
                       id: 'stconsumption', // document ID
                       label: 'Improvement Consumption Overview', // sidebar label
                       },
-                      {
-                        type: 'doc',
-                        id: 'stimprovement', // document ID
-                       
-                        label: 'Improvement Project Report [Karnataka]', // sidebar label
-                      }, 
+                      
                       {
                         type: 'doc',
                         id: 'stuniqueuser', // document ID
