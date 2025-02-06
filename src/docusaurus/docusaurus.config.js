@@ -321,7 +321,7 @@ const config = {
             title: 'REACH US',
             items: [
               {
-                label: 'No 733, 17th Cross, 24th Main, JP Nagar, 6th Phase, Bangalore, Karnataka 560078.',
+                label: '4th Floor, Sumo Sapphire, Outer Ring Rd, KR Layout, 6th Phase, J.P Nagar, Bengaluru, Karnataka 560078.',
                 href: 'https://elevate.shikshalokam.org/'
               },
               {
