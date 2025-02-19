@@ -75,23 +75,49 @@ const sidebars = {
             id: 'profile', // document ID
             label: 'Updating Your Profile', // sidebar label
           },
-          {
-            type: 'doc',
-            id: 'viewobservation', // document ID
-            label: 'Viewing Observations', // sidebar label
-          },
+            ]
+             },
 
-          {
-            type: 'doc',
-            id: 'using-observationwithoutrubrics', // document ID
-            label: 'Observations without Rubrics', // sidebar label
-          },
-
+      { 
+        type: 'category',
+        label: 'Observations',
+        items: [
+          
           {
             type: 'doc',
             id: 'using-observationwithrubrics', // document ID
             label: 'Observations with Rubrics', // sidebar label
           },
+
+          {
+            type: 'doc',
+            id: 'accessing-recording', // document ID
+            label: 'Accessing and Recording Observations Using Rubrics', // sidebar label
+
+          },
+          {
+            type: 'doc',
+            id: 'using-observationwithoutrubrics', // document ID
+            label: 'Observations without Rubrics', // sidebar label
+          },
+          
+          {
+            type: 'doc',
+            id: 'viewobservation', // document ID
+            label: 'View, Edit, and Delete Observations', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'observationreports', // document ID
+            label: 'Viewing Observation Reports', // sidebar label
+          },
+        ]
+      },
+
+      {
+        type: 'category',
+        label: 'Surveys',
+        items: [
 
           {
             type: 'doc',
@@ -113,8 +139,9 @@ const sidebars = {
             id: 'faq', // document ID
             label: 'FAQs', // sidebar label
           },
-        ]
+        ]    
       },
+             
       {
         type: 'category',
         label: 'Additional Technical Resources',
@@ -131,7 +158,7 @@ const sidebars = {
           }
         ]
       },
-    ],
+    ]
   };
   
   module.exports = sidebars;
