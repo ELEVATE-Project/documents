@@ -98,7 +98,7 @@ const sidebars = {
           {
             type: 'doc',
             id: 'using-observationwithoutrubrics', // document ID
-            label: 'Observations without Rubrics', // sidebar label
+            label: 'Accessing and Recording Observations without Rubrics', // sidebar label
           },
           
           {
