@@ -104,7 +104,7 @@ const sidebars = {
           {
             type: 'doc',
             id: 'viewobservation', // document ID
-            label: 'View, Edit, and Delete Observations', // sidebar label
+            label: 'Managing Observations', // sidebar label
           },
           {
             type: 'doc',
