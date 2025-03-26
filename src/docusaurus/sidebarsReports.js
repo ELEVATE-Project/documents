@@ -30,6 +30,12 @@ const sidebars = {
         id: 'keycapabilities',
        label: 'Key Capabilities',
       },
+      {
+        type: 'doc',
+        id: 'settingup-overview',
+       label: 'Hosting and Customizing Your Instance',
+      },
+
 
       {
         type: 'category',
