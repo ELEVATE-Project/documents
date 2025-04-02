@@ -46,7 +46,8 @@ const sidebars = {
       id: 'projecttemplates', // document ID
       label: 'Creating Project Templates', // sidebar label
     },
-    {
+
+       {
       type: 'category',
       label: 'Using the Application',
       items: [
@@ -75,6 +76,21 @@ const sidebars = {
           id: 'profile', // document ID
           label: 'Updating Your Profile', // sidebar label
         },
+           ]
+     },
+
+     {
+      type: 'doc',
+      id: 'programs', // document ID
+      label: 'Programs', // sidebar label
+    },
+
+
+     {
+      type: 'category',
+      label: 'Managing Projects',
+      items: [
+
         {
           type: 'doc',
           id: 'viewprojects', // document ID
