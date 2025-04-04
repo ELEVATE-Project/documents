@@ -41,6 +41,13 @@ const sidebars = {
       id: 'settingup-overview', // document ID
       label: 'Hosting and Customizing Your Instance', // sidebar label
     },
+
+    {
+      type: 'doc',
+      id: 'programs', // document ID
+      label: 'Programs', // sidebar label
+    },
+
     {
       type: 'doc',
       id: 'projecttemplates', // document ID
@@ -79,12 +86,7 @@ const sidebars = {
            ]
      },
 
-     {
-      type: 'doc',
-      id: 'programs', // document ID
-      label: 'Programs', // sidebar label
-    },
-
+    
 
      {
       type: 'category',
