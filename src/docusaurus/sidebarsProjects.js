@@ -45,7 +45,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'programs', // document ID
-      label: 'Programs', // sidebar label
+      label: 'Working with Programs', // sidebar label
     },
 
     {
