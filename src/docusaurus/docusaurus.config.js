@@ -112,6 +112,16 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'reports',
+        path: 'reports',
+        routeBasePath: 'reports',
+        sidebarPath: require.resolve('./sidebarsReports.js'),
+      },
+    ],
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'userservice',
         path: 'userservice',
         routeBasePath: 'userservice',
@@ -223,6 +233,15 @@ const config = {
           label: 'Observations/Surveys',
         },
         {
+          type: 'doc',
+          docId: 'intro',
+          docsPluginId: 'reports',
+          position: 'left',
+          label: 'Reports',
+        },
+
+
+        {
           type: 'dropdown',
           label: 'Supporting Services',
           position: 'left',
@@ -302,7 +321,7 @@ const config = {
             title: 'REACH US',
             items: [
               {
-                label: '4th Floor, Sumo Sapphire, Outer Ring road, KR Layout, 6th Phase, J.P. Nagar, Bengaluru, Karnataka 560078.',
+               label: '4th Floor, Sumo Sapphire, Outer Ring road, KR Layout, 6th Phase, J.P. Nagar, Bengaluru, Karnataka 560078.',
                 href: 'https://elevate.shikshalokam.org/'
               },
               {
