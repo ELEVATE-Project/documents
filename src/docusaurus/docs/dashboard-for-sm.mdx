@@ -2,11 +2,11 @@ import DashboardIcon from './media/dashboard-icon.png';
 import BurgerMenu from './media/burgermenu-icon.png'
 import PortalApplicationMenu from './media/portal-menteeapplicationmenu.png'
 import PortalMenteeDashboard from './media/portal-menteedashboard.png'
+import SessionManagerMenu from './media/sessionmanagerpage.png'
 import Admonition from '@theme/Admonition';
 
-# Dashboard for Mentees
+# Dashboard for Session Managers
 
-The Dashboard provides a summary of the number of sessions attended by the mentee.
 
 **To view the Dashboard, do as follows:**
 
@@ -19,7 +19,7 @@ The Dashboard provides a summary of the number of sessions attended by the mente
     <li>Go to the <b>Application</b> menu <img src={BurgerMenu}/> and select <b>Dashboard</b>.</li>
     </ul>
 <p>
-    <img src={PortalApplicationMenu} />
+    <img src={SessionManagerMenu} />
 </p>
 <li>Go to the <b>Dashboard</b> tab.</li>
 <p>
@@ -28,19 +28,19 @@ The Dashboard provides a summary of the number of sessions attended by the mente
 </ul>
 </ol>
 
-The mentee dashboard helps to track the total number of sessions attended by the mentees and also the total time spent for learning activities.
 
-The dashboard provides a summary of the following:
+By default, the dashboard displays the mentoring session details for a mentee. You need to change the role to session manager.  To change to session manager, select the **Session Manager** role from the **Role** dropdown.
 
-1. Total number of private sessions attended by the mentees.
-2. Total number of public sessions attended by the mentees.
-3. Total hours spent for learning activities.
+![](media/changeroletosm.png)
 
-The bar chart shows the total number of mentees enrolled for the session and total number of sessions attended by the mentees.
+The session manager can track the following using the dashboard:
 
-![](media/menteedashboard.png)
+1. Total number of public and private sessions created.
+2. Total number of public sessions conducted.
+3. Total time taken by the session managers to create the sessions.
+4. Total time taken to conduct the mentoring sessions.
 
-Use the following options to filter the data suiting to your needs.
+![](media/smdashboard.png)
 
 <table>
 <tr>
@@ -49,14 +49,14 @@ Use the following options to filter the data suiting to your needs.
 </tr>
 <tr>
     <td>Duration</td>
-    <td><ul><li><b>This month</b>: To view the sessions attended by the mentees in the current month.</li>
-    <li><b>This week</b>: To view the sessions attended in the current week.</li>
-    <li><b>This quarter</b>: To view the sessions attended in the current quarter.</li>
+    <td><ul><li><b>This month</b>: To view the sessions conducted in the current month.</li>
+    <li><b>This week</b>: To view the sessions conducted in the current week.</li>
+    <li><b>This quarter</b>: To view the sessions conducted in the current quarter.</li>
 </ul></td>
 </tr>
 <tr>
     <td>Type</td>
-    <td><ul><li><b>All</b>: Shows all the public and private sessions attended by the mentees for the selected duration.</li>
+    <td><ul><li><b>All</b>: Shows all the public and private sessions hosted for the selected duration.</li>
     <li><b>Public</b>: Shows only public sessions.</li>
     <li><b>Private</b>: Shows only private sessions.</li>
     </ul></td>
@@ -67,20 +67,19 @@ Use the following options to filter the data suiting to your needs.
 </tr>
 </table>
 
-
-
 ## Session Details
 
-You can view the session details, such as who created the session, the date on which the session was conducted, the session type, (such as public or private),
- and the duration of the session.
+You can view the session details, such as the mentor name, number of mentoring sessions, time spent on the mentoring sessions in hrs and avg mentor rating
 
 
 From this section you can perform the following actions:
 
 1. **Sort**: Sort the table data  in ascending or descending order using the ![](media/sorticon.png)icon
 
-2. **Search**: Search for the session details either by entering a keyword in the search box provided or by selecting the relevant values in the select boxes provided. 
-![](media/menteesessiondetails.png)
+2. **Search**: Search for the session details either by entering a keyword in the search box provided or by selecting the relevant values in the select boxes provided. For example, to search for the number of mentees who have attended a session, select a value 
+from the **Number of Mentees** dropdown.
+
+![](media/smsessiondetails.png)
 
 3. **Filter**: **Clear Filters** option appears only after you enter a search criteria in the search boxes provided. 
            To clear the filter applied, click **Clear Filters**.
