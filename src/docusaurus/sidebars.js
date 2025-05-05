@@ -158,7 +158,13 @@ const sidebars = {
               type: 'doc',
               id: 'joinassignedsession', // document ID
               label: 'Joining Sessions Assigned to Mentors', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'dashboard-for-sm', // document ID
+              label: 'Dashboard', // sidebar label
             }
+
           ]
         },
         {

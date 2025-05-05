@@ -43,11 +43,23 @@ const sidebars = {
     },
 
     {
+      type: 'category',
+      label: 'Working with Programs',
+      items: [
+
+    {
       type: 'doc',
       id: 'programs', // document ID
-      label: 'Working with Programs', // sidebar label
+      label: 'Accessing Programs', // sidebar label
     },
 
+    {
+      type: 'doc',
+      id: 'programtemplates', // document ID
+      label: 'Creating Program Templates', // sidebar label
+    },
+  ],
+  },
     {
       type: 'doc',
       id: 'projecttemplates', // document ID
