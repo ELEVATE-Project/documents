@@ -1,0 +1,49 @@
+import PartialExample from './_mentored.mdx';
+import Admonition from '@theme/Admonition';
+
+
+# Set Rules for Mentor and Session Discovery
+
+Organization administrators can set rules or conditions based on which users can discover mentors or sessions on the application according to the rules set.
+
+Examples:
+
+* By setting rules that match users with mentors based on their preferred languages, users can view only the mentor profiles that match their languages of preference.
+
+* By setting rules that match users with sessions based on their preferred languages, organizations can achieve any one of the following:
+
+    * Users can view sessions where the language of instruction matches their languages of preference.
+
+    * Mentees can view sessions hosted by a mentor who match their languages of preference.
+
+<table>
+  <tr>
+    <th>API Reference</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/user/api-doc#tag/User-APIs/paths/~1user~1v1~1account~1login/post">Organization Administrator Login</a></td>
+    <td><p>To carry out administrative functions in the back end such as setting rules for mentor and session discovery, organization administrators must do the following:</p>
+    <ol><li>After receiving the application's link through email, organization administrators must sign up on the application. See the <a href="aboutorganizationadministrator">Organization Administrator</a> section to learn more.</li><li>Using APIs, log in to generate an access_token.</li></ol></td>
+  </tr>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Entity-Type/paths/~1mentoring~1v1~1entity-type~1read/get">Get Entity Types</a></td>
+    <td>Before setting rules for mentor and session discovery, organization administrators must obtain list of entity types associated with mentors and sessions.</td>
+  </tr>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Default-Rules/paths/~1mentoring~1v1~1default-rule~1create/post">Set Rules for Mentor and Session Discovery</a></td>
+    <td>Organization administrators can set rules for mentor and session discovery using entity types that contain a fixed range of entities.</td>
+  </tr>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Default-Rules/paths/~1mentoring~1v1~1default-rule~1read/get">Get Rules</a></td>
+    <td>To update or delete rules for an organization, the organization administrator can obtain the list of rules and their IDs.</td>
+  </tr>
+  <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Default-Rules/paths/~1mentoring~1v1~1default-rule~1update~1%7Bid%7D/patch">Update Rules</a></td>
+    <td>Organization administrators can modify the existing rules.</td>
+  </tr>
+    <tr>
+    <td><a href="https://dev.elevate-apis.shikshalokam.org/mentoring/api-doc#tag/Default-Rules/paths/~1mentoring~1v1~1default-rule~1delete~1%7Bid%7D/delete">Delete Rules</a></td>
+    <td>Organization Administrators can delete rules that are no longer required.</td>
+  </tr>
+</table>

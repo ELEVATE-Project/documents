@@ -1,0 +1,181 @@
+import PortalJoinButton from './media/portal-joinbutton.png';
+import PortalSessionTileJoin from './media/portal-sessiontilejoin.png'
+import InvitedSessionTileJoin from './media/invitedsessiontile.png'
+import PortalSearchSessions from './media/portal-searchsessions.png'
+import PortalSessionDetailsJoin from './media/portal-sessiondetailsjoin.png'
+import InvitedSessionDetailsJoin from './media/invitedsessiondetailsjoin.png'
+import PortalMentorProfileJoin from './media/portal-mentorprofilejoin.png'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+import PartialExample from './_mentored.mdx';
+import JoinStepPortal from './_joinsessionstep-portal.mdx';
+import SearchSession from './_searchsession.mdx';
+
+# Joining a Session
+
+After the mentor starts the sessions, you can join:
+
+* Public sessions to which you have enrolled or were invited by a session manager.
+* Private sessions to which you were invited.
+
+<Admonition type="note">
+You can join the session anytime within the time allocated for the session.
+</Admonition>
+
+You can join a session in one of the following ways:
+
+* Using the **Enrolled sessions** tab
+* Using the **All sessions** tab
+* Using the mentor profile
+* Using the Session Details page
+* Using the **Search** box
+
+<Admonition type="note">
+<ul>
+<li>Private sessions to which you were invited are listed only on the <b>Enrolled sessions</b> tab.</li>
+<li>On the <b>Enrolled sessions</b> tab, you can click the session title to join the session <a href="#using-the-session-details-page">using the Session Details page</a>.</li> 
+</ul>
+</Admonition>
+
+## Using the Enrolled Sessions Tab
+
+<Admonition type="tip">    
+<p>To look for sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
+</Admonition>
+
+**To join sessions using the Enrolled sessions tab, do as follows:**
+
+1. On the Home page, go to the **Enrolled sessions** tab.
+
+2. Find the session.
+
+3. Click **Join**.
+<p>
+    <Admonition type="tip">    
+    <p>If an error occurs, go back to <PartialExample mentored /> and click <b>Join</b>.</p>
+    </Admonition>
+</p>
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalJoinButton} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionTileJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
+
+4. <JoinStepPortal />
+
+## Using the All Sessions Tab
+
+<Admonition type="tip">    
+<p>To look for Public sessions to which you were invited, check the session tile that is labelled as <i>invited</i>.</p>
+</Admonition>
+
+**To join sessions using the All sessions tab, do as follows:**
+  
+1. On the Home page, go to the **All Sessions** tab.
+
+2. Find the session.
+
+3. Click **Join**.
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalJoinButton} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionTileJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
+
+4. <JoinStepPortal />
+
+## Using the Mentor Profile
+
+<Admonition type="info">    
+<p>See <a href="mentor-directory">Mentor Directory</a> to learn more about accessing the mentor profile.</p>
+</Admonition>
+
+**To join a Public session using the mentor profile, do as follows:**
+
+1. On the Mentor Profile page, go to the **Upcoming sessions** tab.
+
+2. Click **Join**.
+
+    <p>
+        <img src={PortalMentorProfileJoin} />
+    </p>
+
+3. <JoinStepPortal />
+
+## Using the Session Details Page
+
+1. Find the session from the **All Sessions** tab, **Enrolled Sessions** tab, or the Mentor Profile page.
+
+2. Click the session tile to view the Session Details page.
+
+    <p>
+        <img src={PortalSessionTileJoin} />
+    </p>
+
+3. Click **Join**.
+
+   <Tabs>
+   <TabItem value="enrolled session" label="Joining an Enrolled Session" default>
+    <p>
+        <img src={PortalSessionDetailsJoin} />
+    </p>
+   </TabItem>
+   <TabItem value="invited session" label="Joining an Invited Session">
+   <p>
+      <img src={InvitedSessionDetailsJoin} />
+   </p>
+   </TabItem>
+   </Tabs>
+
+4. <JoinStepPortal />
+
+## Using the Search box
+
+<Admonition type="tip">    
+<p>To look for Public sessions to which you were invited, check the session tile or mentor's name that is labelled as <i>invited</i>.</p>
+</Admonition>
+
+**To find Public sessions to which you have enrolled or were invited, do as follows:**
+
+1. <SearchSession />
+
+2. Click **Join**.
+
+3. <JoinStepPortal />
+
+<p>
+   <Admonition type="info">    
+   <p>To configure the meeting settings, see any one of the following sections:</p>
+   <ul>
+   <li><a href="https://bigbluebutton.org">BigBlueButton Tutorials</a>. To view the tutorials, go to the <b>Teachers</b> menu and select <b>Tutorials</b>.</li>
+   <li><a href="https://support.google.com/">Google Meet Support</a></li>
+   <li><a href="https://www.whatsapp.com/">WhatsApp Help Center</a></li>
+   <li><a href="https://zoom.us/">Zoom Support Center</a></li>
+   </ul>
+   </Admonition>
+</p>
+
+## Usage Guidelines
+
+- Unmute your microphone only when necessary.
+
+- Maintain a neat background and attire before you turn on your webcam. 
+
+- Use respectful language while sharing any information.
+
+- If you leave a BigBlueButton meeting unintentionally (by pressing the back key on your phone or closing the meeting tab), go back to <PartialExample mentored /> and click <b>Join</b>.
