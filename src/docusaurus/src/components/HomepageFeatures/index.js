@@ -50,8 +50,8 @@ const FeatureList = [
        a wide range of requirements
       </>
     ),
-    linkUrl: '',
-    linkUrlText: '',
+    // linkUrl: '/reports/intro',
+    linkUrlText: 'Click here to learn more',
   },
 ];
 

@@ -41,12 +41,32 @@ const sidebars = {
       id: 'settingup-overview', // document ID
       label: 'Hosting and Customizing Your Instance', // sidebar label
     },
+
+    {
+      type: 'category',
+      label: 'Working with Programs',
+      items: [
+
+    {
+      type: 'doc',
+      id: 'programs', // document ID
+      label: 'Accessing Programs', // sidebar label
+    },
+
+    {
+      type: 'doc',
+      id: 'programtemplates', // document ID
+      label: 'Creating Program Templates', // sidebar label
+    },
+  ],
+  },
     {
       type: 'doc',
       id: 'projecttemplates', // document ID
       label: 'Creating Project Templates', // sidebar label
     },
-    {
+
+       {
       type: 'category',
       label: 'Using the Application',
       items: [
@@ -75,6 +95,16 @@ const sidebars = {
           id: 'profile', // document ID
           label: 'Updating Your Profile', // sidebar label
         },
+           ]
+     },
+
+    
+
+     {
+      type: 'category',
+      label: 'Managing Projects',
+      items: [
+
         {
           type: 'doc',
           id: 'viewprojects', // document ID
