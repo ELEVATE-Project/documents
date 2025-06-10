@@ -187,6 +187,23 @@ const sidebars = {
               id: 'creating-and-managing-mentor-profile', // document ID
               label: 'Creating a Profile', // sidebar label
             },
+              {
+              type: 'doc',
+              id: 'mentorsconnections', // document ID
+              label: 'Managing My Connections', // sidebar label
+            },
+                {
+              type: 'doc',
+              id: 'mentor-request', // document ID
+              label: 'Responding to a Request', // sidebar label
+            },
+
+              {
+              type: 'doc',
+              id: 'mentor-viewchatmessages', // document ID
+              label: 'Viewing Chat Messages', // sidebar label
+            },
+
             {
               type: 'doc',
               id: 'setting-up-a-session', // document ID
@@ -249,6 +266,21 @@ const sidebars = {
               type: 'doc',
               id: 'mentor-directory', // document ID
               label: 'Using the Mentor Directory', // sidebar label
+            },
+            {
+              type: 'doc',
+              id: 'request', // document ID
+              label: 'Requests', // sidebar label
+            },
+             {
+              type: 'doc',
+              id: 'menteesconnections', // document ID
+              label: 'My Connections', // sidebar label
+            },
+             {
+              type: 'doc',
+              id: 'messages', // document ID
+              label: 'Messages', // sidebar label
             },
             {
               type: 'doc',
