@@ -269,8 +269,8 @@ const sidebars = {
             },
             {
               type: 'doc',
-              id: 'request', // document ID
-              label: 'Requests', // sidebar label
+              id: 'mentee-request', // document ID
+              label: 'Managing Message Requests', // sidebar label
             },
              {
               type: 'doc',
@@ -279,8 +279,8 @@ const sidebars = {
             },
              {
               type: 'doc',
-              id: 'messages', // document ID
-              label: 'Messages', // sidebar label
+              id: 'mentee-viewchatmessages', // document ID
+              label: 'Viewing Chat Messages', // sidebar label
             },
             {
               type: 'doc',
