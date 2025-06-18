@@ -270,7 +270,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'mentee-request', // document ID
-              label: 'Managing Message Requests', // sidebar label
+              label: 'Viewing Sent Requests', // sidebar label
             },
              {
               type: 'doc',
