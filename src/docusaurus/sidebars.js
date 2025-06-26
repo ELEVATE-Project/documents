@@ -190,7 +190,7 @@ const sidebars = {
               {
               type: 'doc',
               id: 'mentorsconnections', // document ID
-              label: 'Managing My Connections', // sidebar label
+              label: 'Managing Mentor Connections', // sidebar label
             },
                 {
               type: 'doc',
@@ -275,7 +275,7 @@ const sidebars = {
              {
               type: 'doc',
               id: 'menteesconnections', // document ID
-              label: 'My Connections', // sidebar label
+              label: 'Managing Mentee Connections', // sidebar label
             },
              {
               type: 'doc',
