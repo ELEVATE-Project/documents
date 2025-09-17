@@ -190,6 +190,15 @@ const config = {
         sidebarPath: require.resolve('./sidebarsSolutionuploadportal.js'),
       },
     ],
+     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'userservices',
+        path: 'userservices',
+        routeBasePath: 'userservices',
+        sidebarPath: require.resolve('./sidebarsUserservices.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -281,9 +290,18 @@ const config = {
               docsPluginId: 'solutionuploadportal',
               label: 'Solution Upload Portal',
             },
-
+            
           ],
-        },         
+        }, 
+        {
+          type: 'doc',
+          docId: 'intro',
+          docsPluginId: 'userservices',
+          position: 'left',
+          label: 'User Services',
+        },
+        
+
         {
           href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',

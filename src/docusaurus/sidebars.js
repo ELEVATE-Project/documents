@@ -266,7 +266,7 @@ const sidebars = {
               type: 'doc',
               id: 'mentor-directory', // document ID
               label: 'Using the Mentor Directory', // sidebar label
-            },
+            },            
             {
               type: 'doc',
               id: 'mentee-request', // document ID
