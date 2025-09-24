@@ -15,21 +15,82 @@
 const sidebars = {
     // By default, Docusaurus generates a sidebar from the docs folder structure
     tutorialSidebar: [
+
       {
+        type: 'category',
+        label: 'Getting Started',
+        items: [
+          {
+            type: 'doc',
+            id: 'intro', // document ID
+            label: 'Introduction', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'technicalarchitecture', // document ID
+            label: 'Architecture', // sidebar label
+          },
+          {
+            type: 'doc',
+            id: 'key-capabilities', // document ID
+            label: 'Key Capabilities', // sidebar label
+          },
+        ]
+      }, 
+          
+         {
         type: 'doc',
-        id: 'intro',
-        label: 'Introduction',
-      },
+        id: 'settingup-overview',
+        label: 'Hosting and Customizing Your Instance',
+      }, 
+
       {
-        type: 'doc',
-        id: 'quickstart',
-        label: 'Quick Start',
-      },
-       {
+      type: 'category',
+      label: 'Using the Application',
+      items: [
+        {
+          type: 'doc',
+          id: 'using-the-application', // document ID
+          label: 'About the Application', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'gettingstarted', // document ID
+          label: 'Getting Started with User Services', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'register', // document ID
+          label: 'Registering New Users', // sidebar label
+        },
+        {
+          type: 'doc',
+          id: 'login', // document ID
+          label: 'Logging in', // sidebar label
+        },
+
+        {
       type: 'doc',
-      id: 'prerequisites',
-      label: 'Prerequisites',
+      id: 'resetpwd',
+      label: 'Reset Your Password',
     },
+
+
+    {
+      type: 'doc',
+      id: 'delete',
+      label: 'Deleting the Account',
+    },
+
+        {
+          type: 'doc',
+          id: 'profile', // document ID
+          label: 'Updating Your Profile', // sidebar label
+        },
+           ]
+     },    
+
+         
 
     {
       type: 'category',
@@ -49,36 +110,7 @@ const sidebars = {
   ]
 },
 
-    {
-      type: 'category',
-      label: 'Managing User Accounts',
-      items: [
-
-    {
-      type: 'doc',
-      id: 'register',
-      label: 'Registering New Users',
-    },
-
-        {
-      type: 'doc',
-      id: 'login',
-      label: 'Logging in',
-    },
-      {
-      type: 'doc',
-      id: 'resetpwd',
-      label: 'Reset Your Password',
-    },
-
-
-    {
-      type: 'doc',
-      id: 'delete',
-      label: 'Deleting the Account',
-    },
-  ]
-    },
+    
 {
   type: 'category',
   label: 'Managing Users and Roles',
