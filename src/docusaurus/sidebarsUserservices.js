@@ -72,7 +72,7 @@ const sidebars = {
         {
       type: 'doc',
       id: 'resetpwd',
-      label: 'Reset Your Password',
+      label: 'Resetting Your Password',
     },
 
 
