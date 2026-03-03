@@ -75,7 +75,6 @@ const sidebars = {
       label: 'Resetting Your Password',
     },
 
-
     {
       type: 'doc',
       id: 'delete',
@@ -88,10 +87,9 @@ const sidebars = {
           label: 'Updating Your Profile', // sidebar label
         },
            ]
-     },    
+     },   
 
-         
-
+      
     {
       type: 'category',
       label: 'Tenant Management',
