@@ -205,6 +205,16 @@ const config = {
         sidebarPath: require.resolve('./sidebarsUserservices.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mitra',
+        path: 'mitra',
+        routeBasePath: 'mitra',
+        sidebarPath: require.resolve('./sidebarsMitra.js'),
+      },
+    ],
+
   ],
 
   themeConfig:
@@ -314,6 +324,14 @@ const config = {
           docsPluginId: 'userservices',
           position: 'left',
           label: 'User Services',
+        },
+
+         {
+          type: 'doc',
+          docId: 'intro',
+          docsPluginId: 'mitra',
+          position: 'left',
+          label: 'MItra',
         },
 
                
