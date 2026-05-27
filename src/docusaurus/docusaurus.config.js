@@ -38,14 +38,25 @@ const config = {
         lastVersion: 'current',
         versions: {
           current: {
-            label: '3.1',
+            label: 'Mentor 3.2',
           },
+           "3.1": {
+            label: 'Mentor 3.1',
+            path: '3.1',
+          },
+          
+          "3.0": {
+            label: 'Mentor 3.0',
+            path: '3.0',
+          },
+
           "2.6": {
-            label: '2.6',
+            label: 'Mentor 2.6',
             path: '2.6',
           },
+
           "2.5": {
-            label: '2.5',
+            label: 'Mentor 2.5',
             path: '2.5',
           },
         }
@@ -185,6 +196,15 @@ const config = {
         sidebarPath: require.resolve('./sidebarsSolutionuploadportal.js'),
       },
     ],
+     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'userservices',
+        path: 'userservices',
+        routeBasePath: 'userservices',
+        sidebarPath: require.resolve('./sidebarsUserservices.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -210,7 +230,15 @@ const config = {
           src: 'img/elevate-logo.png',
         },
         items: [
+         {
 
+         type: 'docsVersionDropdown',
+          position: 'left',
+          dropdownActiveClassDisabled: true,
+
+     },  
+
+/*
         {
             type: 'doc',
             docId: 'intro',
@@ -218,6 +246,7 @@ const config = {
             label: 'Mentor',
   //          logo: 'img/mentoring-logo.png',
         },
+*/
         {
           type: 'doc',
           docId: 'intro',
@@ -276,15 +305,27 @@ const config = {
               docsPluginId: 'solutionuploadportal',
               label: 'Solution Upload Portal',
             },
-
+            
           ],
-        },         
+        }, 
+
+      //  {
+      //    type: 'doc',
+      //    docId: 'intro',
+      //    docsPluginId: 'userservices',
+      //    position: 'left',
+      //    label: 'User Services',
+      //  },
+
+               
+
         {
           href: 'https://elevate.shikshalokam.org/contact-us/',
           label: 'Help',
           position: 'right',
         },
-
+ 
+       
 
 /*          
           {to: '/blog', label: 'Blog', position: 'left'},
