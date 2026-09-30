@@ -214,6 +214,16 @@ const config = {
         sidebarPath: require.resolve('./sidebarsMitra.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'saathi',
+        path: 'saathi',
+        routeBasePath: 'saathi',
+        sidebarPath: require.resolve('./sidebarsSaathi.js'),
+      },
+    ],
+
 
   ],
 
@@ -333,6 +343,14 @@ const config = {
           docsPluginId: 'mitra',
           position: 'left',
           label: 'MItra',
+        },
+
+        {
+          type: 'doc',
+          docId: 'intro',
+          docsPluginId: 'saathi',
+          position: 'left',
+          label: 'Saathi',
         },
 
                
