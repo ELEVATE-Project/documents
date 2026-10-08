@@ -62,7 +62,19 @@ const sidebars = {
         
            ]
      },   
+       
+     {
+      type: 'category',
+      label: 'Working with Saathi',
+      items: [
+        {
+          type: 'doc',
+          id: 'recordingqueries', // document ID
+          label: 'Addressing Challenges and Solutions', // sidebar label
+        },
           
+           ]
+     },   
  
      
 
