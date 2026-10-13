@@ -73,11 +73,14 @@ const sidebars = {
           label: 'Addressing Challenges and Solutions', // sidebar label
         },
           
+        {
+          type: 'doc',
+          id: 'updateprofile', // document ID
+          label: 'Updating Your Profile', // sidebar label
+        },
            ]
      },   
- 
-     
-
+   
      
  {
       type: 'category',
